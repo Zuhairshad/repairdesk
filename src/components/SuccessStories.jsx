@@ -1,64 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const stories = [
-  { label: 'WSA' },
-  { label: 'Techy' },
-  { label: 'Savannah iDoctor' },
-  { label: 'Computer Repair Doctor' },
-  { label: 'iFixScreens' },
-  { label: 'First Response Phone Repair' },
+const videoIds = [
+  "PSXAWZufMz4",
+  "WKvCJld98v0",
+  "0oTx9Sbi2AI",
+  "vKQiEmDbDuU",
+  "PnjJ3FsY40A",
+  "Me4tV77122c",
 ];
 
-const PlayIcon = ({ className }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 5v14l11-7-11-7z" />
-  </svg>
-);
+const tabs = [
+  { logo: "/images/logos/wsa.svg", alt: "WSA" },
+  { logo: "/images/logos/techy.png", alt: "Techy" },
+  { logo: "/images/logos/savannah.png", alt: "Savannah iDoctor" },
+  { logo: "/images/logos/crd.png", alt: "Computer Repair Doctor" },
+  { logo: "/images/logos/ifixscreens.svg", alt: "iFixScreens" },
+  { logo: "/images/logos/firstresponse.png", alt: "First Response Phone Repair" },
+];
 
 export default function SuccessStories() {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(5);
+
+  const currentVideoId = videoIds[activeTab];
+  const thumbnailUrl = `https://i.ytimg.com/vi/${currentVideoId}/hqdefault.jpg`;
 
   return (
     <section className="bg-white section-padding">
       <div className="container-main">
-        <div className="flex items-center gap-3 mb-4">
-          <span className="w-10 h-px bg-rd-teal" />
-          <span className="text-rd-teal font-poppins text-sm uppercase tracking-widest font-medium">
-            Success Stories
-          </span>
+        {/* Header */}
+        <div className="mb-10">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-8 h-[2px] bg-rd-teal inline-block" />
+            <span className="text-rd-teal text-sm uppercase tracking-wider font-poppins font-medium">
+              Success Stories
+            </span>
+          </div>
+          <h2 className="text-[32px] md:text-[38px] font-poppins font-normal text-[#2e384d]">
+            Trusted by More than 3000+ Repair Stores
+          </h2>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold font-dm-sans text-rd-dark max-w-2xl mb-10">
-          Trusted by More than 3000+ Repair Stores
-        </h2>
-
-        <div className="w-full aspect-video rounded-xl bg-gray-800 flex items-center justify-center relative overflow-hidden mb-8">
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900" />
-          <button
-            type="button"
-            className="relative z-10 inline-flex items-center gap-2 bg-rd-teal hover:bg-rd-dark-teal transition-colors text-white rounded-full px-6 py-3 font-poppins font-medium"
-          >
-            <PlayIcon className="w-4 h-4" />
-            Watch Testimonial
-          </button>
-          <span className="absolute bottom-4 left-4 z-10 text-white/80 text-sm font-poppins">
-            {stories[activeTab].label}
-          </span>
+        {/* Video Placeholder */}
+        <div
+          className="relative w-full rounded-xl overflow-hidden bg-gray-800"
+          style={{ aspectRatio: "16 / 9" }}
+        >
+          <img
+            src={thumbnailUrl}
+            alt={tabs[activeTab].alt + " testimonial"}
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <button className="w-[200px] h-[45px] bg-rd-teal rounded-full flex items-center justify-center text-white text-sm font-poppins gap-2 hover:bg-rd-dark-teal transition-colors shadow-lg">
+              <span className="text-lg">&#9654;</span>
+              Watch Testimonial
+            </button>
+          </div>
         </div>
 
-        <div className="flex gap-4 overflow-x-auto pb-2 -mx-1 px-1">
-          {stories.map((story, index) => (
+        {/* Tab Row */}
+        <div className="flex flex-row gap-4 overflow-x-auto scrollbar-hide mt-6 pb-2">
+          {tabs.map((tab, index) => (
             <button
-              key={story.label}
-              type="button"
+              key={index}
               onClick={() => setActiveTab(index)}
-              className={`shrink-0 bg-white border rounded-lg p-4 cursor-pointer transition-all font-dm-sans text-sm font-semibold whitespace-nowrap ${
+              className={`flex-shrink-0 px-6 py-3 bg-white border rounded-lg cursor-pointer transition-all flex items-center justify-center min-w-[140px] ${
                 activeTab === index
-                  ? 'border-rd-teal shadow-md text-rd-teal'
-                  : 'border-gray-200 text-gray-500 hover:border-gray-300'
+                  ? "border-rd-teal border-2 shadow-md"
+                  : "border-gray-200 hover:border-gray-300"
               }`}
             >
-              {story.label}
+              <img
+                src={tab.logo}
+                alt={tab.alt}
+                className="h-10 md:h-12 object-contain"
+              />
             </button>
           ))}
         </div>

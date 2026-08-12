@@ -1,15 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const industriesLinks = [
-  'Drone Repair',
-  'Cellphone Repair',
-  'Computer Repair',
-  'Watch Repair & Restoration',
-  'Jewelry Repair & Restoration',
+  { label: 'Drone Repair', icon: '/images/icon-drone.png' },
+  { label: 'Cellphone Repair', icon: '/images/icon-mobile.png' },
+  { label: 'Computer Repair', icon: '/images/icon-laptop.png' },
+  { label: 'Watch Repair & Restoration', icon: '/images/icon-watch.png' },
+  { label: 'Jewelry Repair & Restoration', icon: '/images/icon-ring.png' },
 ];
 
 const featureColumns = [
   {
+    icon: '/images/feat-attract.svg',
     title: 'Attract Customers',
     subtitle: 'Get more customers with marketing and retention',
     items: [
@@ -21,6 +22,7 @@ const featureColumns = [
     ],
   },
   {
+    icon: '/images/feat-sell.svg',
     title: 'Sell More',
     subtitle: 'Tools to help you sell more repairs and accessories',
     items: [
@@ -33,6 +35,7 @@ const featureColumns = [
     ],
   },
   {
+    icon: '/images/feat-efficiency.svg',
     title: 'Increase Efficiency',
     subtitle: 'Reduce costs and optimize your store operations',
     items: [
@@ -44,23 +47,6 @@ const featureColumns = [
     ],
   },
 ];
-
-const WrenchIcon = ({ className }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2z"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
 
 const ChevronIcon = ({ className }) => (
   <svg
@@ -79,22 +65,11 @@ const ChevronIcon = ({ className }) => (
   </svg>
 );
 
-const Logo = () => (
-  <a href="/" className="flex items-center gap-2 shrink-0">
-    <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-rd-teal text-white">
-      <WrenchIcon className="w-5 h-5" />
-    </span>
-    <span className="font-poppins font-bold text-2xl text-rd-dark">
-      Repair<span className="text-rd-teal">Desk</span>
-    </span>
-  </a>
-);
-
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null); // 'industries' | 'features' | null
-  const [mobileAccordion, setMobileAccordion] = useState(null); // 'industries' | 'features' | null
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileAccordion, setMobileAccordion] = useState(null);
   const closeTimer = useRef(null);
 
   useEffect(() => {
@@ -104,7 +79,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => {
@@ -119,7 +93,7 @@ export default function Navbar() {
 
   const scheduleClose = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
-    closeTimer.current = setTimeout(() => setActiveDropdown(null), 150);
+    closeTimer.current = setTimeout(() => setActiveDropdown(null), 180);
   };
 
   const toggleDropdownClick = (name) => {
@@ -136,11 +110,18 @@ export default function Navbar() {
         scrolled ? 'shadow-md' : 'shadow-none'
       }`}
     >
-      <nav className="container-main flex items-center justify-between h-20">
-        <Logo />
+      <nav className="container-main flex items-center justify-between h-[72px] md:h-20">
+        {/* Logo */}
+        <a href="/" className="flex items-center shrink-0">
+          <img
+            src="/images/logo.png"
+            alt="RepairDesk"
+            className="h-8 md:h-10"
+          />
+        </a>
 
         {/* Desktop nav links */}
-        <div className="hidden lg:flex items-center gap-7 font-dm-sans">
+        <div className="hidden lg:flex items-center gap-8 font-dm-sans">
           {/* Industries dropdown */}
           <div
             className="relative"
@@ -150,26 +131,31 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => toggleDropdownClick('industries')}
-              className="flex items-center gap-1 text-rd-dark font-medium hover:text-rd-teal transition-colors py-2"
+              className="flex items-center gap-1 text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors py-2"
               aria-expanded={activeDropdown === 'industries'}
             >
               Industries
               <ChevronIcon
-                className={`w-4 h-4 transition-transform ${
+                className={`w-4 h-4 transition-transform duration-200 ${
                   activeDropdown === 'industries' ? 'rotate-180' : ''
                 }`}
               />
             </button>
 
             {activeDropdown === 'industries' && (
-              <div className="absolute left-0 top-full mt-2 w-64 rounded-xl bg-white shadow-xl border border-gray-100 py-3 z-50">
+              <div className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-white shadow-xl border border-gray-100 py-2 z-50 animate-fadeIn">
                 {industriesLinks.map((item) => (
                   <a
-                    key={item}
+                    key={item.label}
                     href="#"
-                    className="block px-5 py-2.5 text-sm text-rd-dark hover:bg-rd-cream hover:text-rd-teal transition-colors"
+                    className="flex items-center gap-3 px-5 py-2.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-rd-teal transition-colors"
                   >
-                    {item}
+                    <img
+                      src={item.icon}
+                      alt=""
+                      className="w-6 h-6 object-contain"
+                    />
+                    {item.label}
                   </a>
                 ))}
               </div>
@@ -185,38 +171,49 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => toggleDropdownClick('features')}
-              className="flex items-center gap-1 text-rd-dark font-medium hover:text-rd-teal transition-colors py-2"
+              className="flex items-center gap-1 text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors py-2"
               aria-expanded={activeDropdown === 'features'}
             >
               Features
               <ChevronIcon
-                className={`w-4 h-4 transition-transform ${
+                className={`w-4 h-4 transition-transform duration-200 ${
                   activeDropdown === 'features' ? 'rotate-180' : ''
                 }`}
               />
             </button>
 
             {activeDropdown === 'features' && (
-              <div className="fixed left-1/2 -translate-x-1/2 top-20 mt-2 w-[900px] max-w-[92vw] rounded-2xl bg-white shadow-2xl border border-gray-100 p-8 z-50">
+              <div
+                className="fixed left-1/2 -translate-x-1/2 top-20 mt-2 w-[880px] max-w-[94vw] rounded-2xl bg-white shadow-2xl border border-gray-100 p-8 z-50 animate-fadeIn"
+                onMouseEnter={() => openDropdown('features')}
+                onMouseLeave={scheduleClose}
+              >
                 <div className="grid grid-cols-3 gap-8">
                   {featureColumns.map((col) => (
                     <div key={col.title}>
-                      <h4 className="font-poppins font-semibold text-rd-dark text-base mb-1">
-                        {col.title}
-                      </h4>
-                      <p className="text-xs text-gray-500 mb-4 leading-snug">
+                      <div className="flex items-center gap-3 mb-2">
+                        <img
+                          src={col.icon}
+                          alt=""
+                          className="w-8 h-8 object-contain"
+                        />
+                        <h4 className="font-poppins font-semibold text-[#2e384d] text-[15px] leading-tight">
+                          {col.title}
+                        </h4>
+                      </div>
+                      <p className="text-xs text-gray-400 mb-4 leading-snug pl-11">
                         {col.subtitle}
                       </p>
-                      <ul className="space-y-2.5">
+                      <ul className="space-y-2.5 pl-11">
                         {col.items.map((item) => (
                           <li key={item.label}>
                             <a
                               href="#"
-                              className="flex items-center gap-2 text-sm text-rd-dark hover:text-rd-teal transition-colors"
+                              className="flex items-center gap-2 text-sm text-gray-600 hover:text-rd-teal transition-colors"
                             >
                               {item.label}
                               {item.badge && (
-                                <span className="bg-rd-lime text-rd-dark text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full">
+                                <span className="bg-rd-lime text-rd-dark text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full leading-none">
                                   {item.badge}
                                 </span>
                               )}
@@ -233,19 +230,19 @@ export default function Navbar() {
 
           <a
             href="#"
-            className="text-rd-dark font-medium hover:text-rd-teal transition-colors"
+            className="text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="text-rd-dark font-medium hover:text-rd-teal transition-colors"
+            className="text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors"
           >
             Integrations
           </a>
           <a
             href="#"
-            className="text-rd-dark font-medium hover:text-rd-teal transition-colors"
+            className="text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors"
           >
             Get in Touch
           </a>
@@ -255,11 +252,14 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-5">
           <a
             href="#"
-            className="text-rd-dark font-medium hover:text-rd-teal transition-colors"
+            className="text-[#2e384d] font-normal text-base hover:text-rd-teal transition-colors"
           >
             Login
           </a>
-          <a href="#" className="btn-primary text-sm px-6 py-2.5">
+          <a
+            href="#"
+            className="btn-primary text-sm px-7 py-2.5 whitespace-nowrap"
+          >
             Free Trial
           </a>
         </div>
@@ -267,14 +267,14 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="lg:hidden flex items-center justify-center w-10 h-10 text-rd-dark"
+          className="lg:hidden flex items-center justify-center w-10 h-10 text-[#2e384d] rounded-lg hover:bg-gray-50 transition-colors"
           onClick={() => setMobileOpen((prev) => !prev)}
           aria-label="Toggle menu"
           aria-expanded={mobileOpen}
         >
           {mobileOpen ? (
             <svg
-              className="w-7 h-7"
+              className="w-6 h-6"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@ export default function Navbar() {
             </svg>
           ) : (
             <svg
-              className="w-7 h-7"
+              className="w-6 h-6"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -316,28 +316,37 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => toggleMobileAccordion('industries')}
-              className="w-full flex items-center justify-between py-3.5 text-rd-dark font-medium"
+              className="w-full flex items-center justify-between py-3.5 text-[#2e384d] font-medium text-[15px]"
             >
               Industries
               <ChevronIcon
-                className={`w-4 h-4 transition-transform ${
+                className={`w-4 h-4 transition-transform duration-200 ${
                   mobileAccordion === 'industries' ? 'rotate-180' : ''
                 }`}
               />
             </button>
-            {mobileAccordion === 'industries' && (
-              <div className="pb-3 pl-3 flex flex-col gap-2">
+            <div
+              className={`overflow-hidden transition-all duration-300 ${
+                mobileAccordion === 'industries' ? 'max-h-96 pb-3' : 'max-h-0'
+              }`}
+            >
+              <div className="pl-3 flex flex-col gap-1">
                 {industriesLinks.map((item) => (
                   <a
-                    key={item}
+                    key={item.label}
                     href="#"
-                    className="py-1.5 text-sm text-gray-600 hover:text-rd-teal"
+                    className="flex items-center gap-3 py-2 text-sm text-gray-600 hover:text-rd-teal transition-colors"
                   >
-                    {item}
+                    <img
+                      src={item.icon}
+                      alt=""
+                      className="w-5 h-5 object-contain"
+                    />
+                    {item.label}
                   </a>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
           {/* Features accordion */}
@@ -345,32 +354,45 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => toggleMobileAccordion('features')}
-              className="w-full flex items-center justify-between py-3.5 text-rd-dark font-medium"
+              className="w-full flex items-center justify-between py-3.5 text-[#2e384d] font-medium text-[15px]"
             >
               Features
               <ChevronIcon
-                className={`w-4 h-4 transition-transform ${
+                className={`w-4 h-4 transition-transform duration-200 ${
                   mobileAccordion === 'features' ? 'rotate-180' : ''
                 }`}
               />
             </button>
-            {mobileAccordion === 'features' && (
-              <div className="pb-4 pl-3 flex flex-col gap-5">
+            <div
+              className={`overflow-hidden transition-all duration-300 ${
+                mobileAccordion === 'features'
+                  ? 'max-h-[600px] pb-4'
+                  : 'max-h-0'
+              }`}
+            >
+              <div className="pl-3 flex flex-col gap-5">
                 {featureColumns.map((col) => (
                   <div key={col.title}>
-                    <h4 className="font-poppins font-semibold text-rd-dark text-sm mb-2">
-                      {col.title}
-                    </h4>
-                    <ul className="flex flex-col gap-2">
+                    <div className="flex items-center gap-2 mb-2">
+                      <img
+                        src={col.icon}
+                        alt=""
+                        className="w-6 h-6 object-contain"
+                      />
+                      <h4 className="font-poppins font-semibold text-[#2e384d] text-sm">
+                        {col.title}
+                      </h4>
+                    </div>
+                    <ul className="flex flex-col gap-2 pl-8">
                       {col.items.map((item) => (
                         <li key={item.label}>
                           <a
                             href="#"
-                            className="flex items-center gap-2 text-sm text-gray-600 hover:text-rd-teal"
+                            className="flex items-center gap-2 text-sm text-gray-600 hover:text-rd-teal transition-colors"
                           >
                             {item.label}
                             {item.badge && (
-                              <span className="bg-rd-lime text-rd-dark text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full">
+                              <span className="bg-rd-lime text-rd-dark text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-full leading-none">
                                 {item.badge}
                               </span>
                             )}
@@ -381,33 +403,36 @@ export default function Navbar() {
                   </div>
                 ))}
               </div>
-            )}
+            </div>
           </div>
 
           <a
             href="#"
-            className="py-3.5 border-b border-gray-100 text-rd-dark font-medium"
+            className="py-3.5 border-b border-gray-100 text-[#2e384d] font-medium text-[15px]"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="py-3.5 border-b border-gray-100 text-rd-dark font-medium"
+            className="py-3.5 border-b border-gray-100 text-[#2e384d] font-medium text-[15px]"
           >
             Integrations
           </a>
-          <a href="#" className="py-3.5 text-rd-dark font-medium">
+          <a
+            href="#"
+            className="py-3.5 text-[#2e384d] font-medium text-[15px]"
+          >
             Get in Touch
           </a>
 
-          <div className="flex flex-col gap-3 mt-4">
+          <div className="flex flex-col gap-3 mt-5 pb-2">
             <a
               href="#"
-              className="text-center text-rd-dark font-medium py-2 border border-gray-200 rounded-full"
+              className="text-center text-[#2e384d] font-medium py-2.5 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors"
             >
               Login
             </a>
-            <a href="#" className="btn-primary text-center">
+            <a href="#" className="btn-primary text-center py-2.5">
               Free Trial
             </a>
           </div>

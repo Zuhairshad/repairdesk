@@ -1,62 +1,75 @@
-import React from 'react';
+import React from "react";
 
 export default function Testimonial({
   quote,
   name,
   title,
   company,
-  imageAlt,
   reversed = false,
 }) {
+  const imageSrc = reversed
+    ? "/images/testimonial2.jpeg"
+    : "/images/testimonial1.jpeg";
+
   const textBlock = (
-    <div className="w-full md:w-1/2 flex flex-col justify-center">
+    <div className="w-full lg:w-[60%] flex flex-col justify-center">
       <div className="flex items-center gap-3 mb-6">
-        <span className="w-10 h-px bg-white/40" />
-        <span className="text-white/70 font-poppins text-sm uppercase tracking-widest">
+        <span className="inline-block w-8 h-[2px] bg-white" />
+        <span className="text-white text-sm uppercase tracking-wider font-poppins">
           Testimonial
         </span>
       </div>
 
-      <p className="font-poppins font-light italic text-white text-lg md:text-xl leading-relaxed mb-8">
-        “{quote}”
-      </p>
+      <blockquote className="font-poppins font-light italic text-white text-lg md:text-xl leading-relaxed mb-8">
+        &ldquo;{quote}&rdquo;
+      </blockquote>
 
-      <div className="w-full h-px bg-white/20 mb-6" />
+      <div className="w-8 h-[2px] bg-white my-4" />
 
-      <p className="text-white font-poppins font-bold uppercase tracking-wide text-base mb-1">
+      <p className="text-white font-semibold uppercase tracking-wide text-sm font-poppins mb-1">
         {name}
       </p>
-      <p className="text-white/70 font-poppins text-sm mb-6">
+      <p className="text-white/60 text-sm font-poppins mb-6">
         {title}
-        {title && company ? ', ' : ''}
+        {title && company ? ", " : ""}
         {company}
       </p>
 
       <a
         href="#"
-        className="inline-flex items-center gap-2 text-white font-poppins font-medium hover:underline"
+        className="inline-flex items-center text-white font-poppins font-medium hover:underline"
       >
-        Start My Free Trial <span aria-hidden="true">&rarr;</span>
+        Start My Free Trial
+        <img
+          src="/images/arrow.svg"
+          alt=""
+          className="w-5 h-5 inline ml-2 brightness-0 invert"
+        />
       </a>
     </div>
   );
 
   const imageBlock = (
-    <div className="w-full md:w-1/2 flex items-center justify-center">
-      <div
-        role="img"
-        aria-label={imageAlt || `${name} testimonial photo`}
-        className="w-full aspect-[4/3] rounded-2xl bg-gray-300/80"
+    <div className="w-full lg:w-[40%] flex items-center justify-center">
+      <img
+        src={imageSrc}
+        alt={`${name} testimonial photo`}
+        className="rounded-lg object-cover w-full shadow-xl"
       />
     </div>
   );
 
   return (
-    <section className="bg-rd-dark section-padding">
+    <section
+      className="section-padding"
+      style={{
+        background: "linear-gradient(135deg, #006d75 0%, #004a50 100%)",
+      }}
+    >
       <div className="container-main">
         <div
-          className={`flex flex-col gap-10 md:gap-12 items-center ${
-            reversed ? 'md:flex-row-reverse' : 'md:flex-row'
+          className={`flex flex-col gap-10 lg:gap-12 items-center ${
+            reversed ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
           {textBlock}
@@ -75,14 +88,12 @@ export function TestimonialSection() {
         name="Simon Nash"
         title="Owner"
         company="The iPhone Guy"
-        imageAlt="Simon Nash, Owner of The iPhone Guy"
       />
       <Testimonial
         quote="We had good experience working with the team at RepairDesk in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with RepairDesk!"
         name="Lyle Schrock"
         title="Owner"
         company="The Lab"
-        imageAlt="Lyle Schrock, Owner of The Lab"
         reversed
       />
     </>
