@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(248, 248, 251);
+  border-radius: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(1, 109, 116);
+  border-radius: 8px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(90deg, #D4F479 0%, #C3EAB3 30.21%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.35s ease-out;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-rd-teal text-white font-poppins font-medium px-8 py-3 rounded-full hover:bg-rd-dark-teal transition-all duration-300 inline-block text-center;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white font-poppins font-medium px-8 py-3 rounded-full hover:bg-white hover:text-rd-dark transition-all duration-300 inline-block text-center;
+  }
+  .btn-white {
+    @apply bg-white text-rd-dark font-poppins font-medium px-8 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 inline-block text-center;
+  }
+  .btn-teal-outline {
+    @apply border-2 border-rd-teal text-rd-teal font-poppins font-medium px-8 py-3 rounded-full hover:bg-rd-teal hover:text-white transition-all duration-300 inline-block text-center;
+  }
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  .container-main {
+    @apply max-w-container mx-auto px-4 md:px-6;
+  }
+}
