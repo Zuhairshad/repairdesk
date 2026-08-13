@@ -1,119 +1,313 @@
 import React from 'react';
 import PageLayout from '../../components/PageLayout';
 
-const features = [
-  {
-    title: 'Online Intake Forms',
-    description: 'Customers submit a mail-in repair request directly from your website. They describe the issue, upload photos, and agree to your terms — before the device even ships.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Shipping Label Generation',
-    description: 'Generate inbound shipping labels for customers with a single click. Print-ready labels can be emailed directly to the customer so they can drop off without friction.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5l5 5v11a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Intake Photos',
-    description: 'When the device arrives, technicians photograph its condition and attach those images to the work order. Pre-existing damage is documented before a wrench is touched.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Automated Email Status Updates',
-    description: 'Customers receive automatic emails at every stage — received, diagnosed, in repair, repaired, shipped back. No manual follow-up, no missed communications.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Return Shipping Tracking',
-    description: 'Generate return shipping labels and share real-time tracking links with customers. They know exactly when their repaired device will arrive back at their door.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Customer Portal',
-    description: 'Customers log in to a self-service portal to track their repair, approve estimates, pay invoices, and download receipts — all without calling your shop.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Prepaid Shipping Labels',
-    description: 'Offer a premium experience by emailing customers a prepaid inbound shipping label. Remove every barrier to sending in a device and win more mail-in business.',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-      </svg>
-    ),
-  },
+/* ---------------------------------------------------------------------- */
+/* Icons                                                                   */
+/* ---------------------------------------------------------------------- */
+
+const IconWrap = ({ children, className = 'w-6 h-6' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+    {children}
+  </svg>
+);
+
+const MailIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+  </IconWrap>
+);
+
+const TicketIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 7a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 100 4v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2a2 2 0 100-4V7z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeDasharray="2 2" d="M12 6v12" />
+  </IconWrap>
+);
+
+const PackageIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 7.5l-8.25 4.5-8.25-4.5M12 12v9m8.25-13.5v9a1 1 0 01-.51.87l-7.5 4.125a1 1 0 01-.98 0l-7.5-4.125a1 1 0 01-.51-.87v-9a1 1 0 01.51-.87l7.5-4.125a1 1 0 01.98 0l7.5 4.125a1 1 0 01.51.87z" />
+  </IconWrap>
+);
+
+const TruckIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16V6a1 1 0 011-1h8a1 1 0 011 1v10M3 16h10M3 16a2 2 0 104 0m6 0a2 2 0 104 0m-4 0h4m0 0h2.5V11a1 1 0 00-.293-.707l-2.5-2.5A1 1 0 0015 7.5H13v8.5" />
+  </IconWrap>
+);
+
+const CreditCardIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+  </IconWrap>
+);
+
+const ClipboardCheckIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 14l2 2 4-4" />
+  </IconWrap>
+);
+
+const TrackerPinIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </IconWrap>
+);
+
+const CheckCircleIcon = (props) => (
+  <IconWrap {...props}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </IconWrap>
+);
+
+/* ---------------------------------------------------------------------- */
+/* Content                                                                 */
+/* ---------------------------------------------------------------------- */
+
+const heroBullets = [
+  'Requests, tickets, estimates, payments, and shipping details stay connected',
+  'Track each mail-in repair order through return shipping',
+  'Customer updates stay tied to the repair workflow',
+  'Give teams clearer job visibility from the time a mail-in request is received',
 ];
+
+const trustBadges = ['Built for Repair Shops', 'Guided Onboarding', '24/6 Support'];
 
 const stats = [
-  { value: '100%', label: 'End-to-end trackable' },
-  { value: '0', label: 'Phone calls needed' },
-  { value: '24/7', label: 'Intake form availability' },
-  { value: '1-click', label: 'Shipping label generation' },
+  { value: '3,000+', label: 'Repair Stores' },
+  { value: '400M', label: 'Payment Processed' },
+  { value: '90+', label: 'Countries' },
+  { value: '4.7', label: 'Capterra Rating' },
+  { value: '15+', label: 'Industries Served' },
 ];
 
-const faqs = [
+const painPoints = [
   {
-    q: 'How do customers submit a mail-in repair?',
-    a: 'Customers fill out an online intake form embedded on your website. They describe the issue, upload photos, agree to your terms and pricing, and then receive instructions on how to ship the device to your shop.',
+    title: 'Repair Requests Get Missed',
+    body: 'Mail-in requests can get buried when customer details, device information, and attachments arrive through different emails or forms.',
   },
   {
-    q: 'Does this integrate with shipping carriers?',
-    a: 'Yes. RepairDesk Mail-in Repair integrates with major shipping carriers to generate and print shipping labels directly from the platform. Tracking numbers are automatically shared with customers.',
+    title: 'Intake Detail Is Often Missing',
+    body: 'A missing device photo, warranty detail, or condition note can force your team to chase down information before they can even start checking the device.',
   },
   {
-    q: 'Can customers pay online before the device is shipped back?',
-    a: 'Yes. Once the repair is complete, customers receive an email with a payment link. They pay online and the device is shipped back upon payment confirmation.',
+    title: 'Triage and Diagnostics Vary from Order to Order',
+    body: 'Without a set process, each staff member may check the device, write notes, label assets, or assign a technician in their own way.',
+  },
+  {
+    title: 'Quotes Get Stuck in Limbo',
+    body: 'A repair can be ready to move ahead, but it still sits there because the quote went out late or no one is sure the customer said yes.',
+  },
+  {
+    title: 'Payment Delays Return Shipping',
+    body: 'The repair may already be done, but the device can stay in the shop if the customer never got the invoice, payment link, or payment details.',
+  },
+  {
+    title: 'Customers Are Left Guessing',
+    body: 'When customers cannot check the repair status on your website, they usually do the next obvious thing. They call or message the shop.',
+  },
+  {
+    title: 'Repair Communication Get Hard to Piece Together',
+    body: 'One update is in an email. Another is in a text. A technician note sits somewhere else. Before long, the full repair story is hard to follow.',
+  },
+  {
+    title: 'Return Shipping Details Get Hard to Track',
+    body: 'Labels, carrier details, tracking numbers, and return shipment updates can be missed when they are managed outside the repair order.',
   },
 ];
+
+const solutionBullets = [
+  'Mail-in request forms sit directly on your website',
+  'Customer-submitted requests turn into repair tickets inside RepairDesk',
+  'Shipping labels are generated right after an invoice is created',
+  'Online invoices with the payment methods your shop supports',
+  'Repair tracker access when customers want to check progress themselves',
+  'Email and SMS updates that follow each ticket status',
+];
+
+const processSteps = [
+  {
+    title: 'Repair request is submitted',
+    body: 'Customer enters repair details through your online request form.',
+    icon: MailIcon,
+  },
+  {
+    title: 'Ticket is created in RepairDesk',
+    body: 'Job details move into a repair ticket for tracking.',
+    icon: TicketIcon,
+  },
+  {
+    title: 'Estimate is sent for approval',
+    body: 'The quoted repair lands with the customer before anyone touches the job.',
+    icon: ClipboardCheckIcon,
+  },
+  {
+    title: 'Repair progress is updated',
+    body: 'Ticket notes are added along the way, keeping the repair story together.',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'The invoice is shared for payment',
+    body: 'An invoice with a payment link is shared with the customer.',
+    icon: CreditCardIcon,
+  },
+  {
+    title: 'The device is prepared for return',
+    body: 'ShipStation labels and tracking details stay connected to the ticket.',
+    icon: TruckIcon,
+  },
+];
+
+const featureTabs = ['Repair Ticketing', 'Shipping', 'Payments', 'Intake Forms', 'Repair Tracker', 'B2B Portal', 'Inventory & POS'];
+
+const coreFeatures = [
+  {
+    eyebrow: 'Ticket Management',
+    title: 'One Place for the Mail-in Repair Story',
+    body: 'A mail-in repair can lose context fast if the details are sitting in different places. With RepairDesk, the request becomes a ticket your team can keep building on. Device condition, customer notes, diagnostics, technician updates, job status, and warranty details stay tied to the repair as it moves through the shop.',
+    icon: TicketIcon,
+    bullets: [
+      'Track customer, device, and mail-in order details from the ticket',
+      'Assign the right workflow to each mail-in repair order',
+      'Complete a pre-condition checklist and record diagnostic findings',
+      'Send the repair estimates to the customer for approval',
+      'Trigger automated email and SMS updates as the ticket moves forward',
+    ],
+    cta: true,
+  },
+  {
+    eyebrow: 'Shipping Integration',
+    title: 'Keep Mail-in Shipping Easier to Manage',
+    body: 'Mail-in repairs can bring a lot of small shipping details with them. RepairDesk connects with ShipStation, so your team can handle labels, carrier options, tracking, return shipments, and invoice-related shipping records without digging through scattered notes.',
+    icon: TruckIcon,
+    bullets: [
+      'Inbound labels generated through RepairDesk Forms',
+      'One-click Order sends shipping details to ShipStation',
+      'Supported carriers available for return shipments',
+      'Shipping markup added when the job needs it',
+      'Tracking details kept with the ticket and invoice',
+    ],
+    cta: true,
+  },
+  {
+    eyebrow: 'Online Payments',
+    title: 'Collect Payment Before Return Shipping',
+    body: 'Once a mail-in repair is ready to close out, payment can slow the job down. RepairDesk gives your team a way to send the invoice, share a payment link, and let the customer pay before the item is packed for return shipping.',
+    icon: CreditCardIcon,
+    bullets: [
+      'Payment links included with emailed invoices after the repair is done',
+      'Online payment options such as Stripe, PayPal, and RepairDesk Payments',
+      'Customer Portal access for invoice viewing and payment',
+      'Deposit payment collection available through RepairDesk Forms when set up',
+      'Partial or Full payment requests supported through emailed invoices',
+    ],
+    cta: true,
+  },
+  {
+    eyebrow: 'Online Intake',
+    title: 'Capture Mail-in Requests From Your Website',
+    body: 'Use RepairDesk Forms to collect mail-in repair details through a website widget. Customers can add the information your team needs, attach supported files, and start a request that can become a ticket or lead.',
+    icon: MailIcon,
+    bullets: [
+      'Build custom form flows with the steps your workflow needs',
+      'Create multiple forms for different mail-in repair workflows',
+      'Let customers upload supported attachments, including supported documents and device images, for greater transparency',
+      'Send automated emails after a customer submits the form',
+      'Create inbound shipping labels through RepairDesk Forms',
+      'Charge a deposit when customers submit a mail-in repair order',
+    ],
+    cta: true,
+  },
+  {
+    eyebrow: 'Online Repair Tracking',
+    title: 'Let Customers Check Progress Without Calling In',
+    body: 'Customers do not always want to call just to ask where a repair stands. With RepairDesk, they can use the Repair Tracker on your website, enter their ticket ID and last name, and check the latest status on their own. When invoices are available, they can download them from the same place.',
+    icon: TrackerPinIcon,
+    bullets: [
+      'Website Repair Tracker widget for customer self-service',
+      'Status lookup with ticket ID and last name',
+      'Invoice downloads available through the tracker',
+    ],
+    cta: false,
+  },
+];
+
+/* ---------------------------------------------------------------------- */
+/* Page                                                                    */
+/* ---------------------------------------------------------------------- */
 
 export default function MailInRepairProductPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-24 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#0b4a4e] to-rd-teal text-white py-20 md:py-28">
         <div className="container-main">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
-              Mail-In Repair
-            </span>
-            <h1 className="font-dm-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-              Mail-In Repair Management
-            </h1>
-            <p className="font-dm-sans text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
-              Track and manage mail-in repair orders end-to-end. From intake to return shipping — fully automated, fully professional.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#" className="btn-primary text-base px-8 py-3.5">
-                Start Free Trial
-              </a>
-              <a href="#" className="border border-white/40 hover:border-white text-white font-poppins font-semibold text-base px-8 py-3.5 rounded-full transition-colors duration-200">
-                Watch Demo
-              </a>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7">
+              <span className="inline-block bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
+                Mail-in Repair Software
+              </span>
+              <h1 className="font-dm-serif text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
+                Manage Every Mail-in Repair Order from Request to Return Shipping
+              </h1>
+              <ul className="space-y-3 mb-8">
+                {heroBullets.map((bullet) => (
+                  <li key={bullet} className="flex items-start gap-3 font-dm-sans text-white/85 text-base md:text-lg leading-relaxed">
+                    <CheckCircleIcon className="w-5 h-5 text-rd-lime flex-shrink-0 mt-0.5" />
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <a href="#" className="btn-primary text-base px-8 py-3.5">
+                  Book A Demo
+                </a>
+                <a href="#" className="border border-white/40 hover:border-white text-white font-poppins font-semibold text-base px-8 py-3.5 rounded-full transition-colors duration-200 text-center">
+                  View Pricing Plans
+                </a>
+              </div>
+              <div className="flex flex-wrap gap-x-8 gap-y-2">
+                {trustBadges.map((badge) => (
+                  <span key={badge} className="font-poppins text-sm text-white/70 flex items-center gap-2">
+                    <CheckCircleIcon className="w-4 h-4 text-rd-lime" />
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Shipping / logistics visual */}
+            <div className="lg:col-span-5 relative">
+              <div className="bg-white/10 border border-white/15 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+                <div className="flex items-center justify-between">
+                  {[MailIcon, TicketIcon, PackageIcon, TruckIcon].map((Icon, idx) => (
+                    <React.Fragment key={idx}>
+                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-rd-lime/90 text-rd-dark flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-6 h-6 md:w-7 md:h-7" />
+                      </div>
+                      {idx < 3 && <div className="flex-1 h-px bg-white/30 mx-1 md:mx-2" />}
+                    </React.Fragment>
+                  ))}
+                </div>
+                <div className="grid grid-cols-4 gap-1 mt-3 text-center">
+                  <span className="font-dm-sans text-[11px] md:text-xs text-white/70">Request</span>
+                  <span className="font-dm-sans text-[11px] md:text-xs text-white/70">Ticket</span>
+                  <span className="font-dm-sans text-[11px] md:text-xs text-white/70">Shipped</span>
+                  <span className="font-dm-sans text-[11px] md:text-xs text-white/70">Returned</span>
+                </div>
+                <div className="mt-6 pt-6 border-t border-white/15 space-y-3">
+                  <div className="flex items-center justify-between font-dm-sans text-sm text-white/80">
+                    <span>Ticket #MR-2291</span>
+                    <span className="bg-rd-lime/20 text-rd-lime text-xs font-poppins font-semibold px-2.5 py-1 rounded-full">In Repair</span>
+                  </div>
+                  <div className="flex items-center justify-between font-dm-sans text-sm text-white/80">
+                    <span>Ticket #MR-2288</span>
+                    <span className="bg-white/20 text-white text-xs font-poppins font-semibold px-2.5 py-1 rounded-full">Shipped Back</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,10 +316,10 @@ export default function MailInRepairProductPage() {
       {/* Stats */}
       <section className="bg-rd-cream py-14 border-b border-gray-200">
         <div className="container-main">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {stats.map((stat) => (
-              <div key={stat.value} className="text-center">
-                <div className="font-dm-serif text-4xl md:text-5xl text-rd-teal mb-2">{stat.value}</div>
+              <div key={stat.label} className="text-center">
+                <div className="font-dm-serif text-3xl md:text-4xl text-rd-teal mb-2">{stat.value}</div>
                 <div className="font-dm-sans text-sm text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -133,92 +327,145 @@ export default function MailInRepairProductPage() {
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-20 md:py-28 bg-white">
+      {/* Daily Friction — dark, numbered */}
+      <section className="bg-rd-dark py-20 md:py-28">
         <div className="container-main">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mb-4">
-              Expand your reach beyond your local market
-            </h2>
-            <p className="font-dm-sans text-gray-600 text-lg">
-              Mail-in repairs let you serve customers anywhere in the country. RepairDesk handles the logistics and communication so you can focus on fixing devices.
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <span className="font-poppins text-sm font-semibold tracking-widest text-rd-lime uppercase">Daily Friction</span>
+            <h2 className="font-dm-serif text-3xl md:text-4xl text-white mt-3 mb-4">Mail-in Jobs Get Messy Fast</h2>
+            <p className="font-dm-sans text-white/70 text-lg leading-relaxed">
+              When every repair update lives in a different place, your team loses time chasing details instead of moving repairs forward.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="bg-rd-cream rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 group"
-              >
-                <div className="w-14 h-14 bg-rd-teal/10 text-rd-teal rounded-xl flex items-center justify-center mb-5 group-hover:bg-rd-teal group-hover:text-white transition-colors duration-300">
-                  {feature.icon}
-                </div>
-                <h3 className="font-poppins font-semibold text-rd-dark text-lg mb-3">{feature.title}</h3>
-                <p className="font-dm-sans text-gray-600 leading-relaxed">{feature.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
+            {painPoints.map((point, idx) => (
+              <div key={point.title} className="bg-rd-dark hover:bg-white/5 transition-colors duration-300 p-7 md:p-8">
+                <div className="font-dm-serif text-3xl text-rd-lime/40 mb-4">{String(idx + 1).padStart(2, '0')}</div>
+                <h3 className="font-poppins font-semibold text-white text-base mb-3 leading-snug">{point.title}</h3>
+                <p className="font-dm-sans text-white/60 text-sm leading-relaxed">{point.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-20 bg-rd-cream">
+      {/* The Solution */}
+      <section className="bg-white py-20 md:py-28">
         <div className="container-main">
-          <div className="text-center max-w-xl mx-auto mb-14">
-            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mb-4">
-              How mail-in repair works
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { step: '01', title: 'Customer Submits Form', body: 'Online intake form captures device details, issue, and customer info.' },
-              { step: '02', title: 'Device Ships In', body: 'Customer ships using prepaid label or their own carrier. Tracking is linked to the ticket.' },
-              { step: '03', title: 'Repair & Update', body: 'Technicians repair the device and auto-emails keep the customer informed at every step.' },
-              { step: '04', title: 'Pay & Ship Back', body: 'Customer pays online. Return shipping label is generated and the device is sent back.' },
-            ].map((item) => (
-              <div key={item.step} className="bg-white rounded-2xl p-7 text-center shadow-sm">
-                <div className="font-dm-serif text-5xl text-rd-teal/20 mb-3">{item.step}</div>
-                <h3 className="font-poppins font-semibold text-rd-dark text-base mb-3">{item.title}</h3>
-                <p className="font-dm-sans text-gray-600 text-sm leading-relaxed">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial */}
-      <section className="py-20 bg-gradient-to-br from-rd-dark to-rd-teal">
-        <div className="container-main">
-          <div className="max-w-3xl mx-auto text-center text-white">
-            <svg className="w-10 h-10 text-rd-lime mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-            </svg>
-            <p className="font-dm-sans text-xl md:text-2xl leading-relaxed mb-8 text-white/90">
-              "Mail-in now accounts for 35% of our monthly revenue. RepairDesk handles the intake, the updates, and the shipping automatically — I barely touch it. It just runs."
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
-              <div className="font-poppins font-semibold text-rd-lime">Aiden Clarke</div>
-              <div className="font-dm-sans text-white/60 text-sm mt-1">Owner, NationwideRepair.co — Denver, CO</div>
+              <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">The Solution</span>
+              <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-5">One Workflow for Every Mail-in Repair</h2>
+              <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8">
+                Mail-in repair gets easier when your entire workflow lives in one place. With RepairDesk, the customer request, repair ticket, approval, payment, status update, and shipping details stay tied to the same job as it moves through your shop.
+              </p>
+              <a href="#" className="btn-primary text-base px-8 py-3.5">
+                Book A Demo
+              </a>
+            </div>
+            <div className="bg-rd-cream rounded-2xl p-8 md:p-10">
+              <ul className="space-y-5">
+                {solutionBullets.map((bullet) => (
+                  <li key={bullet} className="flex items-start gap-3">
+                    <span className="w-8 h-8 rounded-lg bg-rd-teal/10 text-rd-teal flex items-center justify-center flex-shrink-0">
+                      <CheckCircleIcon className="w-5 h-5" />
+                    </span>
+                    <span className="font-dm-sans text-rd-dark leading-relaxed pt-1">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 bg-rd-cream">
+      {/* Mail-in Process — logistics timeline */}
+      <section className="bg-rd-cream py-20 md:py-28">
         <div className="container-main">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-6">
-              {faqs.map((faq) => (
-                <div key={faq.q} className="bg-white rounded-2xl p-8 shadow-sm">
-                  <h3 className="font-poppins font-semibold text-rd-dark text-lg mb-3">{faq.q}</h3>
-                  <p className="font-dm-sans text-gray-600 leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">Mail-in Process</span>
+            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-4">A Clearer Path for Every Mail-in Job</h2>
+            <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
+              RepairDesk Workflows let you create different processes for each type of mail-in repair. Assign the right workflow to an order, define the steps and statuses your team should follow, and move the repair through a consistent process from intake to return shipping.
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="relative max-w-5xl mx-auto">
+            <div className="hidden lg:block absolute top-8 left-0 right-0 h-px bg-rd-teal/20" />
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+              {processSteps.map((step, idx) => {
+                const Icon = step.icon;
+                return (
+                  <div key={step.title} className="relative flex flex-col items-center text-center">
+                    <div className="relative z-10 w-16 h-16 rounded-full bg-white border-2 border-rd-teal shadow-sm flex items-center justify-center mb-5 text-rd-teal">
+                      <Icon className="w-7 h-7" />
+                    </div>
+                    <span className="font-dm-serif text-xs text-rd-teal/60 mb-2">STEP {idx + 1}</span>
+                    <h3 className="font-poppins font-semibold text-rd-dark text-sm mb-2 leading-snug">{step.title}</h3>
+                    <p className="font-dm-sans text-gray-600 text-xs leading-relaxed">{step.body}</p>
+                  </div>
+                );
+              })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Features */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="container-main">
+          <div className="max-w-2xl mx-auto text-center mb-10">
+            <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">Core Features</span>
+            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-4">Everything Your Mail-in Repair Team Needs</h2>
+            <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
+              See how RepairDesk helps your team manage requests, tickets, approvals, payments, updates, and shipping.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
+            {featureTabs.map((tab) => (
+              <span key={tab} className="font-poppins text-sm font-medium text-rd-dark bg-rd-cream border border-gray-200 px-5 py-2 rounded-full">
+                {tab}
+              </span>
+            ))}
+          </div>
+
+          <div className="space-y-16 md:space-y-20">
+            {coreFeatures.map((feature, idx) => {
+              const Icon = feature.icon;
+              const reversed = idx % 2 === 1;
+              return (
+                <div
+                  key={feature.eyebrow}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${reversed ? 'lg:[&>*:first-child]:order-2' : ''}`}
+                >
+                  <div>
+                    <div className="w-14 h-14 bg-rd-teal/10 text-rd-teal rounded-xl flex items-center justify-center mb-5">
+                      <Icon className="w-7 h-7" />
+                    </div>
+                    <span className="font-poppins text-sm font-semibold text-rd-teal uppercase tracking-wide">{feature.eyebrow}</span>
+                    <h3 className="font-dm-serif text-2xl md:text-3xl text-rd-dark mt-2 mb-4">{feature.title}</h3>
+                    <p className="font-dm-sans text-gray-600 leading-relaxed mb-6">{feature.body}</p>
+                    {feature.cta && (
+                      <a href="#" className="btn-primary text-sm px-7 py-3">
+                        Book A Demo
+                      </a>
+                    )}
+                  </div>
+                  <div className="bg-rd-cream rounded-2xl p-8">
+                    <ul className="space-y-4">
+                      {feature.bullets.map((bullet) => (
+                        <li key={bullet} className="flex items-start gap-3">
+                          <CheckCircleIcon className="w-5 h-5 text-rd-teal flex-shrink-0 mt-0.5" />
+                          <span className="font-dm-sans text-rd-dark text-sm leading-relaxed">{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
