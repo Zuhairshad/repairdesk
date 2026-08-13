@@ -38,12 +38,12 @@ const industryLinks = [
 
 const usefulLinks = [
   { label: "Get In Touch", to: "/contact" },
-  { label: "Knowledge Base", to: "#" },
-  { label: "Refer a Friend", to: "#" },
-  { label: "RepairDesk vs RepairShopr", to: "#" },
-  { label: "Partner With Us", to: "#" },
-  { label: "RepairDesk vs Repairq", to: "#" },
-  { label: "Recommended Hardware", to: "#" },
+  { label: "Knowledge Base", to: "/knowledge-base" },
+  { label: "Refer a Friend", to: "/refer-a-friend" },
+  { label: "RepairDesk vs RepairShopr", to: "/compare/repairdesk-vs-repairshopr" },
+  { label: "Partner With Us", to: "/partner-with-us" },
+  { label: "RepairDesk vs Repairq", to: "/compare/repairdesk-vs-repairq" },
+  { label: "Recommended Hardware", to: "/recommended-hardware" },
   { label: "Privacy Policy", to: "/privacy-policy" },
   { label: "Terms & Conditions", to: "/terms-conditions" },
 ];
