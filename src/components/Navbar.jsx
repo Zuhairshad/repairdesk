@@ -97,16 +97,31 @@ export default function Navbar() {
   }, [mobileOpen]);
 
   const open = (name) => { clearTimeout(closeTimer.current); setActiveDropdown(name); };
-  const scheduleClose = () => { closeTimer.current = setTimeout(() => setActiveDropdown(null), 180); };
-  const closeAll = () => { setActiveDropdown(null); setMobileOpen(false); setMobileAccordion(null); };
+  const scheduleClose = () => { closeTimer.current = setTimeout(() => setActiveDropdown(null), 250); };
+  const closeAll = () => { clearTimeout(closeTimer.current); setActiveDropdown(null); setMobileOpen(false); setMobileAccordion(null); };
   const toggleMobile = (name) => setMobileAccordion(p => p === name ? null : name);
+
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        closeAll();
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const NavBtn = ({ name, children }) => (
     <button
       type="button"
       onMouseEnter={() => open(name)}
       onMouseLeave={scheduleClose}
-      onClick={() => setActiveDropdown(p => p === name ? null : name)}
+      onClick={() => {
+        clearTimeout(closeTimer.current);
+        setActiveDropdown(p => p === name ? null : name);
+      }}
       className="flex items-center gap-1 text-[#2e384d] text-sm font-medium hover:text-rd-teal transition-colors py-2 whitespace-nowrap"
       aria-expanded={activeDropdown === name}
     >
@@ -116,7 +131,7 @@ export default function Navbar() {
   );
 
   return (
-    <header className={`sticky top-0 z-50 w-full bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-none'}`}>
+    <header ref={navRef} className={`sticky top-0 z-50 w-full bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-none'}`}>
       <nav className="container-main flex items-center justify-between h-16 md:h-[68px]">
 
         {/* Logo */}
@@ -132,29 +147,31 @@ export default function Navbar() {
             <NavBtn name="products">Products</NavBtn>
             {activeDropdown === 'products' && (
               <div
-                className="absolute left-0 top-full mt-2 w-[560px] rounded-2xl bg-white shadow-2xl border border-gray-100 p-6 z-50"
+                className="absolute left-0 top-full pt-2 w-[560px] z-50"
                 onMouseEnter={() => open('products')} onMouseLeave={scheduleClose}
               >
-                <div className="grid grid-cols-2 gap-6">
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Unified Communication</p>
-                    {productsData.unified.map(item => (
-                      <Link key={item.label} to={item.to} onClick={closeAll}
-                        className="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors mb-1">
-                        <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
-                        <span className="text-xs text-gray-400 leading-snug">{item.sub}</span>
-                      </Link>
-                    ))}
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Unlock Revenue</p>
-                    {productsData.revenue.map(item => (
-                      <Link key={item.label} to={item.to} onClick={closeAll}
-                        className="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors mb-1">
-                        <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
-                        <span className="text-xs text-gray-400 leading-snug">{item.sub}</span>
-                      </Link>
-                    ))}
+                <div className="rounded-2xl bg-white shadow-2xl border border-gray-100 p-6">
+                  <div className="grid grid-cols-2 gap-6">
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Unified Communication</p>
+                      {productsData.unified.map(item => (
+                        <Link key={item.label} to={item.to} onClick={closeAll}
+                          className="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors mb-1">
+                          <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
+                          <span className="text-xs text-gray-400 leading-snug">{item.sub}</span>
+                        </Link>
+                      ))}
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-3">Unlock Revenue</p>
+                      {productsData.revenue.map(item => (
+                        <Link key={item.label} to={item.to} onClick={closeAll}
+                          className="flex flex-col gap-0.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition-colors mb-1">
+                          <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
+                          <span className="text-xs text-gray-400 leading-snug">{item.sub}</span>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -166,30 +183,32 @@ export default function Navbar() {
             <NavBtn name="features">Features</NavBtn>
             {activeDropdown === 'features' && (
               <div
-                className="fixed left-1/2 -translate-x-1/2 top-[68px] mt-2 w-[820px] max-w-[96vw] rounded-2xl bg-white shadow-2xl border border-gray-100 p-8 z-50"
+                className="fixed left-1/2 -translate-x-1/2 top-[56px] pt-3 w-[820px] max-w-[96vw] z-50"
                 onMouseEnter={() => open('features')} onMouseLeave={scheduleClose}
               >
-                <div className="grid grid-cols-3 gap-8">
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Productivity</p>
-                    {featuresData.productivity.map(item => (
-                      <Link key={item.label} to={item.to} onClick={closeAll}
-                        className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
-                    ))}
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Marketing & Loyalty</p>
-                    {featuresData.marketing.map(item => (
-                      <Link key={item.label} to={item.to} onClick={closeAll}
-                        className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
-                    ))}
-                  </div>
-                  <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Business Management</p>
-                    {featuresData.business.map(item => (
-                      <Link key={item.label} to={item.to} onClick={closeAll}
-                        className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
-                    ))}
+                <div className="rounded-2xl bg-white shadow-2xl border border-gray-100 p-8">
+                  <div className="grid grid-cols-3 gap-8">
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Productivity</p>
+                      {featuresData.productivity.map(item => (
+                        <Link key={item.label} to={item.to} onClick={closeAll}
+                          className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
+                      ))}
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Marketing & Loyalty</p>
+                      {featuresData.marketing.map(item => (
+                        <Link key={item.label} to={item.to} onClick={closeAll}
+                          className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
+                      ))}
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-4">Business Management</p>
+                      {featuresData.business.map(item => (
+                        <Link key={item.label} to={item.to} onClick={closeAll}
+                          className="block text-sm text-gray-600 hover:text-rd-teal py-1.5 transition-colors">{item.label}</Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -211,16 +230,18 @@ export default function Navbar() {
             <NavBtn name="industries">Industries</NavBtn>
             {activeDropdown === 'industries' && (
               <div
-                className="absolute left-0 top-full mt-2 w-64 rounded-xl bg-white shadow-xl border border-gray-100 py-3 z-50"
+                className="absolute left-0 top-full pt-2 w-64 z-50"
                 onMouseEnter={() => open('industries')} onMouseLeave={scheduleClose}
               >
-                <div className="grid grid-cols-2 gap-x-2 px-3">
-                  {industriesData.map(item => (
-                    <Link key={item.label} to={item.to} onClick={closeAll}
-                      className="block text-xs text-gray-600 hover:text-rd-teal py-1.5 px-2 rounded hover:bg-gray-50 transition-colors">
-                      {item.label}
-                    </Link>
-                  ))}
+                <div className="rounded-xl bg-white shadow-xl border border-gray-100 py-3">
+                  <div className="grid grid-cols-2 gap-x-2 px-3">
+                    {industriesData.map(item => (
+                      <Link key={item.label} to={item.to} onClick={closeAll}
+                        className="block text-xs text-gray-600 hover:text-rd-teal py-1.5 px-2 rounded hover:bg-gray-50 transition-colors">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
@@ -231,16 +252,18 @@ export default function Navbar() {
             <NavBtn name="resources">Resources</NavBtn>
             {activeDropdown === 'resources' && (
               <div
-                className="absolute left-0 top-full mt-2 w-72 rounded-xl bg-white shadow-xl border border-gray-100 p-3 z-50"
+                className="absolute left-0 top-full pt-2 w-72 z-50"
                 onMouseEnter={() => open('resources')} onMouseLeave={scheduleClose}
               >
-                {resourcesData.map(item => (
-                  <Link key={item.label} to={item.to} onClick={closeAll}
-                    className="flex flex-col gap-0.5 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors">
-                    <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
-                    <span className="text-xs text-gray-400">{item.sub}</span>
-                  </Link>
-                ))}
+                <div className="rounded-xl bg-white shadow-xl border border-gray-100 p-3">
+                  {resourcesData.map(item => (
+                    <Link key={item.label} to={item.to} onClick={closeAll}
+                      className="flex flex-col gap-0.5 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors">
+                      <span className="text-sm font-semibold text-rd-dark">{item.label}</span>
+                      <span className="text-xs text-gray-400">{item.sub}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -248,18 +271,18 @@ export default function Navbar() {
 
         {/* Right CTA */}
         <div className="hidden xl:flex items-center gap-4 ml-4">
-          <a href="https://app.repairdesk.co/login"
+          <Link to="/login"
             className="text-[#2e384d] text-sm font-medium hover:text-rd-teal transition-colors whitespace-nowrap">
             Login
-          </a>
+          </Link>
           <Link to="/contact"
             className="text-sm font-medium border border-rd-teal text-rd-teal px-5 py-2 rounded-full hover:bg-rd-teal hover:text-white transition-colors whitespace-nowrap">
             Request a Demo
           </Link>
-          <a href="https://app.repairdesk.co/register"
+          <Link to="/register"
             className="btn-primary text-sm px-5 py-2 whitespace-nowrap">
             Free Trial
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -342,9 +365,9 @@ export default function Navbar() {
           </div>
 
           <div className="pt-4 pb-2 flex flex-col gap-3">
-            <a href="https://app.repairdesk.co/login" className="text-center border border-gray-200 rounded-full py-2.5 text-sm font-medium text-rd-dark">Login</a>
+            <Link to="/login" onClick={closeAll} className="text-center border border-gray-200 rounded-full py-2.5 text-sm font-medium text-rd-dark">Login</Link>
             <Link to="/contact" onClick={closeAll} className="text-center border border-rd-teal text-rd-teal rounded-full py-2.5 text-sm font-medium">Request a Demo</Link>
-            <a href="https://app.repairdesk.co/register" className="btn-primary text-center py-2.5 text-sm">Start Free Trial</a>
+            <Link to="/register" onClick={closeAll} className="btn-primary text-center py-2.5 text-sm">Start Free Trial</Link>
           </div>
         </div>
       </div>

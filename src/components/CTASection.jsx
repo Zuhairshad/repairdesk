@@ -16,9 +16,9 @@ export default function CTASection() {
             <Link to="/contact" className="border border-white/40 text-white px-7 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors whitespace-nowrap">
               Request a Demo
             </Link>
-            <a href="https://app.repairdesk.co/register" className="btn-white px-7 py-3.5 font-semibold inline-block whitespace-nowrap">
+            <Link to="/register" className="btn-white px-7 py-3.5 font-semibold inline-block whitespace-nowrap">
               Start Free Trial
-            </a>
+            </Link>
           </div>
         </div>
       </div>
