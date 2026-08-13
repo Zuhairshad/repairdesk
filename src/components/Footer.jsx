@@ -1,189 +1,135 @@
 import React from "react";
-
-const companyLinks = [
-  "Our Story",
-  "Pricing",
-  "GDPR",
-  "Terms & Conditions",
-  "Privacy Policy",
-  "Careers",
-  "Corporate Social Responsibility",
-];
+import { Link } from "react-router-dom";
 
 const featureLinks = [
-  { label: "Point of Sale", isNew: false },
-  { label: "Inventory Management", isNew: false },
-  { label: "Repair Ticket Management", isNew: false },
-  { label: "Marketing", isNew: false },
-  { label: "Payments", isNew: false },
-  { label: "Appointments Pro", isNew: true },
-  { label: "Loyalty Program", isNew: false },
-  { label: "Store Credits", isNew: false },
-  { label: "Employee Management", isNew: false },
-  { label: "Billing & Invoicing", isNew: false },
-  { label: "Repairdesk Connect", isNew: true },
-  { label: "PhonePro", isNew: true },
-  { label: "Google Reviews", isNew: true },
+  { label: "Point of Sale", to: "/features/point-of-sale" },
+  { label: "Inventory Management", to: "/features/inventory-management" },
+  { label: "Repair Ticket Management", to: "/features/repair-ticket-management" },
+  { label: "Billing & Invoicing", to: "/features/billing-invoicing" },
+  { label: "Employee Management", to: "/features/employee-management" },
+  { label: "Phone System", to: "/products/phone-system" },
+  { label: "RepairDesk Connect", to: "/products/connect" },
+  { label: "Appointments Pro", to: "/products/appointments-pro" },
+  { label: "Google Reviews", to: "/products/reviews-management" },
+  { label: "Customer Facing Display", to: "/features/customer-facing-display" },
+  { label: "Loyalty Program", to: "/features/loyalty-program" },
+  { label: "Store Credit", to: "/features/store-credits" },
+  { label: "Work Order Management", to: "/products/work-order-management" },
+  { label: "Multi Location Management", to: "/features/multi-location" },
+  { label: "Self Check-In", to: "/features/self-check-in" },
 ];
 
 const industryLinks = [
-  "Cell Phone Repair",
-  "Computer Repair",
-  "Jewelry Repair",
-  "Watch Repair",
-  "Drone Repair",
-  "Mail-in Repair",
+  { label: "Cell Phone Repair", to: "/industries/cell-phone-repair" },
+  { label: "Computer Repair", to: "/industries/computer-repair" },
+  { label: "Jewelry Repair", to: "/industries/jewelry-repair" },
+  { label: "Watch Repair", to: "/industries/watch-repair" },
+  { label: "Drone Repair", to: "/industries/drone-repair" },
+  { label: "Mail-in Repair", to: "/industries/mail-in-repair" },
+  { label: "Power Tools", to: "/industries/power-tools" },
+  { label: "Bicycle Repair", to: "/industries/bicycle-repair" },
+  { label: "Wireless Repair", to: "/industries/wireless-repair" },
+  { label: "Camera Repair", to: "/industries/camera-repair" },
+  { label: "Small Engine Repair", to: "/industries/small-engine-repair" },
+  { label: "Heavy Duty Repair", to: "/industries/heavy-duty-repair" },
+  { label: "Shoe Repair", to: "/industries/shoe-repair" },
+  { label: "Tailor Shop", to: "/industries/tailor-shop" },
 ];
 
 const usefulLinks = [
-  "Get In Touch",
-  "Refer a Friend",
-  "Partner With Us",
-  "Blog",
-  "Events",
-  "Podcast",
-  "Knowledge Base",
-  "Public API",
-  "GitHub",
-  "Capital",
-  "Recommended Hardware",
+  { label: "Get In Touch", to: "/contact" },
+  { label: "Knowledge Base", to: "#" },
+  { label: "Refer a Friend", to: "#" },
+  { label: "RepairDesk vs RepairShopr", to: "#" },
+  { label: "Partner With Us", to: "#" },
+  { label: "RepairDesk vs Repairq", to: "#" },
+  { label: "Recommended Hardware", to: "#" },
+  { label: "Privacy Policy", to: "/privacy-policy" },
+  { label: "Terms & Conditions", to: "/terms-conditions" },
 ];
 
 const socialIcons = [
-  { src: "/images/linkedin.svg", alt: "LinkedIn" },
-  { src: "/images/youtube.svg", alt: "YouTube" },
-  { src: "/images/facebook.svg", alt: "Facebook" },
-  { src: "/images/twitter.svg", alt: "X" },
+  { src: "/images/linkedin.svg", alt: "LinkedIn", href: "https://www.linkedin.com/company/repairdesk" },
+  { src: "/images/youtube.svg", alt: "YouTube", href: "https://www.youtube.com/repairdesk" },
+  { src: "/images/facebook.svg", alt: "Facebook", href: "https://www.facebook.com/repairdesk" },
+  { src: "/images/twitter.svg", alt: "X / Twitter", href: "https://twitter.com/repairdesk" },
 ];
 
-function FooterColumn({ title, children }) {
+function FooterLink({ to, children }) {
   return (
-    <div>
-      <h4 className="font-poppins font-bold text-[#2e384d] text-base mb-4">
-        {title}
-      </h4>
-      <nav>{children}</nav>
-    </div>
-  );
-}
-
-function FooterLink({ children }) {
-  return (
-    <a
-      href="#"
-      className="text-gray-600 hover:text-rd-teal text-sm font-poppins block mb-2.5 transition-colors"
-    >
+    <Link to={to} className="block text-gray-500 hover:text-rd-teal text-sm font-poppins mb-2 transition-colors leading-snug">
       {children}
-    </a>
-  );
-}
-
-function NewBadge() {
-  return (
-    <span className="bg-rd-teal text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-      NEW
-    </span>
+    </Link>
   );
 }
 
 export default function Footer() {
   return (
     <footer>
-      {/* Top Section */}
+      {/* Main footer */}
       <div className="bg-[#f8f8fb]">
-        <div className="container-main pt-16 pb-8">
-          {/* 4-Column Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-            {/* Column 1 - Company */}
-            <FooterColumn title="Company">
-              {companyLinks.map((link) => (
-                <FooterLink key={link}>{link}</FooterLink>
-              ))}
-            </FooterColumn>
+        <div className="container-main pt-14 pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+            {/* Column 1 – Brand */}
+            <div>
+              <Link to="/">
+                <img src="/images/logo.png" alt="RepairDesk" className="h-8 mb-4" />
+              </Link>
+              <p className="text-gray-500 text-xs font-poppins leading-relaxed mb-5">
+                RepairDesk is a cloud based point-of-sale software, engineered specifically for small and medium sized computer and cell phone repair shops.
+              </p>
+              <div className="flex gap-3">
+                {socialIcons.map((icon) => (
+                  <a key={icon.alt} href={icon.href} target="_blank" rel="noopener noreferrer">
+                    <img src={icon.src} alt={icon.alt} className="w-5 h-5 opacity-50 hover:opacity-100 transition-opacity" />
+                  </a>
+                ))}
+              </div>
+            </div>
 
-            {/* Column 2 - Features */}
-            <FooterColumn title="Features">
-              {featureLinks.map((item) => (
-                <a
-                  key={item.label}
-                  href="#"
-                  className="text-gray-600 hover:text-rd-teal text-sm font-poppins mb-2.5 transition-colors flex items-center gap-2"
-                >
-                  {item.label}
-                  {item.isNew && <NewBadge />}
-                </a>
-              ))}
-            </FooterColumn>
-
-            {/* Column 3 - Industries */}
-            <FooterColumn title="Industries we Serve">
-              {industryLinks.map((link) => (
-                <FooterLink key={link}>{link}</FooterLink>
-              ))}
-            </FooterColumn>
-
-            {/* Column 4 - Useful Links */}
-            <FooterColumn title="Useful Links">
-              {usefulLinks.map((link) => (
-                <FooterLink key={link}>{link}</FooterLink>
-              ))}
-            </FooterColumn>
-          </div>
-
-          {/* Divider */}
-          <div className="border-t border-gray-300 my-6" />
-
-          {/* Address + Social Row */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-gray-600 text-sm font-poppins">
-              108 West 13th Street, Wilmington, Delaware 19801
-            </p>
-            <div className="flex gap-4">
-              {socialIcons.map((icon) => (
-                <a href="#" key={icon.alt}>
-                  <img
-                    src={icon.src}
-                    alt={icon.alt}
-                    className="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity cursor-pointer"
-                  />
-                </a>
+            {/* Column 2 – Features */}
+            <div>
+              <h4 className="font-poppins font-bold text-[#2e384d] text-sm mb-4 uppercase tracking-wide">Features</h4>
+              {featureLinks.map((link) => (
+                <FooterLink key={link.label} to={link.to}>{link.label}</FooterLink>
               ))}
             </div>
+
+            {/* Column 3 – Industries */}
+            <div>
+              <h4 className="font-poppins font-bold text-[#2e384d] text-sm mb-4 uppercase tracking-wide">Industries We Serve</h4>
+              {industryLinks.map((link) => (
+                <FooterLink key={link.label} to={link.to}>{link.label}</FooterLink>
+              ))}
+            </div>
+
+            {/* Column 4 – Useful Links + Contact */}
+            <div>
+              <h4 className="font-poppins font-bold text-[#2e384d] text-sm mb-4 uppercase tracking-wide">Useful Links</h4>
+              {usefulLinks.map((link) => (
+                <FooterLink key={link.label} to={link.to}>{link.label}</FooterLink>
+              ))}
+              <div className="mt-6 space-y-1.5">
+                <p className="text-gray-400 text-xs font-poppins">hello@repairdesk.co</p>
+                <p className="text-gray-400 text-xs font-poppins">108 W 13th St, Wilmington, DE 19801</p>
+                <p className="text-gray-400 text-xs font-poppins">Jeff Heights Gulberg 3, Lahore, 54000</p>
+              </div>
+            </div>
           </div>
-
-          {/* Divider */}
-          <div className="border-t border-gray-300 my-6" />
-
-          {/* Description */}
-          <p className="text-gray-500 text-xs font-poppins leading-relaxed">
-            RepairDesk is a cloud based point-of-sale software, engineered
-            specifically for small and medium sized computer and cell phone repair
-            shops that allows technicians to track &amp; monitor repair jobs, stay
-            on top of inventory and manage multiple store locations.
-          </p>
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Bottom bar */}
       <div className="bg-[#00464f]">
         <div className="container-main py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
-            <span className="text-white/70 text-xs">
-              Copyright 2024 RepairDesk INC. All rights reserved
+            <span className="text-white/60 text-xs font-poppins">
+              Copyright © 2024 RepairDesk INC. All rights reserved.
             </span>
-            <div className="flex gap-6">
-              <a
-                href="#"
-                className="text-white/70 text-xs hover:text-white transition-colors"
-              >
-                Privacy &amp; GDPR
-              </a>
-              <a
-                href="#"
-                className="text-white/70 text-xs hover:text-white transition-colors"
-              >
-                Terms &amp; Conditions
-              </a>
+            <div className="flex gap-5">
+              <Link to="/privacy-policy" className="text-white/60 text-xs hover:text-white transition-colors font-poppins">Privacy Policy</Link>
+              <Link to="/gdpr" className="text-white/60 text-xs hover:text-white transition-colors font-poppins">GDPR</Link>
+              <Link to="/terms-conditions" className="text-white/60 text-xs hover:text-white transition-colors font-poppins">Terms &amp; Conditions</Link>
             </div>
           </div>
         </div>
