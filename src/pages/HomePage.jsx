@@ -7,7 +7,6 @@ import FeatureCarousel from '../components/FeatureCarousel';
 import UnifiedComm from '../components/UnifiedComm';
 import Awards from '../components/Awards';
 import Industries from '../components/Industries';
-import SuccessStories from '../components/SuccessStories';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 
@@ -27,7 +26,6 @@ export default function HomePage() {
       <UnifiedComm />
       <Awards />
       <Industries />
-      <SuccessStories />
       <Testimonial
         quote="We had good experience working with the team at RepairDesk in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with RepairDesk!"
         name="Lyle Schrock"
