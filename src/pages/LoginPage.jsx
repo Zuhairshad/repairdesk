@@ -92,43 +92,91 @@ export default function LoginPage() {
       </div>
 
       {/* Right — Branded Panel */}
-      <div className="hidden lg:flex w-1/2 bg-rd-teal relative items-center justify-center overflow-hidden">
-        {/* Background pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-64 h-64 border-[3px] border-white/30 rounded-3xl rotate-12" />
-          <div className="absolute bottom-20 right-10 w-48 h-48 border-[3px] border-white/20 rounded-3xl -rotate-6" />
-          <div className="absolute top-1/2 left-1/3 w-80 h-16 bg-gradient-to-r from-white/20 to-transparent rounded-full -rotate-3" />
+      <div className="hidden lg:flex w-1/2 relative items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(180deg, #016D74 0%, #0C3C3E 100%)' }}>
+        {/* Tropical leaf decorations — bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-56 pointer-events-none">
+          {/* Left palm leaf */}
+          <svg className="absolute bottom-0 left-0 w-72 h-56 text-white/[0.07]" viewBox="0 0 300 230" fill="currentColor">
+            <path d="M-20 230C10 180 50 140 100 120C70 160 60 190 50 230H-20Z" />
+            <path d="M10 230C30 170 80 120 140 100C100 150 80 180 70 230H10Z" />
+            <path d="M40 230C60 160 120 100 180 80C140 130 110 170 100 230H40Z" />
+            <path d="M80 230C90 170 130 110 190 90C160 130 140 170 130 230H80Z" />
+          </svg>
+          {/* Right palm leaf */}
+          <svg className="absolute bottom-0 right-0 w-72 h-56 text-white/[0.07] scale-x-[-1]" viewBox="0 0 300 230" fill="currentColor">
+            <path d="M-20 230C10 180 50 140 100 120C70 160 60 190 50 230H-20Z" />
+            <path d="M10 230C30 170 80 120 140 100C100 150 80 180 70 230H10Z" />
+            <path d="M40 230C60 160 120 100 180 80C140 130 110 170 100 230H40Z" />
+            <path d="M80 230C90 170 130 110 190 90C160 130 140 170 130 230H80Z" />
+          </svg>
         </div>
 
-        <div className="relative z-10 text-center max-w-md px-8">
-          {/* Logo */}
-          <div className="flex items-center justify-center gap-3 mb-10">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <div className="w-5 h-5 bg-rd-teal rounded-full" />
+        {/* Product Update Card */}
+        <div className="relative z-10 w-full max-w-lg mx-8">
+          <div className="bg-[#0a3a3d] rounded-2xl p-8 border border-white/10 shadow-2xl">
+            {/* Card header — Logo + PRODUCT UPDATE badge */}
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 bg-rd-teal rounded-full flex items-center justify-center border-2 border-white/20">
+                  <div className="w-3.5 h-3.5 bg-white rounded-full" />
+                </div>
+                <span className="text-white font-poppins font-bold text-lg">RepairDesk</span>
+              </div>
+              <span className="text-white text-xs font-poppins font-semibold tracking-wider border border-white/40 rounded-full px-4 py-1.5 uppercase">
+                Product Update
+              </span>
             </div>
-            <span className="text-white font-poppins font-bold text-2xl tracking-tight">RepairDesk</span>
-          </div>
 
-          {/* Support Notice Card */}
-          <div className="bg-white/15 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <h2 className="text-white font-poppins font-bold text-2xl mb-3">Support Notice</h2>
-            <p className="text-white/80 font-dm-sans mb-4">
-              Our technical support will be limited on
-            </p>
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-5 py-2.5 mb-4">
-              <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-              </svg>
-              <span className="text-rd-lime font-poppins font-semibold text-sm">Friday, August 14, 2026</span>
+            {/* Feature label + REVAMPED badge */}
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-rd-lime font-poppins font-bold text-sm tracking-wider uppercase">Inventory Transfer</span>
+              <span className="bg-rd-lime/20 text-rd-lime text-[10px] font-poppins font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full">
+                Revamped
+              </span>
             </div>
-            <p className="text-white/80 font-dm-sans">
-              We will be back to serve<br />our valued customers shortly.
+
+            {/* Main heading */}
+            <h2 className="text-white font-poppins font-bold text-2xl leading-snug mb-4">
+              Sitting on extra stock at Store A while missing sales at Store B?
+            </h2>
+
+            {/* Description */}
+            <p className="text-white/60 font-dm-sans text-sm leading-relaxed mb-6">
+              Repair shops often re-order stock instead of transferring excess inventory to high-demand store locations.
             </p>
+
+            {/* CTA text */}
+            <p className="text-white font-poppins font-semibold text-lg mb-6">
+              Send, request &amp; receive stock with<br />
+              RepairDesk <span className="text-rd-lime">Inventory Transfer</span>
+            </p>
+
+            {/* Feature pills */}
+            <div className="flex flex-wrap gap-2.5 mb-8">
+              {['Simple, error-free transfers', 'Search or scan to add products', 'Bulk product selection interface', 'Real-time transfer status'].map((feature) => (
+                <span
+                  key={feature}
+                  className="border border-white/30 text-white text-xs font-dm-sans px-4 py-2 rounded-full"
+                >
+                  {feature}
+                </span>
+              ))}
+            </div>
+
+            {/* Watch Video Guide button */}
+            <div className="text-center">
+              <button className="border border-white/40 text-white font-poppins font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-white/10 transition-colors">
+                Watch Video Guide!
+              </button>
+            </div>
+
+            {/* Pagination dots */}
+            <div className="flex items-center justify-center gap-2 mt-6">
+              <div className="w-2 h-2 bg-white rounded-full" />
+              <div className="w-2 h-2 bg-white/30 rounded-full" />
+            </div>
           </div>
         </div>
-
-        {/* Person illustration placeholder — bottom right */}
-        <div className="absolute bottom-0 right-0 w-48 h-48 bg-white/5 rounded-tl-[80px]" />
       </div>
     </div>
   );
