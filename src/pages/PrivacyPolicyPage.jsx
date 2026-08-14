@@ -1,66 +1,204 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PageLayout from '../components/PageLayout';
+import { Link } from 'react-router-dom';
 
 const sections = [
   {
     title: 'Information We Collect',
-    content: `We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support. This includes name, email address, company name, phone number, billing information, and any other information you choose to provide. We also automatically collect certain information when you use our services, including log data, device information, and usage data.`,
+    content: [
+      'Account information: name, email address, company name, phone number, billing details.',
+      'Usage data: pages visited, features used, session duration, error logs.',
+      'Device information: browser type, operating system, IP address.',
+      'Communications: emails, support tickets, survey responses you send us.',
+      'Payment information: processed by our PCI-compliant payment processors — we do not store full card numbers.',
+    ],
   },
   {
     title: 'How We Use Your Information',
-    content: `We use the information we collect to provide, maintain, and improve our services; process transactions; send you technical notices and support messages; respond to your comments and questions; and send you marketing communications (where permitted). We may also use your information to monitor and analyze trends, comply with legal obligations, and protect the rights and property of RepairDesk and our users.`,
+    content: [
+      'Provide, maintain, and improve the RepairDesk platform.',
+      'Process transactions and send billing communications.',
+      'Send product updates, security notices, and support messages.',
+      'Analyse usage patterns to fix bugs and plan new features.',
+      'Comply with legal obligations and protect RepairDesk and its users.',
+    ],
   },
   {
     title: 'Information Sharing',
-    content: `We do not sell, trade, or otherwise transfer your personally identifiable information to third parties without your consent, except as described in this policy. We may share information with vendors, consultants, and service providers who need access to such information to carry out work on our behalf. We may also disclose information when required by law or to protect our rights.`,
+    content: [
+      'We do not sell your personal data to third parties, ever.',
+      'We share data only with service providers who need it to deliver our platform (see sub-processors on the GDPR page).',
+      'We may disclose data when required by law, court order, or regulatory request.',
+      'If RepairDesk is acquired, data transfers under the same privacy terms.',
+    ],
   },
   {
-    title: 'Cookies and Tracking',
-    content: `We use cookies and similar tracking technologies to track activity on our service and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service.`,
+    title: 'Cookies & Tracking',
+    content: [
+      'Essential cookies: required for login, session management, and security.',
+      'Analytics cookies: help us understand how the product is used (opt-out available).',
+      'Marketing cookies: only placed with your consent.',
+      'You can manage cookie preferences in our cookie banner or your browser settings.',
+    ],
+  },
+  {
+    title: 'Data Security',
+    content: [
+      'AES-256 encryption at rest; TLS 1.3 in transit.',
+      'Role-based access controls limit who can see your data internally.',
+      'Regular penetration tests and independent security audits.',
+      'Automated daily backups stored across multiple geographic regions.',
+    ],
   },
   {
     title: 'Data Retention',
-    content: `We retain your information for as long as your account is active or as needed to provide you services. You may request deletion of your account and associated data at any time by contacting us. We will respond to your request within 30 days. Some data may be retained for longer periods where required by law or for legitimate business purposes.`,
+    content: [
+      'Active account data is retained for the lifetime of your subscription.',
+      'After account cancellation, data is retained for 90 days to support recovery, then deleted.',
+      'Billing records are retained for 7 years as required by tax law.',
+      'Backup copies are purged on a rolling 30-day cycle.',
+    ],
   },
   {
     title: 'Your Rights',
-    content: `Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete your data; the right to data portability; and the right to object to processing. To exercise any of these rights, please contact us at privacy@repairdesk.co. We will respond to your request within 30 days.`,
+    content: [
+      'Access: request a copy of all data we hold about you.',
+      'Correction: update inaccurate or incomplete information.',
+      'Deletion: request erasure of your personal data (subject to legal retention obligations).',
+      'Portability: receive your data in a machine-readable format.',
+      'Contact privacy@repairdesk.co to exercise any of these rights.',
+    ],
   },
   {
-    title: 'Security',
-    content: `We take reasonable measures to help protect information about you from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction. We use industry-standard encryption for data in transit and at rest. However, no security system is impenetrable and we cannot guarantee the absolute security of our systems.`,
+    title: 'Changes to This Policy',
+    content: [
+      'We may update this policy to reflect changes in our practices or legal requirements.',
+      'We will notify you via email and in-app notification at least 30 days before material changes take effect.',
+      'Continued use of RepairDesk after the effective date constitutes acceptance.',
+    ],
   },
   {
     title: 'Contact Us',
-    content: `If you have any questions about this Privacy Policy, please contact us at: RepairDesk Inc., 108 West 13th Street, Wilmington, Delaware 19801. Email: privacy@repairdesk.co. Phone: +1-855-919-1256.`,
+    content: [
+      'Privacy enquiries: privacy@repairdesk.co',
+      'General support: hello@repairdesk.co',
+      'Phone: +1 302-207-7373',
+      'Address: 108 W 13th St, Wilmington, DE 19801, USA',
+    ],
   },
 ];
 
 export default function PrivacyPolicyPage() {
+  const [activeSection, setActiveSection] = useState(null);
+
   return (
     <PageLayout showCTA={false}>
-      <section className="bg-gradient-to-br from-rd-dark to-rd-teal text-white py-20 px-6">
-        <div className="container-main max-w-3xl">
-          <h1 className="font-poppins font-bold text-4xl md:text-5xl mb-4">Privacy Policy</h1>
-          <p className="text-white/70 font-dm-sans text-lg">Last updated: January 1, 2024</p>
+      {/* Hero */}
+      <section className="bg-rd-dark py-20 px-6">
+        <div className="container-main max-w-4xl">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-white/80 font-poppins font-semibold text-xs tracking-wider uppercase">Legal</span>
+          </div>
+          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-4">Privacy Policy</h1>
+          <p className="text-white/70 font-dm-sans text-base mb-4">
+            We care about your privacy. This policy explains what data we collect, why we collect it, and how you can control it.
+          </p>
+          <div className="flex items-center gap-4 text-white/40 font-dm-sans text-sm">
+            <span>Last updated: 1 January 2025</span>
+            <span>·</span>
+            <span>Effective: 1 January 2025</span>
+          </div>
         </div>
       </section>
 
-      <section className="bg-white py-16 px-6">
-        <div className="container-main max-w-3xl">
-          <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-12">
-            At RepairDesk, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our cloud-based repair shop management software.
-          </p>
-          <div className="space-y-10">
-            {sections.map((section, i) => (
-              <div key={section.title}>
-                <h2 className="font-poppins font-bold text-xl text-rd-dark mb-3">
-                  {i + 1}. {section.title}
-                </h2>
-                <p className="text-gray-600 font-dm-sans leading-relaxed">{section.content}</p>
-              </div>
-            ))}
+      {/* Quick summary callout */}
+      <section className="bg-rd-teal py-10 px-6">
+        <div className="container-main max-w-4xl">
+          <div className="grid sm:grid-cols-3 gap-6 text-white text-center">
+            <div>
+              <p className="font-poppins font-bold text-lg mb-1">We never sell your data</p>
+              <p className="font-dm-sans text-white/70 text-sm">Your data belongs to you, not advertisers.</p>
+            </div>
+            <div>
+              <p className="font-poppins font-bold text-lg mb-1">You can delete anytime</p>
+              <p className="font-dm-sans text-white/70 text-sm">Request full data deletion by contacting us.</p>
+            </div>
+            <div>
+              <p className="font-poppins font-bold text-lg mb-1">GDPR & CCPA compliant</p>
+              <p className="font-dm-sans text-white/70 text-sm">Your privacy rights are fully respected.</p>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Content with TOC */}
+      <section className="py-16 px-6 bg-rd-cream">
+        <div className="container-main max-w-5xl">
+          <div className="grid lg:grid-cols-[240px_1fr] gap-12">
+            {/* Sticky Table of Contents */}
+            <aside className="hidden lg:block">
+              <div className="sticky top-8 bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                <p className="font-poppins font-bold text-xs text-gray-400 tracking-wider uppercase mb-4">Contents</p>
+                <nav className="space-y-1">
+                  {sections.map((s, i) => (
+                    <button key={i} onClick={() => document.getElementById(`section-${i}`)?.scrollIntoView({ behavior: 'smooth' })}
+                      className="w-full text-left px-3 py-2 rounded-lg text-xs font-dm-sans text-gray-500 hover:bg-rd-cream hover:text-rd-teal transition-colors">
+                      {i + 1}. {s.title}
+                    </button>
+                  ))}
+                </nav>
+              </div>
+            </aside>
+
+            {/* Sections */}
+            <div className="space-y-4">
+              {sections.map((s, i) => (
+                <div key={i} id={`section-${i}`} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                  <button onClick={() => setActiveSection(activeSection === i ? null : i)}
+                    className="w-full flex items-center justify-between px-6 py-5 text-left">
+                    <div className="flex items-center gap-3">
+                      <span className="w-8 h-8 rounded-full bg-rd-teal text-white font-poppins font-bold text-xs flex items-center justify-center flex-shrink-0">{i + 1}</span>
+                      <span className="font-poppins font-semibold text-rd-dark">{s.title}</span>
+                    </div>
+                    <svg className={`w-4 h-4 text-gray-400 flex-shrink-0 transition-transform ${activeSection === i ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  {activeSection === i && (
+                    <div className="px-6 pb-6 pl-14">
+                      <ul className="space-y-2">
+                        {s.content.map((item, j) => (
+                          <li key={j} className="flex items-start gap-2 font-dm-sans text-gray-500 text-sm">
+                            <span className="text-rd-teal mt-1 flex-shrink-0">·</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-14 px-6 bg-white">
+        <div className="container-main max-w-4xl text-center">
+          <h2 className="font-poppins font-bold text-2xl text-rd-dark mb-2">Questions About Your Privacy?</h2>
+          <p className="font-dm-sans text-gray-500 mb-6">Our privacy team responds within 48 hours on business days.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:privacy@repairdesk.co" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark transition-colors">
+              privacy@repairdesk.co
+            </a>
+            <Link to="/contact" className="inline-flex items-center gap-2 border border-gray-200 text-rd-dark font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-cream transition-colors">
+              Contact Form
+            </Link>
+          </div>
+          <p className="font-dm-sans text-gray-400 text-xs mt-6">
+            Also see our <Link to="/gdpr" className="text-rd-teal hover:underline">GDPR page</Link> and <Link to="/terms" className="text-rd-teal hover:underline">Terms of Service</Link>.
+          </p>
         </div>
       </section>
     </PageLayout>

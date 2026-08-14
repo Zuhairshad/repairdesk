@@ -1,182 +1,180 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import { Link } from 'react-router-dom';
 
-const categories = [
-  'All Posts',
-  'Repair Shop Tips',
-  'POS & Checkout',
-  'Inventory',
-  'Marketing',
-  'Industry News',
-  'Product Updates',
+const IconCalendar = ({ className = 'w-4 h-4' }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" />
+  </svg>
+);
+const IconClock = ({ className = 'w-4 h-4' }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+  </svg>
+);
+const IconArrow = ({ className = 'w-4 h-4' }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M5 12h14M12 5l7 7-7 7" />
+  </svg>
+);
+const IconMail = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><path d="M22 6l-10 7L2 6" />
+  </svg>
+);
+
+const categories = ['All', 'Industry Tips', 'Product Updates', 'Business Growth', 'How-To Guides', 'Customer Stories'];
+
+const featured = {
+  category: 'Business Growth', catColor: 'bg-emerald-100 text-emerald-700',
+  title: '10 Ways to Double Your Repair Shop Revenue Without Adding Staff',
+  excerpt: 'Discover proven strategies from upselling accessories to automating follow-ups that top-performing repair shops use to grow revenue while keeping their headcount lean.',
+  date: 'Jan 14, 2025', readTime: '8 min read',
+};
+
+const posts = [
+  { cat: 'Industry Tips', catColor: 'bg-blue-100 text-blue-700', title: 'How to Reduce No-Show Appointments at Your Repair Shop', excerpt: 'Automated reminders, deposit requirements, and smart scheduling rules that cut no-shows by up to 60%.', date: 'Jan 10, 2025', readTime: '5 min' },
+  { cat: 'Product Updates', catColor: 'bg-teal-50 text-rd-teal', title: 'Introducing RepairDesk ARIA: Your AI-Powered Repair Assistant', excerpt: 'ARIA uses machine learning to suggest repair times, flag anomalies in tickets, and auto-categorise devices.', date: 'Jan 7, 2025', readTime: '4 min' },
+  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Setting Up Your First Loyalty Program in RepairDesk', excerpt: 'A step-by-step walkthrough from creating tiers to automating point redemptions at checkout.', date: 'Dec 30, 2024', readTime: '7 min' },
+  { cat: 'Customer Stories', catColor: 'bg-purple-100 text-purple-700', title: 'How iFixScreens Scaled to 50+ Locations with RepairDesk', excerpt: '"RepairDesk gave us the infrastructure to franchise confidently." Their journey from one store to a national brand.', date: 'Dec 22, 2024', readTime: '6 min' },
+  { cat: 'Business Growth', catColor: 'bg-emerald-100 text-emerald-700', title: 'Mail-In Repair: The Revenue Stream Most Shops Are Missing', excerpt: 'Adding a mail-in channel boosted average revenue 35% for shops that tried it. Here is how to set yours up.', date: 'Dec 18, 2024', readTime: '9 min' },
+  { cat: 'Industry Tips', catColor: 'bg-blue-100 text-blue-700', title: 'The Repair Shop Inventory Mistakes Costing You Thousands', excerpt: 'Overstocking slow-movers, under-ordering hot parts, no barcode system -- and how RepairDesk fixes all three.', date: 'Dec 12, 2024', readTime: '5 min' },
+  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Migrating from RepairShopr to RepairDesk: A Smooth Playbook', excerpt: 'Data export, import, staff training, and going live -- everything you need to switch with zero downtime.', date: 'Dec 5, 2024', readTime: '11 min' },
+  { cat: 'Product Updates', catColor: 'bg-teal-50 text-rd-teal', title: 'PhonePro Diagnostics: Automated Pre and Post Repair Testing', excerpt: 'Run battery, screen, speaker, and sensor diagnostics directly from your ticket in under 90 seconds.', date: 'Nov 28, 2024', readTime: '3 min' },
+  { cat: 'Business Growth', catColor: 'bg-emerald-100 text-emerald-700', title: "Why Google Reviews Are Your Repair Shop's Most Valuable Asset", excerpt: 'A single star-rating difference changes conversion rates by 18%. Here is the automated system for collecting more 5-star reviews.', date: 'Nov 20, 2024', readTime: '6 min' },
 ];
 
-const blogPosts = [
-  {
-    title: '10 Ways to Speed Up Your Repair Shop Workflow',
-    excerpt: 'Small changes in how you handle intake, assign jobs, and communicate with customers can shave hours off your weekly workload. Here are ten proven tactics.',
-    category: 'Repair Shop Tips',
-    date: 'Aug 5, 2026',
-  },
-  {
-    title: 'How to Choose the Right POS System for a Repair Business',
-    excerpt: 'Not every POS is built for repair shops. Learn what features matter most — from ticket integration to split payments — before you commit.',
-    category: 'POS & Checkout',
-    date: 'Jul 28, 2026',
-  },
-  {
-    title: 'The Complete Guide to Repair Shop Inventory Management',
-    excerpt: 'From barcode scanning to reorder points, this guide walks through every step of building an inventory system that actually works on a busy bench.',
-    category: 'Inventory',
-    date: 'Jul 20, 2026',
-  },
-  {
-    title: 'How to Get More Google Reviews for Your Repair Shop',
-    excerpt: 'Positive reviews drive foot traffic. Learn how to set up automated review requests that turn happy customers into five-star advocates.',
-    category: 'Marketing',
-    date: 'Jul 12, 2026',
-  },
-  {
-    title: 'Managing a Multi-Location Repair Business: What You Need to Know',
-    excerpt: 'Expanding to a second or third location? Here is how to keep inventory synced, staff managed, and reporting unified across every store.',
-    category: 'Repair Shop Tips',
-    date: 'Jul 3, 2026',
-  },
-  {
-    title: 'Understanding Repair Margins: Pricing Labor and Parts for Profit',
-    excerpt: 'Many repair shops underprice their services. This breakdown shows how to calculate true costs, set competitive prices, and protect your margins.',
-    category: 'Repair Shop Tips',
-    date: 'Jun 25, 2026',
-  },
-  {
-    title: 'How Automated SMS Notifications Reduce No-Shows by 40%',
-    excerpt: 'Customers forget to pick up their devices. Automated reminders fix that. See the data behind SMS-driven pickup rates and how to set them up.',
-    category: 'Marketing',
-    date: 'Jun 18, 2026',
-  },
-  {
-    title: 'Barcode Scanning Best Practices for Repair Shops',
-    excerpt: 'A barcode scanner can cut checkout time in half — if your labeling system is set up correctly. Here is how to do it right from day one.',
-    category: 'Inventory',
-    date: 'Jun 10, 2026',
-  },
-  {
-    title: 'RepairDesk Product Update: New Reporting Dashboard and More',
-    excerpt: 'This month we shipped a redesigned reporting dashboard, improved ticket search, and three new integration partners. Here is the full rundown.',
-    category: 'Product Updates',
-    date: 'Jun 1, 2026',
-  },
-];
-
-const popularPosts = [
-  '10 Ways to Speed Up Your Repair Shop Workflow',
-  'The Complete Guide to Repair Shop Inventory Management',
-  'How to Get More Google Reviews for Your Repair Shop',
-  'Understanding Repair Margins: Pricing Labor and Parts for Profit',
-];
+const popularTags = ['POS System', 'Inventory', 'Repair Tickets', 'Marketing', 'Loyalty Program', 'Multi-Location', 'Mail-In Repair', 'Payments', 'SMS', 'Google Reviews', 'Reporting', 'Cell Phone Repair'];
 
 export default function BlogPage() {
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [email, setEmail] = useState('');
+  const filtered = activeCategory === 'All' ? posts : posts.filter(p => p.cat === activeCategory);
+
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-rd-cream py-16 md:py-20 px-6">
-        <div className="container-main text-center">
-          <span className="inline-block bg-rd-teal/10 text-rd-teal text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            Blog
-          </span>
-          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-rd-dark mb-4">
-            RepairDesk Blog
+      <section className="bg-rd-dark py-20 px-6">
+        <div className="container-main max-w-4xl text-center">
+          <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/40 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-rd-teal font-poppins font-semibold text-xs tracking-wider uppercase">RepairDesk Blog</span>
+          </div>
+          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-4 leading-tight">
+            Insights for Repair Shop Owners
           </h1>
-          <p className="text-gray-500 font-dm-sans text-lg max-w-2xl mx-auto">
-            Tips, tools, and updates to help you run a more efficient and profitable repair shop.
+          <p className="text-white/70 font-dm-sans text-lg max-w-xl mx-auto">
+            Actionable guides, product news, and success stories for smarter, faster repair businesses.
           </p>
         </div>
       </section>
 
-      {/* Blog Grid + Sidebar */}
-      <section className="bg-white py-16 px-6">
-        <div className="container-main">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Posts Grid */}
-            <div className="lg:col-span-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {blogPosts.map((post, i) => (
-                  <div key={i} className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-md transition-all">
-                    {/* Thumbnail placeholder */}
-                    <div className="bg-gray-200 rounded-xl aspect-video m-3 flex items-center justify-center">
-                      <svg className="w-10 h-10 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                      </svg>
-                    </div>
-                    <div className="px-5 pb-5">
-                      <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-rd-teal bg-rd-teal/10 px-2.5 py-1 rounded-full mb-2">
-                        {post.category}
-                      </span>
-                      <h3 className="font-poppins font-bold text-rd-dark mb-2 group-hover:text-rd-teal transition-colors leading-snug">
-                        {post.title}
-                      </h3>
-                      <p className="text-gray-500 font-dm-sans text-sm leading-relaxed mb-3 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-400 font-dm-sans text-xs">{post.date}</span>
-                        <Link to="#" className="text-rd-teal font-poppins font-semibold text-sm hover:underline">
-                          Read More &rarr;
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="space-y-6">
-              {/* Categories */}
-              <div className="bg-rd-cream rounded-2xl p-6">
-                <h3 className="font-poppins font-bold text-rd-dark mb-4">Categories</h3>
-                <ul className="space-y-2">
-                  {categories.map(cat => (
-                    <li key={cat}>
-                      <Link to="#" className="flex items-center justify-between text-gray-600 font-dm-sans text-sm hover:text-rd-teal transition-colors py-1">
-                        <span>{cat}</span>
-                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Popular Posts */}
-              <div className="bg-rd-cream rounded-2xl p-6">
-                <h3 className="font-poppins font-bold text-rd-dark mb-4">Popular Posts</h3>
-                <ul className="space-y-3">
-                  {popularPosts.map((title, i) => (
-                    <li key={i}>
-                      <Link to="#" className="flex items-start gap-3 group">
-                        <span className="w-6 h-6 rounded-full bg-rd-teal text-white flex items-center justify-center shrink-0 text-xs font-bold font-poppins mt-0.5">{i + 1}</span>
-                        <span className="text-gray-600 font-dm-sans text-sm leading-snug group-hover:text-rd-teal transition-colors">{title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Newsletter */}
-              <div className="bg-rd-dark rounded-2xl p-6 text-white">
-                <h3 className="font-poppins font-bold mb-2">Stay Updated</h3>
-                <p className="text-white/70 text-sm font-dm-sans mb-4">Get the latest repair shop tips and RepairDesk updates delivered to your inbox.</p>
-                <div className="flex gap-2">
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="flex-1 px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 font-dm-sans text-sm focus:outline-none focus:ring-2 focus:ring-rd-lime/50"
-                  />
-                  <button className="btn-primary px-4 py-2.5 text-sm whitespace-nowrap">Subscribe</button>
+      {/* Featured Post */}
+      <section className="bg-rd-cream py-14 px-6">
+        <div className="container-main max-w-5xl">
+          <p className="font-poppins font-bold text-xs text-rd-teal tracking-widest uppercase mb-6">Featured Article</p>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div className="grid md:grid-cols-2">
+              <div className="bg-gradient-to-br from-rd-teal to-rd-dark h-56 md:h-auto flex items-center justify-center">
+                <div className="text-center text-white/30 p-10">
+                  <svg className="w-20 h-20 mx-auto mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1}>
+                    <rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="M21 15l-5-5L5 21" />
+                  </svg>
+                  <p className="text-xs font-poppins">Featured Image</p>
                 </div>
               </div>
+              <div className="p-8 flex flex-col justify-center">
+                <span className={`inline-block text-xs font-poppins font-semibold rounded-full px-3 py-1 mb-4 w-fit ${featured.catColor}`}>{featured.category}</span>
+                <h2 className="font-poppins font-bold text-rd-dark text-xl leading-snug mb-3">{featured.title}</h2>
+                <p className="font-dm-sans text-gray-500 text-sm leading-relaxed mb-6">{featured.excerpt}</p>
+                <div className="flex items-center gap-4 text-gray-400 text-xs font-dm-sans mb-6">
+                  <span className="flex items-center gap-1"><IconCalendar />{featured.date}</span>
+                  <span className="flex items-center gap-1"><IconClock />{featured.readTime}</span>
+                </div>
+                <Link to="/blog/article" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-rd-dark transition-colors w-fit">
+                  Read Article <IconArrow />
+                </Link>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Category Filter + Grid */}
+      <section className="py-16 px-6 bg-white">
+        <div className="container-main max-w-5xl">
+          <div className="flex flex-wrap gap-2 mb-10">
+            {categories.map(c => (
+              <button key={c} onClick={() => setActiveCategory(c)}
+                className={`px-4 py-2 rounded-full text-sm font-poppins font-semibold transition-all ${activeCategory === c ? 'bg-rd-teal text-white' : 'bg-rd-cream text-gray-600 hover:bg-gray-100'}`}>
+                {c}
+              </button>
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filtered.map((post, i) => (
+              <article key={i} className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+                <div className="bg-gradient-to-br from-gray-100 to-gray-200 h-40 flex items-center justify-center">
+                  <svg className="w-12 h-12 text-gray-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1}>
+                    <rect x="3" y="3" width="18" height="18" rx="2" /><circle cx="8.5" cy="8.5" r="1.5" /><path d="M21 15l-5-5L5 21" />
+                  </svg>
+                </div>
+                <div className="p-5">
+                  <span className={`inline-block text-xs font-poppins font-semibold rounded-full px-3 py-1 mb-3 ${post.catColor}`}>{post.cat}</span>
+                  <h3 className="font-poppins font-bold text-rd-dark text-sm leading-snug mb-2 group-hover:text-rd-teal transition-colors">{post.title}</h3>
+                  <p className="font-dm-sans text-gray-500 text-xs leading-relaxed mb-4">{post.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3 text-gray-400 text-xs font-dm-sans">
+                      <span className="flex items-center gap-1"><IconCalendar />{post.date}</span>
+                      <span className="flex items-center gap-1"><IconClock />{post.readTime}</span>
+                    </div>
+                    <Link to="/blog/article" className="text-rd-teal"><IconArrow /></Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          {filtered.length === 0 && (
+            <div className="text-center py-16 text-gray-400">
+              <p className="font-poppins font-semibold">No articles in this category yet.</p>
+            </div>
+          )}
+          <div className="text-center mt-10">
+            <button className="border border-gray-200 text-rd-dark font-poppins font-semibold text-sm px-8 py-3 rounded-xl hover:bg-rd-cream transition-colors">
+              Load More Articles
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="py-20 px-6 bg-rd-dark">
+        <div className="container-main max-w-2xl text-center">
+          <div className="w-14 h-14 rounded-2xl bg-rd-teal/20 flex items-center justify-center mx-auto mb-6">
+            <IconMail className="w-7 h-7 text-rd-teal" />
+          </div>
+          <h2 className="font-poppins font-bold text-3xl text-white mb-3">Get the Best Articles in Your Inbox</h2>
+          <p className="text-white/60 font-dm-sans mb-8">Join 12,000+ repair shop owners who get our weekly digest of tips, news, and product updates.</p>
+          <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Enter your email"
+              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 font-dm-sans text-sm focus:outline-none focus:border-rd-teal" />
+            <button className="bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-teal-600 transition-colors whitespace-nowrap">
+              Subscribe Free
+            </button>
+          </div>
+          <p className="font-dm-sans text-white/30 text-xs mt-4">No spam. Unsubscribe anytime.</p>
+        </div>
+      </section>
+
+      {/* Tags */}
+      <section className="py-14 px-6 bg-rd-cream">
+        <div className="container-main max-w-4xl text-center">
+          <h3 className="font-poppins font-bold text-rd-dark text-lg mb-6">Popular Topics</h3>
+          <div className="flex flex-wrap gap-2 justify-center">
+            {popularTags.map(tag => (
+              <button key={tag} className="bg-white border border-gray-200 text-gray-600 font-poppins font-medium text-xs px-4 py-2 rounded-full hover:border-rd-teal hover:text-rd-teal transition-colors">
+                #{tag}
+              </button>
+            ))}
           </div>
         </div>
       </section>

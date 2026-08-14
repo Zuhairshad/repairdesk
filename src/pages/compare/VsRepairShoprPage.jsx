@@ -2,206 +2,195 @@ import React, { useState } from 'react';
 import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
-const comparisonData = [
-  { feature: 'Point of Sale', rd: true, competitor: true },
-  { feature: 'Inventory Management', rd: true, competitor: true },
-  { feature: 'Repair Ticket Tracking', rd: true, competitor: true },
-  { feature: 'Built-in Marketing Automation', rd: true, competitor: false },
-  { feature: 'Customer Facing Display', rd: true, competitor: false },
-  { feature: 'Multi-Location Management', rd: true, competitor: true },
-  { feature: 'Integrated Phone System', rd: true, competitor: false },
-  { feature: 'Loyalty Program', rd: true, competitor: false },
-  { feature: 'Self Check-In Kiosk', rd: true, competitor: false },
-  { feature: 'Store Credits', rd: true, competitor: true },
-  { feature: 'Gift Cards', rd: true, competitor: false },
-  { feature: 'Reviews Management', rd: true, competitor: false },
+const Check = () => <span className="text-emerald-500 font-bold text-lg">✓</span>;
+const Cross = () => <span className="text-gray-300 font-bold text-lg">✗</span>;
+
+const features = [
+  { label: 'Point of Sale', rd: true, rs: true },
+  { label: 'Inventory Management', rd: true, rs: true },
+  { label: 'Repair Ticket Tracking', rd: true, rs: true },
+  { label: 'Multi-Location Management', rd: true, rs: true },
+  { label: 'Built-in Marketing Automation', rd: true, rs: false },
+  { label: 'Integrated Phone System (VoIP)', rd: true, rs: false },
+  { label: 'Loyalty Points Program', rd: true, rs: false },
+  { label: 'Self Check-In Kiosk', rd: true, rs: false },
+  { label: 'Customer Facing Display', rd: true, rs: false },
+  { label: 'Store Credits', rd: true, rs: true },
+  { label: 'Gift Cards', rd: true, rs: false },
+  { label: 'Google Reviews Integration', rd: true, rs: false },
+  { label: 'Phone Diagnostics (PhonePro)', rd: true, rs: false },
+  { label: 'Unified Inbox (SMS + Email)', rd: true, rs: false },
+  { label: 'Franchise Management', rd: true, rs: false },
+  { label: 'Free Data Migration', rd: true, rs: false },
+  { label: 'iPad POS Register App', rd: true, rs: true },
+  { label: '24/6 Customer Support', rd: true, rs: false },
 ];
 
-const differentiators = [
-  {
-    title: 'All-in-One Marketing Suite',
-    description:
-      'RepairDesk includes built-in marketing automation, Google Reviews management, and a loyalty program — tools that keep customers coming back without bolting on third-party apps. RepairShopr leaves marketing to external integrations, adding cost and complexity.',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Customer-Facing Hardware & Kiosk',
-    description:
-      'From a customer-facing display at checkout to a self check-in kiosk that lets walk-ins start their own repair tickets, RepairDesk gives you storefront tools that reduce wait times and free up your counter staff. RepairShopr does not offer either feature.',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: 'Integrated Phone System',
-    description:
-      'RepairDesk PhonePro brings VoIP calling, caller ID, and call logs directly into your repair workflow. See who is calling, pull up their ticket instantly, and log the call — no switching apps. RepairShopr has no built-in phone integration.',
-    icon: (
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-      </svg>
-    ),
-  },
+const advantages = [
+  { num: '01', title: 'All-in-One Marketing Suite', desc: 'RepairDesk includes email campaigns, SMS marketing, loyalty programs, and review collection — tools RepairShopr charges extra for or lacks entirely.' },
+  { num: '02', title: 'Built-in Phone System', desc: 'Take calls, see caller ID linked to customer profiles, record calls, and route voicemails — all from within RepairDesk. RepairShopr has no native phone system.' },
+  { num: '03', title: 'PhonePro Diagnostics', desc: 'Run automated battery, screen, sensor, and speaker diagnostics on any device directly from the repair ticket. Builds customer trust and reduces disputes.' },
+  { num: '04', title: 'Google Reviews Automation', desc: "Automatically request reviews after every completed repair. RepairDesk's integration sends requests at the right moment to maximise 5-star ratings." },
+  { num: '05', title: 'Superior Onboarding & Support', desc: 'Free data migration from RepairShopr, dedicated onboarding specialists, and 24/6 live support. RepairShopr relies heavily on community forums.' },
+  { num: '06', title: 'Franchise-Ready at Every Plan', desc: 'Multi-location management, centralized reporting, and franchise-grade controls are built in — not locked behind expensive enterprise tiers.' },
 ];
 
-const faqs = [
-  {
-    q: 'Can I migrate my data from RepairShopr to RepairDesk?',
-    a: 'Yes. RepairDesk offers a free data migration service that brings over your customers, tickets, inventory, and invoices from RepairShopr. Our onboarding team handles the heavy lifting so you can switch without losing history.',
-  },
-  {
-    q: 'Does RepairDesk cost more than RepairShopr?',
-    a: 'RepairDesk plans are competitively priced, and you get significantly more features out of the box — including marketing automation, a customer-facing display, loyalty programs, and gift cards — without paying for add-ons or third-party tools.',
-  },
-  {
-    q: 'Is RepairDesk suitable for multi-location repair shops?',
-    a: 'Absolutely. RepairDesk was built with multi-store operations in mind. You get centralized inventory, cross-location reporting, role-based access, and franchise management tools that scale as you grow.',
-  },
-  {
-    q: 'Does RepairDesk offer a free trial?',
-    a: 'Yes. You can start a 14-day free trial with full access to all features — no credit card required. That gives you enough time to import your data and see how RepairDesk compares to RepairShopr in your day-to-day workflow.',
-  },
-  {
-    q: 'What kind of support does RepairDesk provide?',
-    a: 'RepairDesk offers live chat, email, and phone support along with a comprehensive knowledge base and video tutorials. Growth and Advanced plan customers also receive priority support and a dedicated onboarding specialist.',
-  },
+const ratings = [
+  { platform: 'Capterra', rd: '4.7', rs: '4.5', rdCount: '244+', rsCount: '180+' },
+  { platform: 'Trustpilot', rd: '4.9', rs: '3.8', rdCount: '509+', rsCount: '60+' },
+  { platform: 'G2', rd: '4.6', rs: '4.2', rdCount: '95+', rsCount: '70+' },
 ];
 
 export default function VsRepairShoprPage() {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+  const visibleFeatures = showAll ? features : features.slice(0, 10);
 
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-24 md:py-32 px-6">
-        <div className="container-main max-w-4xl text-center">
-          <span className="inline-block bg-rd-lime text-rd-dark text-xs font-bold uppercase tracking-widest font-poppins px-4 py-1.5 rounded-full mb-6">
-            Comparison
-          </span>
-          <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[56px] leading-tight mb-6">
-            RepairDesk vs RepairShopr — Why Repair Shops Choose RepairDesk
-          </h1>
-          <p className="text-white/80 text-lg md:text-xl font-dm-sans leading-relaxed max-w-2xl mx-auto mb-10">
-            Both platforms handle repair tickets, inventory, and point of sale. See where RepairDesk pulls ahead with built-in marketing, a customer-facing display, and tools RepairShopr simply does not offer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/pricing" className="btn-primary text-center">
-              Start Free Trial
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-full border-2 border-white/30 text-white font-poppins font-medium hover:bg-white/10 transition-colors duration-200"
-            >
-              Request a Demo
-            </Link>
+      <section className="bg-rd-dark py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+          <span className="text-[18rem] font-poppins font-black text-white select-none">VS</span>
+        </div>
+        <div className="container-main max-w-5xl relative z-10 text-center">
+          <p className="font-poppins font-bold text-xs text-rd-teal tracking-widest uppercase mb-8">Software Comparison</p>
+          <div className="flex items-center justify-center gap-8 mb-8">
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-2xl bg-rd-teal flex items-center justify-center mx-auto mb-3 shadow-lg shadow-rd-teal/30">
+                <span className="font-poppins font-black text-white text-2xl">RD</span>
+              </div>
+              <p className="font-poppins font-bold text-white text-lg">RepairDesk</p>
+            </div>
+            <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0">
+              <span className="font-poppins font-black text-white text-xl">VS</span>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-2xl bg-gray-600 flex items-center justify-center mx-auto mb-3">
+                <span className="font-poppins font-black text-white text-2xl">RS</span>
+              </div>
+              <p className="font-poppins font-bold text-white text-lg">RepairShopr</p>
+            </div>
           </div>
+          <h1 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-4 leading-tight">
+            RepairDesk vs RepairShopr:<br />Which Repair Shop Software Is Better?
+          </h1>
+          <p className="text-white/70 font-dm-sans max-w-xl mx-auto mb-8">
+            An honest, feature-by-feature comparison to help you choose the right platform for your repair business.
+          </p>
+          <Link to="/register" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold px-8 py-3.5 rounded-xl hover:bg-teal-600 transition-colors">
+            Try RepairDesk Free for 14 Days
+          </Link>
         </div>
       </section>
 
-      {/* Comparison Table */}
-      <section className="bg-white py-16 md:py-24 px-6">
+      {/* Feature Comparison Table */}
+      <section className="py-20 px-6 bg-rd-cream">
         <div className="container-main max-w-4xl">
-          <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark text-center mb-4">
-            Feature-by-Feature Comparison
-          </h2>
-          <p className="text-gray-500 font-dm-sans text-center mb-12 max-w-xl mx-auto">
-            A side-by-side look at the capabilities that matter most to repair shops.
-          </p>
-
+          <div className="text-center mb-10">
+            <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-2">Feature-by-Feature Comparison</h2>
+            <p className="font-dm-sans text-gray-500">Every feature independently verified as of January 2025.</p>
+          </div>
           <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
-            <table className="w-full text-left min-w-[480px]">
+            <table className="w-full bg-white text-sm font-dm-sans">
               <thead>
-                <tr className="bg-rd-dark text-white sticky top-0">
-                  <th className="font-poppins font-semibold text-sm py-4 px-6 w-1/2">Feature</th>
-                  <th className="font-poppins font-semibold text-sm py-4 px-6 text-center bg-rd-teal w-1/4">
-                    RepairDesk
+                <tr className="border-b border-gray-100">
+                  <th className="text-left px-6 py-4 font-poppins text-xs text-gray-400 uppercase tracking-wider w-1/2">Feature</th>
+                  <th className="px-6 py-4 text-center w-1/4">
+                    <span className="font-poppins font-bold text-rd-teal text-sm">RepairDesk</span>
                   </th>
-                  <th className="font-poppins font-semibold text-sm py-4 px-6 text-center w-1/4">RepairShopr</th>
+                  <th className="px-6 py-4 text-center w-1/4">
+                    <span className="font-poppins font-semibold text-gray-500 text-sm">RepairShopr</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {comparisonData.map((row, i) => (
-                  <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="font-dm-sans text-rd-dark text-sm py-4 px-6 font-medium">{row.feature}</td>
-                    <td className="text-center py-4 px-6 bg-rd-teal/5">
-                      <span className="text-green-500 text-xl">&#10003;</span>
-                    </td>
-                    <td className="text-center py-4 px-6">
-                      {row.competitor ? (
-                        <span className="text-green-500 text-xl">&#10003;</span>
-                      ) : (
-                        <span className="text-red-400 text-xl">&#10007;</span>
-                      )}
-                    </td>
+                {visibleFeatures.map((f, i) => (
+                  <tr key={i} className={`border-t border-gray-50 ${i % 2 === 0 ? '' : 'bg-gray-50/50'}`}>
+                    <td className="px-6 py-3.5 font-dm-sans text-gray-700">{f.label}</td>
+                    <td className="px-6 py-3.5 text-center">{f.rd ? <Check /> : <Cross />}</td>
+                    <td className="px-6 py-3.5 text-center">{f.rs ? <Check /> : <Cross />}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          {!showAll && (
+            <div className="text-center mt-6">
+              <button onClick={() => setShowAll(true)} className="font-poppins font-semibold text-sm text-rd-teal hover:underline">
+                Show all {features.length} features ↓
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
-      {/* Key Differentiators */}
-      <section className="bg-rd-cream py-16 md:py-24 px-6">
+      {/* Why RepairDesk Wins */}
+      <section className="py-20 px-6 bg-white">
         <div className="container-main max-w-5xl">
-          <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark text-center mb-4">
-            Why Repair Shops Switch to RepairDesk
-          </h2>
-          <p className="text-gray-500 font-dm-sans text-center mb-12 max-w-xl mx-auto">
-            Three areas where RepairDesk gives you capabilities that RepairShopr cannot match.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {differentiators.map((d) => (
-              <div
-                key={d.title}
-                className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300 group"
-              >
-                <div className="w-14 h-14 bg-rd-teal/10 text-rd-teal rounded-xl flex items-center justify-center mb-5 group-hover:bg-rd-teal group-hover:text-white transition-colors duration-300">
-                  {d.icon}
+          <div className="text-center mb-14">
+            <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-2">Why Repair Shops Choose RepairDesk Over RepairShopr</h2>
+            <p className="font-dm-sans text-gray-500">Six advantages that make a real difference in day-to-day operations.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {advantages.map((a, i) => (
+              <div key={i} className="bg-rd-cream rounded-2xl p-6 border border-gray-100">
+                <div className="flex items-start gap-4">
+                  <span className="font-poppins font-black text-rd-teal/30 text-3xl leading-none flex-shrink-0">{a.num}</span>
+                  <div>
+                    <p className="font-poppins font-bold text-rd-dark mb-2">{a.title}</p>
+                    <p className="font-dm-sans text-gray-500 text-sm leading-relaxed">{a.desc}</p>
+                  </div>
                 </div>
-                <h3 className="font-poppins font-semibold text-rd-dark text-lg mb-3">{d.title}</h3>
-                <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">{d.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-[#F8F8FB] py-16 md:py-24 px-6">
-        <div className="container-main max-w-3xl">
-          <h2 className="font-poppins font-normal text-[32px] md:text-[38px] text-[#2e384d] text-center mb-12">
-            Frequently Asked Questions
-          </h2>
-          <div>
-            {faqs.map((faq, i) => (
-              <div key={i} className="border-b border-gray-200">
-                <button
-                  type="button"
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between py-5 text-left"
-                >
-                  <span className="font-poppins font-medium text-[#2e384d] text-[15px] pr-4">{faq.q}</span>
-                  <svg
-                    className={`w-5 h-5 text-rd-teal shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`}
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-                <div className={`overflow-hidden transition-all duration-300 ${openFaq === i ? 'max-h-96 pb-5' : 'max-h-0'}`}>
-                  <p className="text-gray-500 font-poppins text-sm leading-relaxed">{faq.a}</p>
+      {/* Ratings comparison */}
+      <section className="py-16 px-6 bg-rd-dark">
+        <div className="container-main max-w-4xl">
+          <h2 className="font-poppins font-bold text-2xl text-white text-center mb-10">Third-Party Ratings</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {ratings.map((r, i) => (
+              <div key={i} className="bg-white/10 border border-white/20 rounded-2xl p-6 text-center">
+                <p className="font-poppins font-bold text-white mb-4">{r.platform}</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="font-poppins font-black text-rd-teal text-2xl">{r.rd}</p>
+                    <p className="font-dm-sans text-white/50 text-xs">RepairDesk</p>
+                    <p className="font-dm-sans text-white/30 text-xs">{r.rdCount} reviews</p>
+                  </div>
+                  <div>
+                    <p className="font-poppins font-black text-gray-400 text-2xl">{r.rs}</p>
+                    <p className="font-dm-sans text-white/50 text-xs">RepairShopr</p>
+                    <p className="font-dm-sans text-white/30 text-xs">{r.rsCount} reviews</p>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Switch section */}
+      <section className="py-20 px-6 bg-rd-cream">
+        <div className="container-main max-w-4xl">
+          <div className="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm text-center">
+            <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-3">Switch from RepairShopr in 24 Hours</h2>
+            <p className="font-dm-sans text-gray-500 max-w-lg mx-auto mb-8">
+              Our onboarding team handles your data migration for free. Your tickets, customers, inventory, and history come with you.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <div className="text-center"><div className="w-10 h-10 rounded-full bg-rd-teal text-white font-poppins font-bold flex items-center justify-center mx-auto mb-2">1</div><p className="font-dm-sans text-sm text-gray-500">Sign up free</p></div>
+              <div className="hidden sm:flex items-center text-gray-300">→</div>
+              <div className="text-center"><div className="w-10 h-10 rounded-full bg-rd-teal text-white font-poppins font-bold flex items-center justify-center mx-auto mb-2">2</div><p className="font-dm-sans text-sm text-gray-500">We migrate your data</p></div>
+              <div className="hidden sm:flex items-center text-gray-300">→</div>
+              <div className="text-center"><div className="w-10 h-10 rounded-full bg-rd-teal text-white font-poppins font-bold flex items-center justify-center mx-auto mb-2">3</div><p className="font-dm-sans text-sm text-gray-500">Go live in 24 hours</p></div>
+            </div>
+            <Link to="/register" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold px-8 py-3.5 rounded-xl hover:bg-rd-dark transition-colors">
+              Start Free — No Credit Card Required
+            </Link>
           </div>
         </div>
       </section>
