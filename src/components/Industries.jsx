@@ -85,7 +85,7 @@ export default function Industries() {
             Industries We Serve
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-poppins text-lg font-light">
-            RepairDesk offers total repair control with an end-to-end workflow tailored for your entire repair business in one place.
+            RepairHub offers total repair control with an end-to-end workflow tailored for your entire repair business in one place.
           </p>
         </div>
 

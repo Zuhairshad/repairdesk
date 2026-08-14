@@ -4,8 +4,8 @@ import PageLayout from '../../components/PageLayout';
 
 const faqs = [
   {
-    q: 'How many franchise locations can RepairDesk support?',
-    a: 'RepairDesk scales to 100+ franchise locations under a single franchisor account. Each location gets its own workspace while corporate maintains full oversight. For networks exceeding 100 locations, our enterprise team provides dedicated infrastructure.',
+    q: 'How many franchise locations can RepairHub support?',
+    a: 'RepairHub scales to 100+ franchise locations under a single franchisor account. Each location gets its own workspace while corporate maintains full oversight. For networks exceeding 100 locations, our enterprise team provides dedicated infrastructure.',
   },
   {
     q: 'Can franchisees customize anything locally?',
@@ -188,7 +188,7 @@ export default function FranchiseManagementPage() {
               Watch your franchise network expand
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg">
-              From your first franchise location to your hundredth, RepairDesk scales with you at every milestone.
+              From your first franchise location to your hundredth, RepairHub scales with you at every milestone.
             </p>
           </div>
 
@@ -344,7 +344,7 @@ export default function FranchiseManagementPage() {
               Automated royalty collection. Zero spreadsheets.
             </h2>
             <p className="font-dm-sans text-white/60 text-lg">
-              Define your royalty structure once. RepairDesk calculates, invoices, and reports — every billing cycle, hands-free.
+              Define your royalty structure once. RepairHub calculates, invoices, and reports — every billing cycle, hands-free.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">

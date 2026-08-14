@@ -127,7 +127,7 @@ const IconCard = ({ className = 'w-6 h-6' }) => (
 const inventoryFeatures = [
   { icon: IconBell, title: 'Low Stock Alerts', desc: 'Track what’s on hand and receive alerts when your inventory is low so you can replenish stock.' },
   { icon: IconCart, title: 'Purchase Management', desc: 'Create POs in seconds and quickly send them to QuickBooks or Xero to keep everything in sync. Automatically update inventory as items are received and eliminate double entry by directly passing purchase information into your accounting software.' },
-  { icon: IconSwap, title: 'Transfer Inventory b/w Stores', desc: 'Do you own more than one wireless store? With RepairDesk, you can easily sync and transfer inventory across all your locations, making inventory management tasks a breeze!' },
+  { icon: IconSwap, title: 'Transfer Inventory b/w Stores', desc: 'Do you own more than one wireless store? With RepairHub, you can easily sync and transfer inventory across all your locations, making inventory management tasks a breeze!' },
   { icon: IconClipboard, title: 'Inventory Count', desc: 'Take the guesswork out of inventory management and use inventory counts that help you perform physical stock takes to ensure that your inventory is up to date.' },
 ];
 
@@ -158,7 +158,7 @@ const efficiencyFeatures = [
   { icon: IconChartUp, title: 'Reporting', desc: 'Stay on top of your shop operations and view key operational metrics including sales, performance, orders, and payment summaries along with your most profitable line items.', link: '/features/reporting' },
   { icon: IconClock, title: 'Appointment Scheduling', desc: 'Grab every opportunity by turning website visitors into quote requests and booked appointments. Provide accurate repair quotes around the clock.', link: '/features/appointments-pro' },
   { icon: IconTag, title: 'Sell Memberships', desc: 'Sell membership with a monthly subscription to increase recurring revenue and unlock a steady income stream.' },
-  { icon: IconStar, title: 'Loyalty Program', desc: 'Use the RepairDesk loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.', link: '/features/loyalty-program' },
+  { icon: IconStar, title: 'Loyalty Program', desc: 'Use the RepairHub loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.', link: '/features/loyalty-program' },
   { icon: IconMegaphone, title: 'Automated Campaigns', desc: 'Reach the right customers automatically with campaigns triggered by their activity in your store.', link: '/features/marketing' },
 ];
 
@@ -217,7 +217,7 @@ export default function WirelessRepairPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-              <a href="https://app.repairdesk.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start Free Trial</a>
             </div>
           </div>
           <div className="mt-16 flex items-center gap-4 flex-wrap">
@@ -244,7 +244,7 @@ export default function WirelessRepairPage() {
               </p>
             </div>
             <p className="text-rd-dark font-poppins font-semibold max-w-xs md:text-right">
-              Whether you prefer selling in-store or online, RepairDesk provides the tools to scale.
+              Whether you prefer selling in-store or online, RepairHub provides the tools to scale.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -309,7 +309,7 @@ export default function WirelessRepairPage() {
               Accept Prepaid Bills At Your Wireless Store
             </h2>
             <p className="text-white/70 font-dm-sans text-lg leading-relaxed max-w-xl">
-              Top-up mobile phones of leading providers with the RepairDesk Bill Payments module. Accept payments for {carriers.slice(0, 3).join(', ')}, and more&mdash;ensuring you never lose a sale due to platform limitations. Expand your network carrier options and instantly recharge multiple networks in just a few clicks!
+              Top-up mobile phones of leading providers with the RepairHub Bill Payments module. Accept payments for {carriers.slice(0, 3).join(', ')}, and more&mdash;ensuring you never lose a sale due to platform limitations. Expand your network carrier options and instantly recharge multiple networks in just a few clicks!
             </p>
           </div>
 
@@ -431,9 +431,9 @@ export default function WirelessRepairPage() {
                 Payments Built Into Your POS
               </h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
-                RepairDesk provides a unified platform with Payments seamlessly integrated into your POS. This automates your payment process, reducing errors and quicker checkouts without manual entries. With RepairDesk Integrated payment processing, you get:
+                RepairHub provides a unified platform with Payments seamlessly integrated into your POS. This automates your payment process, reducing errors and quicker checkouts without manual entries. With RepairHub Integrated payment processing, you get:
               </p>
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 inline-block mt-8">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 inline-block mt-8">Start Free Trial</a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {paymentFeatures.map((f) => (
@@ -455,7 +455,7 @@ export default function WirelessRepairPage() {
             You&rsquo;re in Great Company
           </h2>
           <p className="text-gray-500 font-dm-sans max-w-2xl mx-auto mb-12">
-            When you join RepairDesk, you don&rsquo;t just get software. You join a community of wireless repair shop owners around the world who help you learn and grow your business.
+            When you join RepairHub, you don&rsquo;t just get software. You join a community of wireless repair shop owners around the world who help you learn and grow your business.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {trustStats.map((s) => (
@@ -475,7 +475,7 @@ export default function WirelessRepairPage() {
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-8 max-w-2xl mx-auto">
             Power Up Your Wireless Retail &amp; Repair Store with the #1 POS!
           </h2>
-          <a href="https://app.repairdesk.co/register" className="btn-white px-10 py-3.5 inline-block">Start Free Trial</a>
+          <a href="https://app.repairhub.co/register" className="btn-white px-10 py-3.5 inline-block">Start Free Trial</a>
         </div>
       </section>
     </PageLayout>

@@ -5,7 +5,7 @@ import PageLayout from '../components/PageLayout';
 const productCards = [
   {
     title: 'Point of Sale',
-    desc: 'Join RepairDesk in bringing the best POS system for repair stores to customers all over the world.',
+    desc: 'Join RepairHub in bringing the best POS system for repair stores to customers all over the world.',
     href: '/features/point-of-sale',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -85,7 +85,7 @@ const values = [
 const journey = [
   {
     tag: 'The Finance Graduate',
-    text: "Achieving his degree in Finance, Usman Butt, the CEO and founder of RepairDesk, was eager to be a successful entrepreneur.",
+    text: "Achieving his degree in Finance, Usman Butt, the CEO and founder of RepairHub, was eager to be a successful entrepreneur.",
   },
   {
     tag: 'Learning the Trade',
@@ -97,7 +97,7 @@ const journey = [
   },
   {
     tag: 'The Bigger Opportunity',
-    text: "Usman's ambition to achieve big and do more drove him further to pursue greater opportunities, and RepairDesk was born.",
+    text: "Usman's ambition to achieve big and do more drove him further to pursue greater opportunities, and RepairHub was born.",
   },
 ];
 
@@ -144,10 +144,10 @@ export default function OurStoryPage() {
               <span className="w-8 h-px bg-rd-teal" /> Our Story
             </span>
             <h1 className="font-poppins font-semibold text-3xl md:text-5xl text-rd-dark leading-tight mb-6">
-              Everything You Need To Know About RepairDesk
+              Everything You Need To Know About RepairHub
             </h1>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
-              RepairDesk is built to automate the whole process of repair shops and to streamline their daily activities to give you greater peace of mind.
+              RepairHub is built to automate the whole process of repair shops and to streamline their daily activities to give you greater peace of mind.
             </p>
             <Link to="/partner-with-us" className="btn-primary">
               Become a Partner
@@ -179,10 +179,10 @@ export default function OurStoryPage() {
             <span className="text-rd-teal text-xs font-poppins font-semibold uppercase tracking-widest">Reinventing Repair</span>
             <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">About the Product</h2>
             <p className="font-dm-sans text-gray-600 leading-relaxed">
-              RepairDesk is a SaaS-based integrated POS &amp; ERP software designed specifically for the repair industry. It allows users to track items for repair, set deadlines, delegate employees, save customer information, collect deposits, print repair tickets, and manage invoices and receipts.
+              RepairHub is a SaaS-based integrated POS &amp; ERP software designed specifically for the repair industry. It allows users to track items for repair, set deadlines, delegate employees, save customer information, collect deposits, print repair tickets, and manage invoices and receipts.
             </p>
             <p className="font-dm-sans text-gray-600 leading-relaxed mt-4">
-              RepairDesk also notifies employees of low stock, and gives detailed analytics that help businesses anticipate demand.
+              RepairHub also notifies employees of low stock, and gives detailed analytics that help businesses anticipate demand.
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export default function OurStoryPage() {
               <span className="text-rd-lime text-xs font-poppins font-semibold uppercase tracking-widest">Our Customers</span>
               <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-white mt-3 mb-5">A Global Network of Repair Shops</h2>
               <p className="font-dm-sans text-white/70 leading-relaxed mb-4">
-                RepairDesk currently powers hundreds of cell phone repair shops around the world. Most of our customers reside in the USA, UK, Australia, Canada, Italy, France and other European countries.
+                RepairHub currently powers hundreds of cell phone repair shops around the world. Most of our customers reside in the USA, UK, Australia, Canada, Italy, France and other European countries.
               </p>
               <p className="font-dm-sans text-white/70 leading-relaxed">
                 We work with our customers to help them automate the whole repair management process and grow their business — wherever in the world they operate.
@@ -287,7 +287,7 @@ export default function OurStoryPage() {
                 style={{ top: hub.top, left: hub.left }}
               >
                 <span className="w-4 h-4 rounded-full bg-rd-lime shadow-[0_0_0_6px_rgba(212,244,121,0.2)]" />
-                <span className="mt-2 text-[10px] font-poppins font-semibold text-white bg-rd-teal px-2 py-0.5 rounded-full whitespace-nowrap">RepairDesk HQ</span>
+                <span className="mt-2 text-[10px] font-poppins font-semibold text-white bg-rd-teal px-2 py-0.5 rounded-full whitespace-nowrap">RepairHub HQ</span>
               </div>
 
               {mapPins.map((pin) => (
@@ -332,11 +332,11 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* Founder timeline — RepairDesk's Journey */}
+      {/* Founder timeline — RepairHub's Journey */}
       <section className="bg-rd-cream py-20">
         <div className="container-main">
           <div className="text-center mb-14">
-            <span className="text-rd-teal text-xs font-poppins font-semibold uppercase tracking-widest">RepairDesk's Journey</span>
+            <span className="text-rd-teal text-xs font-poppins font-semibold uppercase tracking-widest">RepairHub's Journey</span>
             <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark mt-3">Where It All Started...</h2>
           </div>
 
@@ -373,9 +373,9 @@ export default function OurStoryPage() {
         <div className="container-main">
           <div className="text-center mb-14">
             <span className="text-rd-teal text-xs font-poppins font-semibold uppercase tracking-widest">By The Numbers</span>
-            <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark mt-3">RepairDesk by the Numbers</h2>
+            <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark mt-3">RepairHub by the Numbers</h2>
             <p className="font-dm-sans text-gray-600 mt-4 max-w-xl mx-auto">
-              The best results are ones that can be measured, and we've got the numbers to back up our claims. See just how successful RepairDesk has been in the repair industry.
+              The best results are ones that can be measured, and we've got the numbers to back up our claims. See just how successful RepairHub has been in the repair industry.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -437,9 +437,9 @@ export default function OurStoryPage() {
       {/* Partner CTA */}
       <section className="bg-rd-teal py-20">
         <div className="container-main text-center">
-          <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-white mb-4">Become a RepairDesk Partner</h2>
+          <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-white mb-4">Become a RepairHub Partner</h2>
           <p className="font-dm-sans text-white/80 text-lg max-w-2xl mx-auto mb-8">
-            Join RepairDesk in bringing the best POS system for repair stores to customers all over the world.
+            Join RepairHub in bringing the best POS system for repair stores to customers all over the world.
           </p>
           <Link to="/partner-with-us" className="btn-white inline-block font-semibold px-8 py-3.5">
             Become a Partner

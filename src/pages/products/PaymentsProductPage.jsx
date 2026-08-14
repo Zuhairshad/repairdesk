@@ -5,7 +5,7 @@ import PageLayout from '../../components/PageLayout';
 const faqs = [
   {
     q: 'What hardware do I need to accept payments?',
-    a: 'None beyond what you already have. RepairDesk Payments works with your existing POS setup. For tap-to-pay, we ship a compact chip + contactless reader that plugs right in — no separate terminal contract required.',
+    a: 'None beyond what you already have. RepairHub Payments works with your existing POS setup. For tap-to-pay, we ship a compact chip + contactless reader that plugs right in — no separate terminal contract required.',
   },
   {
     q: 'How fast do I get my money?',
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: 'Is it safe for my customers\' card data?',
-    a: 'Absolutely. RepairDesk Payments is fully PCI-DSS Level 1 compliant with end-to-end encryption and tokenization. Card data never touches your local systems — it is encrypted at the reader and decrypted only by the payment processor.',
+    a: 'Absolutely. RepairHub Payments is fully PCI-DSS Level 1 compliant with end-to-end encryption and tokenization. Card data never touches your local systems — it is encrypted at the reader and decrypted only by the payment processor.',
   },
   {
     q: 'Can I send payment links instead of swiping a card?',
@@ -47,7 +47,7 @@ const flowSteps = [
   {
     step: '04',
     title: 'Auto-Reconciled',
-    desc: 'Every transaction ties back to the ticket inside RepairDesk.',
+    desc: 'Every transaction ties back to the ticket inside RepairHub.',
     color: 'bg-rd-dark',
   },
 ];
@@ -80,7 +80,7 @@ export default function PaymentsProductPage() {
             {/* Copy */}
             <div>
               <span className="inline-block bg-rd-lime/90 text-rd-dark text-xs font-bold font-poppins px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
-                RepairDesk Payments
+                RepairHub Payments
               </span>
               <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.12] mb-6">
                 One tap. <br className="hidden md:block" />Paid and reconciled.
@@ -270,7 +270,7 @@ export default function PaymentsProductPage() {
                 Every payment method,<br />one reader
               </h2>
               <p className="font-dm-sans text-gray-600 text-lg mb-8 leading-relaxed">
-                Chip cards, contactless tap, Apple Pay, Google Pay, magnetic swipe — the RepairDesk reader handles them all. No juggling terminals from different providers.
+                Chip cards, contactless tap, Apple Pay, Google Pay, magnetic swipe — the RepairHub reader handles them all. No juggling terminals from different providers.
               </p>
               <ul className="space-y-4">
                 {[
@@ -301,14 +301,14 @@ export default function PaymentsProductPage() {
               Transparent pricing, no surprises
             </h2>
             <p className="font-dm-sans text-gray-500 text-lg">
-              See how RepairDesk Payments stacks up against legacy processors.
+              See how RepairHub Payments stacks up against legacy processors.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-3 gap-0 text-center font-dm-sans text-sm text-gray-400 mb-3 px-4">
               <span className="text-left" />
-              <span className="font-poppins font-semibold text-rd-teal">RepairDesk</span>
+              <span className="font-poppins font-semibold text-rd-teal">RepairHub</span>
               <span className="font-poppins font-semibold text-gray-400">Traditional</span>
             </div>
             {[

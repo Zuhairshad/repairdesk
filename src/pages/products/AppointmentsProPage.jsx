@@ -87,7 +87,7 @@ const abcSteps = [
   {
     letter: 'A',
     title: 'Categories, Auto-Imported',
-    body: 'Your repair categories are pulled straight from RepairDesk — nothing to rebuild.',
+    body: 'Your repair categories are pulled straight from RepairHub — nothing to rebuild.',
   },
   {
     letter: 'B',
@@ -97,7 +97,7 @@ const abcSteps = [
   {
     letter: 'C',
     title: 'Issues & Pricing, In Sync',
-    body: 'Issues and their prices match your RepairDesk account exactly, so quotes are always accurate.',
+    body: 'Issues and their prices match your RepairHub account exactly, so quotes are always accurate.',
   },
 ];
 
@@ -116,12 +116,12 @@ const inboxMessages = [
 
 const faqs = [
   {
-    q: 'How do I install Appointments Pro in RepairDesk?',
-    a: 'Open RepairDesk and click the "+" icon on the right side. Choose "Appointments Pro" from the list of applications and click "Install." The "Appointments Pro" icon will then appear on the right side.',
+    q: 'How do I install Appointments Pro in RepairHub?',
+    a: 'Open RepairHub and click the "+" icon on the right side. Choose "Appointments Pro" from the list of applications and click "Install." The "Appointments Pro" icon will then appear on the right side.',
   },
   {
     q: 'Can I get a free trial of Appointments Pro?',
-    a: "By filling out the form above, you can get a 7-day free trial to RepairDesk Appointments Pro. Once you're happy with the experience, you can enable a subscription from the Billing Module anytime.",
+    a: "By filling out the form above, you can get a 7-day free trial to RepairHub Appointments Pro. Once you're happy with the experience, you can enable a subscription from the Billing Module anytime.",
   },
   {
     q: 'How much does Appointments Pro cost?',
@@ -137,7 +137,7 @@ const faqs = [
   },
   {
     q: 'How can I view leads in Appointments Pro?',
-    a: 'When a customer requests a quote or books an appointment, a lead appears on the "Leads and Appointments" page with their name and contact information. If Sync with RepairDesk is enabled, you can also view the lead in RepairDesk’s Leads section, where you can send messages or start repair tickets.',
+    a: 'When a customer requests a quote or books an appointment, a lead appears on the "Leads and Appointments" page with their name and contact information. If Sync with RepairHub is enabled, you can also view the lead in RepairHub’s Leads section, where you can send messages or start repair tickets.',
   },
 ];
 
@@ -245,7 +245,7 @@ export default function AppointmentsProPage() {
               Getting Started is as Easy as ABC
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-              Getting started is a breeze with Appointments Pro. It automatically imports your repair categories, brands, models, and issues, along with their prices, precisely as configured in your RepairDesk account. This allows you to get started with Appointments Pro RIGHT AWAY!
+              Getting started is a breeze with Appointments Pro. It automatically imports your repair categories, brands, models, and issues, along with their prices, precisely as configured in your RepairHub account. This allows you to get started with Appointments Pro RIGHT AWAY!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -318,10 +318,10 @@ export default function AppointmentsProPage() {
                 Seamless Integration
               </span>
               <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mb-5">
-                Seamless Integration with RepairDesk
+                Seamless Integration with RepairHub
               </h2>
               <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-                Turn Leads into Action with Ease! Appointments Pro syncs the lead information with RepairDesk, allowing you to take instant action directly from RepairDesk. Whether it&rsquo;s converting a lead into a ticket or sending a quick message, &ndash; It&rsquo;s just a click away!
+                Turn Leads into Action with Ease! Appointments Pro syncs the lead information with RepairHub, allowing you to take instant action directly from RepairHub. Whether it&rsquo;s converting a lead into a ticket or sending a quick message, &ndash; It&rsquo;s just a click away!
               </p>
             </div>
             <div className="bg-rd-cream rounded-2xl p-8">
@@ -636,7 +636,7 @@ export default function AppointmentsProPage() {
                           <p className="font-dm-sans text-gray-600 leading-relaxed">
                             Appointments Pro is available for FREE when you purchase{' '}
                             <Link to="/products/connect" className="text-rd-teal font-semibold hover:underline">
-                              RepairDesk Connect
+                              RepairHub Connect
                             </Link>
                             .
                           </p>

@@ -18,11 +18,11 @@ const timesheetRows = [
 ];
 
 const faqs = [
-  { q: 'How do employees clock in from their phones?', a: 'Employees download the RepairDesk mobile app and tap the Clock In button when they arrive. The app captures their GPS coordinates to verify they are at the shop location. Managers can set a geofence radius so clock-ins are only accepted within range of the store.' },
+  { q: 'How do employees clock in from their phones?', a: 'Employees download the RepairHub mobile app and tap the Clock In button when they arrive. The app captures their GPS coordinates to verify they are at the shop location. Managers can set a geofence radius so clock-ins are only accepted within range of the store.' },
   { q: 'Can I track breaks separately from regular work hours?', a: 'Yes. You can configure paid and unpaid break types for each location. When an employee starts a break, their active shift pauses and the break timer begins. Break duration is deducted automatically from total billable hours, and managers can set maximum break limits per shift.' },
-  { q: 'How does overtime calculation work?', a: 'RepairDesk lets you define overtime thresholds at daily and weekly levels. Once an employee exceeds the threshold, all additional hours are flagged as overtime at your configured multiplier (1.5x, 2x, etc). Overtime hours are highlighted in red on timesheets and included separately in payroll exports.' },
+  { q: 'How does overtime calculation work?', a: 'RepairHub lets you define overtime thresholds at daily and weekly levels. Once an employee exceeds the threshold, all additional hours are flagged as overtime at your configured multiplier (1.5x, 2x, etc). Overtime hours are highlighted in red on timesheets and included separately in payroll exports.' },
   { q: 'Can managers edit a timesheet after submission?', a: 'Managers with the appropriate permissions can adjust any clock-in or clock-out time. Every edit is logged in an immutable audit trail showing who made the change, the original value, and the reason. This keeps you compliant with labor regulations while giving flexibility for corrections.' },
-  { q: 'Does it integrate with our payroll provider?', a: 'RepairDesk exports timesheets in standard CSV and PDF formats compatible with QuickBooks, Xero, Gusto, ADP, and others. You can also use direct API integrations to push approved timesheets straight to your payroll system without any manual file handling.' },
+  { q: 'Does it integrate with our payroll provider?', a: 'RepairHub exports timesheets in standard CSV and PDF formats compatible with QuickBooks, Xero, Gusto, ADP, and others. You can also use direct API integrations to push approved timesheets straight to your payroll system without any manual file handling.' },
 ];
 
 export default function ClockInOutPage() {
@@ -43,7 +43,7 @@ export default function ClockInOutPage() {
               Replace punch cards and spreadsheets with a digital clock-in system built for repair shops. GPS-verified, mobile-ready, payroll-connected.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/25 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors text-sm">Book a Demo</Link>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function ClockInOutPage() {
                   <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22C24 5.4 18.6 0 12 0z" fill="#3d405b"/>
                   <circle cx="12" cy="11" r="5" fill="white"/>
                 </g>
-                <text x="240" y="210" textAnchor="middle" fill="#3d405b" fontSize="10" fontWeight="700" fontFamily="sans-serif">RepairDesk HQ</text>
+                <text x="240" y="210" textAnchor="middle" fill="#3d405b" fontSize="10" fontWeight="700" fontFamily="sans-serif">RepairHub HQ</text>
                 {/* Employee pins */}
                 <g transform="translate(193,160)">
                   <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#3d405b" strokeWidth="1.5"/>

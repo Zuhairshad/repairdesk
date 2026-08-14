@@ -127,7 +127,7 @@ const faqs = [
   { q: 'Can I store individual customer measurements?', a: 'Yes. Every customer profile includes a dedicated measurements tab where you can log chest, waist, hip, inseam, sleeve length, and any custom fields. Measurements are saved permanently so repeat orders take seconds to create.' },
   { q: 'How does multi-garment ticketing work?', a: 'A single ticket can hold multiple garments. Each garment gets its own alteration line items, pricing, and status. Customers receive one consolidated invoice while your team sees each item individually on the workshop floor.' },
   { q: 'Can I manage rush orders separately?', a: 'Absolutely. Mark any ticket as Rush and assign a priority level. Rush orders appear with a visual flag across every screen, and you can set automatic surcharges based on the turnaround time selected.' },
-  { q: 'Does RepairDesk handle before-and-after photos?', a: 'Yes. Attach photos at intake and after completion directly from a phone or tablet camera. Photos are stored on the ticket and can be shared with the customer via email or the online repair tracker.' },
+  { q: 'Does RepairHub handle before-and-after photos?', a: 'Yes. Attach photos at intake and after completion directly from a phone or tablet camera. Photos are stored on the ticket and can be shared with the customer via email or the online repair tracker.' },
   { q: 'Can I set custom pricing for different alteration types?', a: 'You can build a full alteration price list organized by garment type. Set a base price for hemming pants, a different price for tapering a jacket, and so on. Prices auto-populate when creating tickets, and staff can still adjust per order if needed.' },
 ];
 
@@ -155,7 +155,7 @@ export default function TailorShopPage() {
               From the first measurement to the final stitch — manage alteration orders, fabric inventory, fitting appointments, and customer profiles in one elegant system built for tailors.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
               <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors text-base">Book a Demo</Link>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function TailorShopPage() {
               <span className="text-xs font-bold uppercase tracking-widest text-rd-teal font-poppins">Fitting Appointments</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-2 mb-4">Book fittings, reduce no-shows</h2>
               <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-5">
-                Schedule fitting and measurement appointments directly inside RepairDesk. Automated SMS and email reminders go out before each appointment so your chair is never empty.
+                Schedule fitting and measurement appointments directly inside RepairHub. Automated SMS and email reminders go out before each appointment so your chair is never empty.
               </p>
               <div className="flex items-center gap-3 text-sm font-dm-sans text-gray-500">
                 <CalendarIcon className="w-5 h-5 text-rd-teal" />

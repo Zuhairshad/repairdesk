@@ -197,7 +197,7 @@ const inventoryItems = [
   },
   {
     title: 'Track Special Part Order',
-    desc: "With RepairDesk, you can track every custom part request from order to arrival. Whether you're sourcing rare carburetors, ignition coils, or gaskets, our system makes sure nothing gets overlooked.",
+    desc: "With RepairHub, you can track every custom part request from order to arrival. Whether you're sourcing rare carburetors, ignition coils, or gaskets, our system makes sure nothing gets overlooked.",
     icon: Icon.truck,
   },
   {
@@ -287,7 +287,7 @@ const stayInChargeItems = [
   },
   {
     title: 'Know Your Loyal Customers',
-    desc: 'Leverage the RepairDesk Loyalty program to know about your loyal clients. Offer them loyalty points to grow repeat business.',
+    desc: 'Leverage the RepairHub Loyalty program to know about your loyal clients. Offer them loyalty points to grow repeat business.',
     icon: Icon.heart,
     value: 92,
   },
@@ -326,15 +326,15 @@ const trustBadges = [
 const faqs = [
   {
     q: 'Can I Track Different Types of Small Engines using POS Software?',
-    a: 'Yes, RepairDesk small engine repair shop software allows you to track different types of small engines such as lawnmowers, generators, snowblowers, etc.',
+    a: 'Yes, RepairHub small engine repair shop software allows you to track different types of small engines such as lawnmowers, generators, snowblowers, etc.',
   },
   {
     q: 'Does Small Engine Repair Business Software Offer Integration with QuickBooks and Google Calendar?',
-    a: 'Yes, you can integrate your small engine repair business software with your favourite tools such as QuickBooks, and Google Calendar for fast, error-free accounting, and appointment scheduling. However, not every system available in the market does that but RepairDesk. So, it would be a good pick for you.',
+    a: 'Yes, you can integrate your small engine repair business software with your favourite tools such as QuickBooks, and Google Calendar for fast, error-free accounting, and appointment scheduling. However, not every system available in the market does that but RepairHub. So, it would be a good pick for you.',
   },
   {
     q: 'My Repair Technicians are not very Techy. Is Small Engine Repair Shop Software Easy for them to Learn?',
-    a: 'RepairDesk is an all in one management software for small engine repair shops designed with a simple user interface so that anyone can use it with just a little training.',
+    a: 'RepairHub is an all in one management software for small engine repair shops designed with a simple user interface so that anyone can use it with just a little training.',
   },
   {
     q: 'Can I get Low Inventory Notifications and Transfer Stock Between Locations if I use the Best Small Engine Repair Shop POS?',
@@ -354,7 +354,7 @@ const faqs = [
   },
   {
     q: 'Do You Also Offer Customer Support?',
-    a: 'Yes. Our customer support is top-notch and always available to help you setup, and troubleshoot whenever you need 24 hours, 6 days a week. You can give us a call, chat with one of our product specialists, or send us an email at support@repairdesk.co',
+    a: 'Yes. Our customer support is top-notch and always available to help you setup, and troubleshoot whenever you need 24 hours, 6 days a week. You can give us a call, chat with one of our product specialists, or send us an email at support@repairhub.co',
   },
 ];
 
@@ -416,7 +416,7 @@ export default function SmallEngineRepairPage() {
               </li>
             </ul>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
             </div>
           </div>
@@ -492,7 +492,7 @@ export default function SmallEngineRepairPage() {
             <span className="text-rd-teal font-poppins font-bold text-xs uppercase tracking-widest">Repair Job Management</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">Take Control of Every Repair Job</h2>
             <p className="text-gray-600 font-dm-sans leading-relaxed mb-3">
-              With RepairDesk small engine repair shop software, you can track engine models, serial numbers, and service history for every customer.
+              With RepairHub small engine repair shop software, you can track engine models, serial numbers, and service history for every customer.
             </p>
             <p className="text-gray-600 font-dm-sans leading-relaxed mb-3">
               Create, manage, and track each repair ticket from intake to pickup. Assign repairs to technicians, update job statuses, add internal notes, upload photos, and send job notifications via email or SMS to keep your customers informed.
@@ -551,7 +551,7 @@ export default function SmallEngineRepairPage() {
             <span className="text-rd-lime font-poppins font-bold text-xs uppercase tracking-widest">Work Smarter</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-3 mb-5">Built for Small Engine Repair Workflows</h2>
             <p className="text-white/70 font-dm-sans leading-relaxed">
-              RepairDesk isn't just generic repair software — it's built for how your shop actually works. These tools and integrations help you work faster, stay accurate, and deliver a better customer experience every time.
+              RepairHub isn't just generic repair software — it's built for how your shop actually works. These tools and integrations help you work faster, stay accurate, and deliver a better customer experience every time.
             </p>
           </div>
 
@@ -607,7 +607,7 @@ export default function SmallEngineRepairPage() {
             <span className="text-rd-teal font-poppins font-bold text-xs uppercase tracking-widest">Earn Faster</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">Integrated Payments That Just Work Your Way</h2>
             <p className="text-gray-600 font-dm-sans leading-relaxed mb-4">
-              RepairDesk integrates with Stripe and Square, trusted by thousands of small engine repair shops. This automates your payment process, reducing errors and speeding up checkouts without manual entries. With RepairDesk Integrated payment processing, you get:
+              RepairHub integrates with Stripe and Square, trusted by thousands of small engine repair shops. This automates your payment process, reducing errors and speeding up checkouts without manual entries. With RepairHub Integrated payment processing, you get:
             </p>
             <div className="flex gap-3">
               <span className="text-xs font-dm-sans font-semibold bg-white text-rd-dark rounded-full px-4 py-1.5 shadow-sm">Stripe</span>
@@ -632,7 +632,7 @@ export default function SmallEngineRepairPage() {
         <div className="container-main text-center">
           <h2 className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark mb-3">You're in Great Company</h2>
           <p className="text-gray-500 font-dm-sans max-w-2xl mx-auto mb-10">
-            When you join RepairDesk, you don't just get software designed for small engine repair shops, but a global community of repair business owners who help you grow and understand your business.
+            When you join RepairHub, you don't just get software designed for small engine repair shops, but a global community of repair business owners who help you grow and understand your business.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {trustBadges.map((b) => (
@@ -668,9 +668,9 @@ export default function SmallEngineRepairPage() {
         <div className="container-main text-center max-w-3xl">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Power Up Your Small Engine Repair Shop with the #1 Repair POS</h2>
           <p className="text-white/80 font-dm-sans leading-relaxed mb-8">
-            RepairDesk is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
+            RepairHub is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
           </p>
-          <a href="https://app.repairdesk.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
+          <a href="https://app.repairhub.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
         </div>
       </section>
     </PageLayout>

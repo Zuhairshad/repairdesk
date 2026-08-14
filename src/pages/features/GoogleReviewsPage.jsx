@@ -90,7 +90,7 @@ const automationSteps = [
     step: '02',
     title: 'Review Monitoring',
     description:
-      'All reviews can be accessed from within the RepairDesk Connect App. Check reviews directly on your dashboard and monitor your online rating.',
+      'All reviews can be accessed from within the RepairHub Connect App. Check reviews directly on your dashboard and monitor your online rating.',
     icon: <TrendUpIcon className="w-7 h-7" />,
   },
   {
@@ -143,11 +143,11 @@ const testimonials = [
 const faqs = [
   {
     q: 'Is Google Review automation via SMS accessible for my current pricing plan?',
-    a: 'Google Review automation through SMS is offered as an Add-on and can be obtained independently by subscribers to both the Essential and Growth plans. All clients who subscribe to RepairDesk Connect receive Google review automation via SMS free of charge.',
+    a: 'Google Review automation through SMS is offered as an Add-on and can be obtained independently by subscribers to both the Essential and Growth plans. All clients who subscribe to RepairHub Connect receive Google review automation via SMS free of charge.',
   },
   {
-    q: "Which countries are supported by RepairDesk's Google Review automation via SMS?",
-    a: 'At the moment, the Google Review automation through SMS service offered by RepairDesk is only available to RepairDesk merchants situated in the US, Canada, Australia, and the UK.',
+    q: "Which countries are supported by RepairHub's Google Review automation via SMS?",
+    a: 'At the moment, the Google Review automation through SMS service offered by RepairHub is only available to RepairHub merchants situated in the US, Canada, Australia, and the UK.',
   },
   {
     q: 'What happens if I do not observe an increase in the number of reviews I am already receiving?',
@@ -155,7 +155,7 @@ const faqs = [
   },
   {
     q: 'Is it necessary for me to purchase SMS credits separately?',
-    a: 'At this time, you are required to pay separately for virtual numbers and SMS credits. If you are utilizing RepairDesk Phone System service in either the United States or Canada, you will be eligible to receive a complimentary allotment of one thousand SMS credits.',
+    a: 'At this time, you are required to pay separately for virtual numbers and SMS credits. If you are utilizing RepairHub Phone System service in either the United States or Canada, you will be eligible to receive a complimentary allotment of one thousand SMS credits.',
   },
 ];
 
@@ -272,7 +272,7 @@ export default function GoogleReviewsPage() {
               Nate Minor from ScreenFixing on getting 5x More Reviews
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-              RepairDesk Google Review Automation System takes the hassle out of generating and managing reviews. Nate from ScreenFixing, a leading cell phone repair shop in Atlanta, Georgia, tested it out for a few months. The results? Mind-blowing.
+              RepairHub Google Review Automation System takes the hassle out of generating and managing reviews. Nate from ScreenFixing, a leading cell phone repair shop in Atlanta, Georgia, tested it out for a few months. The results? Mind-blowing.
             </p>
           </div>
 
@@ -349,7 +349,7 @@ export default function GoogleReviewsPage() {
               Automate Review Collection System
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-              With the RepairDesk review generation and monitoring tool, you can collect 5-star feedback for every successful repair job completed. Whether you're a small local repair shop or a large-scale operation, you can automate the process and enjoy the benefits.
+              With the RepairHub review generation and monitoring tool, you can collect 5-star feedback for every successful repair job completed. Whether you're a small local repair shop or a large-scale operation, you can automate the process and enjoy the benefits.
             </p>
           </div>
 
@@ -392,7 +392,7 @@ export default function GoogleReviewsPage() {
       <section className="bg-rd-cream py-20 md:py-28">
         <div className="container-main">
           <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark text-center max-w-3xl mx-auto mb-16 leading-snug">
-            RepairDesk Reviews Automation Tool is Popular Among Repair Businesses
+            RepairHub Reviews Automation Tool is Popular Among Repair Businesses
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">

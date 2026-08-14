@@ -17,9 +17,9 @@ const categories = [
 const integrations = [
   // Payments
   {
-    name: 'RepairDesk Payments',
+    name: 'RepairHub Payments',
     category: 'Payments',
-    description: 'Preferred Payment Solution. Accept payments seamlessly within RepairDesk with competitive rates and next-day funding.',
+    description: 'Preferred Payment Solution. Accept payments seamlessly within RepairHub with competitive rates and next-day funding.',
     badge: 'Preferred',
     color: 'bg-teal-100 text-teal-700',
     initials: 'RD',
@@ -60,7 +60,7 @@ const integrations = [
   {
     name: 'Xero',
     category: 'Accounting',
-    description: 'Xero simplifies your store\'s accounting by automatically sending invoices from RepairDesk to your Xero accounting system.',
+    description: 'Xero simplifies your store\'s accounting by automatically sending invoices from RepairHub to your Xero accounting system.',
     badge: null,
     color: 'bg-cyan-100 text-cyan-700',
     initials: 'XR',
@@ -68,7 +68,7 @@ const integrations = [
   {
     name: 'FreshBooks',
     category: 'Accounting',
-    description: 'Simple invoicing and expense tracking. Sync your RepairDesk transactions with FreshBooks effortlessly.',
+    description: 'Simple invoicing and expense tracking. Sync your RepairHub transactions with FreshBooks effortlessly.',
     badge: null,
     color: 'bg-red-100 text-red-700',
     initials: 'FB',
@@ -92,7 +92,7 @@ const integrations = [
     initials: 'MC',
   },
   {
-    name: 'RepairDesk SMS',
+    name: 'RepairHub SMS',
     category: 'Marketing',
     description: 'Keep customers informed with automated SMS notifications for repair status updates, pickup reminders, and promotions.',
     badge: null,
@@ -127,7 +127,7 @@ const integrations = [
   {
     name: 'Wholesale Gadget Parts',
     category: 'Parts Suppliers',
-    description: 'Order wholesale cell phone and tablet repair parts directly from your RepairDesk account to keep your inventory stocked.',
+    description: 'Order wholesale cell phone and tablet repair parts directly from your RepairHub account to keep your inventory stocked.',
     badge: null,
     color: 'bg-green-100 text-green-700',
     initials: 'WG',
@@ -143,7 +143,7 @@ const integrations = [
   {
     name: 'Nexus Cellular',
     category: 'Parts Suppliers',
-    description: 'Leading supplier of wholesale cell phone parts and accessories. Order directly from RepairDesk with seamless inventory sync.',
+    description: 'Leading supplier of wholesale cell phone parts and accessories. Order directly from RepairHub with seamless inventory sync.',
     badge: null,
     color: 'bg-purple-100 text-purple-700',
     initials: 'NC',
@@ -151,7 +151,7 @@ const integrations = [
   {
     name: 'Balaji Wireless',
     category: 'Parts Suppliers',
-    description: 'Worldwide supplier of phone accessories including cases, chargers, speakers and more. Order in bulk from your RepairDesk dashboard.',
+    description: 'Worldwide supplier of phone accessories including cases, chargers, speakers and more. Order in bulk from your RepairHub dashboard.',
     badge: null,
     color: 'bg-pink-100 text-pink-700',
     initials: 'BW',
@@ -160,7 +160,7 @@ const integrations = [
   {
     name: 'ShipStation',
     category: 'Shipping',
-    description: 'Streamline your mail-in repair shipping. Create labels, track packages, and manage returns all from within RepairDesk.',
+    description: 'Streamline your mail-in repair shipping. Create labels, track packages, and manage returns all from within RepairHub.',
     badge: null,
     color: 'bg-blue-100 text-blue-800',
     initials: 'SS',
@@ -169,7 +169,7 @@ const integrations = [
   {
     name: 'Zapier',
     category: 'Automation',
-    description: 'Automate your repair shop by connecting RepairDesk with over 3,000+ apps. No coding required.',
+    description: 'Automate your repair shop by connecting RepairHub with over 3,000+ apps. No coding required.',
     badge: null,
     color: 'bg-orange-100 text-orange-700',
     initials: 'ZP',
@@ -177,7 +177,7 @@ const integrations = [
   {
     name: 'Integrately',
     category: 'Automation',
-    description: 'Streamline your repair shop by linking RepairDesk to 1,200+ apps — no coding needed!',
+    description: 'Streamline your repair shop by linking RepairHub to 1,200+ apps — no coding needed!',
     badge: null,
     color: 'bg-violet-100 text-violet-700',
     initials: 'IN',
@@ -251,7 +251,7 @@ const integrations = [
   {
     name: 'Phone System (3CX)',
     category: 'Misc',
-    description: 'Easily engage with more customers, solve queries faster with 3CX phone system integration built into RepairDesk.',
+    description: 'Easily engage with more customers, solve queries faster with 3CX phone system integration built into RepairHub.',
     badge: null,
     color: 'bg-teal-100 text-teal-700',
     initials: '3C',
@@ -290,7 +290,7 @@ export default function IntegrationsPage() {
             Connect Your Favorite Tools
           </h1>
           <p className="font-dm-sans text-gray-600 text-lg max-w-2xl mx-auto mb-10">
-            RepairDesk integrates with the platforms your repair business already relies on — from payment processors and accounting software to parts suppliers and automation tools.
+            RepairHub integrates with the platforms your repair business already relies on — from payment processors and accounting software to parts suppliers and automation tools.
           </p>
 
           {/* Search */}
@@ -402,7 +402,7 @@ export default function IntegrationsPage() {
         <div className="container-main text-center">
           <h2 className="font-dm-serif text-3xl text-white mb-4">Want to create your own integration?</h2>
           <p className="text-gray-300 font-dm-sans mb-8 max-w-xl mx-auto">
-            RepairDesk offers a powerful API that lets developers build custom integrations and automate workflows for their repair shops.
+            RepairHub offers a powerful API that lets developers build custom integrations and automate workflows for their repair shops.
           </p>
           <a
             href="#"

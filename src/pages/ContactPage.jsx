@@ -110,8 +110,8 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <a href="mailto:hello@repairdesk.co" className="text-rd-dark font-poppins font-medium hover:text-rd-teal transition-colors">
-                    hello@repairdesk.co
+                  <a href="mailto:hello@repairhub.co" className="text-rd-dark font-poppins font-medium hover:text-rd-teal transition-colors">
+                    hello@repairhub.co
                   </a>
                 </div>
               </div>

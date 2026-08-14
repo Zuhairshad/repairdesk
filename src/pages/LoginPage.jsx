@@ -19,7 +19,7 @@ export default function LoginPage() {
         <div className="w-full max-w-md">
           {/* Logo */}
           <Link to="/" className="inline-flex items-center gap-2 mb-10">
-            <img src="/images/logo.png" alt="RepairDesk" className="h-8" />
+            <img src="/images/logo.png" alt="RepairHub" className="h-8" />
           </Link>
 
           <h1 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-2">
@@ -120,7 +120,7 @@ export default function LoginPage() {
                 <div className="w-8 h-8 bg-rd-teal rounded-full flex items-center justify-center border-2 border-white/20">
                   <div className="w-3.5 h-3.5 bg-white rounded-full" />
                 </div>
-                <span className="text-white font-poppins font-bold text-lg">RepairDesk</span>
+                <span className="text-white font-poppins font-bold text-lg">RepairHub</span>
               </div>
               <span className="text-white text-xs font-poppins font-semibold tracking-wider border border-white/40 rounded-full px-4 py-1.5 uppercase">
                 Product Update
@@ -148,7 +148,7 @@ export default function LoginPage() {
             {/* CTA text */}
             <p className="text-white font-poppins font-semibold text-lg mb-6">
               Send, request &amp; receive stock with<br />
-              RepairDesk <span className="text-rd-lime">Inventory Transfer</span>
+              RepairHub <span className="text-rd-lime">Inventory Transfer</span>
             </p>
 
             {/* Feature pills */}

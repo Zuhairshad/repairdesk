@@ -53,7 +53,7 @@ const keyPartners = [
 const resellerBenefits = [
   {
     title: 'Generous Commissions',
-    desc: 'Get a signup bonus and recurring commission for every customer you refer to RepairDesk.',
+    desc: 'Get a signup bonus and recurring commission for every customer you refer to RepairHub.',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182 1.106-.879 2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -102,7 +102,7 @@ const orderSyncBenefits = [
   },
   {
     title: 'Happy Customers',
-    desc: 'Delight your customers with a smooth ordering experience with RepairDesk.',
+    desc: 'Delight your customers with a smooth ordering experience with RepairHub.',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
@@ -115,11 +115,11 @@ const highlights = [
   {
     tag: 'Reseller Partnership',
     title: 'Lessons from Partnering with Walmart with Timothy Phelps',
-    desc: "RepairDesk's partnership with Techy is focused towards developing RepairDesk University to help repair store owners excel in their business.",
+    desc: "RepairHub's partnership with Techy is focused towards developing RepairHub University to help repair store owners excel in their business.",
   },
   {
     tag: 'Supplier Integration',
-    title: 'RepairDesk Integration with MobileSentrix Canada is now LIVE!',
+    title: 'RepairHub Integration with MobileSentrix Canada is now LIVE!',
     desc: 'Our strategic partnership is focused on providing high-quality parts to repair shops in USA and Canada.',
   },
   {
@@ -153,7 +153,7 @@ export default function PartnerPage() {
               Partner Program
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-white mb-6">
-              RepairDesk Partner Program
+              RepairHub Partner Program
             </h1>
             <p className="font-dm-sans text-white/75 text-lg md:text-xl leading-relaxed mb-9 max-w-xl mx-auto lg:mx-0">
               We are building an integrated ecosystem to support the repair movement.
@@ -172,7 +172,7 @@ export default function PartnerPage() {
               </g>
               {/* Center node */}
               <circle cx="200" cy="200" r="58" fill="#3d405b" />
-              <text x="200" y="196" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="700" fontFamily="Poppins, sans-serif">RepairDesk</text>
+              <text x="200" y="196" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="700" fontFamily="Poppins, sans-serif">RepairHub</text>
               <text x="200" y="214" textAnchor="middle" fill="#C3EAB3" fontSize="10" fontFamily="DM Sans, sans-serif">Ecosystem Core</text>
 
               {/* Satellite: Resellers */}
@@ -237,7 +237,7 @@ export default function PartnerPage() {
               </span>
 
               <blockquote className="font-poppins text-xl md:text-2xl leading-relaxed text-white max-w-2xl">
-                "At RepairDesk, we are committed to providing robust repair shop management and growth solutions for our merchants in <span className="text-rd-lime">over 70 countries</span>. Our vision is to build a next-generation integrated platform that empowers repair shops to save time, earn more and unlock their true potential. We're grateful to everyone who has been part of this journey and are looking forward to building more meaningful partnerships in the coming year. If you're looking to partner with the next disruptor in the repair industry, drop us a line — we'd love to connect and explore potential synergies."
+                "At RepairHub, we are committed to providing robust repair shop management and growth solutions for our merchants in <span className="text-rd-lime">over 70 countries</span>. Our vision is to build a next-generation integrated platform that empowers repair shops to save time, earn more and unlock their true potential. We're grateful to everyone who has been part of this journey and are looking forward to building more meaningful partnerships in the coming year. If you're looking to partner with the next disruptor in the repair industry, drop us a line — we'd love to connect and explore potential synergies."
               </blockquote>
 
               <div className="flex items-center gap-4 mt-9">
@@ -246,7 +246,7 @@ export default function PartnerPage() {
                 </div>
                 <div className="text-left">
                   <div className="font-poppins font-bold text-white">Usman Butt</div>
-                  <div className="font-dm-sans text-white/60 text-sm">CEO &amp; Founder, RepairDesk</div>
+                  <div className="font-dm-sans text-white/60 text-sm">CEO &amp; Founder, RepairHub</div>
                 </div>
               </div>
 
@@ -267,7 +267,7 @@ export default function PartnerPage() {
               <p className="text-xs font-poppins font-bold uppercase tracking-widest text-rd-teal mb-3">Reseller Program</p>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5 leading-tight">Become a Reseller!</h2>
               <p className="font-dm-sans text-gray-600 leading-relaxed mb-8">
-                Do you like sharing things you love? Help your fellow repair businesses upgrade to RepairDesk and earn money while opening new possibilities for them.
+                Do you like sharing things you love? Help your fellow repair businesses upgrade to RepairHub and earn money while opening new possibilities for them.
               </p>
               <a href="#become-partner" className="btn-primary px-8 py-3.5 inline-block">Get Started Now</a>
             </div>
@@ -299,7 +299,7 @@ export default function PartnerPage() {
             <p className="text-xs font-poppins font-bold uppercase tracking-widest text-rd-lime mb-3">OrderSync App</p>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-5">Become an Integrated Supplier!</h2>
             <p className="font-dm-sans text-white/70 leading-relaxed">
-              Become your customer's favorite supplier by helping them save up to 20 hrs in inventory management. With RepairDesk's OrderSync application integration, customers can import Purchase Order details in just one click, update cost and pricing in their POS, and automatically save SKUs — reducing manual hassle and improving efficiency in their repair shops.
+              Become your customer's favorite supplier by helping them save up to 20 hrs in inventory management. With RepairHub's OrderSync application integration, customers can import Purchase Order details in just one click, update cost and pricing in their POS, and automatically save SKUs — reducing manual hassle and improving efficiency in their repair shops.
             </p>
           </div>
 
@@ -371,7 +371,7 @@ export default function PartnerPage() {
               <ul className="space-y-4 font-dm-sans text-sm">
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-rd-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-                  <a href="mailto:partnerships@repairdesk.co" className="text-rd-dark hover:text-rd-teal">partnerships@repairdesk.co</a>
+                  <a href="mailto:partnerships@repairhub.co" className="text-rd-dark hover:text-rd-teal">partnerships@repairhub.co</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-rd-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a1.5 1.5 0 001.5-1.5v-3.379a1.5 1.5 0 00-1.06-1.06l-3.94-.984a1.5 1.5 0 00-1.4.408l-1.021 1.02a11.207 11.207 0 01-6.336-6.336l1.021-1.021a1.5 1.5 0 00.408-1.398l-.984-3.941A1.5 1.5 0 0011.5 2.25H8.25a1.5 1.5 0 00-1.5 1.5V6.75z" /></svg>

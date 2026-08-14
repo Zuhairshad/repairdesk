@@ -24,7 +24,7 @@ const differentiators = [
   {
     title: 'Built for Scale, Not Just Basics',
     description:
-      'Repairq covers ticket tracking and basic inventory, but RepairDesk goes further with multi-location management, franchise tools, and centralized reporting. Whether you run one store or twenty, RepairDesk grows with you instead of holding you back.',
+      'Repairq covers ticket tracking and basic inventory, but RepairHub goes further with multi-location management, franchise tools, and centralized reporting. Whether you run one store or twenty, RepairHub grows with you instead of holding you back.',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -34,7 +34,7 @@ const differentiators = [
   {
     title: 'Revenue Tools That Repairq Lacks',
     description:
-      'Gift cards, loyalty programs, store credits, and built-in marketing automation turn one-time customers into repeat visitors. RepairDesk includes all of these out of the box. With Repairq, you either go without or patch together outside services.',
+      'Gift cards, loyalty programs, store credits, and built-in marketing automation turn one-time customers into repeat visitors. RepairHub includes all of these out of the box. With Repairq, you either go without or patch together outside services.',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -55,24 +55,24 @@ const differentiators = [
 
 const faqs = [
   {
-    q: 'Can I switch from Repairq to RepairDesk easily?',
-    a: 'Yes. RepairDesk provides a free assisted migration that transfers your customers, repair tickets, inventory, and invoices. Our onboarding team walks you through every step so the transition is smooth and nothing gets lost.',
+    q: 'Can I switch from Repairq to RepairHub easily?',
+    a: 'Yes. RepairHub provides a free assisted migration that transfers your customers, repair tickets, inventory, and invoices. Our onboarding team walks you through every step so the transition is smooth and nothing gets lost.',
   },
   {
-    q: 'How does RepairDesk pricing compare to Repairq?',
-    a: 'RepairDesk plans start at $99/month and include features that Repairq either does not offer or charges extra for — such as marketing automation, loyalty programs, gift cards, and multi-location management. You get more value without bolting on third-party tools.',
+    q: 'How does RepairHub pricing compare to Repairq?',
+    a: 'RepairHub plans start at $99/month and include features that Repairq either does not offer or charges extra for — such as marketing automation, loyalty programs, gift cards, and multi-location management. You get more value without bolting on third-party tools.',
   },
   {
-    q: 'Does RepairDesk support multi-store and franchise operations?',
-    a: 'Yes. RepairDesk includes centralized inventory, cross-store reporting, franchise management dashboards, and role-based permissions designed for businesses with multiple locations. Repairq is limited to single-store workflows.',
+    q: 'Does RepairHub support multi-store and franchise operations?',
+    a: 'Yes. RepairHub includes centralized inventory, cross-store reporting, franchise management dashboards, and role-based permissions designed for businesses with multiple locations. Repairq is limited to single-store workflows.',
   },
   {
-    q: 'Does RepairDesk offer a free trial?',
-    a: 'Yes. You can start a 14-day free trial with full access to every feature — no credit card required. That gives you time to import your data and compare RepairDesk to Repairq in your actual workflow.',
+    q: 'Does RepairHub offer a free trial?',
+    a: 'Yes. You can start a 14-day free trial with full access to every feature — no credit card required. That gives you time to import your data and compare RepairHub to Repairq in your actual workflow.',
   },
   {
-    q: 'What integrations does RepairDesk support?',
-    a: 'RepairDesk integrates with QuickBooks, Xero, Shopify, WooCommerce, eBay, and dozens of other platforms. It also offers RepairDesk Connect for custom integrations and an open API for developers who need deeper connectivity.',
+    q: 'What integrations does RepairHub support?',
+    a: 'RepairHub integrates with QuickBooks, Xero, Shopify, WooCommerce, eBay, and dozens of other platforms. It also offers RepairHub Connect for custom integrations and an open API for developers who need deeper connectivity.',
   },
 ];
 
@@ -88,10 +88,10 @@ export default function VsRepairqPage() {
             Comparison
           </span>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[56px] leading-tight mb-6">
-            RepairDesk vs Repairq — The Upgrade Your Repair Shop Deserves
+            RepairHub vs Repairq — The Upgrade Your Repair Shop Deserves
           </h1>
           <p className="text-white/80 text-lg md:text-xl font-dm-sans leading-relaxed max-w-2xl mx-auto mb-10">
-            Repairq handles the basics, but RepairDesk delivers a complete platform — from multi-location management and marketing automation to in-store hardware that transforms the customer experience.
+            Repairq handles the basics, but RepairHub delivers a complete platform — from multi-location management and marketing automation to in-store hardware that transforms the customer experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/pricing" className="btn-primary text-center">
@@ -114,7 +114,7 @@ export default function VsRepairqPage() {
             Feature-by-Feature Comparison
           </h2>
           <p className="text-gray-500 font-dm-sans text-center mb-12 max-w-xl mx-auto">
-            See how RepairDesk stacks up against Repairq across the features repair shops rely on every day.
+            See how RepairHub stacks up against Repairq across the features repair shops rely on every day.
           </p>
 
           <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
@@ -123,7 +123,7 @@ export default function VsRepairqPage() {
                 <tr className="bg-rd-dark text-white sticky top-0">
                   <th className="font-poppins font-semibold text-sm py-4 px-6 w-1/2">Feature</th>
                   <th className="font-poppins font-semibold text-sm py-4 px-6 text-center bg-rd-teal w-1/4">
-                    RepairDesk
+                    RepairHub
                   </th>
                   <th className="font-poppins font-semibold text-sm py-4 px-6 text-center w-1/4">Repairq</th>
                 </tr>
@@ -154,10 +154,10 @@ export default function VsRepairqPage() {
       <section className="bg-rd-cream py-16 md:py-24 px-6">
         <div className="container-main max-w-5xl">
           <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-rd-dark text-center mb-4">
-            Why Repair Shops Choose RepairDesk Over Repairq
+            Why Repair Shops Choose RepairHub Over Repairq
           </h2>
           <p className="text-gray-500 font-dm-sans text-center mb-12 max-w-xl mx-auto">
-            Three areas where RepairDesk delivers what Repairq cannot.
+            Three areas where RepairHub delivers what Repairq cannot.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {differentiators.map((d) => (

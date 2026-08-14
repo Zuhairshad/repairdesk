@@ -105,7 +105,7 @@ const employeeFeatures = [
 const efficiencyFeatures = [
   {
     title: 'Loyalty Program',
-    desc: 'Use the RepairDesk loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.',
+    desc: 'Use the RepairHub loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.',
     link: '/features/loyalty-program',
     icon: <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 1.343-3 3 0 4 3 6 3 6s3-2 3-6c0-1.657-1.343-3-3-3zm0 0V2m0 6a4 4 0 100 8" />,
   },
@@ -217,7 +217,7 @@ export default function PowerToolsPage() {
                 Create professional quotes to repair drills, sanders, saws, compact routers, vacuums, and grinders, and email your customers so they can accept or decline. Never miss a deadline again — manage work orders, track time, notes, and special part order requests from one place.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+                <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
                 <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
               </div>
             </div>
@@ -303,10 +303,10 @@ export default function PowerToolsPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Always Know What's In Your Inventory</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">Inventory Management at Your Fingertips</h2>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-4">
-                For many small and medium power tool shop owners, tracking repair parts can be time-consuming. With RepairDesk, you can efficiently manage your inventory, ensuring you are always aware of what you have in stock and what you'll need before the demand arises.
+                For many small and medium power tool shop owners, tracking repair parts can be time-consuming. With RepairHub, you can efficiently manage your inventory, ensuring you are always aware of what you have in stock and what you'll need before the demand arises.
               </p>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed">
-                Whether you prefer selling in-store or have an online store powered by Shopify or WooCommerce, RepairDesk provides the tools to scale.
+                Whether you prefer selling in-store or have an online store powered by Shopify or WooCommerce, RepairHub provides the tools to scale.
               </p>
             </div>
 
@@ -390,9 +390,9 @@ export default function PowerToolsPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Unified POS &amp; Payments</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">Get Paid Without the Friction</h2>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-8">
-                RepairDesk provides a unified platform with Payments seamlessly integrated into your POS. This automates your payment process, reducing errors and speeding up checkouts without manual entries. With RepairDesk Integrated payment processing, you get:
+                RepairHub provides a unified platform with Payments seamlessly integrated into your POS. This automates your payment process, reducing errors and speeding up checkouts without manual entries. With RepairHub Integrated payment processing, you get:
               </p>
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 inline-block">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 inline-block">Start Free Trial</a>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -418,7 +418,7 @@ export default function PowerToolsPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Join Power Tool Shop Owners Worldwide</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
-                When you join RepairDesk, you don't just get a software. You join a community of power tool repair shop owners around the world who help you learn and grow your business.
+                When you join RepairHub, you don't just get a software. You join a community of power tool repair shop owners around the world who help you learn and grow your business.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
@@ -439,7 +439,7 @@ export default function PowerToolsPage() {
         <div className="container-main text-center max-w-2xl mx-auto pt-4">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-6">Supercharge Repairs with the #1 Power Tools Repair POS!</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
             <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
           </div>
         </div>

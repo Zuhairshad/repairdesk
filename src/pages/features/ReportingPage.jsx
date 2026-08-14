@@ -131,7 +131,7 @@ const stores = [
 /* ── FAQ data ── */
 
 const faqs = [
-  { q: 'What types of reports does RepairDesk offer?', a: 'RepairDesk provides sales summaries, inventory reports, employee performance analytics, customer insights, profit margin breakdowns, tax reports, ticket status tracking, and multi-store comparison dashboards. Each report type supports custom date ranges and filters.' },
+  { q: 'What types of reports does RepairHub offer?', a: 'RepairHub provides sales summaries, inventory reports, employee performance analytics, customer insights, profit margin breakdowns, tax reports, ticket status tracking, and multi-store comparison dashboards. Each report type supports custom date ranges and filters.' },
   { q: 'Can I export reports to share with my accountant?', a: 'Absolutely. Every report can be exported as CSV, PDF, or Excel with a single click. You can also schedule automatic exports to be emailed at daily, weekly, or monthly intervals.' },
   { q: 'How does multi-store reporting work?', a: 'Our multi-store dashboard aggregates data from all your locations into a single view. You can compare revenue, ticket volume, employee performance, and customer satisfaction side by side, or drill down into any individual store.' },
   { q: 'Are the KPIs updated in real time?', a: 'Yes. Dashboard widgets and KPI cards pull live data so you always see the most current numbers. There is no delay or batch processing -- the moment a ticket is closed or a sale is made, your dashboard reflects it.' },
@@ -165,7 +165,7 @@ export default function ReportingPage() {
               Your Repair Shop's Numbers,<br className="hidden md:block" /> Finally Making Sense
             </h1>
             <p className="text-white/60 font-dm-sans text-lg max-w-2xl mx-auto leading-relaxed">
-              Stop guessing. RepairDesk turns every ticket, sale, and customer interaction into clear, actionable reports you can act on today.
+              Stop guessing. RepairHub turns every ticket, sale, and customer interaction into clear, actionable reports you can act on today.
             </p>
           </div>
 
@@ -216,7 +216,7 @@ export default function ReportingPage() {
           </div>
 
           <div className="flex justify-center gap-4 mt-10">
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
             <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors text-sm">Book a Demo</Link>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function ReportingPage() {
               <span className="w-3 h-3 rounded-full bg-red-400" />
               <span className="w-3 h-3 rounded-full bg-yellow-400" />
               <span className="w-3 h-3 rounded-full bg-green-400" />
-              <span className="ml-4 text-xs text-gray-400 font-dm-sans bg-white rounded px-3 py-1 flex-1 max-w-xs truncate">app.repairdesk.co/reports/{activeTab}</span>
+              <span className="ml-4 text-xs text-gray-400 font-dm-sans bg-white rounded px-3 py-1 flex-1 max-w-xs truncate">app.repairhub.co/reports/{activeTab}</span>
             </div>
             {/* Tabs */}
             <div className="flex border-b border-gray-200 overflow-x-auto">

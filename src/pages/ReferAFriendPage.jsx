@@ -16,7 +16,7 @@ const steps = [
   {
     number: '2',
     title: 'Your Friend Subscribes',
-    desc: 'We reach out to your referral. Once their repair shop signs up for a paid RepairDesk plan, the referral is marked successful.',
+    desc: 'We reach out to your referral. Once their repair shop signs up for a paid RepairHub plan, the referral is marked successful.',
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.7M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
@@ -38,7 +38,7 @@ const steps = [
 const faqs = [
   {
     q: 'Who can be a part of this Referral Program?',
-    a: 'This program is open for all our valuable RepairDesk customers.',
+    a: 'This program is open for all our valuable RepairHub customers.',
   },
   {
     q: 'What is the Reward Structure?',
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: 'Can I avail any other reward option?',
-    a: 'You can convert your cash payout to an equal number of subscription credits for RepairDesk. Your subscription credits will be offset in your invoices for the subsequent months automatically. Once we have a referral active from your end, we will reach out to ask for your preferred mode, or you can email us at finance@repairdesk.co.',
+    a: 'You can convert your cash payout to an equal number of subscription credits for RepairHub. Your subscription credits will be offset in your invoices for the subsequent months automatically. Once we have a referral active from your end, we will reach out to ask for your preferred mode, or you can email us at finance@repairhub.co.',
   },
   {
     q: 'Will I get any bonus for referring customers?',
@@ -57,8 +57,8 @@ const faqs = [
     a: "There's no limit. You can make repair shop management easier for as many friends as you like and earn as much as you want! You will get a commission for every successfully subscribed referral. If your referred merchant has more than one store, you'll make a commission on each store.",
   },
   {
-    q: 'How will RepairDesk know I referred the customers?',
-    a: 'Make sure to add your correct details to the referral form above. This is the only way RepairDesk can track your contribution.',
+    q: 'How will RepairHub know I referred the customers?',
+    a: 'Make sure to add your correct details to the referral form above. This is the only way RepairHub can track your contribution.',
   },
   {
     q: 'When will I get paid?',
@@ -173,7 +173,7 @@ export default function ReferAFriendPage() {
               Share the Love &amp; Earn Up to <span className="text-rd-lime">$250</span>
             </h1>
             <p className="text-white/75 text-lg font-dm-sans leading-relaxed mb-8 max-w-xl">
-              Invite a repair store owner to RepairDesk and get $250 in Paypal for every successful referral subscription. Make as many referrals as you like and enjoy the rewards.
+              Invite a repair store owner to RepairHub and get $250 in Paypal for every successful referral subscription. Make as many referrals as you like and enjoy the rewards.
             </p>
             <a href="#referral-form" className="btn-primary px-8 py-3.5 inline-block">Refer a Friend Now</a>
           </div>
@@ -411,7 +411,7 @@ export default function ReferAFriendPage() {
             All the Answers You&rsquo;re Looking For
           </h2>
           <p className="text-gray-500 font-dm-sans text-lg mb-12 text-center max-w-2xl mx-auto">
-            Everything you need to know about earning rewards through the RepairDesk Referral Program.
+            Everything you need to know about earning rewards through the RepairHub Referral Program.
           </p>
           <div className="max-w-3xl mx-auto space-y-3">
             {faqs.map((item, idx) => (

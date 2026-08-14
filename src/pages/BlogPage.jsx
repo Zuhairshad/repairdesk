@@ -34,12 +34,12 @@ const featured = {
 
 const posts = [
   { cat: 'Industry Tips', catColor: 'bg-blue-100 text-blue-700', title: 'How to Reduce No-Show Appointments at Your Repair Shop', excerpt: 'Automated reminders, deposit requirements, and smart scheduling rules that cut no-shows by up to 60%.', date: 'Jan 10, 2025', readTime: '5 min' },
-  { cat: 'Product Updates', catColor: 'bg-teal-50 text-rd-teal', title: 'Introducing RepairDesk ARIA: Your AI-Powered Repair Assistant', excerpt: 'ARIA uses machine learning to suggest repair times, flag anomalies in tickets, and auto-categorise devices.', date: 'Jan 7, 2025', readTime: '4 min' },
-  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Setting Up Your First Loyalty Program in RepairDesk', excerpt: 'A step-by-step walkthrough from creating tiers to automating point redemptions at checkout.', date: 'Dec 30, 2024', readTime: '7 min' },
-  { cat: 'Customer Stories', catColor: 'bg-purple-100 text-purple-700', title: 'How iFixScreens Scaled to 50+ Locations with RepairDesk', excerpt: '"RepairDesk gave us the infrastructure to franchise confidently." Their journey from one store to a national brand.', date: 'Dec 22, 2024', readTime: '6 min' },
+  { cat: 'Product Updates', catColor: 'bg-teal-50 text-rd-teal', title: 'Introducing RepairHub ARIA: Your AI-Powered Repair Assistant', excerpt: 'ARIA uses machine learning to suggest repair times, flag anomalies in tickets, and auto-categorise devices.', date: 'Jan 7, 2025', readTime: '4 min' },
+  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Setting Up Your First Loyalty Program in RepairHub', excerpt: 'A step-by-step walkthrough from creating tiers to automating point redemptions at checkout.', date: 'Dec 30, 2024', readTime: '7 min' },
+  { cat: 'Customer Stories', catColor: 'bg-purple-100 text-purple-700', title: 'How iFixScreens Scaled to 50+ Locations with RepairHub', excerpt: '"RepairHub gave us the infrastructure to franchise confidently." Their journey from one store to a national brand.', date: 'Dec 22, 2024', readTime: '6 min' },
   { cat: 'Business Growth', catColor: 'bg-emerald-100 text-emerald-700', title: 'Mail-In Repair: The Revenue Stream Most Shops Are Missing', excerpt: 'Adding a mail-in channel boosted average revenue 35% for shops that tried it. Here is how to set yours up.', date: 'Dec 18, 2024', readTime: '9 min' },
-  { cat: 'Industry Tips', catColor: 'bg-blue-100 text-blue-700', title: 'The Repair Shop Inventory Mistakes Costing You Thousands', excerpt: 'Overstocking slow-movers, under-ordering hot parts, no barcode system -- and how RepairDesk fixes all three.', date: 'Dec 12, 2024', readTime: '5 min' },
-  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Migrating from RepairShopr to RepairDesk: A Smooth Playbook', excerpt: 'Data export, import, staff training, and going live -- everything you need to switch with zero downtime.', date: 'Dec 5, 2024', readTime: '11 min' },
+  { cat: 'Industry Tips', catColor: 'bg-blue-100 text-blue-700', title: 'The Repair Shop Inventory Mistakes Costing You Thousands', excerpt: 'Overstocking slow-movers, under-ordering hot parts, no barcode system -- and how RepairHub fixes all three.', date: 'Dec 12, 2024', readTime: '5 min' },
+  { cat: 'How-To Guides', catColor: 'bg-amber-100 text-amber-700', title: 'Migrating from RepairShopr to RepairHub: A Smooth Playbook', excerpt: 'Data export, import, staff training, and going live -- everything you need to switch with zero downtime.', date: 'Dec 5, 2024', readTime: '11 min' },
   { cat: 'Product Updates', catColor: 'bg-teal-50 text-rd-teal', title: 'PhonePro Diagnostics: Automated Pre and Post Repair Testing', excerpt: 'Run battery, screen, speaker, and sensor diagnostics directly from your ticket in under 90 seconds.', date: 'Nov 28, 2024', readTime: '3 min' },
   { cat: 'Business Growth', catColor: 'bg-emerald-100 text-emerald-700', title: "Why Google Reviews Are Your Repair Shop's Most Valuable Asset", excerpt: 'A single star-rating difference changes conversion rates by 18%. Here is the automated system for collecting more 5-star reviews.', date: 'Nov 20, 2024', readTime: '6 min' },
 ];
@@ -57,7 +57,7 @@ export default function BlogPage() {
       <section className="bg-rd-dark py-20 px-6">
         <div className="container-main max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/40 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-rd-teal font-poppins font-semibold text-xs tracking-wider uppercase">RepairDesk Blog</span>
+            <span className="text-rd-teal font-poppins font-semibold text-xs tracking-wider uppercase">RepairHub Blog</span>
           </div>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-4 leading-tight">
             Insights for Repair Shop Owners

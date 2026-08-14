@@ -13,7 +13,7 @@ const ticketFeatures = [
   {
     title: 'Easy Payment Options',
     desc: 'Allow customers pay conveniently using their debit/credit cards without additional fees. Get paid faster by integrating the watch repair software with your favorite payment processors like Square and Stripe.',
-    to: '/features/repairdesk-payments',
+    to: '/features/repairhub-payments',
     icon: 'M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z',
   },
   {
@@ -63,19 +63,19 @@ const integrations = [
   {
     title: 'Payments Integration',
     desc: 'Get paid faster by Integrating the watch repair software with your favorite payments processor like Square and Stripe.',
-    to: '/features/repairdesk-payments',
+    to: '/features/repairhub-payments',
     icon: 'M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z',
   },
   {
     title: 'Xero integration',
-    desc: 'Be confident, every transaction in RepairDesk is reflected in your Integrated Xero account.',
+    desc: 'Be confident, every transaction in RepairHub is reflected in your Integrated Xero account.',
     to: '/integrations',
     icon: 'M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4',
   },
   {
     title: 'SMS Integration',
     desc: 'Connect with your favorite SMS provider and start sending job notifications and marketing campaigns.',
-    to: '/features/repairdesk-sms',
+    to: '/features/repairhub-sms',
     icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
   },
 ];
@@ -147,7 +147,7 @@ const customerFeatures = [
   {
     title: 'Integrated Calls and SMS',
     desc: 'Talk with customers via single phone number for text and calls and get notified on your mobile and web apps.',
-    to: '/features/repairdesk-sms',
+    to: '/features/repairhub-sms',
     icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
   },
   {
@@ -162,27 +162,27 @@ const faqs = [
     q: 'How do I advertise my watch repair store?',
     a: (
       <>
-        The best way to advertise your store is by creating optimized blogs that highlight your store and promoting your work, customer testimonials, and feedback on social media. With the RepairDesk{' '}
+        The best way to advertise your store is by creating optimized blogs that highlight your store and promoting your work, customer testimonials, and feedback on social media. With the RepairHub{' '}
         <Link to="/features/marketing" className="text-rd-teal font-semibold underline">marketing automation</Link> feature, you can send automated campaigns for customers and prompt them to give you reviews as well.
       </>
     ),
   },
   {
     q: 'Can I integrate my vendors into my watch repair shop POS software?',
-    a: 'Yes. You can. With RepairDesk, you can store supplier details, manage purchase orders, track shipments, and even generate Goods Received Notes (GRN). It allows seamless integration, so your vendor communication will always stay organized.',
+    a: 'Yes. You can. With RepairHub, you can store supplier details, manage purchase orders, track shipments, and even generate Goods Received Notes (GRN). It allows seamless integration, so your vendor communication will always stay organized.',
   },
   {
     q: 'Do I manage the warranty of watches separately in my watch repair store?',
     a: (
       <>
-        No, not at all. RepairDesk allows you to enter warranty information for all services and parts. You can easily define the claim, history, duration, and conditions within{' '}
+        No, not at all. RepairHub allows you to enter warranty information for all services and parts. You can easily define the claim, history, duration, and conditions within{' '}
         <Link to="/features/point-of-sale" className="text-rd-teal font-semibold underline">the POS</Link>. If your customer comes with a claim, simply track it through the repair ticket or use the watch repair shop barcode tracking.
       </>
     ),
   },
   {
-    q: "How can my watch shop's workflow improve using RepairDesk?",
-    a: 'Through using the watch repair shop workflow management, RepairDesk simplifies your workflow by managing every aspect, starting from repair ticket management, inventory, billing, payments, reports, and so much more. Everything is digitalized and centralized for easy use.',
+    q: "How can my watch shop's workflow improve using RepairHub?",
+    a: 'Through using the watch repair shop workflow management, RepairHub simplifies your workflow by managing every aspect, starting from repair ticket management, inventory, billing, payments, reports, and so much more. Everything is digitalized and centralized for easy use.',
   },
 ];
 
@@ -260,7 +260,7 @@ export default function WatchRepairPage() {
               Watch repair ticketing software that works faster ⚡ when you're in a rush! Manage all your watch repair and heirloom restoration jobs in one place.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
               <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function WatchRepairPage() {
               Track your Mail-in Repairs
             </h2>
             <p className="text-gray-500 font-dm-sans text-lg leading-relaxed">
-              Start offering your customers with <span className="font-semibold text-rd-dark">mail-in repair</span> facility through an integrated calendar on your website. The appointments land in RepairDesk allowing you to create a ticket against it, send repair job notifications to the customer, and email the invoice with a pay link.
+              Start offering your customers with <span className="font-semibold text-rd-dark">mail-in repair</span> facility through an integrated calendar on your website. The appointments land in RepairHub allowing you to create a ticket against it, send repair job notifications to the customer, and email the invoice with a pay link.
             </p>
           </div>
         </div>
@@ -364,10 +364,10 @@ export default function WatchRepairPage() {
             Integrations for Clock Repair Shops
           </span>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-4 max-w-2xl">
-            RepairDesk Works Better Together
+            RepairHub Works Better Together
           </h2>
           <p className="text-white/70 font-dm-sans text-lg mb-12 max-w-2xl">
-            Connect all your core systems with the central headquarters of your business that is RepairDesk for seamlessly managing everything from one place.
+            Connect all your core systems with the central headquarters of your business that is RepairHub for seamlessly managing everything from one place.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {integrations.map((f) => (
@@ -479,7 +479,7 @@ export default function WatchRepairPage() {
             You're in Great Company
           </h2>
           <p className="text-white/70 font-dm-sans text-lg max-w-2xl mx-auto mb-12">
-            When you join RepairDesk, you don't just get a software. You join a community of watch repair shop owners around the world who help you learn and grow your business.
+            When you join RepairHub, you don't just get a software. You join a community of watch repair shop owners around the world who help you learn and grow your business.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {[

@@ -3,11 +3,11 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 const faqData = [
-  { q: 'How do inventory transfers between stores work?', a: 'You can initiate a transfer from any location. Select the items, choose the destination store, and RepairDesk tracks the shipment status in real time. The sending store\'s inventory decreases and the receiving store\'s inventory increases once the transfer is confirmed — no double-counting, no manual spreadsheet updates.' },
-  { q: 'Can each location have its own pricing?', a: 'Absolutely. RepairDesk lets you set location-specific pricing for any service or product. You can maintain a global price list as a baseline and override individual prices per store based on local market conditions, rent costs, or competitive positioning.' },
+  { q: 'How do inventory transfers between stores work?', a: 'You can initiate a transfer from any location. Select the items, choose the destination store, and RepairHub tracks the shipment status in real time. The sending store\'s inventory decreases and the receiving store\'s inventory increases once the transfer is confirmed — no double-counting, no manual spreadsheet updates.' },
+  { q: 'Can each location have its own pricing?', a: 'Absolutely. RepairHub lets you set location-specific pricing for any service or product. You can maintain a global price list as a baseline and override individual prices per store based on local market conditions, rent costs, or competitive positioning.' },
   { q: 'How does role-based access work across multiple stores?', a: 'Each employee can be assigned to one or more locations with granular permissions. A technician at Store A won\'t see Store B\'s financial data unless you allow it. Store managers see their own branch, while owners and admins get the full cross-store picture.' },
   { q: 'Is the customer database really shared across all locations?', a: 'Yes. When a customer walks into any of your locations, staff can pull up their full history — past repairs, purchase records, loyalty points, and notes — regardless of which store they originally visited. No duplicate profiles, no lost context.' },
-  { q: 'Can I compare performance between my stores?', a: 'RepairDesk provides side-by-side location analytics: revenue, ticket volume, average repair time, customer satisfaction, and more. You can spot trends, identify your strongest branch, and replicate what works across your network.' },
+  { q: 'Can I compare performance between my stores?', a: 'RepairHub provides side-by-side location analytics: revenue, ticket volume, average repair time, customer satisfaction, and more. You can spot trends, identify your strongest branch, and replicate what works across your network.' },
 ];
 
 const storeNodes = [
@@ -112,7 +112,7 @@ export default function MultiLocationPage() {
               Connect every store location into a single operating system. See live metrics, move inventory, manage staff, and compare performance — without switching tabs.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
               <Link to="/contact" className="group inline-flex items-center gap-2 border border-white/30 text-white px-7 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors text-base">
                 Book a Demo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -137,7 +137,7 @@ export default function MultiLocationPage() {
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
                 <div className="flex gap-1.5"><span className="w-3 h-3 rounded-full bg-red-400" /><span className="w-3 h-3 rounded-full bg-yellow-400" /><span className="w-3 h-3 rounded-full bg-green-400" /></div>
-                <span className="text-white/40 font-dm-sans text-xs ml-2">RepairDesk — All Locations</span>
+                <span className="text-white/40 font-dm-sans text-xs ml-2">RepairHub — All Locations</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-green-400" />
@@ -310,7 +310,7 @@ export default function MultiLocationPage() {
               <span className="text-rd-teal font-dm-sans text-sm font-bold uppercase tracking-wider">Franchise Ready</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-2 mb-4">Scale From 2 Stores to 200</h2>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-6">
-                RepairDesk grows as you grow. Each new location plugs into your existing infrastructure — same workflows, same data visibility, same control. Perfect for franchise owners who need independent operations with centralized oversight.
+                RepairHub grows as you grow. Each new location plugs into your existing infrastructure — same workflows, same data visibility, same control. Perfect for franchise owners who need independent operations with centralized oversight.
               </p>
               <ul className="space-y-3">
                 {['Onboard new locations in minutes', 'Clone workflows and pricing templates', 'Franchise-level reporting and royalties', 'Independent POS per store, unified backend'].map(item => (

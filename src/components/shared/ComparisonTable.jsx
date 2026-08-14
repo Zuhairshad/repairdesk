@@ -12,7 +12,7 @@ const CrossMark = () => (
   </svg>
 );
 
-export default function ComparisonTable({ companyA = 'RepairDesk', companyB, features = [] }) {
+export default function ComparisonTable({ companyA = 'RepairHub', companyB, features = [] }) {
   return (
     <section className="bg-white section-padding">
       <div className="container-main max-w-4xl">

@@ -80,13 +80,13 @@ const integrations = [
   'Xero',
   'Zapier',
   'MailChimp',
-  'RepairDesk Payments',
+  'RepairHub Payments',
   'Square (Terminal)',
   'PaymentSense',
   'PayFacto',
   'Stripe',
   'PayPal',
-  'RepairDesk SMS',
+  'RepairHub SMS',
   'M360 Diagnostics',
   'Shopify',
   'WooCommerce',
@@ -98,7 +98,7 @@ const faqs = [
     a: 'If you run a single-store repair shop, the Essential plan is a great fit. If you have multiple locations, a growing team, or franchise stores, the Growth plan is designed for you. For mail-in repair centers, refurbishment & warranty centers, or manufacturer repair depots, the Advanced plan is built specifically to handle those workflows.',
   },
   {
-    q: 'How much does a RepairDesk subscription cost?',
+    q: 'How much does a RepairHub subscription cost?',
     a: 'The Essential plan starts at $99/store per month, or $79/store per month when billed annually. The Growth plan starts at $149/store per month, or $119/store per month when billed annually. The Advanced plan is custom-quoted based on your business needs — contact our sales team for a quote.',
   },
   {
@@ -111,7 +111,7 @@ const faqs = [
   },
   {
     q: 'Are all integrations available on every plan?',
-    a: 'Core integrations like QuickBooks Online, Xero, and Zapier are available starting on the Essential plan. Payment integrations such as RepairDesk Payments, Square, Stripe, and PayPal, along with M360 Diagnostics, Shopify, and WooCommerce, are available across plans — reach out to our team to confirm availability for your specific setup.',
+    a: 'Core integrations like QuickBooks Online, Xero, and Zapier are available starting on the Essential plan. Payment integrations such as RepairHub Payments, Square, Stripe, and PayPal, along with M360 Diagnostics, Shopify, and WooCommerce, are available across plans — reach out to our team to confirm availability for your specific setup.',
   },
   {
     q: 'Can I change or upgrade my plan later?',
@@ -454,7 +454,7 @@ export default function PricingPage() {
             Ready to get started?
           </h2>
           <p className="font-dm-sans text-gray-300 text-lg max-w-xl mx-auto mb-8">
-            Join thousands of repair shops worldwide who trust RepairDesk to run their business
+            Join thousands of repair shops worldwide who trust RepairHub to run their business
             every day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

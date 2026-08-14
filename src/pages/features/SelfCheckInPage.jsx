@@ -151,7 +151,7 @@ export default function SelfCheckInPage() {
                 Put a tablet on the counter and let walk-ins register themselves. Name, phone, device, issue — captured in seconds, turned into a ticket instantly.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/25">Start Free Trial</a>
+                <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/25">Start Free Trial</a>
                 <Link to="/contact" className="border border-white/25 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Book a Demo</Link>
               </div>
             </div>
@@ -404,7 +404,7 @@ export default function SelfCheckInPage() {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-rd-teal font-poppins">Make It Yours</span>
                 <h2 className="font-poppins font-bold text-3xl text-rd-dark mt-3 mb-4">Fully Customizable to Match Your Shop</h2>
                 <p className="text-gray-500 font-dm-sans leading-relaxed text-sm">
-                  Every repair shop is different. Configure the kiosk form fields, upload your branding, set repair terms, and add a pre-repair checklist — all from RepairDesk settings.
+                  Every repair shop is different. Configure the kiosk form fields, upload your branding, set repair terms, and add a pre-repair checklist — all from RepairHub settings.
                 </p>
               </div>
 

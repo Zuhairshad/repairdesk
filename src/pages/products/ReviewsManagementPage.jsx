@@ -19,7 +19,7 @@ const reviewCards = [
 
 const faqs = [
   { q: 'How quickly are review requests sent after a repair?', a: 'Review requests are sent automatically within minutes of marking a repair as complete. You can customize the delay — some shops prefer 1 hour so the customer has time to test their device, others send immediately at pickup. Both email and SMS channels are available.' },
-  { q: 'Does this integrate with my existing Google Business Profile?', a: 'Yes. You connect your verified Google Business Profile directly inside RepairDesk. Once linked, new reviews appear in your dashboard in real time, and you can respond to them without ever opening Google. The integration takes about 2 minutes to set up.' },
+  { q: 'Does this integrate with my existing Google Business Profile?', a: 'Yes. You connect your verified Google Business Profile directly inside RepairHub. Once linked, new reviews appear in your dashboard in real time, and you can respond to them without ever opening Google. The integration takes about 2 minutes to set up.' },
   { q: 'What happens when a customer leaves a negative review?', a: 'You receive an instant alert via email and in-app notification. The dashboard highlights negative reviews so you can respond quickly. Our sentiment filter can also intercept unhappy customers before they reach Google, routing them to a private feedback form instead.' },
   { q: 'Can I customize the review request messages?', a: 'Absolutely. You can edit both the SMS and email templates, include your shop name and branding, and even A/B test different messages. Templates support dynamic fields like customer name, device type, and repair type for a personal touch.' },
   { q: 'How is NPS tracking different from star ratings?', a: 'NPS (Net Promoter Score) measures overall loyalty — how likely a customer is to recommend your shop. Star ratings reflect individual repair experiences. Together they give you the full picture: NPS shows your brand health trend, while star ratings show day-to-day service quality.' },
@@ -106,7 +106,7 @@ export default function ReviewsManagementPage() {
             <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-rd-teal via-rd-lime to-rd-teal -translate-y-1/2 z-0" />
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
               {[
-                { icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>), title: 'Repair Complete', desc: 'Ticket marked as picked up in RepairDesk' },
+                { icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>), title: 'Repair Complete', desc: 'Ticket marked as picked up in RepairHub' },
                 { icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>), title: 'Send Request', desc: 'SMS or email sent automatically to customer' },
                 { icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>), title: 'Customer Reviews', desc: 'Happy customers land on your Google page' },
                 { icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>), title: 'Rating Goes Up', desc: 'Watch your star rating climb week by week' },
@@ -141,13 +141,13 @@ export default function ReviewsManagementPage() {
                 <span className="font-poppins text-sm font-semibold text-gray-700">Google Reviews</span>
               </div>
               <h2 className="font-poppins text-3xl md:text-4xl font-bold text-rd-dark mb-5">
-                Your Google rating,<br />inside RepairDesk
+                Your Google rating,<br />inside RepairHub
               </h2>
               <p className="font-dm-sans text-gray-600 text-lg mb-8 leading-relaxed">
                 Connect your Google Business Profile and manage everything from one place. See new reviews instantly, respond without switching tabs, and track how your rating changes over time.
               </p>
               <ul className="space-y-4">
-                {['Real-time review sync from Google', 'Respond to reviews without leaving RepairDesk', 'Negative review alerts via email and in-app', 'Review widget code for your website'].map(item => (
+                {['Real-time review sync from Google', 'Respond to reviews without leaving RepairHub', 'Negative review alerts via email and in-app', 'Review widget code for your website'].map(item => (
                   <li key={item} className="flex items-start gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-rd-teal mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="font-dm-sans text-gray-700">{item}</span>
@@ -161,7 +161,7 @@ export default function ReviewsManagementPage() {
                 <div className="w-3 h-3 rounded-full bg-red-400" />
                 <div className="w-3 h-3 rounded-full bg-yellow-400" />
                 <div className="w-3 h-3 rounded-full bg-green-400" />
-                <span className="font-dm-sans text-xs text-gray-400 ml-3">RepairDesk — Reviews Dashboard</span>
+                <span className="font-dm-sans text-xs text-gray-400 ml-3">RepairHub — Reviews Dashboard</span>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-6">
@@ -377,7 +377,7 @@ export default function ReviewsManagementPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               { title: 'Automated Email & SMS', desc: 'Review requests go out automatically after every completed repair via email and SMS.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>) },
-              { title: 'Review Monitoring', desc: 'All Google reviews stream into your RepairDesk dashboard the moment they are posted.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>) },
+              { title: 'Review Monitoring', desc: 'All Google reviews stream into your RepairHub dashboard the moment they are posted.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>) },
               { title: 'Negative Review Alerts', desc: 'Get notified instantly when a low-rated review appears so you can respond quickly.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>) },
               { title: 'Review Analytics', desc: 'See star distribution, volume trends, and sentiment breakdowns at a glance.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>) },
               { title: 'Website Review Widget', desc: 'Embed a live review widget on your website that shows your latest 5-star reviews.', icon: (<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>) },

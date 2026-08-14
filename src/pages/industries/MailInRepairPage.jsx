@@ -102,11 +102,11 @@ const comparisonRows = [
 
 /* ---- FAQ data ---- */
 const faqs = [
-  { q: 'How does the online repair request form work?', a: 'You embed a booking widget on your website. Customers fill in their device details, select the repair type, and submit. RepairDesk automatically creates a repair ticket, sends a confirmation email with a pre-paid shipping label, and assigns the job to a technician queue.' },
-  { q: 'Which shipping carriers does RepairDesk integrate with?', a: 'RepairDesk integrates with ShipStation, which connects you to FedEx, UPS, USPS, DHL, and dozens of other carriers. You can generate labels, compare rates, and track shipments from inside RepairDesk without switching between apps.' },
+  { q: 'How does the online repair request form work?', a: 'You embed a booking widget on your website. Customers fill in their device details, select the repair type, and submit. RepairHub automatically creates a repair ticket, sends a confirmation email with a pre-paid shipping label, and assigns the job to a technician queue.' },
+  { q: 'Which shipping carriers does RepairHub integrate with?', a: 'RepairHub integrates with ShipStation, which connects you to FedEx, UPS, USPS, DHL, and dozens of other carriers. You can generate labels, compare rates, and track shipments from inside RepairHub without switching between apps.' },
   { q: 'Can customers track their repair status in real time?', a: 'Yes. Every customer gets a unique tracking link via email and SMS. The customer portal shows the current repair stage, technician notes, photos, and estimated completion date. Updates are sent automatically at each stage transition.' },
-  { q: 'How does damage documentation protect my business?', a: 'When a device arrives, technicians photograph the device and log its condition using RepairDesk intake forms. These timestamped records are attached to the repair ticket and visible in the customer portal, preventing disputes about pre-existing damage.' },
-  { q: 'Do I need a separate ShipStation subscription?', a: 'Yes, ShipStation requires its own subscription. RepairDesk connects to your ShipStation account via API to pull rates, generate labels, and sync tracking numbers. The integration eliminates double-entry and keeps shipping data inside your repair workflow.' },
+  { q: 'How does damage documentation protect my business?', a: 'When a device arrives, technicians photograph the device and log its condition using RepairHub intake forms. These timestamped records are attached to the repair ticket and visible in the customer portal, preventing disputes about pre-existing damage.' },
+  { q: 'Do I need a separate ShipStation subscription?', a: 'Yes, ShipStation requires its own subscription. RepairHub connects to your ShipStation account via API to pull rates, generate labels, and sync tracking numbers. The integration eliminates double-entry and keeps shipping data inside your repair workflow.' },
 ];
 
 export default function MailInRepairPage() {
@@ -146,10 +146,10 @@ export default function MailInRepairPage() {
             Run a Repair Shop Without a Storefront
           </h1>
           <p className="text-white/75 text-lg md:text-xl font-dm-sans leading-relaxed mb-10 max-w-2xl">
-            Accept devices from anywhere in the country. RepairDesk handles the entire mail-in cycle — online requests, shipping labels, package tracking, automated updates, and return delivery — so your customers always know exactly where their device is.
+            Accept devices from anywhere in the country. RepairHub handles the entire mail-in cycle — online requests, shipping labels, package tracking, automated updates, and return delivery — so your customers always know exactly where their device is.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
             <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors text-base">Book a Demo</Link>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function MailInRepairPage() {
       <section className="bg-rd-cream py-20 px-6">
         <div className="container-main">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark text-center mb-4">The Mail-In Journey</h2>
-          <p className="text-gray-500 font-dm-sans text-center max-w-xl mx-auto mb-14">Every mail-in repair follows six clear stages. RepairDesk automates each handoff so nothing falls through the cracks.</p>
+          <p className="text-gray-500 font-dm-sans text-center max-w-xl mx-auto mb-14">Every mail-in repair follows six clear stages. RepairHub automates each handoff so nothing falls through the cracks.</p>
 
           <div className="relative">
             {/* Connecting line (desktop) */}
@@ -187,7 +187,7 @@ export default function MailInRepairPage() {
             <div>
               <span className="text-rd-teal font-dm-sans font-semibold text-sm uppercase tracking-wider">Online Booking Widget</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-2 mb-5">Accept Repair Requests 24/7</h2>
-              <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-6">Embed a branded booking form on your website. Customers describe the issue, upload photos, and submit — RepairDesk creates the ticket, emails a shipping label, and queues the job before you even open for the day.</p>
+              <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-6">Embed a branded booking form on your website. Customers describe the issue, upload photos, and submit — RepairHub creates the ticket, emails a shipping label, and queues the job before you even open for the day.</p>
               <ul className="space-y-3 font-dm-sans text-gray-600">
                 {['Custom fields for device type, model & issue', 'Photo upload for pre-ship condition', 'Auto-generated shipping label via ShipStation', 'Instant confirmation email with tracking link'].map(item => (
                   <li key={item} className="flex items-start gap-2.5">
@@ -283,7 +283,7 @@ export default function MailInRepairPage() {
         <div className="container-main text-center">
           <span className="text-rd-teal font-dm-sans font-semibold text-sm uppercase tracking-wider">Shipping Integration</span>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-2 mb-4">Ship With Every Major Carrier</h2>
-          <p className="text-gray-500 font-dm-sans text-lg max-w-2xl mx-auto mb-12">RepairDesk connects to ShipStation so you can compare rates, print labels, and track packages across all carriers — without leaving your repair dashboard.</p>
+          <p className="text-gray-500 font-dm-sans text-lg max-w-2xl mx-auto mb-12">RepairHub connects to ShipStation so you can compare rates, print labels, and track packages across all carriers — without leaving your repair dashboard.</p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto mb-14">
             {[
@@ -303,9 +303,9 @@ export default function MailInRepairPage() {
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              { icon: <IconPackage className="w-6 h-6" />, title: 'Generate Labels', desc: 'Create outbound and return shipping labels from inside RepairDesk. Costs are logged against the repair ticket.' },
+              { icon: <IconPackage className="w-6 h-6" />, title: 'Generate Labels', desc: 'Create outbound and return shipping labels from inside RepairHub. Costs are logged against the repair ticket.' },
               { icon: <IconTruck className="w-6 h-6" />, title: 'Compare Rates', desc: 'See live rates from all your connected carriers. Pick the cheapest or fastest option for each shipment.' },
-              { icon: <IconShield className="w-6 h-6" />, title: 'Sync Tracking', desc: 'Tracking numbers flow back into RepairDesk automatically. Customers get SMS/email updates at every scan.' },
+              { icon: <IconShield className="w-6 h-6" />, title: 'Sync Tracking', desc: 'Tracking numbers flow back into RepairHub automatically. Customers get SMS/email updates at every scan.' },
             ].map(feat => (
               <div key={feat.title} className="text-left bg-rd-cream/60 rounded-2xl p-6 border border-gray-100">
                 <div className="w-11 h-11 rounded-xl bg-rd-teal/10 flex items-center justify-center text-rd-teal mb-4">{feat.icon}</div>
@@ -324,7 +324,7 @@ export default function MailInRepairPage() {
             <div>
               <span className="text-rd-teal font-dm-sans font-semibold text-sm uppercase tracking-wider">Automated Notifications</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-2 mb-5">Keep Customers Informed at Every Stage</h2>
-              <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-6">The number-one complaint in mail-in repair is silence. RepairDesk sends automated SMS and email notifications at each stage transition — so your customer never has to wonder what is happening.</p>
+              <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-6">The number-one complaint in mail-in repair is silence. RepairHub sends automated SMS and email notifications at each stage transition — so your customer never has to wonder what is happening.</p>
               <div className="flex gap-6 font-dm-sans text-sm">
                 <div className="text-center">
                   <div className="text-3xl font-poppins font-bold text-rd-teal">6</div>
@@ -399,7 +399,7 @@ export default function MailInRepairPage() {
             <div>
               <span className="text-rd-lime font-dm-sans font-semibold text-sm uppercase tracking-wider">Damage Documentation</span>
               <h2 className="font-poppins font-bold text-3xl mt-2 mb-5">Protect Yourself From Disputes</h2>
-              <p className="text-white/65 font-dm-sans text-lg leading-relaxed mb-6">When a device arrives by mail, there is no face-to-face handoff. RepairDesk intake forms let technicians photograph every angle and log pre-existing damage before work begins. Every record is timestamped and attached to the ticket.</p>
+              <p className="text-white/65 font-dm-sans text-lg leading-relaxed mb-6">When a device arrives by mail, there is no face-to-face handoff. RepairHub intake forms let technicians photograph every angle and log pre-existing damage before work begins. Every record is timestamped and attached to the ticket.</p>
               <ul className="space-y-2.5 font-dm-sans text-white/70 text-sm">
                 {['Timestamped intake photos', 'Condition checklist with checkboxes', 'Notes visible in customer portal', 'PDF export for dispute resolution'].map(item => (
                   <li key={item} className="flex items-start gap-2">

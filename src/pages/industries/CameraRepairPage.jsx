@@ -129,7 +129,7 @@ const employeeFeatures = [
   { title: 'Track Work Hours', desc: 'Let employees clock in and out directly from the POS, then easily export their hours on payday and process their payroll accordingly.', icon: icons.clock },
   { title: 'Track & Process Commissions', desc: 'Track commissions on repairs and product sales to reward top-performing employees fairly.', icon: icons.coin },
   { title: 'Role Based Access', desc: 'Set permission levels based on roles so each technician or employee can only see what they need.', icon: icons.lock },
-  { title: 'Performance Monitoring', desc: "Get real-time insights into who's completing the most repairs, bring in sales, upselling services and more with RepairDesk, leading software for camera repair shops.", icon: icons.chart },
+  { title: 'Performance Monitoring', desc: "Get real-time insights into who's completing the most repairs, bring in sales, upselling services and more with RepairHub, leading software for camera repair shops.", icon: icons.chart },
 ];
 
 const paymentFeatures = [
@@ -149,13 +149,13 @@ const stats = [
 const faqs = [
   {
     q: 'Can I keep track of the same camera parts but from different suppliers?',
-    a: 'Yes. You can easily track the parts from the purchase order history while using RepairDesk.',
+    a: 'Yes. You can easily track the parts from the purchase order history while using RepairHub.',
   },
   {
     q: 'Can I create an estimate and provide a quote to the customer using camera repair shop software?',
     a: (
       <>
-        Yes. It is possible. RepairDesk allows you to create an estimate beforehand and send it to your customers for approval. Moreover, our{' '}
+        Yes. It is possible. RepairHub allows you to create an estimate beforehand and send it to your customers for approval. Moreover, our{' '}
         <Link to="/features/customer-facing-display" className="text-rd-teal font-semibold hover:underline">
           customer-facing display
         </Link>{' '}
@@ -165,23 +165,23 @@ const faqs = [
   },
   {
     q: 'Can I track the progress of the camera repairs after assigning it to the technician?',
-    a: 'Yes, it is completely possible. When you assign a repair ticket to the technician, you can always check its status and send your technician reminders using RepairDesk.',
+    a: 'Yes, it is completely possible. When you assign a repair ticket to the technician, you can always check its status and send your technician reminders using RepairHub.',
   },
   {
     q: 'How can I track shutters, lenses, and batteries in my camera repair store?',
-    a: 'You can search for the parts either by SKUs in the inventory or by the product name, using the RepairDesk camera inventory management software.',
+    a: 'You can search for the parts either by SKUs in the inventory or by the product name, using the RepairHub camera inventory management software.',
   },
   {
     q: 'What is the best camera repair shop management software?',
-    a: 'The best camera repair shop management software is the one that automates your repair tickets, inventory, and billing, all while properly updating your customers. Not only that, but it also offers integrations so you can efficiently operate your store and design your own workflow. RepairDesk checks all the boxes in this case.',
+    a: 'The best camera repair shop management software is the one that automates your repair tickets, inventory, and billing, all while properly updating your customers. Not only that, but it also offers integrations so you can efficiently operate your store and design your own workflow. RepairHub checks all the boxes in this case.',
   },
   {
     q: 'How can I track the sales made by employees in my camera repair store?',
-    a: 'RepairDesk creates a specific profile for each employee, so each sale made by them during their shift hours will be tracked through their profile. You can also view their progress in the employee reports available in the reports section of RepairDesk.',
+    a: 'RepairHub creates a specific profile for each employee, so each sale made by them during their shift hours will be tracked through their profile. You can also view their progress in the employee reports available in the reports section of RepairHub.',
   },
   {
-    q: 'Does RepairDesk support diagnostic checklists for camera repairs?',
-    a: "Yes. It does. In RepairDesk's camera shop software, whenever you create a repair ticket, there is a checklist where you can select the condition of the camera parts. Not only that, but you can also add pre- and post-repair images to improve the quality of your services and avoid any issues with customers.",
+    q: 'Does RepairHub support diagnostic checklists for camera repairs?',
+    a: "Yes. It does. In RepairHub's camera shop software, whenever you create a repair ticket, there is a checklist where you can select the condition of the camera parts. Not only that, but you can also add pre- and post-repair images to improve the quality of your services and avoid any issues with customers.",
   },
 ];
 
@@ -229,11 +229,11 @@ export default function CameraRepairPage() {
               Create top-notch repair estimates and receipts for a full-fledged invoice solution. Impressing your customers is that easy!
             </p>
             <p className="text-white/80 text-lg font-dm-sans leading-relaxed mb-8">
-              Don't just record, chart your repair shop's growth with detailed breakdowns. Integrate with <span className="text-rd-lime font-semibold">PayPal</span>, and <span className="text-rd-lime font-semibold">RepairDesk</span> payments for smooth financial operations.
+              Don't just record, chart your repair shop's growth with detailed breakdowns. Integrate with <span className="text-rd-lime font-semibold">PayPal</span>, and <span className="text-rd-lime font-semibold">RepairHub</span> payments for smooth financial operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-              <a href="https://app.repairdesk.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start Free Trial</a>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ export default function CameraRepairPage() {
             <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Repair Management</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Ace All Repair Jobs Effortlessly!</h2>
             <p className="text-white/70 font-dm-sans text-lg leading-relaxed">
-              Say goodbye to paperwork and spreadsheets. RepairDesk helps you manage every step of the repair process transparently—from intake to delivery. Whether it's creating and assigning tickets, or collecting order notes and images, we're with you every step of the way.
+              Say goodbye to paperwork and spreadsheets. RepairHub helps you manage every step of the repair process transparently—from intake to delivery. Whether it's creating and assigning tickets, or collecting order notes and images, we're with you every step of the way.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -335,7 +335,7 @@ export default function CameraRepairPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">You're in Great Company</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
-                When you join RepairDesk, you don't just get a POS system built for camera repair shops, but a global community of repair business owners who help you grow and understand your business better.
+                When you join RepairHub, you don't just get a POS system built for camera repair shops, but a global community of repair business owners who help you grow and understand your business better.
               </p>
             </div>
             <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -368,9 +368,9 @@ export default function CameraRepairPage() {
         <div className="container-main text-center max-w-3xl relative z-10">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Power Up Your Camera Repair Shop with the #1 POS!</h2>
           <p className="text-white/80 font-dm-sans leading-relaxed mb-8">
-            RepairDesk is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
+            RepairHub is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
           </p>
-          <a href="https://app.repairdesk.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
+          <a href="https://app.repairhub.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
         </div>
       </section>
     </PageLayout>

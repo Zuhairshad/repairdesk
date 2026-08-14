@@ -27,10 +27,10 @@ const features = [
 ];
 
 const advantages = [
-  { num: '01', title: 'All-in-One Marketing Suite', desc: 'RepairDesk includes email campaigns, SMS marketing, loyalty programs, and review collection — tools RepairShopr charges extra for or lacks entirely.' },
-  { num: '02', title: 'Built-in Phone System', desc: 'Take calls, see caller ID linked to customer profiles, record calls, and route voicemails — all from within RepairDesk. RepairShopr has no native phone system.' },
+  { num: '01', title: 'All-in-One Marketing Suite', desc: 'RepairHub includes email campaigns, SMS marketing, loyalty programs, and review collection — tools RepairShopr charges extra for or lacks entirely.' },
+  { num: '02', title: 'Built-in Phone System', desc: 'Take calls, see caller ID linked to customer profiles, record calls, and route voicemails — all from within RepairHub. RepairShopr has no native phone system.' },
   { num: '03', title: 'PhonePro Diagnostics', desc: 'Run automated battery, screen, sensor, and speaker diagnostics on any device directly from the repair ticket. Builds customer trust and reduces disputes.' },
-  { num: '04', title: 'Google Reviews Automation', desc: "Automatically request reviews after every completed repair. RepairDesk's integration sends requests at the right moment to maximise 5-star ratings." },
+  { num: '04', title: 'Google Reviews Automation', desc: "Automatically request reviews after every completed repair. RepairHub's integration sends requests at the right moment to maximise 5-star ratings." },
   { num: '05', title: 'Superior Onboarding & Support', desc: 'Free data migration from RepairShopr, dedicated onboarding specialists, and 24/6 live support. RepairShopr relies heavily on community forums.' },
   { num: '06', title: 'Franchise-Ready at Every Plan', desc: 'Multi-location management, centralized reporting, and franchise-grade controls are built in — not locked behind expensive enterprise tiers.' },
 ];
@@ -59,7 +59,7 @@ export default function VsRepairShoprPage() {
               <div className="w-20 h-20 rounded-2xl bg-rd-teal flex items-center justify-center mx-auto mb-3 shadow-lg shadow-rd-teal/30">
                 <span className="font-poppins font-black text-white text-2xl">RD</span>
               </div>
-              <p className="font-poppins font-bold text-white text-lg">RepairDesk</p>
+              <p className="font-poppins font-bold text-white text-lg">RepairHub</p>
             </div>
             <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0">
               <span className="font-poppins font-black text-white text-xl">VS</span>
@@ -72,13 +72,13 @@ export default function VsRepairShoprPage() {
             </div>
           </div>
           <h1 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-4 leading-tight">
-            RepairDesk vs RepairShopr:<br />Which Repair Shop Software Is Better?
+            RepairHub vs RepairShopr:<br />Which Repair Shop Software Is Better?
           </h1>
           <p className="text-white/70 font-dm-sans max-w-xl mx-auto mb-8">
             An honest, feature-by-feature comparison to help you choose the right platform for your repair business.
           </p>
           <Link to="/register" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold px-8 py-3.5 rounded-xl hover:bg-teal-600 transition-colors">
-            Try RepairDesk Free for 14 Days
+            Try RepairHub Free for 14 Days
           </Link>
         </div>
       </section>
@@ -96,7 +96,7 @@ export default function VsRepairShoprPage() {
                 <tr className="border-b border-gray-100">
                   <th className="text-left px-6 py-4 font-poppins text-xs text-gray-400 uppercase tracking-wider w-1/2">Feature</th>
                   <th className="px-6 py-4 text-center w-1/4">
-                    <span className="font-poppins font-bold text-rd-teal text-sm">RepairDesk</span>
+                    <span className="font-poppins font-bold text-rd-teal text-sm">RepairHub</span>
                   </th>
                   <th className="px-6 py-4 text-center w-1/4">
                     <span className="font-poppins font-semibold text-gray-500 text-sm">RepairShopr</span>
@@ -124,11 +124,11 @@ export default function VsRepairShoprPage() {
         </div>
       </section>
 
-      {/* Why RepairDesk Wins */}
+      {/* Why RepairHub Wins */}
       <section className="py-20 px-6 bg-white">
         <div className="container-main max-w-5xl">
           <div className="text-center mb-14">
-            <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-2">Why Repair Shops Choose RepairDesk Over RepairShopr</h2>
+            <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-2">Why Repair Shops Choose RepairHub Over RepairShopr</h2>
             <p className="font-dm-sans text-gray-500">Six advantages that make a real difference in day-to-day operations.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -158,7 +158,7 @@ export default function VsRepairShoprPage() {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <p className="font-poppins font-black text-rd-teal text-2xl">{r.rd}</p>
-                    <p className="font-dm-sans text-white/50 text-xs">RepairDesk</p>
+                    <p className="font-dm-sans text-white/50 text-xs">RepairHub</p>
                     <p className="font-dm-sans text-white/30 text-xs">{r.rdCount} reviews</p>
                   </div>
                   <div>

@@ -116,14 +116,14 @@ const commSteps = [
   { title: 'Internal Notes', desc: 'Serve your customers better & improve internal communication by adding private notes, only accessible to the repair shop personnel, to a ticket.', Icon: IconNote },
   { title: 'Diagnostic Notes', desc: 'Improve communication and repair clarity between the customer and the technician by adding diagnostic notes that are viewable by both parties.', Icon: IconDiagnostic },
   { title: 'Repair Job Notifications', desc: 'Automatically send repair job notifications to technicians. View due date, repair time, ticket status, repair charges, and technician name.', Icon: IconBell },
-  { title: 'Email & SMS Alerts', desc: 'Update customers by setting up automated SMS or email alerts on the repair status. Using RepairDesk Connect, it is easier to manage everything.', Icon: IconChat },
+  { title: 'Email & SMS Alerts', desc: 'Update customers by setting up automated SMS or email alerts on the repair status. Using RepairHub Connect, it is easier to manage everything.', Icon: IconChat },
 ];
 
 const chipFeatures = [
   { title: 'Ticket Management', desc: 'Displays repair tickets based on due date instead of creation date & highlights overdue tickets in red so action is immediate.', Icon: IconTicketStub },
   { title: 'Multiple Viewing Options', desc: 'Reduce time wastage with flexible viewing options for your ticket dashboard — Kanban, list and calendar view.', Icon: IconKanban },
   { title: 'Ticket Labels', desc: 'Never confuse similar repair orders again. Add ticket labels, scan the code and pull up the desired ticket in seconds.', Icon: IconBarcode },
-  { title: 'Associate Parts to Repairs', desc: 'Reduce the actual cost of repairs by associating parts to repairs directly within RepairDesk.', Icon: IconLink },
+  { title: 'Associate Parts to Repairs', desc: 'Reduce the actual cost of repairs by associating parts to repairs directly within RepairHub.', Icon: IconLink },
 ];
 
 const journeySteps = [
@@ -137,7 +137,7 @@ const faqs = [
   { q: 'How long are your contracts?', a: 'We offer both, month to month and annual plans, to give you the most flexibility. You can always upgrade, downgrade or add locations as your business grows.' },
   { q: 'Can I add custom fields in the ticket?', a: "Yes, you can create a text field for device type, color, special order notes, priority, or anything else that's important to your workflow for a more personalized system." },
   { q: 'Can I re-assign a ticket to a technician?', a: 'Yes, you can re-assign a ticket to a technician by editing it and changing the entry in the "Assigned to" column.' },
-  { q: 'Can I make an invoice out of an existing repair ticket?', a: 'Yes, RepairDesk lets you convert a repair ticket directly into an invoice with a single click, keeping all parts and labor already populated.' },
+  { q: 'Can I make an invoice out of an existing repair ticket?', a: 'Yes, RepairHub lets you convert a repair ticket directly into an invoice with a single click, keeping all parts and labor already populated.' },
   { q: 'Can I search for a ticket using item barcode?', a: 'Yes, you can scan the item barcode under the SKU field to pull up your desired ticket.' },
   { q: 'Can I add warranty on repair services?', a: 'Yes, you can add warranty on repair services.' },
 ];
@@ -163,7 +163,7 @@ export default function RepairTicketPage() {
             Increase your repair shop's efficiency and save time with a maintenance ticketing system that reduces your losses and manual errors. Offer a great experience to your customers by keeping them updated on the repair status and enhancing communication within your team.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
             <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function RepairTicketPage() {
             Less Time Managing, More Time Repairing
           </h2>
           <p className="text-gray-500 font-dm-sans text-lg mb-14 max-w-2xl">
-            Time is money. Save precious time with RepairDesk by creating tickets seamlessly, sorting repairs efficiently and managing special orders with the click of a button. With <strong className="text-rd-dark">customizable workflows</strong> for each repair type, your store becomes the Usain Bolt of device repairs and never misses a step.
+            Time is money. Save precious time with RepairHub by creating tickets seamlessly, sorting repairs efficiently and managing special orders with the click of a button. With <strong className="text-rd-dark">customizable workflows</strong> for each repair type, your store becomes the Usain Bolt of device repairs and never misses a step.
           </p>
 
           <div className="max-w-4xl mx-auto">
@@ -261,7 +261,7 @@ export default function RepairTicketPage() {
             <div className="absolute left-1/2 -bottom-4 -translate-x-1/2 w-8 h-8 rounded-full bg-rd-dark border border-white/10" />
             <IconTicketStub className="w-8 h-8 text-rd-lime mb-5" />
             <p className="text-white/90 text-xl font-dm-sans italic leading-relaxed mb-6">
-              "I think the repair business is the hardest lane of retail. There are so many computers and cell phone models, each one has different kinds of repair problems and we have to master them all. RepairDesk helps us a lot in managing all types of repairs and devices."
+              "I think the repair business is the hardest lane of retail. There are so many computers and cell phone models, each one has different kinds of repair problems and we have to master them all. RepairHub helps us a lot in managing all types of repairs and devices."
             </p>
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
@@ -316,7 +316,7 @@ export default function RepairTicketPage() {
             The M1 Chip of Repair Shop Softwares
           </h2>
           <p className="text-white/70 font-dm-sans text-lg mb-14 max-w-2xl">
-            Tightly-integrated and efficient, RepairDesk gives you all the tools to optimize your store for better management and increase employee productivity. Just like an Apple M1 chip.
+            Tightly-integrated and efficient, RepairHub gives you all the tools to optimize your store for better management and increase employee productivity. Just like an Apple M1 chip.
           </p>
 
           <div className="relative rounded-3xl border border-white/15 p-8 md:p-10">

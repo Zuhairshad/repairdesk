@@ -15,7 +15,7 @@ const overviewFeatures = [
   },
   {
     title: 'Roles & Permissions',
-    desc: 'Roles are the quickest and easiest way to manage employee permissions. Define, set, and implement different employee roles and permissions to control their access to RepairDesk.',
+    desc: 'Roles are the quickest and easiest way to manage employee permissions. Define, set, and implement different employee roles and permissions to control their access to RepairHub.',
     icon: 'shield',
   },
   {
@@ -41,8 +41,8 @@ const permissionColumns = ['POS & Sales', 'Inventory', 'Reports', 'Payroll', 'Se
 
 const faqs = [
   {
-    q: 'Does RepairDesk Employee Management feature work on my mobile or tablet?',
-    a: 'You can access the RepairDesk web app from your mobile and tablet.',
+    q: 'Does RepairHub Employee Management feature work on my mobile or tablet?',
+    a: 'You can access the RepairHub web app from your mobile and tablet.',
   },
   {
     q: 'Can multiple people access the Employee Management Portal at the same time?',
@@ -54,15 +54,15 @@ const faqs = [
   },
   {
     q: 'Can I contact my employees within the software?',
-    a: "You can keep in touch with your employees via the Slack integration of RepairDesk's employee management software for your repair shop.",
+    a: "You can keep in touch with your employees via the Slack integration of RepairHub's employee management software for your repair shop.",
   },
   {
     q: 'Does it have a calendar view to show absents and leaves?',
     a: 'You can access the daily time sheet to check for absences and leaves.',
   },
   {
-    q: 'Does RepairDesk have a payroll integration?',
-    a: "Yes, RepairDesk has a payroll integration that allows you to set your employee's hourly or monthly pay rate. You can also add the commission feature for your employees.",
+    q: 'Does RepairHub have a payroll integration?',
+    a: "Yes, RepairHub has a payroll integration that allows you to set your employee's hourly or monthly pay rate. You can also add the commission feature for your employees.",
   },
 ];
 
@@ -153,7 +153,7 @@ export default function EmployeeManagementPage() {
               <Link to="/features/reporting" className="text-rd-lime underline hover:text-white transition-colors">Reporting</Link> feature.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Free Trial</a>
+              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Free Trial</a>
               <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
             </div>
           </div>
@@ -372,7 +372,7 @@ export default function EmployeeManagementPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Case Study</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark mb-5">How Adam Donovan Increased Employee Accountability &amp; Efficiency</h2>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed italic mb-6">
-                "I like that I can check the status of all repair jobs and see what needs to be done and I can track who's been doing what. I have also added the feature where the system asks the employees to sign-in every time they try to do something, now everybody is accountable for the things they are doing. So I can easily keep a check on everything at the old store through RepairDesk reporting, while I'll be away at the new one."
+                "I like that I can check the status of all repair jobs and see what needs to be done and I can track who's been doing what. I have also added the feature where the system asks the employees to sign-in every time they try to do something, now everybody is accountable for the things they are doing. So I can easily keep a check on everything at the old store through RepairHub reporting, while I'll be away at the new one."
               </p>
               <Link to="/customer-stories" className="text-rd-teal font-poppins font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                 Learn More

@@ -9,19 +9,19 @@ const webinars = [
       'In this expert-led webinar, learn about the most common pitfalls shop owners face and how to avoid them. From pricing to customer service and employee management, we cover real-world mistakes and offer practical tips to run a successful business.',
   },
   {
-    title: 'RepairDesk Phone System for Repair Pros – A Fireside Chat',
+    title: 'RepairHub Phone System for Repair Pros – A Fireside Chat',
     description:
-      'In this candid discussion, Usman (CEO RepairDesk) sits down with Alex (Computer Repair Doctor Cleveland), Travis (Four Corners Repair Center), and Coby (The Hard Drive) to talk about their communication challenges—and how RepairDesk Phone System helped solve them.',
+      'In this candid discussion, Usman (CEO RepairHub) sits down with Alex (Computer Repair Doctor Cleveland), Travis (Four Corners Repair Center), and Coby (The Hard Drive) to talk about their communication challenges—and how RepairHub Phone System helped solve them.',
     speakers: 'Usman, Alex, Travis & Coby',
   },
   {
     title: 'How to Transform Your Business to Work Without You',
     description:
-      "Tired of being tied to your repair shop 24/7? In this powerful webinar, Usman (RepairDesk) and Ben (ProFixerr) share proven strategies to build systems that let your repair business run smoothly—even when you're not around.",
+      "Tired of being tied to your repair shop 24/7? In this powerful webinar, Usman (RepairHub) and Ben (ProFixerr) share proven strategies to build systems that let your repair business run smoothly—even when you're not around.",
     speakers: 'Usman & Ben',
   },
   {
-    title: 'How to Train Your Repair Store Staff – RepairDesk x ProFixerr',
+    title: 'How to Train Your Repair Store Staff – RepairHub x ProFixerr',
     description:
       'Learn how to create clear SOPs, divide responsibilities fairly, and foster teamwork that drives business growth in this insightful session with Ben Rossow (Co-founder of ProFixerr). Watch now to start improving your operations.',
     speakers: 'Ben Rossow',
@@ -29,13 +29,13 @@ const webinars = [
   {
     title: 'Fast Tracking Success at Repair Shops with Digital Marketing',
     description:
-      'Learn proven digital marketing strategies from Ben (ProFixerr), along with Saad, Hamid, and Usman from RepairDesk, that attract and retain customers, and help you stand out in a crowded market, and enhance visibility.',
+      'Learn proven digital marketing strategies from Ben (ProFixerr), along with Saad, Hamid, and Usman from RepairHub, that attract and retain customers, and help you stand out in a crowded market, and enhance visibility.',
     speakers: 'Ben, Saad, Hamid & Usman',
   },
   {
-    title: 'Boost Profits & Cut Risks with RepairDesk + M360 Integration',
+    title: 'Boost Profits & Cut Risks with RepairHub + M360 Integration',
     description:
-      "Unlock the full replay of our exclusive M360 + RepairDesk webinar and discover how to streamline repairs, eliminate trade-in risks, and boost your shop's efficiency — anytime, at your convenience.",
+      "Unlock the full replay of our exclusive M360 + RepairHub webinar and discover how to streamline repairs, eliminate trade-in risks, and boost your shop's efficiency — anytime, at your convenience.",
   },
   {
     title: 'Key Takeaways from The Profitable Playbook Session',
@@ -50,30 +50,30 @@ const webinars = [
     speakers: 'Jeff Sandridge',
   },
   {
-    title: "How to Leverage RepairDesk's Powerful Reporting Tool",
+    title: "How to Leverage RepairHub's Powerful Reporting Tool",
     description: '',
   },
   {
     title: 'New Repair Tickets Module, Membership Module, & Appointments Pro',
     description:
-      'Discover the launch of 3 new exciting modules in RepairDesk – the new Repair Tickets Module, Membership Module, and Appointments Pro. Learn how these modules provide more control over your repairs, appointments, and revenue.',
+      'Discover the launch of 3 new exciting modules in RepairHub – the new Repair Tickets Module, Membership Module, and Appointments Pro. Learn how these modules provide more control over your repairs, appointments, and revenue.',
   },
   {
-    title: 'RepairDesk Automations with Jeff Baker from One Bite Technology',
+    title: 'RepairHub Automations with Jeff Baker from One Bite Technology',
     description:
-      'Learn how to use RepairDesk automations to get real-time repair updates and monitor employee performance at your repair store. Jeff Baker (One Bite Technology) explains how to automate processes and boost productivity.',
+      'Learn how to use RepairHub automations to get real-time repair updates and monitor employee performance at your repair store. Jeff Baker (One Bite Technology) explains how to automate processes and boost productivity.',
     speakers: 'Jeff Baker',
   },
   {
     title: 'Unlock Higher Profits with Trade-Ins & Buy-Backs',
     description:
-      'Learn how trade-ins can be more profitable than supplier purchases and how you can automate trade-ins with RepairDesk and Reusely. Jeff also shares some of his effective resale and pricing strategies to maximize profit margins.',
+      'Learn how trade-ins can be more profitable than supplier purchases and how you can automate trade-ins with RepairHub and Reusely. Jeff also shares some of his effective resale and pricing strategies to maximize profit margins.',
     speakers: 'Jeff Baker',
   },
 ];
 
 const speakers = [
-  { name: 'Usman', role: 'CEO, RepairDesk' },
+  { name: 'Usman', role: 'CEO, RepairHub' },
   { name: 'Ben Rossow', role: 'Co-founder, ProFixerr' },
   { name: 'Jeff Sandridge', role: 'The Smartphone Medics' },
   { name: 'Jeff Baker', role: 'One Bite Technology' },
@@ -134,12 +134,12 @@ export default function WebinarPage() {
               Webinars
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
-              RepairDesk Webinar
+              RepairHub Webinar
             </h1>
             <p className="text-white/80 text-lg font-dm-sans leading-relaxed mb-8 max-w-lg">
               Expert insights from industry leaders for shop owners, service advisors, and technicians.
             </p>
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5 inline-block">
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 inline-block">
               Start My Free Trial
             </a>
           </div>
@@ -274,14 +274,14 @@ export default function WebinarPage() {
         </div>
       </section>
 
-      {/* About RepairDesk */}
+      {/* About RepairHub */}
       <section className="bg-[#FAF9E3] py-16 px-6">
         <div className="container-main grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8 items-center">
           <div className="w-16 h-16 rounded-2xl bg-rd-dark text-rd-lime flex items-center justify-center shrink-0">
             <ScreenIcon className="w-8 h-8" />
           </div>
           <p className="text-rd-dark font-dm-sans text-base md:text-lg leading-relaxed">
-            RepairDesk is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch &amp; jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
+            RepairHub is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch &amp; jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
           </p>
         </div>
       </section>
@@ -297,7 +297,7 @@ export default function WebinarPage() {
             Expert insights from industry leaders for shop owners, service advisors, and technicians — put them to work in your own shop today.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://app.repairdesk.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
+            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
             <Link
               to="/contact"
               className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors"

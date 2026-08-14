@@ -3,7 +3,7 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 /* ---------------------------------------------------------------- */
-/* Content pulled directly from the repairdesk.co cell phone page   */
+/* Content pulled directly from the repairhub.co cell phone page   */
 /* ---------------------------------------------------------------- */
 
 const heroBullets = [
@@ -129,14 +129,14 @@ const coreFeatures = [
     accent: 'teal',
     title: 'Leads & Appointments',
     desc: 'Capture repair requests, book jobs faster, and convert inquiries into tickets without losing details.',
-    tags: ['Appointment Pro online booking', 'Email and SMS alerts', 'RepairDesk Forms', 'Mail-in repair suite', 'Lead-to-ticket flow'],
+    tags: ['Appointment Pro online booking', 'Email and SMS alerts', 'RepairHub Forms', 'Mail-in repair suite', 'Lead-to-ticket flow'],
   },
   {
     icon: 'chat',
     accent: 'lime',
     title: 'Unified Communication',
     desc: 'Keep calls, texts, and messages tied to the ticket, with customer details and history visible so replies stay fast and accurate.',
-    tags: ['RepairDesk Connect inbox', 'Two-way SMS', 'Google My Business integration', 'Facebook Messenger integration'],
+    tags: ['RepairHub Connect inbox', 'Two-way SMS', 'Google My Business integration', 'Facebook Messenger integration'],
   },
 ];
 
@@ -149,13 +149,13 @@ const accentClasses = {
 const testimonials = [
   {
     quote:
-      'Our experience with RepairDesk has been a really exciting advancement for our business. While there was a transition period moving to the new system, the positive and cooperative attitude of the company is one that we really admire. Usman and his team go out of their way to assist their customers and are open to feedback and integrating new ideas into their software, as well as providing an extensive knowledge base and tailored support for your business model. Cannot recommend these guys enough for all the hard work and grit they pour into their software.',
+      'Our experience with RepairHub has been a really exciting advancement for our business. While there was a transition period moving to the new system, the positive and cooperative attitude of the company is one that we really admire. Usman and his team go out of their way to assist their customers and are open to feedback and integrating new ideas into their software, as well as providing an extensive knowledge base and tailored support for your business model. Cannot recommend these guys enough for all the hard work and grit they pour into their software.',
     name: 'Simon Nash',
     title: 'Owner, The iPhone Guy',
   },
   {
     quote:
-      'We had good experience working with the team at RepairDesk in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with RepairDesk!',
+      'We had good experience working with the team at RepairHub in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with RepairHub!',
     name: 'Lyle Schrock',
     title: 'Owner, The Lab',
   },
@@ -284,7 +284,7 @@ export default function CellPhoneRepairPage() {
         <div className="container-main text-center">
           <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Trusted By</span>
           <h2 className="font-poppins font-semibold text-2xl md:text-3xl text-rd-dark mb-10">
-            3000+ Repair Stores Run on RepairDesk
+            3000+ Repair Stores Run on RepairHub
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
             {trustedByLogos.map((l) => (
@@ -313,7 +313,7 @@ export default function CellPhoneRepairPage() {
             <div className="bg-white/10 border border-white/10 rounded-2xl p-6 md:p-7">
               <p className="text-white font-dm-sans text-base md:text-lg leading-relaxed">
                 When your workflow cracks under pressure, the gaps get expensive.{' '}
-                <span className="text-rd-lime font-semibold">RepairDesk keeps repairs, inventory, and checkout connected</span>, so your shop stays in control.
+                <span className="text-rd-lime font-semibold">RepairHub keeps repairs, inventory, and checkout connected</span>, so your shop stays in control.
               </p>
             </div>
           </div>
@@ -349,7 +349,7 @@ export default function CellPhoneRepairPage() {
               One System for Every Phone Repair, Every Part, and Every Checkout
             </h2>
             <p className="text-gray-500 font-dm-sans text-lg leading-relaxed">
-              From cracked screens and battery swaps to charge port fixes and diagnostics, the work moves fast on a busy bench. RepairDesk keeps the full job in one place, from intake to pickup, with tickets, inventory, customer updates, and checkout working together.
+              From cracked screens and battery swaps to charge port fixes and diagnostics, the work moves fast on a busy bench. RepairHub keeps the full job in one place, from intake to pickup, with tickets, inventory, customer updates, and checkout working together.
             </p>
           </div>
 
@@ -384,7 +384,7 @@ export default function CellPhoneRepairPage() {
               Everything You Need to Run a Fast, Profitable Cell Phone Repair Shop
             </h2>
             <p className="text-gray-500 font-dm-sans text-lg leading-relaxed">
-              Phone repair is detailed work. Your software should keep up. These are the core tools RepairDesk brings together so that tickets, parts, customers, and checkout stay connected during the daily rush.
+              Phone repair is detailed work. Your software should keep up. These are the core tools RepairHub brings together so that tickets, parts, customers, and checkout stay connected during the daily rush.
             </p>
           </div>
 
@@ -424,7 +424,7 @@ export default function CellPhoneRepairPage() {
           <div className="text-center mb-12">
             <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-4">What Repair Shops Say</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white max-w-2xl mx-auto">
-              Shops Trust RepairDesk to Keep Every Repair Moving
+              Shops Trust RepairHub to Keep Every Repair Moving
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -457,7 +457,7 @@ export default function CellPhoneRepairPage() {
               Ready to Upgrade Your Cell Phone Repair Shop?
             </h2>
             <p className="text-rd-dark/70 font-dm-sans text-base">
-              Join thousands of repair stores running faster tickets, checkout, and inventory on RepairDesk.
+              Join thousands of repair stores running faster tickets, checkout, and inventory on RepairHub.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
