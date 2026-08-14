@@ -160,7 +160,7 @@ export default function AppointmentsProPage() {
   return (
     <PageLayout>
       {/* ============ HERO ============ */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>

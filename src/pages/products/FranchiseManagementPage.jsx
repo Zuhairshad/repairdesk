@@ -146,22 +146,22 @@ export default function FranchiseManagementPage() {
 
                 {/* Central HQ node */}
                 <circle cx="210" cy="200" r="44" fill="#3d405b" />
-                <circle cx="210" cy="200" r="44" stroke="#B5F542" strokeWidth="2.5" fill="none" />
+                <circle cx="210" cy="200" r="44" stroke="#7ba8c4" strokeWidth="2.5" fill="none" />
                 <text x="210" y="195" textAnchor="middle" fill="white" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="14">HQ</text>
-                <text x="210" y="213" textAnchor="middle" fill="#B5F542" fontFamily="DM Sans, sans-serif" fontSize="9">CORPORATE</text>
+                <text x="210" y="213" textAnchor="middle" fill="#7ba8c4" fontFamily="DM Sans, sans-serif" fontSize="9">CORPORATE</text>
 
                 {/* Franchise nodes */}
                 {[
-                  { cx: 210, cy: 60, name: 'Store 1', status: '#22c55e' },
-                  { cx: 350, cy: 120, name: 'Store 2', status: '#22c55e' },
-                  { cx: 370, cy: 260, name: 'Store 3', status: '#22c55e' },
+                  { cx: 210, cy: 60, name: 'Store 1', status: '#457b9d' },
+                  { cx: 350, cy: 120, name: 'Store 2', status: '#457b9d' },
+                  { cx: 370, cy: 260, name: 'Store 3', status: '#457b9d' },
                   { cx: 310, cy: 360, name: 'Store 4', status: '#eab308' },
-                  { cx: 110, cy: 360, name: 'Store 5', status: '#22c55e' },
-                  { cx: 50, cy: 260, name: 'Store 6', status: '#22c55e' },
-                  { cx: 70, cy: 120, name: 'Store 7', status: '#22c55e' },
+                  { cx: 110, cy: 360, name: 'Store 5', status: '#457b9d' },
+                  { cx: 50, cy: 260, name: 'Store 6', status: '#457b9d' },
+                  { cx: 70, cy: 120, name: 'Store 7', status: '#457b9d' },
                 ].map((node, i) => (
                   <g key={i}>
-                    <circle cx={node.cx} cy={node.cy} r="28" fill="#0a2e30" stroke="#3d405b" strokeWidth="1.5" />
+                    <circle cx={node.cx} cy={node.cy} r="28" fill="#1e2035" stroke="#3d405b" strokeWidth="1.5" />
                     <circle cx={node.cx + 16} cy={node.cy - 16} r="5" fill={node.status} />
                     <text x={node.cx} y={node.cy + 4} textAnchor="middle" fill="white" fontFamily="DM Sans, sans-serif" fontSize="10" fontWeight="500">{node.name}</text>
                   </g>
@@ -169,7 +169,7 @@ export default function FranchiseManagementPage() {
 
                 {/* Data flow particles */}
                 {[60, 120, 260, 360].map((angle, i) => (
-                  <circle key={`p${i}`} r="3" fill="#B5F542" opacity="0.8">
+                  <circle key={`p${i}`} r="3" fill="#7ba8c4" opacity="0.8">
                     <animateMotion dur={`${2.5 + i * 0.3}s`} repeatCount="indefinite" path={`M210,200 L${[210, 350, 370, 310][i]},${[60, 120, 260, 360][i]}`} />
                   </circle>
                 ))}
@@ -336,7 +336,7 @@ export default function FranchiseManagementPage() {
       </section>
 
       {/* Royalty & Reporting */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-rd-dark to-[#013a3f]">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-rd-dark to-[#1e2035]">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="inline-block text-rd-mint font-poppins font-semibold text-sm uppercase tracking-widest mb-3">Royalties & Reporting</span>

@@ -82,7 +82,7 @@ export default function VsRepairqPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-24 md:py-32 px-6">
+      <section className="bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-24 md:py-32 px-6">
         <div className="container-main max-w-4xl text-center">
           <span className="inline-block bg-rd-lime text-white text-xs font-bold uppercase tracking-widest font-poppins px-4 py-1.5 rounded-full mb-6">
             Comparison

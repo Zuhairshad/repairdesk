@@ -36,13 +36,13 @@ const flowSteps = [
     step: '02',
     title: 'Securely Processed',
     desc: 'Encrypted end-to-end and routed through PCI-compliant rails.',
-    color: 'bg-[#0a8a8f]',
+    color: 'bg-[#3d405b]',
   },
   {
     step: '03',
     title: 'Deposited Next Day',
     desc: 'Funds land in your bank account the following business day.',
-    color: 'bg-[#014a50]',
+    color: 'bg-[#2d2f45]',
   },
   {
     step: '04',
@@ -66,7 +66,7 @@ export default function PaymentsProductPage() {
   return (
     <PageLayout>
       {/* ── Hero: dark gradient with credit card + contactless waves ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#012e32] to-[#014a50] text-white py-24 md:py-36">
+      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#1e2035] to-[#2d2f45] text-white py-24 md:py-36">
         {/* Decorative contactless wave arcs */}
         <svg className="absolute right-[8%] top-1/2 -translate-y-1/2 w-[340px] h-[340px] opacity-[0.07] pointer-events-none hidden lg:block" viewBox="0 0 340 340" fill="none">
           <circle cx="170" cy="170" r="60" stroke="white" strokeWidth="3" />
@@ -106,7 +106,7 @@ export default function PaymentsProductPage() {
                 <defs>
                   <linearGradient id="cardGrad" x1="20" y1="30" x2="320" y2="220">
                     <stop offset="0%" stopColor="#3d405b" />
-                    <stop offset="100%" stopColor="#012e32" />
+                    <stop offset="100%" stopColor="#1e2035" />
                   </linearGradient>
                 </defs>
                 {/* Chip */}
@@ -137,7 +137,7 @@ export default function PaymentsProductPage() {
                 <circle cx="295" cy="185" r="18" fill="#eb001b" opacity="0.5" />
 
                 {/* Floating contactless waves outside card */}
-                <g transform="translate(310,60)" stroke="#B4F472" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.55">
+                <g transform="translate(310,60)" stroke="#7ba8c4" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.55">
                   <path d="M0 22c4-6 4-14 0-20" />
                   <path d="M8 28c6-9 6-21 0-30" />
                   <path d="M16 34c8-12 8-28 0-40" />
@@ -233,18 +233,18 @@ export default function PaymentsProductPage() {
                 <rect x="30" y="20" width="200" height="340" rx="24" fill="#1a2332" />
                 <rect x="30" y="20" width="200" height="340" rx="24" stroke="#2d3a4a" strokeWidth="2" />
                 {/* Screen */}
-                <rect x="50" y="45" width="160" height="100" rx="10" fill="#0d3d40" />
-                <text x="130" y="82" textAnchor="middle" fill="#B4F472" fontSize="28" fontWeight="bold" fontFamily="monospace">$189.00</text>
+                <rect x="50" y="45" width="160" height="100" rx="10" fill="#1e2035" />
+                <text x="130" y="82" textAnchor="middle" fill="#7ba8c4" fontSize="28" fontWeight="bold" fontFamily="monospace">$189.00</text>
                 <text x="130" y="108" textAnchor="middle" fill="white" opacity="0.5" fontSize="11" fontFamily="sans-serif">TAP, DIP, OR SWIPE</text>
-                <rect x="60" y="120" width="46" height="14" rx="3" fill="#B4F472" opacity="0.3" />
-                <text x="83" y="131" textAnchor="middle" fill="#B4F472" fontSize="8" fontFamily="sans-serif">APPROVED</text>
+                <rect x="60" y="120" width="46" height="14" rx="3" fill="#7ba8c4" opacity="0.3" />
+                <text x="83" y="131" textAnchor="middle" fill="#7ba8c4" fontSize="8" fontFamily="sans-serif">APPROVED</text>
                 {/* Contactless zone */}
-                <g transform="translate(108,165)" stroke="#B4F472" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.6">
+                <g transform="translate(108,165)" stroke="#7ba8c4" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.6">
                   <path d="M4 18c3.5-5 3.5-11 0-16" />
                   <path d="M11 22c5-7 5-15 0-22" />
                   <path d="M18 26c6.5-9 6.5-19 0-28" />
                 </g>
-                <rect x="80" y="160" width="100" height="45" rx="8" stroke="#B4F472" strokeWidth="1.2" strokeDasharray="4 3" fill="none" opacity="0.35" />
+                <rect x="80" y="160" width="100" height="45" rx="8" stroke="#7ba8c4" strokeWidth="1.2" strokeDasharray="4 3" fill="none" opacity="0.35" />
                 {/* Keypad */}
                 {[0, 1, 2].map((row) =>
                   [0, 1, 2].map((col) => (
@@ -254,7 +254,7 @@ export default function PaymentsProductPage() {
                 {/* Bottom keys */}
                 <rect x="72" y="333" width="32" height="16" rx="4" fill="#d94f4f" opacity="0.6" />
                 <rect x="114" y="333" width="32" height="16" rx="4" fill="#f5c542" opacity="0.6" />
-                <rect x="156" y="333" width="32" height="16" rx="4" fill="#4caf50" opacity="0.6" />
+                <rect x="156" y="333" width="32" height="16" rx="4" fill="#457b9d" opacity="0.6" />
                 {/* Tap animation hint — phone approaching */}
                 <rect x="185" y="130" width="48" height="80" rx="10" fill="white" fillOpacity="0.08" stroke="white" strokeWidth="1.5" opacity="0.4" />
                 <g transform="translate(196,148)" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.3">
@@ -333,7 +333,7 @@ export default function PaymentsProductPage() {
       </section>
 
       {/* ── Security & PCI Compliance ── */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-rd-dark to-[#013a3f] text-white">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-rd-dark to-[#1e2035] text-white">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-4">

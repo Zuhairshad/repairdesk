@@ -77,7 +77,7 @@ export default function VsRepairShoprPage() {
           <p className="text-white/70 font-dm-sans max-w-xl mx-auto mb-8">
             An honest, feature-by-feature comparison to help you choose the right platform for your repair business.
           </p>
-          <Link to="/register" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold px-8 py-3.5 rounded-xl hover:bg-teal-600 transition-colors">
+          <Link to="/register" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold px-8 py-3.5 rounded-xl hover:bg-rd-dark-teal transition-colors">
             Try RepairHub Free for 14 Days
           </Link>
         </div>

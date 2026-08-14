@@ -203,7 +203,7 @@ export default function ConnectPage() {
   return (
     <PageLayout>
       {/* Hero — split with a live "unified inbox" mockup */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">

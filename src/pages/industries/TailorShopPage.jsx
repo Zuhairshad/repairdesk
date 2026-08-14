@@ -168,8 +168,8 @@ export default function TailorShopPage() {
               <path d="M110 120c0-10 22-20 50-20s50 10 50 20l8 140c0 8-6 14-14 14H116c-8 0-14-6-14-14l8-140z" fill="#3d405b" opacity="0.7" />
               <path d="M100 260h120v20c0 12-10 22-22 22H122c-12 0-22-10-22-22v-20z" fill="#3d405b" opacity="0.5" />
               {/* measuring tape wrapping around */}
-              <path d="M95 140c60-10 110 10 130 0" stroke="#CDEA68" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />
-              <path d="M90 190c70 15 120-5 140 5" stroke="#CDEA68" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />
+              <path d="M95 140c60-10 110 10 130 0" stroke="#7ba8c4" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />
+              <path d="M90 190c70 15 120-5 140 5" stroke="#7ba8c4" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />
               {/* measurement annotations */}
               <line x1="80" y1="130" x2="80" y2="250" stroke="white" strokeWidth="1" strokeDasharray="4 3" opacity="0.5" />
               <text x="70" y="195" fill="white" fontSize="11" textAnchor="end" opacity="0.6" fontFamily="sans-serif">28"</text>
@@ -177,10 +177,10 @@ export default function TailorShopPage() {
               <text x="160" y="100" fill="white" fontSize="11" textAnchor="middle" opacity="0.6" fontFamily="sans-serif">16"</text>
               {/* scissors accent */}
               <g transform="translate(230, 100) rotate(25)">
-                <circle cx="0" cy="0" r="6" stroke="#CDEA68" strokeWidth="1.5" fill="none" />
-                <circle cx="0" cy="18" r="6" stroke="#CDEA68" strokeWidth="1.5" fill="none" />
-                <line x1="4" y1="4" x2="20" y2="20" stroke="#CDEA68" strokeWidth="1.5" />
-                <line x1="4" y1="14" x2="20" y2="-2" stroke="#CDEA68" strokeWidth="1.5" />
+                <circle cx="0" cy="0" r="6" stroke="#7ba8c4" strokeWidth="1.5" fill="none" />
+                <circle cx="0" cy="18" r="6" stroke="#7ba8c4" strokeWidth="1.5" fill="none" />
+                <line x1="4" y1="4" x2="20" y2="20" stroke="#7ba8c4" strokeWidth="1.5" />
+                <line x1="4" y1="14" x2="20" y2="-2" stroke="#7ba8c4" strokeWidth="1.5" />
               </g>
             </svg>
           </div>
@@ -227,7 +227,7 @@ export default function TailorShopPage() {
 
           {/* mockup card */}
           <div className="flex-shrink-0 w-full max-w-sm">
-            <div className="bg-gradient-to-br from-rd-dark to-[#014a50] rounded-2xl p-6 text-white shadow-2xl">
+            <div className="bg-gradient-to-br from-rd-dark to-[#2d2f45] rounded-2xl p-6 text-white shadow-2xl">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-11 h-11 rounded-full bg-rd-teal flex items-center justify-center font-poppins font-bold text-lg">SK</div>
                 <div>

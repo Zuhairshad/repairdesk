@@ -80,7 +80,7 @@ const XIcon = (props) => (
 
 const flowSteps = [
   { num: '1', label: 'Issue', desc: 'Issue store credit instead of a cash refund', color: 'bg-rd-teal' },
-  { num: '2', label: 'Store', desc: 'Credit sits in the customer\'s digital wallet', color: 'bg-[#014a50]' },
+  { num: '2', label: 'Store', desc: 'Credit sits in the customer\'s digital wallet', color: 'bg-[#2d2f45]' },
   { num: '3', label: 'Redeem', desc: 'Customer spends credit on their next visit', color: 'bg-rd-dark' },
 ];
 
@@ -116,7 +116,7 @@ export default function StoreCreditsPage() {
   return (
     <PageLayout>
       {/* ===== HERO — Digital Wallet ===== */}
-      <section className="relative bg-gradient-to-b from-rd-dark via-rd-dark to-[#014a50] text-white py-24 md:py-32 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-rd-dark via-rd-dark to-[#2d2f45] text-white py-24 md:py-32 px-6 overflow-hidden">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="container-main relative z-10 grid lg:grid-cols-2 gap-16 items-center">
@@ -180,7 +180,7 @@ export default function StoreCreditsPage() {
 
           <div className="relative max-w-3xl mx-auto">
             {/* Connecting line */}
-            <div className="hidden md:block absolute top-16 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-rd-teal via-[#014a50] to-rd-dark" />
+            <div className="hidden md:block absolute top-16 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-rd-teal via-[#2d2f45] to-rd-dark" />
             <div className="hidden md:block absolute top-16 left-[16%] right-[16%]">
               <ArrowIcon className="w-5 h-5 text-rd-teal absolute left-[42%] -top-2.5" />
               <ArrowIcon className="w-5 h-5 text-rd-dark absolute left-[85%] -top-2.5" />
@@ -205,7 +205,7 @@ export default function StoreCreditsPage() {
       <section className="bg-rd-cream py-20 px-6">
         <div className="container-main grid lg:grid-cols-2 gap-16 items-center">
           <div className="flex justify-center">
-            <div className="w-full max-w-md aspect-[1.58/1] bg-gradient-to-br from-rd-dark via-[#013a3e] to-rd-teal rounded-2xl p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+            <div className="w-full max-w-md aspect-[1.58/1] bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal rounded-2xl p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden">
               {/* Card chip pattern */}
               <div className="absolute top-7 right-7 w-20 h-20 rounded-full border border-white/10" />
               <div className="absolute top-10 right-10 w-14 h-14 rounded-full border border-white/10" />

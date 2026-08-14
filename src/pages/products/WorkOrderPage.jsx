@@ -202,7 +202,7 @@ export default function WorkOrderPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <div>

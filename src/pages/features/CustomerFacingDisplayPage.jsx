@@ -35,7 +35,7 @@ function DisplayMockup({ variant, className = '' }) {
       <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-20 h-2 bg-gray-400 rounded-full" />
 
       {/* tablet body */}
-      <div className="relative bg-rd-dark rounded-[1.75rem] p-2.5 shadow-2xl border-4 border-[#0a2f30]">
+      <div className="relative bg-rd-dark rounded-[1.75rem] p-2.5 shadow-2xl border-4 border-[#2d2f45]">
         <div className="absolute top-1 left-1/2 -translate-x-1/2 w-10 h-1.5 bg-black/40 rounded-full" />
         <div className="bg-rd-cream rounded-2xl overflow-hidden aspect-[9/13] flex flex-col">
           {variant === 'items' && <ItemsScreen />}

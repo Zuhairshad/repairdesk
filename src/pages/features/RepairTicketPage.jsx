@@ -148,7 +148,7 @@ export default function RepairTicketPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-24 px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-24 px-6">
         <div className="absolute -right-16 top-10 w-72 h-72 rounded-full border border-white/10 hidden lg:block" />
         <div className="absolute -right-6 top-32 w-40 h-40 rounded-full border border-dashed border-rd-lime/30 hidden lg:block" />
         <div className="container-main max-w-3xl relative">
@@ -256,7 +256,7 @@ export default function RepairTicketPage() {
           <h2 className="font-poppins font-semibold text-2xl md:text-3xl text-center mb-10">
             Peter Haydon of Technology Traders on Repair Ticket Management
           </h2>
-          <div className="relative bg-[#0f4548] rounded-2xl border border-white/10 p-8 md:p-10">
+          <div className="relative bg-[#1e2035] rounded-2xl border border-white/10 p-8 md:p-10">
             <div className="absolute left-1/2 -top-4 -translate-x-1/2 w-8 h-8 rounded-full bg-rd-dark border border-white/10" />
             <div className="absolute left-1/2 -bottom-4 -translate-x-1/2 w-8 h-8 rounded-full bg-rd-dark border border-white/10" />
             <IconTicketStub className="w-8 h-8 text-rd-mint mb-5" />

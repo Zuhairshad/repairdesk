@@ -6,26 +6,26 @@ import PageLayout from '../../components/PageLayout';
 const DeskPhoneSVG = () => (
   <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-xs mx-auto">
     {/* Signal waves */}
-    <path d="M230 40c12-12 32-12 44 0" stroke="#B8F260" strokeWidth="3" strokeLinecap="round" opacity=".5" />
-    <path d="M222 28c20-20 52-20 72 0" stroke="#B8F260" strokeWidth="3" strokeLinecap="round" opacity=".35" />
-    <path d="M214 16c28-28 72-28 100 0" stroke="#B8F260" strokeWidth="3" strokeLinecap="round" opacity=".2" />
+    <path d="M230 40c12-12 32-12 44 0" stroke="#7ba8c4" strokeWidth="3" strokeLinecap="round" opacity=".5" />
+    <path d="M222 28c20-20 52-20 72 0" stroke="#7ba8c4" strokeWidth="3" strokeLinecap="round" opacity=".35" />
+    <path d="M214 16c28-28 72-28 100 0" stroke="#7ba8c4" strokeWidth="3" strokeLinecap="round" opacity=".2" />
     {/* Phone base */}
-    <rect x="60" y="130" width="200" height="120" rx="16" fill="#014a50" />
+    <rect x="60" y="130" width="200" height="120" rx="16" fill="#2d2f45" />
     <rect x="70" y="140" width="180" height="100" rx="10" fill="#3d405b" />
     {/* Screen */}
-    <rect x="100" y="152" width="120" height="44" rx="6" fill="#0a3d40" />
-    <text x="160" y="172" textAnchor="middle" fill="#B8F260" fontFamily="monospace" fontSize="11">INCOMING CALL</text>
+    <rect x="100" y="152" width="120" height="44" rx="6" fill="#1e2035" />
+    <text x="160" y="172" textAnchor="middle" fill="#7ba8c4" fontFamily="monospace" fontSize="11">INCOMING CALL</text>
     <text x="160" y="188" textAnchor="middle" fill="#fff" fontFamily="monospace" fontSize="13">(512) 555-0147</text>
     {/* Keypad dots */}
     {[0,1,2].map(r => [0,1,2].map(c => (
-      <circle key={`${r}${c}`} cx={120 + c * 30} cy={210 + r * 12} r="3.5" fill="#0a3d40" />
+      <circle key={`${r}${c}`} cx={120 + c * 30} cy={210 + r * 12} r="3.5" fill="#1e2035" />
     )))}
     {/* Handset */}
-    <rect x="70" y="78" width="100" height="36" rx="18" fill="#012e32" />
-    <circle cx="86" cy="96" r="10" fill="#0a3d40" />
-    <circle cx="154" cy="96" r="10" fill="#0a3d40" />
+    <rect x="70" y="78" width="100" height="36" rx="18" fill="#1e2035" />
+    <circle cx="86" cy="96" r="10" fill="#1e2035" />
+    <circle cx="154" cy="96" r="10" fill="#1e2035" />
     {/* Cord */}
-    <path d="M120 114 Q125 126 120 130" stroke="#012e32" strokeWidth="3" fill="none" />
+    <path d="M120 114 Q125 126 120 130" stroke="#1e2035" strokeWidth="3" fill="none" />
   </svg>
 );
 
@@ -295,26 +295,26 @@ export default function PhoneSystemPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 {/* CRM node */}
-                <line x1="150" y1="92" x2="150" y2="38" stroke="#B8F260" strokeWidth="2" strokeDasharray="6 3" />
-                <circle cx="150" cy="28" r="24" fill="#0a3d40" />
-                <text x="150" y="32" textAnchor="middle" fill="#B8F260" fontSize="10" fontFamily="sans-serif" fontWeight="600">CRM</text>
+                <line x1="150" y1="92" x2="150" y2="38" stroke="#7ba8c4" strokeWidth="2" strokeDasharray="6 3" />
+                <circle cx="150" cy="28" r="24" fill="#1e2035" />
+                <text x="150" y="32" textAnchor="middle" fill="#7ba8c4" fontSize="10" fontFamily="sans-serif" fontWeight="600">CRM</text>
                 {/* Tickets node */}
-                <line x1="192" y1="162" x2="252" y2="210" stroke="#B8F260" strokeWidth="2" strokeDasharray="6 3" />
-                <circle cx="262" cy="220" r="24" fill="#0a3d40" />
-                <text x="262" y="224" textAnchor="middle" fill="#B8F260" fontSize="9" fontFamily="sans-serif" fontWeight="600">Tickets</text>
+                <line x1="192" y1="162" x2="252" y2="210" stroke="#7ba8c4" strokeWidth="2" strokeDasharray="6 3" />
+                <circle cx="262" cy="220" r="24" fill="#1e2035" />
+                <text x="262" y="224" textAnchor="middle" fill="#7ba8c4" fontSize="9" fontFamily="sans-serif" fontWeight="600">Tickets</text>
                 {/* SMS node */}
-                <line x1="108" y1="162" x2="48" y2="210" stroke="#B8F260" strokeWidth="2" strokeDasharray="6 3" />
-                <circle cx="38" cy="220" r="24" fill="#0a3d40" />
-                <text x="38" y="224" textAnchor="middle" fill="#B8F260" fontSize="10" fontFamily="sans-serif" fontWeight="600">SMS</text>
+                <line x1="108" y1="162" x2="48" y2="210" stroke="#7ba8c4" strokeWidth="2" strokeDasharray="6 3" />
+                <circle cx="38" cy="220" r="24" fill="#1e2035" />
+                <text x="38" y="224" textAnchor="middle" fill="#7ba8c4" fontSize="10" fontFamily="sans-serif" fontWeight="600">SMS</text>
                 {/* Call log node */}
-                <line x1="108" y1="118" x2="48" y2="70" stroke="#B8F260" strokeWidth="2" strokeDasharray="6 3" />
-                <circle cx="38" cy="60" r="24" fill="#0a3d40" />
-                <text x="38" y="64" textAnchor="middle" fill="#B8F260" fontSize="9" fontFamily="sans-serif" fontWeight="600">Log</text>
+                <line x1="108" y1="118" x2="48" y2="70" stroke="#7ba8c4" strokeWidth="2" strokeDasharray="6 3" />
+                <circle cx="38" cy="60" r="24" fill="#1e2035" />
+                <text x="38" y="64" textAnchor="middle" fill="#7ba8c4" fontSize="9" fontFamily="sans-serif" fontWeight="600">Log</text>
                 {/* Voicemail node */}
-                <line x1="192" y1="118" x2="252" y2="70" stroke="#B8F260" strokeWidth="2" strokeDasharray="6 3" />
-                <circle cx="262" cy="60" r="24" fill="#0a3d40" />
-                <text x="262" y="56" textAnchor="middle" fill="#B8F260" fontSize="8" fontFamily="sans-serif" fontWeight="600">Voice</text>
-                <text x="262" y="68" textAnchor="middle" fill="#B8F260" fontSize="8" fontFamily="sans-serif" fontWeight="600">mail</text>
+                <line x1="192" y1="118" x2="252" y2="70" stroke="#7ba8c4" strokeWidth="2" strokeDasharray="6 3" />
+                <circle cx="262" cy="60" r="24" fill="#1e2035" />
+                <text x="262" y="56" textAnchor="middle" fill="#7ba8c4" fontSize="8" fontFamily="sans-serif" fontWeight="600">Voice</text>
+                <text x="262" y="68" textAnchor="middle" fill="#7ba8c4" fontSize="8" fontFamily="sans-serif" fontWeight="600">mail</text>
               </svg>
             </div>
           </div>
@@ -341,7 +341,7 @@ export default function PhoneSystemPage() {
               { label: 'Missed Calls', value: '3', delta: '-40%', up: true },
               { label: 'Tickets Created', value: '14', delta: '+3', up: true },
             ].map(m => (
-              <div key={m.label} className="bg-[#0a3d40] rounded-2xl p-6 text-center">
+              <div key={m.label} className="bg-[#1e2035] rounded-2xl p-6 text-center">
                 <p className="font-dm-sans text-white/50 text-sm mb-1">{m.label}</p>
                 <p className="font-poppins font-bold text-white text-3xl md:text-4xl">{m.value}</p>
                 <span className="inline-block mt-2 text-xs font-dm-sans font-semibold text-rd-mint bg-rd-lime/10 px-2 py-0.5 rounded-full">
@@ -352,7 +352,7 @@ export default function PhoneSystemPage() {
           </div>
 
           {/* Mini bar chart mockup */}
-          <div className="bg-[#0a3d40] rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
+          <div className="bg-[#1e2035] rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
             <div className="flex items-center justify-between mb-6">
               <h3 className="font-poppins font-semibold text-white text-sm">Calls by Hour&nbsp;&mdash;&nbsp;Today</h3>
               <span className="text-xs font-dm-sans text-white/40">9 AM &ndash; 6 PM</span>

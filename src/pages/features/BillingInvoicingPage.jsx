@@ -228,7 +228,7 @@ export default function BillingInvoicingPage() {
             {/* Accounting platforms */}
             <div className="flex flex-col gap-4 shrink-0">
               <div className="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-5 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-[#2CA01C] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-[#457b9d] flex items-center justify-center">
                   <span className="text-white font-black text-sm font-poppins">QB</span>
                 </div>
                 <div>
@@ -237,7 +237,7 @@ export default function BillingInvoicingPage() {
                 </div>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-2xl px-8 py-5 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-[#13B5EA] flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-[#3b82f6] flex items-center justify-center">
                   <span className="text-white font-black text-sm font-poppins">X</span>
                 </div>
                 <div>
@@ -378,7 +378,7 @@ export default function BillingInvoicingPage() {
               {
                 title: 'Tax Management',
                 desc: 'Set tax rates by category or region. Taxes calculate automatically on every invoice — stay compliant without manual math or guesswork.',
-                accent: 'bg-[#10B981]',
+                accent: 'bg-[#457b9d]',
                 icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>,
               },
               {

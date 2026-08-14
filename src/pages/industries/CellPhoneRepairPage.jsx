@@ -419,7 +419,7 @@ export default function CellPhoneRepairPage() {
       </section>
 
       {/* ========================= TESTIMONIALS ========================= */}
-      <section className="bg-gradient-to-br from-rd-dark to-[#014a50] py-20 md:py-24 px-6">
+      <section className="bg-gradient-to-br from-rd-dark to-[#2d2f45] py-20 md:py-24 px-6">
         <div className="container-main">
           <div className="text-center mb-12">
             <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-4">What Repair Shops Say</span>

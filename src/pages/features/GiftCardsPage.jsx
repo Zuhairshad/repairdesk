@@ -15,7 +15,7 @@ const GiftCardSVG = () => (
     <defs>
       <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stopColor="#3d405b" />
-        <stop offset="100%" stopColor="#013a3e" />
+        <stop offset="100%" stopColor="#2d2f45" />
       </linearGradient>
       <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#d4a843" />
@@ -241,7 +241,7 @@ export default function GiftCardsPage() {
       </section>
 
       {/* ── Holiday Season Promo ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rd-teal via-[#015a60] to-rd-dark py-20 px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-rd-teal via-[#2d2f45] to-rd-dark py-20 px-6">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#f0d78c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
         <div className="container-main relative z-10 max-w-4xl">
           <div className="flex flex-col md:flex-row items-center gap-10">

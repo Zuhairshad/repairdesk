@@ -16,7 +16,7 @@ export default function RepairHubConnectPage() {
   return (
     <PageLayout>
       {/* ── Hero: Split layout with unified inbox mockup ── */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-20 md:py-28 overflow-hidden">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
@@ -45,10 +45,10 @@ export default function RepairHubConnectPage() {
                 {/* Header bar */}
                 <rect x="2" y="2" width="416" height="48" rx="18" fill="rgba(255,255,255,.1)" />
                 <rect x="2" y="32" width="416" height="18" fill="rgba(255,255,255,.1)" />
-                <circle cx="26" cy="26" r="8" fill="#C1F04F" />
+                <circle cx="26" cy="26" r="8" fill="#457b9d" />
                 <text x="44" y="30" fill="#fff" fontSize="13" fontFamily="sans-serif" fontWeight="600">Inbox</text>
-                <rect x="310" y="17" width="48" height="18" rx="9" fill="#C1F04F" />
-                <text x="320" y="30" fill="#0a2e31" fontSize="9" fontFamily="sans-serif" fontWeight="700">3 new</text>
+                <rect x="310" y="17" width="48" height="18" rx="9" fill="#457b9d" />
+                <text x="320" y="30" fill="#1e2035" fontSize="9" fontFamily="sans-serif" fontWeight="700">3 new</text>
                 {/* Message rows */}
                 {/* Row 1 — SMS */}
                 <rect x="16" y="62" width="388" height="56" rx="10" fill="rgba(255,255,255,.06)" />
@@ -74,8 +74,8 @@ export default function RepairHubConnectPage() {
                 {/* Compose bar */}
                 <rect x="16" y="272" width="388" height="48" rx="24" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.12)" />
                 <text x="40" y="300" fill="rgba(255,255,255,.3)" fontSize="12" fontFamily="sans-serif">Type a reply...</text>
-                <circle cx="372" cy="296" r="16" fill="#C1F04F" />
-                <path d="M366 296l8-4v8z" fill="#0a2e31" />
+                <circle cx="372" cy="296" r="16" fill="#457b9d" />
+                <path d="M366 296l8-4v8z" fill="#1e2035" />
               </svg>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function RepairHubConnectPage() {
               <path d="M134 182 C220 182, 260 110, 350 110" stroke="#8B5CF6" strokeWidth="2.5" strokeDasharray="6 4" fill="none" />
               {/* Merge circle */}
               <circle cx="370" cy="110" r="22" fill="#3d405b" />
-              <path d="M360 110h20M370 100v20" stroke="#C1F04F" strokeWidth="2.5" strokeLinecap="round" />
+              <path d="M360 110h20M370 100v20" stroke="#457b9d" strokeWidth="2.5" strokeLinecap="round" />
               {/* Arrow to inbox */}
               <path d="M394 110 L470 110" stroke="#3d405b" strokeWidth="2.5" fill="none" markerEnd="url(#arrowT)" />
               <defs><marker id="arrowT" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l7 4-7 4z" fill="#3d405b" /></marker></defs>

@@ -3,16 +3,16 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 const diagnosticTests = [
-  { name: 'Battery Health', score: 92, color: '#22c55e', icon: (
+  { name: 'Battery Health', score: 92, color: '#457b9d', icon: (
     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><rect x="6" y="4" width="12" height="17" rx="2" /><line x1="10" y1="1" x2="14" y2="1" /><rect x="8" y="10" width="8" height="9" rx="1" fill="currentColor" opacity=".25" /></svg>
   )},
-  { name: 'Display & Touch', score: 100, color: '#22c55e', icon: (
+  { name: 'Display & Touch', score: 100, color: '#457b9d', icon: (
     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><rect x="5" y="2" width="14" height="20" rx="2" /><circle cx="12" cy="18" r="1" fill="currentColor" /><path d="M9 8l2 2 4-4" /></svg>
   )},
   { name: 'Audio System', score: 85, color: '#eab308', icon: (
     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path d="M11 5L6 9H2v6h4l5 4V5z" /><path d="M15.54 8.46a5 5 0 010 7.07M19.07 4.93a10 10 0 010 14.14" /></svg>
   )},
-  { name: 'Sensors', score: 97, color: '#22c55e', icon: (
+  { name: 'Sensors', score: 97, color: '#457b9d', icon: (
     <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><circle cx="12" cy="12" r="3" /><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" /></svg>
   )},
   { name: 'Connectivity', score: 78, color: '#f97316', icon: (
@@ -92,14 +92,14 @@ export default function PhoneProPage() {
                   <rect x="90" y="14" width="80" height="24" rx="12" fill="#3d405b" fillOpacity="0.25" />
                   {/* Internal components - X-ray style */}
                   {/* Battery */}
-                  <rect x="30" y="280" width="90" height="120" rx="8" stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" fill="#22c55e" fillOpacity="0.06" />
-                  <text x="75" y="345" textAnchor="middle" fill="#22c55e" fontSize="9" fontFamily="sans-serif" opacity="0.8">BATTERY</text>
+                  <rect x="30" y="280" width="90" height="120" rx="8" stroke="#457b9d" strokeWidth="1.5" strokeDasharray="4 2" fill="#457b9d" fillOpacity="0.06" />
+                  <text x="75" y="345" textAnchor="middle" fill="#457b9d" fontSize="9" fontFamily="sans-serif" opacity="0.8">BATTERY</text>
                   {/* Mainboard */}
                   <rect x="130" y="120" width="100" height="180" rx="6" stroke="#3d405b" strokeWidth="1" strokeDasharray="3 3" fill="#3d405b" fillOpacity="0.05" />
                   <circle cx="160" cy="180" r="14" stroke="#eab308" strokeWidth="1" fill="#eab308" fillOpacity="0.08" />
                   <text x="160" y="184" textAnchor="middle" fill="#eab308" fontSize="7" fontFamily="sans-serif">CPU</text>
-                  <circle cx="200" cy="160" r="10" stroke="#06b6d4" strokeWidth="1" fill="#06b6d4" fillOpacity="0.08" />
-                  <text x="200" y="163" textAnchor="middle" fill="#06b6d4" fontSize="6" fontFamily="sans-serif">RAM</text>
+                  <circle cx="200" cy="160" r="10" stroke="#457b9d" strokeWidth="1" fill="#457b9d" fillOpacity="0.08" />
+                  <text x="200" y="163" textAnchor="middle" fill="#457b9d" fontSize="6" fontFamily="sans-serif">RAM</text>
                   {/* Camera module */}
                   <circle cx="55" cy="90" r="18" stroke="#a78bfa" strokeWidth="1.5" fill="#a78bfa" fillOpacity="0.06" />
                   <circle cx="55" cy="90" r="8" stroke="#a78bfa" strokeWidth="1" fill="none" />
@@ -110,8 +110,8 @@ export default function PhoneProPage() {
                   {/* Charging port */}
                   <rect x="100" y="430" width="60" height="12" rx="6" stroke="#3d405b" strokeWidth="1" fill="#3d405b" fillOpacity="0.15" />
                   {/* Antenna lines */}
-                  <line x1="20" y1="60" x2="20" y2="180" stroke="#06b6d4" strokeWidth="0.5" opacity="0.3" />
-                  <line x1="240" y1="60" x2="240" y2="180" stroke="#06b6d4" strokeWidth="0.5" opacity="0.3" />
+                  <line x1="20" y1="60" x2="20" y2="180" stroke="#457b9d" strokeWidth="0.5" opacity="0.3" />
+                  <line x1="240" y1="60" x2="240" y2="180" stroke="#457b9d" strokeWidth="0.5" opacity="0.3" />
                   {/* Scan line glow */}
                   <rect x="16" y="200" width="228" height="3" fill="url(#scanGlow)" opacity="0.6">
                     <animate attributeName="y" values="50;420;50" dur="4s" repeatCount="indefinite" />
@@ -119,9 +119,9 @@ export default function PhoneProPage() {
                   <defs>
                     <linearGradient id="scanGlow" x1="0" y1="0" x2="1" y2="0">
                       <stop offset="0%" stopColor="#3d405b" stopOpacity="0" />
-                      <stop offset="30%" stopColor="#B2F042" stopOpacity="0.8" />
-                      <stop offset="50%" stopColor="#B2F042" stopOpacity="1" />
-                      <stop offset="70%" stopColor="#B2F042" stopOpacity="0.8" />
+                      <stop offset="30%" stopColor="#7ba8c4" stopOpacity="0.8" />
+                      <stop offset="50%" stopColor="#7ba8c4" stopOpacity="1" />
+                      <stop offset="70%" stopColor="#7ba8c4" stopOpacity="0.8" />
                       <stop offset="100%" stopColor="#3d405b" stopOpacity="0" />
                     </linearGradient>
                   </defs>
@@ -193,7 +193,7 @@ export default function PhoneProPage() {
                       <span>{t.name}</span><span className="font-poppins font-semibold">{t.score}%</span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${t.score}%`, backgroundColor: t.score >= 80 ? '#22c55e' : t.score >= 60 ? '#eab308' : '#ef4444' }} />
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${t.score}%`, backgroundColor: t.score >= 80 ? '#457b9d' : t.score >= 60 ? '#eab308' : '#ef4444' }} />
                     </div>
                   </div>
                 ))}
@@ -217,7 +217,7 @@ export default function PhoneProPage() {
                       <span>{t.name}</span><span className="font-poppins font-semibold">{t.score}%</span>
                     </div>
                     <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${t.score}%`, backgroundColor: '#22c55e' }} />
+                      <div className="h-full rounded-full transition-all duration-500" style={{ width: `${t.score}%`, backgroundColor: '#457b9d' }} />
                     </div>
                   </div>
                 ))}
@@ -353,7 +353,7 @@ export default function PhoneProPage() {
       </section>
 
       {/* ── Trust Section ── */}
-      <section className="bg-gradient-to-br from-rd-teal to-[#014a50] py-20 md:py-28">
+      <section className="bg-gradient-to-br from-rd-teal to-[#2d2f45] py-20 md:py-28">
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center">
             <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-8">

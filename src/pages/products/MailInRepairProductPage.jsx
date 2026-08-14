@@ -242,7 +242,7 @@ export default function MailInRepairProductPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#0b4a4e] to-rd-teal text-white py-20 md:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-20 md:py-28">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">

@@ -106,7 +106,7 @@ const barMax = Math.max(...barData.map(d => d.value));
 const pieSlices = [
   { label: 'Screen Repair', pct: 35, color: '#3d405b' },
   { label: 'Battery Replace', pct: 22, color: '#0EA5E9' },
-  { label: 'Data Recovery', pct: 18, color: '#84CC16' },
+  { label: 'Data Recovery', pct: 18, color: '#457b9d' },
   { label: 'Board Repair', pct: 15, color: '#F59E0B' },
   { label: 'Other', pct: 10, color: '#A78BFA' },
 ];
@@ -385,7 +385,7 @@ export default function ReportingPage() {
       </section>
 
       {/* ─── Export Anywhere ─── */}
-      <section className="bg-gradient-to-br from-rd-dark to-[#013a3f] py-20 px-6 text-white">
+      <section className="bg-gradient-to-br from-rd-dark to-[#1e2035] py-20 px-6 text-white">
         <div className="container-main max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6">
             <IconDownload className="w-4 h-4 text-rd-mint" />
@@ -396,7 +396,7 @@ export default function ReportingPage() {
 
           <div className="grid grid-cols-3 gap-6 max-w-lg mx-auto">
             {[
-              { ext: 'CSV', desc: 'Spreadsheet-ready', color: '#84CC16' },
+              { ext: 'CSV', desc: 'Spreadsheet-ready', color: '#457b9d' },
               { ext: 'PDF', desc: 'Print & share', color: '#F43F5E' },
               { ext: 'XLS', desc: 'Excel compatible', color: '#0EA5E9' },
             ].map(fmt => (

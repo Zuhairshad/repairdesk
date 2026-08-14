@@ -50,7 +50,7 @@ export default function ClockInOutPage() {
           {/* Clock Face SVG */}
           <div className="flex-shrink-0 relative">
             <svg width="310" height="310" viewBox="0 0 310 310" fill="none" className="drop-shadow-2xl">
-              <circle cx="155" cy="155" r="150" fill="#014a50" stroke="#3d405b" strokeWidth="3"/>
+              <circle cx="155" cy="155" r="150" fill="#2d2f45" stroke="#3d405b" strokeWidth="3"/>
               <circle cx="155" cy="155" r="135" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
               {/* Hour marks */}
               {[...Array(12)].map((_, i) => {
@@ -66,11 +66,11 @@ export default function ClockInOutPage() {
               {/* Hour hand pointing roughly at 9 */}
               <line x1="155" y1="155" x2="75" y2="152" stroke="white" strokeWidth="4" strokeLinecap="round"/>
               {/* Center dot */}
-              <circle cx="155" cy="155" r="6" fill="#C2F970"/>
-              <circle cx="155" cy="155" r="3" fill="#014a50"/>
+              <circle cx="155" cy="155" r="6" fill="#7ba8c4"/>
+              <circle cx="155" cy="155" r="3" fill="#2d2f45"/>
               {/* Digital display */}
               <rect x="110" y="195" rx="8" ry="8" width="90" height="32" fill="rgba(0,0,0,0.35)" />
-              <text x="155" y="216" textAnchor="middle" fill="#C2F970" fontSize="14" fontFamily="monospace" fontWeight="600">09:03 AM</text>
+              <text x="155" y="216" textAnchor="middle" fill="#7ba8c4" fontSize="14" fontFamily="monospace" fontWeight="600">09:03 AM</text>
             </svg>
             {/* Clock-in button below clock */}
             <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-rd-teal text-white font-poppins font-semibold text-sm px-8 py-3 rounded-full shadow-lg shadow-rd-teal/30 flex items-center gap-2 whitespace-nowrap">
@@ -206,11 +206,11 @@ export default function ClockInOutPage() {
                 <text x="240" y="210" textAnchor="middle" fill="#3d405b" fontSize="10" fontWeight="700" fontFamily="sans-serif">RepairHub HQ</text>
                 {/* Employee pins */}
                 <g transform="translate(193,160)">
-                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#3d405b" strokeWidth="1.5"/>
+                  <circle cx="0" cy="0" r="6" fill="#7ba8c4" stroke="#3d405b" strokeWidth="1.5"/>
                   <text x="10" y="4" fill="#3d405b" fontSize="8" fontWeight="600">Sarah</text>
                 </g>
                 <g transform="translate(270,195)">
-                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#3d405b" strokeWidth="1.5"/>
+                  <circle cx="0" cy="0" r="6" fill="#7ba8c4" stroke="#3d405b" strokeWidth="1.5"/>
                   <text x="10" y="4" fill="#3d405b" fontSize="8" fontWeight="600">Jake</text>
                 </g>
                 {/* Out of range employee */}

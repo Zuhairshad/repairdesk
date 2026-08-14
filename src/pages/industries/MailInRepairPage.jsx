@@ -115,7 +115,7 @@ export default function MailInRepairPage() {
   return (
     <PageLayout>
       {/* ========== HERO — package tracking motif ========== */}
-      <section className="relative bg-gradient-to-br from-rd-dark via-[#013a3e] to-rd-teal text-white py-28 px-6 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-rd-dark via-[#2d2f45] to-rd-teal text-white py-28 px-6 overflow-hidden">
         {/* Decorative dotted tracking path */}
         <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.07]" preserveAspectRatio="none" viewBox="0 0 1200 500">
           <path d="M-20 400 Q300 50 600 250 T1220 100" fill="none" stroke="white" strokeWidth="3" strokeDasharray="12 8" />

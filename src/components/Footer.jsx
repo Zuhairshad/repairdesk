@@ -120,7 +120,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-[#00464f]">
+      <div className="bg-[#1e2035]">
         <div className="container-main py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
             <span className="text-white/60 text-xs font-poppins">

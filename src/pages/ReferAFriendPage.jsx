@@ -375,7 +375,7 @@ export default function ReferAFriendPage() {
                           fontWeight: 'bold',
                           fontStyle: 'italic',
                           letterSpacing: '4px',
-                          color: '#1a6e3a',
+                          color: '#457b9d',
                           textDecoration: 'line-through',
                           textDecorationColor: '#ccc',
                         }}

@@ -62,7 +62,7 @@ const integrations = [
     category: 'Accounting',
     description: 'Xero simplifies your store\'s accounting by automatically sending invoices from RepairHub to your Xero accounting system.',
     badge: null,
-    color: 'bg-cyan-100 text-cyan-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'XR',
   },
   {
@@ -204,7 +204,7 @@ const integrations = [
     category: 'Widgets',
     description: 'Reduce counter lines by letting customers check themselves in before they reach the counter.',
     badge: null,
-    color: 'bg-cyan-100 text-cyan-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'CI',
   },
   {

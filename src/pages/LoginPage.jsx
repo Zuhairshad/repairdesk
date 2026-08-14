@@ -113,7 +113,7 @@ export default function LoginPage() {
 
         {/* Product Update Card */}
         <div className="relative z-10 w-full max-w-lg mx-8">
-          <div className="bg-[#0a3a3d] rounded-2xl p-8 border border-white/10 shadow-2xl">
+          <div className="bg-[#1e2035] rounded-2xl p-8 border border-white/10 shadow-2xl">
             {/* Card header — Logo + PRODUCT UPDATE badge */}
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center gap-2.5">

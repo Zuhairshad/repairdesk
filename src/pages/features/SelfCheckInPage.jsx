@@ -162,7 +162,7 @@ export default function SelfCheckInPage() {
                 {/* Glow behind tablet */}
                 <div className="absolute inset-0 bg-rd-teal/20 rounded-full blur-3xl scale-110" />
                 {/* Tablet */}
-                <div className="relative bg-[#0a2e30] rounded-[2rem] p-3 shadow-2xl border-2 border-rd-teal/30 w-[260px] md:w-[300px]">
+                <div className="relative bg-[#1e2035] rounded-[2rem] p-3 shadow-2xl border-2 border-rd-teal/30 w-[260px] md:w-[300px]">
                   <div className="absolute top-2 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-black/40 rounded-full" />
                   <div className="bg-white rounded-[1.25rem] overflow-hidden aspect-[3/4.2] flex flex-col">
                     {/* Mock screen: welcome state */}

@@ -7,11 +7,11 @@ const POSTerminal = () => (
   <svg viewBox="0 0 320 400" className="w-full max-w-xs mx-auto drop-shadow-2xl" fill="none">
     {/* Terminal body */}
     <rect x="30" y="20" width="260" height="360" rx="24" fill="#1e2035" />
-    <rect x="30" y="20" width="260" height="360" rx="24" stroke="#1a5c5f" strokeWidth="2" />
+    <rect x="30" y="20" width="260" height="360" rx="24" stroke="#3d405b" strokeWidth="2" />
     {/* Screen bezel */}
     <rect x="50" y="44" width="220" height="180" rx="12" fill="#2d2f45" />
     {/* Screen */}
-    <rect x="58" y="52" width="204" height="164" rx="8" fill="#e0faf4" />
+    <rect x="58" y="52" width="204" height="164" rx="8" fill="#e8eef5" />
     {/* Screen content - transaction lines */}
     <rect x="72" y="68" width="90" height="8" rx="4" fill="#3d405b" opacity="0.6" />
     <rect x="200" y="68" width="48" height="8" rx="4" fill="#3d405b" opacity="0.4" />
@@ -38,8 +38,8 @@ const POSTerminal = () => (
           width="44"
           height="26"
           rx="6"
-          fill="#1a5c5f"
-          stroke="#2a7a7d"
+          fill="#3d405b"
+          stroke="#3d405b"
           strokeWidth="1"
         />
       ))
@@ -173,7 +173,7 @@ export default function PointOfSalePage() {
                 From inventory and billing to customer management and integrations, everything you need is built into one streamlined checkout. You focus on repairs &mdash; we handle the rest.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/signup" className="inline-flex items-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-7 py-3.5 rounded-full hover:bg-[#e2ff8a] transition-colors">
+                <Link to="/signup" className="inline-flex items-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-7 py-3.5 rounded-full hover:opacity-90 transition-colors">
                   Start Free Trial
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </Link>
@@ -262,11 +262,11 @@ export default function PointOfSalePage() {
                 {/* Card 4 (deepest) */}
                 <div className="absolute bottom-0 left-6 right-6 h-44 rounded-2xl bg-gradient-to-br from-rd-dark to-rd-teal/80 transform rotate-[-6deg] shadow-lg" />
                 {/* Card 3 */}
-                <div className="absolute bottom-4 left-4 right-4 h-44 rounded-2xl bg-gradient-to-br from-rd-teal to-[#02878f] transform rotate-[-3deg] shadow-lg" />
+                <div className="absolute bottom-4 left-4 right-4 h-44 rounded-2xl bg-gradient-to-br from-rd-teal to-[#2d2f45] transform rotate-[-3deg] shadow-lg" />
                 {/* Card 2 */}
-                <div className="absolute bottom-8 left-2 right-2 h-44 rounded-2xl bg-gradient-to-br from-[#02a0a9] to-rd-teal transform rotate-[1deg] shadow-lg" />
+                <div className="absolute bottom-8 left-2 right-2 h-44 rounded-2xl bg-gradient-to-br from-[#3d405b] to-rd-teal transform rotate-[1deg] shadow-lg" />
                 {/* Card 1 (top) */}
-                <div className="absolute bottom-12 left-0 right-0 h-44 rounded-2xl bg-gradient-to-br from-rd-lime to-[#c5e86a] shadow-xl p-6 flex flex-col justify-between">
+                <div className="absolute bottom-12 left-0 right-0 h-44 rounded-2xl bg-gradient-to-br from-rd-lime to-[#457b9d] shadow-xl p-6 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
                     <div className="font-poppins font-bold text-rd-dark text-lg">RepairHub</div>
                     {/* Contactless icon */}
@@ -330,8 +330,8 @@ export default function PointOfSalePage() {
           <div className="relative max-w-xl mx-auto">
             {/* Outer ring (decorative) */}
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 500 500" aria-hidden="true">
-              <circle cx="250" cy="250" r="210" fill="none" stroke="#1a5c5f" strokeWidth="1" strokeDasharray="8 6" />
-              <circle cx="250" cy="250" r="160" fill="none" stroke="#1a5c5f" strokeWidth="1" />
+              <circle cx="250" cy="250" r="210" fill="none" stroke="#3d405b" strokeWidth="1" strokeDasharray="8 6" />
+              <circle cx="250" cy="250" r="160" fill="none" stroke="#3d405b" strokeWidth="1" />
               {/* Animated orbit dot */}
               <circle r="5" fill="#457b9d">
                 <animateMotion dur="8s" repeatCount="indefinite" path="M250,40 A210,210 0 1,1 249.9,40" />
@@ -620,7 +620,7 @@ export default function PointOfSalePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/signup"
-              className="inline-flex items-center justify-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-8 py-4 rounded-full hover:bg-[#e2ff8a] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-colors"
             >
               Start Free Trial
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>

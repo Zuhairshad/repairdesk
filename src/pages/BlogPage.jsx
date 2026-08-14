@@ -157,7 +157,7 @@ export default function BlogPage() {
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/40 font-dm-sans text-sm focus:outline-none focus:border-rd-teal" />
-            <button className="bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-teal-600 transition-colors whitespace-nowrap">
+            <button className="bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark-teal transition-colors whitespace-nowrap">
               Subscribe Free
             </button>
           </div>

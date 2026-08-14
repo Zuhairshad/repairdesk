@@ -63,7 +63,7 @@ export default function Testimonial({
     <section
       className="section-padding"
       style={{
-        background: "linear-gradient(135deg, #006d75 0%, #004a50 100%)",
+        background: "linear-gradient(135deg, #3d405b 0%, #1e2035 100%)",
       }}
     >
       <div className="container-main">
