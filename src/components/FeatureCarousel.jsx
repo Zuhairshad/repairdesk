@@ -106,7 +106,7 @@ export default function FeatureCarousel() {
               >
                 <span
                   className={`p-2 rounded-lg transition-all ${
-                    isActive ? "bg-[#134e4a]" : "bg-transparent"
+                    isActive ? "bg-[#2d2f45]" : "bg-transparent"
                   }`}
                 >
                   <img

@@ -171,27 +171,27 @@ export default function PartnerPage() {
                 <line x1="200" y1="200" x2="70" y2="200" />
               </g>
               {/* Center node */}
-              <circle cx="200" cy="200" r="58" fill="#016D74" />
+              <circle cx="200" cy="200" r="58" fill="#3d405b" />
               <text x="200" y="196" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="700" fontFamily="Poppins, sans-serif">RepairDesk</text>
               <text x="200" y="214" textAnchor="middle" fill="#C3EAB3" fontSize="10" fontFamily="DM Sans, sans-serif">Ecosystem Core</text>
 
               {/* Satellite: Resellers */}
-              <circle cx="200" cy="70" r="42" fill="#0C3C3E" stroke="#D4F479" strokeOpacity="0.4" />
+              <circle cx="200" cy="70" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
               <text x="200" y="66" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Resellers</text>
               <text x="200" y="80" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">Refer &amp; Earn</text>
 
               {/* Satellite: Suppliers */}
-              <circle cx="330" cy="200" r="42" fill="#0C3C3E" stroke="#D4F479" strokeOpacity="0.4" />
+              <circle cx="330" cy="200" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
               <text x="330" y="196" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Suppliers</text>
               <text x="330" y="210" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">OrderSync</text>
 
               {/* Satellite: Affiliates */}
-              <circle cx="200" cy="330" r="42" fill="#0C3C3E" stroke="#D4F479" strokeOpacity="0.4" />
+              <circle cx="200" cy="330" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
               <text x="200" y="326" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Affiliates</text>
               <text x="200" y="340" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">Train &amp; Refer</text>
 
               {/* Satellite: Repair Shops */}
-              <circle cx="70" cy="200" r="42" fill="#0C3C3E" stroke="#D4F479" strokeOpacity="0.4" />
+              <circle cx="70" cy="200" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
               <text x="70" y="196" textAnchor="middle" fill="#D4F479" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Repair</text>
               <text x="70" y="210" textAnchor="middle" fill="#D4F479" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Shops</text>
             </svg>

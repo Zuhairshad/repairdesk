@@ -125,7 +125,7 @@ export default function PaymentsPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-rd-dark via-[#0C3C3E] to-rd-teal text-white overflow-hidden py-24 md:py-32 px-6">
+      <section className="relative bg-gradient-to-br from-rd-dark via-[#1e2035] to-rd-teal text-white overflow-hidden py-24 md:py-32 px-6">
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rd-lime/10 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="container-main relative grid md:grid-cols-2 gap-16 items-center">
@@ -169,7 +169,7 @@ export default function PaymentsPage() {
             </div>
 
             {/* Card */}
-            <div className="absolute left-0 top-4 w-56 md:w-64 rounded-2xl bg-gradient-to-br from-[#0C3C3E] to-rd-teal p-5 shadow-2xl border border-white/10">
+            <div className="absolute left-0 top-4 w-56 md:w-64 rounded-2xl bg-gradient-to-br from-[#1e2035] to-rd-teal p-5 shadow-2xl border border-white/10">
               <div className="flex justify-between items-start mb-8">
                 <span className="w-9 h-6 rounded bg-gradient-to-br from-rd-lime to-yellow-200 opacity-90" />
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
@@ -193,7 +193,7 @@ export default function PaymentsPage() {
       <section className="bg-white py-20 px-6">
         <div className="container-main grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-2xl bg-rd-dark overflow-hidden aspect-video flex items-center justify-center border border-gray-100 shadow-lg">
-            <div className="absolute inset-0 bg-gradient-to-br from-rd-dark via-[#0C3C3E] to-rd-teal opacity-90" />
+            <div className="absolute inset-0 bg-gradient-to-br from-rd-dark via-[#1e2035] to-rd-teal opacity-90" />
             <div className="absolute inset-0 flex items-end p-6">
               <div className="flex gap-1 items-end h-10 opacity-40">
                 {[6, 10, 14, 8, 16, 12, 7, 15, 9, 11].map((h, i) => (

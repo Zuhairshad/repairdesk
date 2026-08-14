@@ -208,7 +208,7 @@ export default function CareersPage() {
           {/* People constellation graphic */}
           <div className="relative h-72 hidden sm:block">
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 260" fill="none">
-              <path d="M60 60 L160 130 L260 50 M160 130 L100 210 M160 130 L240 200" stroke="#016D74" strokeOpacity="0.3" strokeWidth="1.5" />
+              <path d="M60 60 L160 130 L260 50 M160 130 L100 210 M160 130 L240 200" stroke="#3d405b" strokeOpacity="0.3" strokeWidth="1.5" />
             </svg>
             {[
               { top: '4%', left: '10%', size: 'w-16 h-16', tint: 'bg-rd-lime text-rd-dark' },

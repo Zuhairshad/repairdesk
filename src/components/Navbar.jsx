@@ -370,7 +370,7 @@ export default function Navbar() {
               >
                 <div className="rounded-2xl bg-white shadow-2xl border border-gray-100 overflow-hidden flex">
                   {/* Left — ARIA promo card */}
-                  <div className="w-[240px] shrink-0 bg-gradient-to-br from-[#016D74] to-[#0C3C3E] p-6 flex flex-col justify-between">
+                  <div className="w-[240px] shrink-0 bg-gradient-to-br from-[#3d405b] to-[#1e2035] p-6 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center gap-2 mb-3">
                         <div className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center">

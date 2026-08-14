@@ -92,7 +92,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right — Branded Panel */}
-      <div className="hidden lg:flex w-1/2 relative items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(180deg, #016D74 0%, #0C3C3E 100%)' }}>
+      <div className="hidden lg:flex w-1/2 relative items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(180deg, #3d405b 0%, #1e2035 100%)' }}>
         {/* Tropical leaf decorations — bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-56 pointer-events-none">
           {/* Left palm leaf */}

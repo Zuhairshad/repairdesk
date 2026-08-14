@@ -37,9 +37,9 @@ const journeyStages = [
 
 const satisfactionStats = [
   { value: '73%', label: 'Fewer inbound status calls', color: 'bg-rd-teal' },
-  { value: '4.8x', label: 'Faster estimate approvals', color: 'bg-[#016D74]' },
+  { value: '4.8x', label: 'Faster estimate approvals', color: 'bg-[#3d405b]' },
   { value: '91%', label: 'Customer satisfaction rate', color: 'bg-rd-dark' },
-  { value: '2 min', label: 'Avg. notification delivery', color: 'bg-[#016D74]' },
+  { value: '2 min', label: 'Avg. notification delivery', color: 'bg-[#3d405b]' },
 ];
 
 const faqs = [

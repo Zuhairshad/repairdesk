@@ -105,7 +105,7 @@ export default function PaymentsProductPage() {
                 <rect x="20" y="30" width="300" height="190" rx="18" fill="url(#cardGrad)" />
                 <defs>
                   <linearGradient id="cardGrad" x1="20" y1="30" x2="320" y2="220">
-                    <stop offset="0%" stopColor="#016D74" />
+                    <stop offset="0%" stopColor="#3d405b" />
                     <stop offset="100%" stopColor="#012e32" />
                   </linearGradient>
                 </defs>

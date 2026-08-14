@@ -139,7 +139,7 @@ export default function EmployeeManagementPage() {
   return (
     <PageLayout>
       {/* HERO with org chart mockup */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#0C3C3E] to-rd-teal text-white py-24 px-6 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#1e2035] to-rd-teal text-white py-24 px-6 overflow-hidden">
         <div className="container-main grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
             <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">

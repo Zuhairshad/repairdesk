@@ -114,7 +114,7 @@ export default function HeavyDutyRepairPage() {
           </div>
         </div>
         {/* Hazard stripe bottom border */}
-        <div className="h-3 w-full" style={{ background: 'repeating-linear-gradient(135deg, #C8E52B 0 12px, #016D74 12px 24px)' }} />
+        <div className="h-3 w-full" style={{ background: 'repeating-linear-gradient(135deg, #C8E52B 0 12px, #3d405b 12px 24px)' }} />
       </section>
 
       {/* === EQUIPMENT CATEGORIES GRID === */}

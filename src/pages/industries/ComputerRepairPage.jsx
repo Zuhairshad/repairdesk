@@ -150,7 +150,7 @@ export default function ComputerRepairPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-[#0C3C3E] text-white pt-20 pb-24 px-6 relative overflow-hidden">
+      <section className="bg-[#1e2035] text-white pt-20 pb-24 px-6 relative overflow-hidden">
         <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="absolute -left-16 bottom-0 w-72 h-72 rounded-full bg-rd-lime/10 blur-3xl" />
         <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
@@ -251,7 +251,7 @@ export default function ComputerRepairPage() {
       </section>
 
       {/* Repair Tracker — full-width intro then 3-up icon cards */}
-      <section className="bg-[#0C3C3E] text-white py-16 md:py-24 px-6">
+      <section className="bg-[#1e2035] text-white py-16 md:py-24 px-6">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
             <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Repair Tracker</span>
@@ -348,7 +348,7 @@ export default function ComputerRepairPage() {
       {/* Case study / community */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="container-main">
-          <div className="grid grid-cols-1 lg:grid-cols-[0.55fr_0.45fr] gap-12 items-center bg-[#0C3C3E] rounded-3xl p-8 md:p-14">
+          <div className="grid grid-cols-1 lg:grid-cols-[0.55fr_0.45fr] gap-12 items-center bg-[#1e2035] rounded-3xl p-8 md:p-14">
             <div>
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Trusted by More Than 3,000+ Repair Stores</h2>
@@ -389,7 +389,7 @@ export default function ComputerRepairPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0C3C3E] py-16 md:py-20 px-6">
+      <section className="bg-[#1e2035] py-16 md:py-20 px-6">
         <div className="container-main text-center max-w-2xl mx-auto">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-6">Fix More Computers Faster with the #1 Repair POS!</h2>
           <div className="flex flex-wrap justify-center gap-4">

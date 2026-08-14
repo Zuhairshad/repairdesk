@@ -146,7 +146,7 @@ export default function WebinarPage() {
 
           {/* Right: video player mockup */}
           <div className="relative">
-            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-br from-[#0C3C3E] to-[#016D74]">
+            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-br from-[#1e2035] to-[#3d405b]">
               {/* "screen" area */}
               <div className="relative aspect-video flex items-center justify-center bg-[radial-gradient(circle_at_center,rgba(212,244,121,0.15),transparent_60%)]">
                 <span className="absolute top-4 left-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-black/40 text-rd-lime px-3 py-1 rounded-full">
@@ -234,7 +234,7 @@ export default function WebinarPage() {
                 className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-rd-teal/30 hover:shadow-lg transition-all flex flex-col"
               >
                 {/* video thumbnail */}
-                <div className="relative aspect-video bg-[#0C3C3E] flex items-center justify-center overflow-hidden">
+                <div className="relative aspect-video bg-[#1e2035] flex items-center justify-center overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-rd-teal/40 via-rd-dark/60 to-black/40" />
                   <div className="relative w-12 h-12 rounded-full bg-white/90 text-rd-dark flex items-center justify-center group-hover:bg-rd-lime transition-colors">
                     <PlayIcon className="w-5 h-5" />

@@ -44,14 +44,14 @@ function NetworkMapSVG() {
           <circle cx={n.x} cy={n.y} r={n.size + 6} fill="#D4F479" opacity="0.1">
             <animate attributeName="r" values={`${n.size + 4};${n.size + 10};${n.size + 4}`} dur="3s" repeatCount="indefinite" />
           </circle>
-          <circle cx={n.x} cy={n.y} r={n.size} fill={n.id === 'hq' ? '#D4F479' : '#fff'} stroke="#016D74" strokeWidth="2.5" />
+          <circle cx={n.x} cy={n.y} r={n.size} fill={n.id === 'hq' ? '#D4F479' : '#fff'} stroke="#3d405b" strokeWidth="2.5" />
           {n.id === 'hq' && (
-            <svg x={n.x - 9} y={n.y - 9} width="18" height="18" viewBox="0 0 24 24" fill="#016D74" stroke="none">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#016D74" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <svg x={n.x - 9} y={n.y - 9} width="18" height="18" viewBox="0 0 24 24" fill="#3d405b" stroke="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#3d405b" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           )}
           {n.id !== 'hq' && (
-            <svg x={n.x - 7} y={n.y - 7} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#016D74" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg x={n.x - 7} y={n.y - 7} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d405b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
             </svg>
           )}
@@ -65,10 +65,10 @@ function NetworkMapSVG() {
 function TransferFlowSVG() {
   return (
     <svg viewBox="0 0 600 120" className="w-full" fill="none">
-      <rect x="10" y="25" width="140" height="70" rx="16" fill="#016D74" />
+      <rect x="10" y="25" width="140" height="70" rx="16" fill="#3d405b" />
       <text x="80" y="55" textAnchor="middle" fill="#fff" className="text-[13px] font-semibold">Store A</text>
       <text x="80" y="75" textAnchor="middle" fill="#D4F479" className="text-[10px]">50 × iPhone Screens</text>
-      <rect x="450" y="25" width="140" height="70" rx="16" fill="#016D74" />
+      <rect x="450" y="25" width="140" height="70" rx="16" fill="#3d405b" />
       <text x="520" y="55" textAnchor="middle" fill="#fff" className="text-[13px] font-semibold">Store B</text>
       <text x="520" y="75" textAnchor="middle" fill="#D4F479" className="text-[10px]">Needs restock</text>
       <line x1="155" y1="60" x2="445" y2="60" stroke="#D4F479" strokeWidth="2" strokeDasharray="8 5" />
@@ -78,7 +78,7 @@ function TransferFlowSVG() {
       <circle r="4" fill="#D4F479" opacity="0.5">
         <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.6s" path="M155,60 L445,60" />
       </circle>
-      <rect x="250" y="30" width="100" height="30" rx="8" fill="#0C3C3E" />
+      <rect x="250" y="30" width="100" height="30" rx="8" fill="#1e2035" />
       <text x="300" y="50" textAnchor="middle" fill="#D4F479" className="text-[10px] font-bold">TRANSFER</text>
       <polygon points="440,52 450,60 440,68" fill="#D4F479" />
     </svg>
@@ -325,7 +325,7 @@ export default function MultiLocationPage() {
               <svg viewBox="0 0 320 320" className="w-full max-w-xs" fill="none">
                 {/* Expanding rings */}
                 {[130, 100, 70, 40].map((r, i) => (
-                  <circle key={i} cx="160" cy="160" r={r} stroke="#016D74" strokeWidth="1" fill="none" opacity={0.1 + i * 0.08}>
+                  <circle key={i} cx="160" cy="160" r={r} stroke="#3d405b" strokeWidth="1" fill="none" opacity={0.1 + i * 0.08}>
                     <animate attributeName="r" values={`${r - 3};${r + 3};${r - 3}`} dur={`${4 - i * 0.5}s`} repeatCount="indefinite" />
                   </circle>
                 ))}
@@ -341,12 +341,12 @@ export default function MultiLocationPage() {
                   return (
                     <g key={i}>
                       <line x1="160" y1="160" x2={cx} y2={cy} stroke="#D4F479" strokeWidth="0.5" opacity="0.3" />
-                      <circle cx={cx} cy={cy} r="6" fill="#016D74" stroke="#D4F479" strokeWidth="1.5" />
+                      <circle cx={cx} cy={cy} r="6" fill="#3d405b" stroke="#D4F479" strokeWidth="1.5" />
                     </g>
                   );
                 })}
                 {/* Center HQ */}
-                <circle cx="160" cy="160" r="22" fill="#016D74" stroke="#D4F479" strokeWidth="2" />
+                <circle cx="160" cy="160" r="22" fill="#3d405b" stroke="#D4F479" strokeWidth="2" />
                 <text x="160" y="164" textAnchor="middle" fill="#D4F479" className="text-[11px] font-bold">HQ</text>
               </svg>
             </div>

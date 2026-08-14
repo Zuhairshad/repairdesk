@@ -141,7 +141,7 @@ export default function StoreCreditsPage() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-sm">
               {/* Wallet body */}
-              <div className="bg-gradient-to-br from-[#01858e] to-rd-teal rounded-3xl p-6 shadow-2xl shadow-black/40 border border-white/10">
+              <div className="bg-gradient-to-br from-[#4d5175] to-rd-teal rounded-3xl p-6 shadow-2xl shadow-black/40 border border-white/10">
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-xs font-poppins font-semibold tracking-wider uppercase text-white/60">RepairDesk Wallet</span>
                   <WalletIcon className="w-6 h-6 text-rd-lime" />

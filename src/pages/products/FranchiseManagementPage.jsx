@@ -126,26 +126,26 @@ export default function FranchiseManagementPage() {
             <div className="hidden lg:flex justify-center">
               <svg viewBox="0 0 420 400" className="w-full max-w-[420px]" fill="none">
                 {/* Connection lines from HQ to nodes */}
-                <line x1="210" y1="200" x2="210" y2="60" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="350" y2="120" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="370" y2="260" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="310" y2="360" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="110" y2="360" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="50" y2="260" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
-                <line x1="210" y1="200" x2="70" y2="120" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="210" y2="60" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="350" y2="120" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="370" y2="260" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="310" y2="360" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="110" y2="360" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="50" y2="260" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
+                <line x1="210" y1="200" x2="70" y2="120" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4" opacity="0.5" />
 
                 {/* Animated pulse rings on HQ */}
-                <circle cx="210" cy="200" r="45" stroke="#016D74" strokeWidth="1" opacity="0.15">
+                <circle cx="210" cy="200" r="45" stroke="#3d405b" strokeWidth="1" opacity="0.15">
                   <animate attributeName="r" from="45" to="90" dur="3s" repeatCount="indefinite" />
                   <animate attributeName="opacity" from="0.2" to="0" dur="3s" repeatCount="indefinite" />
                 </circle>
-                <circle cx="210" cy="200" r="45" stroke="#016D74" strokeWidth="1" opacity="0.15">
+                <circle cx="210" cy="200" r="45" stroke="#3d405b" strokeWidth="1" opacity="0.15">
                   <animate attributeName="r" from="45" to="90" dur="3s" begin="1.5s" repeatCount="indefinite" />
                   <animate attributeName="opacity" from="0.2" to="0" dur="3s" begin="1.5s" repeatCount="indefinite" />
                 </circle>
 
                 {/* Central HQ node */}
-                <circle cx="210" cy="200" r="44" fill="#016D74" />
+                <circle cx="210" cy="200" r="44" fill="#3d405b" />
                 <circle cx="210" cy="200" r="44" stroke="#B5F542" strokeWidth="2.5" fill="none" />
                 <text x="210" y="195" textAnchor="middle" fill="white" fontFamily="Poppins, sans-serif" fontWeight="700" fontSize="14">HQ</text>
                 <text x="210" y="213" textAnchor="middle" fill="#B5F542" fontFamily="DM Sans, sans-serif" fontSize="9">CORPORATE</text>
@@ -161,7 +161,7 @@ export default function FranchiseManagementPage() {
                   { cx: 70, cy: 120, name: 'Store 7', status: '#22c55e' },
                 ].map((node, i) => (
                   <g key={i}>
-                    <circle cx={node.cx} cy={node.cy} r="28" fill="#0a2e30" stroke="#016D74" strokeWidth="1.5" />
+                    <circle cx={node.cx} cy={node.cy} r="28" fill="#0a2e30" stroke="#3d405b" strokeWidth="1.5" />
                     <circle cx={node.cx + 16} cy={node.cy - 16} r="5" fill={node.status} />
                     <text x={node.cx} y={node.cy + 4} textAnchor="middle" fill="white" fontFamily="DM Sans, sans-serif" fontSize="10" fontWeight="500">{node.name}</text>
                   </g>
@@ -272,7 +272,7 @@ export default function FranchiseManagementPage() {
                   <div className="font-dm-sans text-xs text-gray-500 mb-2">Weekly Revenue</div>
                   <div className="flex items-end gap-1.5 h-20">
                     {[55, 70, 45, 80, 65, 90, 75].map((h, i) => (
-                      <div key={i} className="flex-1 rounded-t" style={{ height: `${h}%`, background: i === 5 ? '#016D74' : '#e2e8f0' }} />
+                      <div key={i} className="flex-1 rounded-t" style={{ height: `${h}%`, background: i === 5 ? '#3d405b' : '#e2e8f0' }} />
                     ))}
                   </div>
                   <div className="flex justify-between mt-1">
@@ -444,25 +444,25 @@ export default function FranchiseManagementPage() {
               </div>
               <svg viewBox="0 0 400 260" className="w-full" fill="none">
                 {/* Abstract territory zones */}
-                <rect x="10" y="10" width="120" height="100" rx="16" fill="#016D74" opacity="0.12" stroke="#016D74" strokeWidth="1.5" strokeDasharray="4 3" />
-                <text x="70" y="55" textAnchor="middle" fill="#016D74" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Northwest</text>
-                <text x="70" y="72" textAnchor="middle" fill="#016D74" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">8 locations</text>
-                <circle cx="45" cy="90" r="4" fill="#016D74" /><circle cx="70" cy="85" r="4" fill="#016D74" /><circle cx="95" cy="92" r="4" fill="#016D74" />
+                <rect x="10" y="10" width="120" height="100" rx="16" fill="#3d405b" opacity="0.12" stroke="#3d405b" strokeWidth="1.5" strokeDasharray="4 3" />
+                <text x="70" y="55" textAnchor="middle" fill="#3d405b" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Northwest</text>
+                <text x="70" y="72" textAnchor="middle" fill="#3d405b" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">8 locations</text>
+                <circle cx="45" cy="90" r="4" fill="#3d405b" /><circle cx="70" cy="85" r="4" fill="#3d405b" /><circle cx="95" cy="92" r="4" fill="#3d405b" />
 
-                <rect x="145" y="10" width="120" height="100" rx="16" fill="#016D74" opacity="0.12" stroke="#016D74" strokeWidth="1.5" strokeDasharray="4 3" />
-                <text x="205" y="55" textAnchor="middle" fill="#016D74" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Midwest</text>
-                <text x="205" y="72" textAnchor="middle" fill="#016D74" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">5 locations</text>
-                <circle cx="180" cy="88" r="4" fill="#016D74" /><circle cx="210" cy="90" r="4" fill="#eab308" /><circle cx="230" cy="85" r="4" fill="#016D74" />
+                <rect x="145" y="10" width="120" height="100" rx="16" fill="#3d405b" opacity="0.12" stroke="#3d405b" strokeWidth="1.5" strokeDasharray="4 3" />
+                <text x="205" y="55" textAnchor="middle" fill="#3d405b" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Midwest</text>
+                <text x="205" y="72" textAnchor="middle" fill="#3d405b" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">5 locations</text>
+                <circle cx="180" cy="88" r="4" fill="#3d405b" /><circle cx="210" cy="90" r="4" fill="#eab308" /><circle cx="230" cy="85" r="4" fill="#3d405b" />
 
                 <rect x="280" y="10" width="110" height="100" rx="16" fill="#d1d5db" opacity="0.3" stroke="#9ca3af" strokeWidth="1.5" strokeDasharray="4 3" />
                 <text x="335" y="55" textAnchor="middle" fill="#6b7280" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Northeast</text>
                 <text x="335" y="72" textAnchor="middle" fill="#9ca3af" fontFamily="DM Sans, sans-serif" fontSize="9">Available</text>
 
-                <rect x="10" y="125" width="180" height="120" rx="16" fill="#016D74" opacity="0.12" stroke="#016D74" strokeWidth="1.5" strokeDasharray="4 3" />
-                <text x="100" y="175" textAnchor="middle" fill="#016D74" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Southwest</text>
-                <text x="100" y="192" textAnchor="middle" fill="#016D74" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">12 locations</text>
-                <circle cx="50" cy="210" r="4" fill="#016D74" /><circle cx="80" cy="215" r="4" fill="#016D74" /><circle cx="110" cy="208" r="4" fill="#016D74" />
-                <circle cx="140" cy="218" r="4" fill="#016D74" /><circle cx="65" cy="225" r="4" fill="#eab308" />
+                <rect x="10" y="125" width="180" height="120" rx="16" fill="#3d405b" opacity="0.12" stroke="#3d405b" strokeWidth="1.5" strokeDasharray="4 3" />
+                <text x="100" y="175" textAnchor="middle" fill="#3d405b" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Southwest</text>
+                <text x="100" y="192" textAnchor="middle" fill="#3d405b" fontFamily="DM Sans, sans-serif" fontSize="9" opacity="0.7">12 locations</text>
+                <circle cx="50" cy="210" r="4" fill="#3d405b" /><circle cx="80" cy="215" r="4" fill="#3d405b" /><circle cx="110" cy="208" r="4" fill="#3d405b" />
+                <circle cx="140" cy="218" r="4" fill="#3d405b" /><circle cx="65" cy="225" r="4" fill="#eab308" />
 
                 <rect x="205" y="125" width="185" height="120" rx="16" fill="#fef3c7" opacity="0.5" stroke="#eab308" strokeWidth="1.5" strokeDasharray="4 3" />
                 <text x="297" y="175" textAnchor="middle" fill="#92400e" fontFamily="Poppins, sans-serif" fontWeight="600" fontSize="11">Southeast</text>

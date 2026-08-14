@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function IntegrationsBanner() {
   return (
-    <section className="bg-[#0C3C3E]">
+    <section className="bg-[#1e2035]">
       <div className="container-main py-12 md:py-16">
         <h2 className="text-white font-poppins font-semibold text-xl md:text-2xl text-center">
           Powered by a Suite of 40+ Integrated Partners

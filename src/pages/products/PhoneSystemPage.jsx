@@ -11,7 +11,7 @@ const DeskPhoneSVG = () => (
     <path d="M214 16c28-28 72-28 100 0" stroke="#B8F260" strokeWidth="3" strokeLinecap="round" opacity=".2" />
     {/* Phone base */}
     <rect x="60" y="130" width="200" height="120" rx="16" fill="#014a50" />
-    <rect x="70" y="140" width="180" height="100" rx="10" fill="#016D74" />
+    <rect x="70" y="140" width="180" height="100" rx="10" fill="#3d405b" />
     {/* Screen */}
     <rect x="100" y="152" width="120" height="44" rx="6" fill="#0a3d40" />
     <text x="160" y="172" textAnchor="middle" fill="#B8F260" fontFamily="monospace" fontSize="11">INCOMING CALL</text>
@@ -290,7 +290,7 @@ export default function PhoneSystemPage() {
             <div className="order-1 lg:order-2 flex justify-center">
               <svg viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-sm">
                 {/* Center phone node */}
-                <circle cx="150" cy="140" r="48" fill="#016D74" />
+                <circle cx="150" cy="140" r="48" fill="#3d405b" />
                 <svg x="126" y="116" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.4">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>

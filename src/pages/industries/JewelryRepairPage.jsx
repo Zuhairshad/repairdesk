@@ -481,7 +481,7 @@ export default function JewelryRepairPage() {
       </section>
 
       {/* REPAIR AND SELL — jewel case grid */}
-      <section className="bg-[#0C3C3E] py-20 px-6 text-white">
+      <section className="bg-[#1e2035] py-20 px-6 text-white">
         <div className="container-main">
           <Eyebrow dark>Jewelry Repair Management Software</Eyebrow>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-4 max-w-2xl">Repair and Sell Jewelry in One place</h2>
@@ -675,7 +675,7 @@ export default function JewelryRepairPage() {
       </section>
 
       {/* TRUST BAND */}
-      <section className="bg-[#0C3C3E] py-16 px-6 text-white">
+      <section className="bg-[#1e2035] py-16 px-6 text-white">
         <div className="container-main text-center">
           <h2 className="font-poppins font-bold text-2xl md:text-3xl mb-4">You're in Great Company</h2>
           <p className="text-white/70 font-dm-sans max-w-2xl mx-auto mb-12">

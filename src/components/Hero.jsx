@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       className="relative overflow-hidden min-h-[600px] lg:min-h-[700px] flex items-center py-16 md:py-24 lg:py-32"
       style={{
-        background: 'linear-gradient(135deg, #0C3C3E 0%, #134e4a 50%, #0C3C3E 100%)',
+        background: 'linear-gradient(135deg, #1e2035 0%, #2d2f45 50%, #1e2035 100%)',
       }}
     >
       {/* Subtle radial glow */}

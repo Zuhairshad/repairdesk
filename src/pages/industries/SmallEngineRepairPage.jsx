@@ -387,7 +387,7 @@ export default function SmallEngineRepairPage() {
         >
           {Icon.gear}
         </div>
-        <div className="absolute top-0 left-0 right-0 h-1.5" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #D4F479 0 10px, #0C3C3E 10px 20px)' }} />
+        <div className="absolute top-0 left-0 right-0 h-1.5" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #D4F479 0 10px, #1e2035 10px 20px)' }} />
 
         <div className="container-main grid md:grid-cols-[1.15fr_0.85fr] gap-14 items-center relative z-10">
           <div>
@@ -574,7 +574,7 @@ export default function SmallEngineRepairPage() {
       </section>
 
       {/* ============ STAY IN CHARGE — gauge dashboard ============ */}
-      <section className="bg-[#0C3C3E] text-white py-20 px-6">
+      <section className="bg-[#1e2035] text-white py-20 px-6">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
             <span className="text-rd-lime font-poppins font-bold text-xs uppercase tracking-widest">Stay in Charge</span>
@@ -617,7 +617,7 @@ export default function SmallEngineRepairPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {paymentItems.map((item) => (
-              <div key={item.title} className="bg-[#0C3C3E] text-white rounded-2xl p-7">
+              <div key={item.title} className="bg-[#1e2035] text-white rounded-2xl p-7">
                 <HexIcon tone="lime">{item.icon}</HexIcon>
                 <h3 className="font-poppins font-semibold mt-4 mb-1.5">{item.title}</h3>
                 <p className="text-white/60 font-dm-sans text-sm leading-relaxed">{item.desc}</p>

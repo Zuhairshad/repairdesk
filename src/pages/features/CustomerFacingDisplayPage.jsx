@@ -99,7 +99,7 @@ function ItemsScreen({ tall }) {
 function AdsScreen() {
   return (
     <>
-      <div className="bg-[#0C3C3E] px-4 py-3 flex items-center gap-2">
+      <div className="bg-[#1e2035] px-4 py-3 flex items-center gap-2">
         <div className="w-5 h-5 rounded-full bg-rd-lime flex items-center justify-center">
           <svg className="w-3 h-3 text-rd-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -196,7 +196,7 @@ export default function CustomerFacingDisplayPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-[#0C3C3E] relative overflow-hidden py-20 md:py-28 px-6">
+      <section className="bg-[#1e2035] relative overflow-hidden py-20 md:py-28 px-6">
         <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #D4F479 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-main relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>

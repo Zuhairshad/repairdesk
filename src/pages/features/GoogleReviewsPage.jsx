@@ -167,7 +167,7 @@ export default function GoogleReviewsPage() {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="bg-[#0C3C3E] text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
+      <section className="bg-[#1e2035] text-white pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden relative">
         <div className="container-main relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: copy */}
@@ -372,7 +372,7 @@ export default function GoogleReviewsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-[#0C3C3E] py-20 md:py-28">
+      <section className="bg-[#1e2035] py-20 md:py-28">
         <div className="container-main">
           <div className="grid lg:grid-cols-3 gap-10">
             {benefits.map((b) => (

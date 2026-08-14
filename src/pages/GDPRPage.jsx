@@ -72,7 +72,7 @@ export default function GDPRPage() {
       {/* Hero */}
       <section className="relative bg-white overflow-hidden py-24 px-6 border-b border-gray-100">
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none">
-          <svg viewBox="0 0 200 240" className="w-96 h-96" fill="#016D74">
+          <svg viewBox="0 0 200 240" className="w-96 h-96" fill="#3d405b">
             <path d="M100 5L15 40v60c0 55 37 105 85 120C148 205 185 155 185 100V40L100 5z" />
           </svg>
         </div>
@@ -172,7 +172,7 @@ export default function GDPRPage() {
                   <path d="M100 8L18 42v60c0 53 35 101 82 118C147 203 182 155 182 102V42L100 8z" fill="url(#sg)" />
                   <defs>
                     <linearGradient id="sg" x1="100" y1="8" x2="100" y2="220" gradientUnits="userSpaceOnUse">
-                      <stop offset="0%" stopColor="#016D74" /><stop offset="100%" stopColor="#0C3C3E" />
+                      <stop offset="0%" stopColor="#3d405b" /><stop offset="100%" stopColor="#1e2035" />
                     </linearGradient>
                   </defs>
                 </svg>

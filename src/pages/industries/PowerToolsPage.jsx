@@ -168,7 +168,7 @@ function HazardStrip({ className = '' }) {
       className={`h-2.5 w-full ${className}`}
       style={{
         backgroundImage:
-          'repeating-linear-gradient(135deg, #D4F479 0 14px, #0C3C3E 14px 28px)',
+          'repeating-linear-gradient(135deg, #D4F479 0 14px, #1e2035 14px 28px)',
       }}
     />
   );
@@ -190,7 +190,7 @@ export default function PowerToolsPage() {
   return (
     <PageLayout>
       {/* ============================ HERO ============================ */}
-      <section className="bg-[#0C3C3E] text-white pt-20 pb-16 px-6 relative overflow-hidden">
+      <section className="bg-[#1e2035] text-white pt-20 pb-16 px-6 relative overflow-hidden">
         <div className="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="absolute left-1/3 -bottom-32 w-72 h-72 rounded-full bg-rd-lime/10 blur-3xl" />
 
@@ -329,7 +329,7 @@ export default function PowerToolsPage() {
       </section>
 
       {/* ====================== EMPLOYEE MANAGEMENT (dark dashboard strip) ====================== */}
-      <section className="bg-[#0C3C3E] text-white py-16 md:py-24 px-6 relative overflow-hidden">
+      <section className="bg-[#1e2035] text-white py-16 md:py-24 px-6 relative overflow-hidden">
         <div className="absolute -left-24 top-1/3 w-72 h-72 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="container-main relative z-10">
           <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Employee Management</span>
@@ -413,7 +413,7 @@ export default function PowerToolsPage() {
       {/* ====================== YOU'RE IN GREAT COMPANY ====================== */}
       <section className="bg-rd-cream py-16 md:py-24 px-6">
         <div className="container-main">
-          <div className="bg-[#0C3C3E] rounded-3xl p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+          <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
             <div>
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Join Power Tool Shop Owners Worldwide</h2>
@@ -434,7 +434,7 @@ export default function PowerToolsPage() {
       </section>
 
       {/* ====================== FINAL CTA ====================== */}
-      <section className="bg-[#0C3C3E] py-16 md:py-20 px-6 relative overflow-hidden">
+      <section className="bg-[#1e2035] py-16 md:py-20 px-6 relative overflow-hidden">
         <HazardStrip className="absolute top-0 left-0" />
         <div className="container-main text-center max-w-2xl mx-auto pt-4">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-6">Supercharge Repairs with the #1 Power Tools Repair POS!</h2>

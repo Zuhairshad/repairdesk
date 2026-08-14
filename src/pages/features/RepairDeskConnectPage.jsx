@@ -103,17 +103,17 @@ export default function RepairDeskConnectPage() {
               <path d="M134 110 L350 110" stroke="#F59E0B" strokeWidth="2.5" strokeDasharray="6 4" fill="none" />
               <path d="M134 182 C220 182, 260 110, 350 110" stroke="#8B5CF6" strokeWidth="2.5" strokeDasharray="6 4" fill="none" />
               {/* Merge circle */}
-              <circle cx="370" cy="110" r="22" fill="#016D74" />
+              <circle cx="370" cy="110" r="22" fill="#3d405b" />
               <path d="M360 110h20M370 100v20" stroke="#C1F04F" strokeWidth="2.5" strokeLinecap="round" />
               {/* Arrow to inbox */}
-              <path d="M394 110 L470 110" stroke="#016D74" strokeWidth="2.5" fill="none" markerEnd="url(#arrowT)" />
-              <defs><marker id="arrowT" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l7 4-7 4z" fill="#016D74" /></marker></defs>
+              <path d="M394 110 L470 110" stroke="#3d405b" strokeWidth="2.5" fill="none" markerEnd="url(#arrowT)" />
+              <defs><marker id="arrowT" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l7 4-7 4z" fill="#3d405b" /></marker></defs>
               {/* Unified inbox */}
-              <rect x="476" y="60" width="220" height="100" rx="16" fill="#F8F8FB" stroke="#016D74" strokeWidth="2" />
-              <text x="586" y="96" textAnchor="middle" fill="#016D74" fontSize="14" fontFamily="sans-serif" fontWeight="700">Unified Inbox</text>
-              <rect x="500" y="108" width="172" height="8" rx="4" fill="#016D74" fillOpacity=".15" />
-              <rect x="500" y="122" width="130" height="8" rx="4" fill="#016D74" fillOpacity=".1" />
-              <rect x="500" y="136" width="90" height="8" rx="4" fill="#016D74" fillOpacity=".07" />
+              <rect x="476" y="60" width="220" height="100" rx="16" fill="#F8F8FB" stroke="#3d405b" strokeWidth="2" />
+              <text x="586" y="96" textAnchor="middle" fill="#3d405b" fontSize="14" fontFamily="sans-serif" fontWeight="700">Unified Inbox</text>
+              <rect x="500" y="108" width="172" height="8" rx="4" fill="#3d405b" fillOpacity=".15" />
+              <rect x="500" y="122" width="130" height="8" rx="4" fill="#3d405b" fillOpacity=".1" />
+              <rect x="500" y="136" width="90" height="8" rx="4" fill="#3d405b" fillOpacity=".07" />
             </svg>
           </div>
         </div>
@@ -222,13 +222,13 @@ export default function RepairDeskConnectPage() {
             <div className="order-1 lg:order-2 flex justify-center" aria-hidden="true">
               <svg viewBox="0 0 340 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-xs">
                 {/* Incoming message */}
-                <rect x="110" y="0" width="120" height="44" rx="22" fill="#016D74" />
+                <rect x="110" y="0" width="120" height="44" rx="22" fill="#3d405b" />
                 <text x="170" y="27" textAnchor="middle" fill="#fff" fontSize="13" fontFamily="sans-serif" fontWeight="600">Incoming</text>
                 {/* Router diamond */}
-                <polygon points="170,80 220,130 170,180 120,130" fill="#F8F8FB" stroke="#016D74" strokeWidth="2" />
-                <text x="170" y="134" textAnchor="middle" fill="#016D74" fontSize="11" fontFamily="sans-serif" fontWeight="700">ROUTE</text>
+                <polygon points="170,80 220,130 170,180 120,130" fill="#F8F8FB" stroke="#3d405b" strokeWidth="2" />
+                <text x="170" y="134" textAnchor="middle" fill="#3d405b" fontSize="11" fontFamily="sans-serif" fontWeight="700">ROUTE</text>
                 {/* Lines down from incoming to diamond */}
-                <line x1="170" y1="44" x2="170" y2="80" stroke="#016D74" strokeWidth="2" />
+                <line x1="170" y1="44" x2="170" y2="80" stroke="#3d405b" strokeWidth="2" />
                 {/* Branches */}
                 <line x1="120" y1="130" x2="40" y2="130" stroke="#3B82F6" strokeWidth="2" />
                 <line x1="40" y1="130" x2="40" y2="230" stroke="#3B82F6" strokeWidth="2" />

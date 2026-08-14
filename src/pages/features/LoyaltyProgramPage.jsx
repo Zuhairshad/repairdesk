@@ -88,9 +88,9 @@ function FeatureArt({ type }) {
       <div className={wrap}>
         <svg className="w-4/5 h-4/5 relative z-10" viewBox="0 0 200 140" fill="none">
           <path d="M15 110 C 60 20, 140 120, 185 30" stroke="#D4F479" strokeWidth="3" strokeDasharray="6 8" strokeLinecap="round" />
-          <circle cx="15" cy="110" r="9" fill="#0C3C3E" stroke="#D4F479" strokeWidth="2.5" />
+          <circle cx="15" cy="110" r="9" fill="#1e2035" stroke="#D4F479" strokeWidth="2.5" />
           <circle cx="185" cy="30" r="12" fill="#D4F479" />
-          <path d="M180 30 l4 -5 l4 5 l-4 5z" fill="#0C3C3E" transform="translate(1,1)" />
+          <path d="M180 30 l4 -5 l4 5 l-4 5z" fill="#1e2035" transform="translate(1,1)" />
         </svg>
         <div className="absolute top-6 left-6 text-[10px] font-poppins font-bold uppercase tracking-widest text-white/50">First Visit</div>
         <div className="absolute bottom-6 right-6 text-[10px] font-poppins font-bold uppercase tracking-widest text-rd-lime">Loyal Regular</div>
@@ -163,7 +163,7 @@ export default function LoyaltyProgramPage() {
           {/* Loyalty card mockup */}
           <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute -inset-6 bg-rd-teal/20 rounded-[2.5rem] blur-2xl" />
-            <div className="relative bg-gradient-to-br from-rd-teal via-[#0C3C3E] to-rd-dark rounded-3xl p-7 shadow-2xl border border-white/10">
+            <div className="relative bg-gradient-to-br from-rd-teal via-[#1e2035] to-rd-dark rounded-3xl p-7 shadow-2xl border border-white/10">
               <div className="flex items-center justify-between mb-8">
                 <span className="font-poppins font-bold tracking-wide text-sm">REPAIRDESK REWARDS</span>
                 <div className="w-9 h-6 rounded-sm bg-rd-lime/80" />

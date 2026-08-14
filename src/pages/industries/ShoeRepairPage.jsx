@@ -470,7 +470,7 @@ export default function ShoeRepairPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {paymentCards.map((c) => (
-              <div key={c.title} className="bg-[#0C3C3E] text-white rounded-2xl p-7">
+              <div key={c.title} className="bg-[#1e2035] text-white rounded-2xl p-7">
                 <div className="w-11 h-11 rounded-xl bg-rd-teal flex items-center justify-center mb-4">
                   {c.icon}
                 </div>

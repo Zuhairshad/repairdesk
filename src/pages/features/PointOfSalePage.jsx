@@ -6,28 +6,28 @@ import PageLayout from '../../components/PageLayout';
 const POSTerminal = () => (
   <svg viewBox="0 0 320 400" className="w-full max-w-xs mx-auto drop-shadow-2xl" fill="none">
     {/* Terminal body */}
-    <rect x="30" y="20" width="260" height="360" rx="24" fill="#0C3C3E" />
+    <rect x="30" y="20" width="260" height="360" rx="24" fill="#1e2035" />
     <rect x="30" y="20" width="260" height="360" rx="24" stroke="#1a5c5f" strokeWidth="2" />
     {/* Screen bezel */}
-    <rect x="50" y="44" width="220" height="180" rx="12" fill="#134e4a" />
+    <rect x="50" y="44" width="220" height="180" rx="12" fill="#2d2f45" />
     {/* Screen */}
     <rect x="58" y="52" width="204" height="164" rx="8" fill="#e0faf4" />
     {/* Screen content - transaction lines */}
-    <rect x="72" y="68" width="90" height="8" rx="4" fill="#016D74" opacity="0.6" />
-    <rect x="200" y="68" width="48" height="8" rx="4" fill="#016D74" opacity="0.4" />
-    <rect x="72" y="88" width="70" height="8" rx="4" fill="#016D74" opacity="0.5" />
-    <rect x="200" y="88" width="40" height="8" rx="4" fill="#016D74" opacity="0.35" />
-    <rect x="72" y="108" width="110" height="8" rx="4" fill="#016D74" opacity="0.45" />
-    <rect x="200" y="108" width="52" height="8" rx="4" fill="#016D74" opacity="0.3" />
+    <rect x="72" y="68" width="90" height="8" rx="4" fill="#3d405b" opacity="0.6" />
+    <rect x="200" y="68" width="48" height="8" rx="4" fill="#3d405b" opacity="0.4" />
+    <rect x="72" y="88" width="70" height="8" rx="4" fill="#3d405b" opacity="0.5" />
+    <rect x="200" y="88" width="40" height="8" rx="4" fill="#3d405b" opacity="0.35" />
+    <rect x="72" y="108" width="110" height="8" rx="4" fill="#3d405b" opacity="0.45" />
+    <rect x="200" y="108" width="52" height="8" rx="4" fill="#3d405b" opacity="0.3" />
     {/* Divider line */}
-    <line x1="72" y1="132" x2="248" y2="132" stroke="#016D74" strokeWidth="1" strokeDasharray="4 3" opacity="0.4" />
+    <line x1="72" y1="132" x2="248" y2="132" stroke="#3d405b" strokeWidth="1" strokeDasharray="4 3" opacity="0.4" />
     {/* Total */}
-    <rect x="72" y="148" width="50" height="10" rx="5" fill="#016D74" opacity="0.7" />
-    <rect x="190" y="146" width="58" height="14" rx="7" fill="#016D74" />
+    <rect x="72" y="148" width="50" height="10" rx="5" fill="#3d405b" opacity="0.7" />
+    <rect x="190" y="146" width="58" height="14" rx="7" fill="#3d405b" />
     <text x="219" y="157" textAnchor="middle" fill="white" fontSize="9" fontWeight="bold">$149.99</text>
     {/* Checkout button on screen */}
     <rect x="72" y="176" width="176" height="28" rx="14" fill="#D4F479" />
-    <text x="160" y="195" textAnchor="middle" fill="#0C3C3E" fontSize="11" fontWeight="bold">COMPLETE SALE</text>
+    <text x="160" y="195" textAnchor="middle" fill="#1e2035" fontSize="11" fontWeight="bold">COMPLETE SALE</text>
     {/* Keypad area */}
     {[0, 1, 2].map(row =>
       [0, 1, 2].map(col => (

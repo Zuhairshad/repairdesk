@@ -196,7 +196,7 @@ function WheelGraphic({ className = '' }) {
 
 function FaqItem({ q, a, index, open, onToggle }) {
   return (
-    <div className="border-b border-[#0C3C3E]/10 last:border-b-0">
+    <div className="border-b border-[#1e2035]/10 last:border-b-0">
       <button onClick={() => onToggle(index)} className="w-full flex items-center justify-between gap-4 text-left py-5">
         <span className="font-poppins font-semibold text-rd-dark text-base md:text-lg">{q}</span>
         <span className={`shrink-0 w-8 h-8 rounded-full bg-rd-teal/10 flex items-center justify-center transition-transform ${open ? 'rotate-45' : ''}`}>
@@ -368,7 +368,7 @@ export default function BicycleRepairPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {paymentSubFeatures.map((f) => (
               <div key={f.title} className="bg-white rounded-2xl p-6 shadow-sm">
-                <div className="w-11 h-11 rounded-xl bg-[#0C3C3E] flex items-center justify-center mb-4">
+                <div className="w-11 h-11 rounded-xl bg-[#1e2035] flex items-center justify-center mb-4">
                   <Icon paths={f.icon} className="w-5 h-5 text-rd-lime" />
                 </div>
                 <h3 className="font-poppins font-semibold text-rd-dark mb-2">{f.title}</h3>
@@ -382,7 +382,7 @@ export default function BicycleRepairPage() {
       {/* ===== TRUSTED / STATS ===== */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="container-main">
-          <div className="rounded-3xl bg-[#0C3C3E] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[0.6fr_0.4fr] gap-10 items-center">
+          <div className="rounded-3xl bg-[#1e2035] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[0.6fr_0.4fr] gap-10 items-center">
             <div>
               <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">
                 <Icon paths={ICONS.users} className="w-3.5 h-3.5" strokeWidth={2.2} />

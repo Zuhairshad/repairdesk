@@ -14,7 +14,7 @@ const GiftCardSVG = () => (
   <svg viewBox="0 0 340 220" fill="none" className="w-full max-w-[340px] drop-shadow-2xl" style={{ transform: 'perspective(800px) rotateY(-8deg) rotateX(4deg)' }}>
     <defs>
       <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#016D74" />
+        <stop offset="0%" stopColor="#3d405b" />
         <stop offset="100%" stopColor="#013a3e" />
       </linearGradient>
       <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -55,7 +55,7 @@ export default function GiftCardsPage() {
 
   const designCards = [
     { bg: '#1a1a2e', accent: '#e94560', label: 'PREMIUM', amount: '$100' },
-    { bg: '#016D74', accent: '#f0d78c', label: 'CLASSIC', amount: '$50' },
+    { bg: '#3d405b', accent: '#f0d78c', label: 'CLASSIC', amount: '$50' },
     { bg: '#2d3436', accent: '#74b9ff', label: 'TECH LOVER', amount: '$25' },
   ];
 
@@ -180,7 +180,7 @@ export default function GiftCardsPage() {
               <svg viewBox="0 0 280 200" fill="none" className="w-full">
                 <rect width="280" height="200" rx="16" fill="white" />
                 <text x="20" y="30" fill="#1a1a2e" fontFamily="Poppins, sans-serif" fontSize="10" fontWeight="600">Gift Card Sales</text>
-                <text x="220" y="30" fill="#016D74" fontFamily="DM Sans, sans-serif" fontSize="8" fontWeight="500">This Year</text>
+                <text x="220" y="30" fill="#3d405b" fontFamily="DM Sans, sans-serif" fontSize="8" fontWeight="500">This Year</text>
                 {/* Y-axis labels */}
                 {['$5k', '$4k', '$3k', '$2k', '$1k', '$0'].map((l, i) => (
                   <text key={l} x="16" y={55 + i * 24} fill="#9ca3af" fontFamily="DM Sans, sans-serif" fontSize="7" textAnchor="end">{l}</text>
@@ -196,7 +196,7 @@ export default function GiftCardsPage() {
                   { x: 232, h: 120, label: 'Jul' },
                 ].map(bar => (
                   <g key={bar.label}>
-                    <rect x={bar.x} y={172 - bar.h} width="20" height={bar.h} rx="4" fill="#016D74" opacity="0.85" />
+                    <rect x={bar.x} y={172 - bar.h} width="20" height={bar.h} rx="4" fill="#3d405b" opacity="0.85" />
                     <text x={bar.x + 10} y="188" fill="#9ca3af" fontFamily="DM Sans, sans-serif" fontSize="7" textAnchor="middle">{bar.label}</text>
                   </g>
                 ))}

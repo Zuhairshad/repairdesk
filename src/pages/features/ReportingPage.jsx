@@ -104,7 +104,7 @@ const barMax = Math.max(...barData.map(d => d.value));
 /* ── Pie chart data (revenue by service) ── */
 
 const pieSlices = [
-  { label: 'Screen Repair', pct: 35, color: '#016D74' },
+  { label: 'Screen Repair', pct: 35, color: '#3d405b' },
   { label: 'Battery Replace', pct: 22, color: '#0EA5E9' },
   { label: 'Data Recovery', pct: 18, color: '#84CC16' },
   { label: 'Board Repair', pct: 15, color: '#F59E0B' },
@@ -338,7 +338,7 @@ export default function ReportingPage() {
                   const x = 35 + i * 27;
                   return (
                     <g key={i}>
-                      <rect x={x} y={160 - barH} width="18" height={barH} rx="3" fill="#016D74" opacity={0.85} />
+                      <rect x={x} y={160 - barH} width="18" height={barH} rx="3" fill="#3d405b" opacity={0.85} />
                       <text x={x + 9} y={175} textAnchor="middle" className="text-[8px] fill-gray-400" style={{ fontFamily: 'DM Sans, sans-serif' }}>{d.month}</text>
                     </g>
                   );

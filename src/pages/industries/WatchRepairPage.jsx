@@ -191,7 +191,7 @@ function TickMark({ i }) {
   return (
     <line
       x1="120" y1="20" x2="120" y2={isCardinal ? 34 : 30}
-      stroke="#0C3C3E"
+      stroke="#1e2035"
       strokeWidth={isCardinal ? 4 : 2}
       strokeLinecap="round"
       transform={`rotate(${i * 30} 120 120)`}
@@ -201,18 +201,18 @@ function TickMark({ i }) {
 
 function WatchDial() {
   return (
-    <div className="bg-[#0C3C3E] rounded-full p-4 shadow-2xl">
+    <div className="bg-[#1e2035] rounded-full p-4 shadow-2xl">
       <div className="bg-[#FAF9E3] rounded-full p-8 ring-4 ring-rd-lime/60">
         <svg viewBox="0 0 240 240" className="w-56 h-56 md:w-72 md:h-72">
-          <circle cx="120" cy="120" r="106" fill="none" stroke="#0C3C3E" strokeWidth="1" opacity="0.15" />
+          <circle cx="120" cy="120" r="106" fill="none" stroke="#1e2035" strokeWidth="1" opacity="0.15" />
           {Array.from({ length: 12 }).map((_, i) => <TickMark key={i} i={i} />)}
-          <line x1="120" y1="120" x2="120" y2="74" stroke="#0C3C3E" strokeWidth="6" strokeLinecap="round" transform="rotate(45 120 120)" />
-          <line x1="120" y1="120" x2="120" y2="50" stroke="#0C3C3E" strokeWidth="4" strokeLinecap="round" transform="rotate(155 120 120)" />
+          <line x1="120" y1="120" x2="120" y2="74" stroke="#1e2035" strokeWidth="6" strokeLinecap="round" transform="rotate(45 120 120)" />
+          <line x1="120" y1="120" x2="120" y2="50" stroke="#1e2035" strokeWidth="4" strokeLinecap="round" transform="rotate(155 120 120)" />
           <g>
-            <line x1="120" y1="132" x2="120" y2="42" stroke="#016D74" strokeWidth="2" strokeLinecap="round" />
+            <line x1="120" y1="132" x2="120" y2="42" stroke="#3d405b" strokeWidth="2" strokeLinecap="round" />
             <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="12s" repeatCount="indefinite" />
           </g>
-          <circle cx="120" cy="120" r="7" fill="#016D74" />
+          <circle cx="120" cy="120" r="7" fill="#3d405b" />
           <circle cx="120" cy="120" r="2.5" fill="#FAF9E3" />
         </svg>
       </div>
@@ -247,7 +247,7 @@ export default function WatchRepairPage() {
   return (
     <PageLayout>
       {/* Hero — the watch face */}
-      <section className="bg-gradient-to-br from-rd-dark via-[#0C3C3E] to-rd-teal text-white py-20 md:py-28 px-6 overflow-hidden">
+      <section className="bg-gradient-to-br from-rd-dark via-[#1e2035] to-rd-teal text-white py-20 md:py-28 px-6 overflow-hidden">
         <div className="container-main grid lg:grid-cols-[1.2fr_1fr] gap-14 items-center">
           <div>
             <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6 font-poppins">
@@ -473,7 +473,7 @@ export default function WatchRepairPage() {
       </section>
 
       {/* You're in Great Company — the case back */}
-      <section className="bg-[#0C3C3E] py-16 md:py-20 px-6">
+      <section className="bg-[#1e2035] py-16 md:py-20 px-6">
         <div className="container-main text-center">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-4">
             You're in Great Company

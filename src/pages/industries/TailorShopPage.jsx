@@ -164,9 +164,9 @@ export default function TailorShopPage() {
           <div className="flex-shrink-0 relative w-64 h-72 md:w-80 md:h-[22rem]">
             <svg viewBox="0 0 320 360" fill="none" className="w-full h-full drop-shadow-2xl">
               {/* mannequin silhouette */}
-              <path d="M160 40c-18 0-32 14-32 32s14 32 32 32 32-14 32-32-14-32-32-32z" fill="#016D74" opacity="0.9" />
-              <path d="M110 120c0-10 22-20 50-20s50 10 50 20l8 140c0 8-6 14-14 14H116c-8 0-14-6-14-14l8-140z" fill="#016D74" opacity="0.7" />
-              <path d="M100 260h120v20c0 12-10 22-22 22H122c-12 0-22-10-22-22v-20z" fill="#016D74" opacity="0.5" />
+              <path d="M160 40c-18 0-32 14-32 32s14 32 32 32 32-14 32-32-14-32-32-32z" fill="#3d405b" opacity="0.9" />
+              <path d="M110 120c0-10 22-20 50-20s50 10 50 20l8 140c0 8-6 14-14 14H116c-8 0-14-6-14-14l8-140z" fill="#3d405b" opacity="0.7" />
+              <path d="M100 260h120v20c0 12-10 22-22 22H122c-12 0-22-10-22-22v-20z" fill="#3d405b" opacity="0.5" />
               {/* measuring tape wrapping around */}
               <path d="M95 140c60-10 110 10 130 0" stroke="#CDEA68" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />
               <path d="M90 190c70 15 120-5 140 5" stroke="#CDEA68" strokeWidth="6" strokeLinecap="round" strokeDasharray="12 6" />

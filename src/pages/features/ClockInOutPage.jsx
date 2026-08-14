@@ -50,7 +50,7 @@ export default function ClockInOutPage() {
           {/* Clock Face SVG */}
           <div className="flex-shrink-0 relative">
             <svg width="310" height="310" viewBox="0 0 310 310" fill="none" className="drop-shadow-2xl">
-              <circle cx="155" cy="155" r="150" fill="#014a50" stroke="#016D74" strokeWidth="3"/>
+              <circle cx="155" cy="155" r="150" fill="#014a50" stroke="#3d405b" strokeWidth="3"/>
               <circle cx="155" cy="155" r="135" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1"/>
               {/* Hour marks */}
               {[...Array(12)].map((_, i) => {
@@ -197,21 +197,21 @@ export default function ClockInOutPage() {
                 <rect x="100" y="230" width="70" height="55" rx="4" fill="#d1d1db"/>
                 <rect x="350" y="220" width="65" height="50" rx="4" fill="#d1d1db"/>
                 {/* Geofence circle */}
-                <circle cx="240" cy="185" r="75" fill="rgba(1,109,116,0.08)" stroke="#016D74" strokeWidth="2" strokeDasharray="6 4"/>
+                <circle cx="240" cy="185" r="75" fill="rgba(1,109,116,0.08)" stroke="#3d405b" strokeWidth="2" strokeDasharray="6 4"/>
                 {/* Shop marker */}
                 <g transform="translate(228,150)">
-                  <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22C24 5.4 18.6 0 12 0z" fill="#016D74"/>
+                  <path d="M12 0C5.4 0 0 5.4 0 12c0 9 12 22 12 22s12-13 12-22C24 5.4 18.6 0 12 0z" fill="#3d405b"/>
                   <circle cx="12" cy="11" r="5" fill="white"/>
                 </g>
-                <text x="240" y="210" textAnchor="middle" fill="#016D74" fontSize="10" fontWeight="700" fontFamily="sans-serif">RepairDesk HQ</text>
+                <text x="240" y="210" textAnchor="middle" fill="#3d405b" fontSize="10" fontWeight="700" fontFamily="sans-serif">RepairDesk HQ</text>
                 {/* Employee pins */}
                 <g transform="translate(193,160)">
-                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#016D74" strokeWidth="1.5"/>
-                  <text x="10" y="4" fill="#016D74" fontSize="8" fontWeight="600">Sarah</text>
+                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#3d405b" strokeWidth="1.5"/>
+                  <text x="10" y="4" fill="#3d405b" fontSize="8" fontWeight="600">Sarah</text>
                 </g>
                 <g transform="translate(270,195)">
-                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#016D74" strokeWidth="1.5"/>
-                  <text x="10" y="4" fill="#016D74" fontSize="8" fontWeight="600">Jake</text>
+                  <circle cx="0" cy="0" r="6" fill="#C2F970" stroke="#3d405b" strokeWidth="1.5"/>
+                  <text x="10" y="4" fill="#3d405b" fontSize="8" fontWeight="600">Jake</text>
                 </g>
                 {/* Out of range employee */}
                 <g transform="translate(390,290)">

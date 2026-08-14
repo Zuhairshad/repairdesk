@@ -184,14 +184,14 @@ export default function ReviewsManagementPage() {
                   <svg viewBox="0 0 320 80" className="w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                       <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#016D74" stopOpacity="0.15" />
-                        <stop offset="100%" stopColor="#016D74" stopOpacity="0" />
+                        <stop offset="0%" stopColor="#3d405b" stopOpacity="0.15" />
+                        <stop offset="100%" stopColor="#3d405b" stopOpacity="0" />
                       </linearGradient>
                     </defs>
                     <path d="M0 60 L53 50 L107 45 L160 35 L213 22 L267 18 L320 10 L320 80 L0 80Z" fill="url(#chartGrad)" />
-                    <path d="M0 60 L53 50 L107 45 L160 35 L213 22 L267 18 L320 10" stroke="#016D74" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M0 60 L53 50 L107 45 L160 35 L213 22 L267 18 L320 10" stroke="#3d405b" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                     {[{x:0,y:60},{x:53,y:50},{x:107,y:45},{x:160,y:35},{x:213,y:22},{x:267,y:18},{x:320,y:10}].map((p,i) => (
-                      <circle key={i} cx={p.x} cy={p.y} r="4" fill="#fff" stroke="#016D74" strokeWidth="2" />
+                      <circle key={i} cx={p.x} cy={p.y} r="4" fill="#fff" stroke="#3d405b" strokeWidth="2" />
                     ))}
                     {['Mar','Apr','May','Jun','Jul','Aug','Sep'].map((m,i) => (
                       <text key={m} x={i * 53.3} y="78" fill="#9CA3AF" fontSize="8" fontFamily="sans-serif">{m}</text>
@@ -340,8 +340,8 @@ export default function ReviewsManagementPage() {
               <svg viewBox="0 0 400 160" className="w-full" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#016D74" />
-                    <stop offset="100%" stopColor="#016D74" stopOpacity="0.6" />
+                    <stop offset="0%" stopColor="#3d405b" />
+                    <stop offset="100%" stopColor="#3d405b" stopOpacity="0.6" />
                   </linearGradient>
                 </defs>
                 {/* Grid lines */}
@@ -360,7 +360,7 @@ export default function ReviewsManagementPage() {
                     <g key={bar.m}>
                       <rect x={x} y={130 - barH} width="18" height={barH} rx="4" fill="url(#barGrad)" />
                       <text x={x + 9} y="148" fill="#9CA3AF" fontSize="7" textAnchor="middle" fontFamily="sans-serif">{bar.m}</text>
-                      <text x={x + 9} y={125 - barH} fill="#016D74" fontSize="7" textAnchor="middle" fontFamily="sans-serif" fontWeight="600">{bar.h}</text>
+                      <text x={x + 9} y={125 - barH} fill="#3d405b" fontSize="7" textAnchor="middle" fontFamily="sans-serif" fontWeight="600">{bar.h}</text>
                     </g>
                   );
                 })}

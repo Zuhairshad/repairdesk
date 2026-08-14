@@ -86,16 +86,16 @@ export default function PhoneProPage() {
               <div className="relative w-[260px] h-[460px]">
                 {/* Phone outline */}
                 <svg viewBox="0 0 260 460" fill="none" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="8" y="8" width="244" height="444" rx="32" stroke="#016D74" strokeWidth="2" fill="none" />
-                  <rect x="16" y="50" width="228" height="370" rx="4" fill="#016D74" fillOpacity="0.08" />
+                  <rect x="8" y="8" width="244" height="444" rx="32" stroke="#3d405b" strokeWidth="2" fill="none" />
+                  <rect x="16" y="50" width="228" height="370" rx="4" fill="#3d405b" fillOpacity="0.08" />
                   {/* Notch */}
-                  <rect x="90" y="14" width="80" height="24" rx="12" fill="#016D74" fillOpacity="0.25" />
+                  <rect x="90" y="14" width="80" height="24" rx="12" fill="#3d405b" fillOpacity="0.25" />
                   {/* Internal components - X-ray style */}
                   {/* Battery */}
                   <rect x="30" y="280" width="90" height="120" rx="8" stroke="#22c55e" strokeWidth="1.5" strokeDasharray="4 2" fill="#22c55e" fillOpacity="0.06" />
                   <text x="75" y="345" textAnchor="middle" fill="#22c55e" fontSize="9" fontFamily="sans-serif" opacity="0.8">BATTERY</text>
                   {/* Mainboard */}
-                  <rect x="130" y="120" width="100" height="180" rx="6" stroke="#016D74" strokeWidth="1" strokeDasharray="3 3" fill="#016D74" fillOpacity="0.05" />
+                  <rect x="130" y="120" width="100" height="180" rx="6" stroke="#3d405b" strokeWidth="1" strokeDasharray="3 3" fill="#3d405b" fillOpacity="0.05" />
                   <circle cx="160" cy="180" r="14" stroke="#eab308" strokeWidth="1" fill="#eab308" fillOpacity="0.08" />
                   <text x="160" y="184" textAnchor="middle" fill="#eab308" fontSize="7" fontFamily="sans-serif">CPU</text>
                   <circle cx="200" cy="160" r="10" stroke="#06b6d4" strokeWidth="1" fill="#06b6d4" fillOpacity="0.08" />
@@ -108,7 +108,7 @@ export default function PhoneProPage() {
                   <rect x="30" y="200" width="80" height="30" rx="4" stroke="#f97316" strokeWidth="1" strokeDasharray="3 2" fill="#f97316" fillOpacity="0.05" />
                   <text x="70" y="219" textAnchor="middle" fill="#f97316" fontSize="7" fontFamily="sans-serif" opacity="0.8">SPEAKER</text>
                   {/* Charging port */}
-                  <rect x="100" y="430" width="60" height="12" rx="6" stroke="#016D74" strokeWidth="1" fill="#016D74" fillOpacity="0.15" />
+                  <rect x="100" y="430" width="60" height="12" rx="6" stroke="#3d405b" strokeWidth="1" fill="#3d405b" fillOpacity="0.15" />
                   {/* Antenna lines */}
                   <line x1="20" y1="60" x2="20" y2="180" stroke="#06b6d4" strokeWidth="0.5" opacity="0.3" />
                   <line x1="240" y1="60" x2="240" y2="180" stroke="#06b6d4" strokeWidth="0.5" opacity="0.3" />
@@ -118,11 +118,11 @@ export default function PhoneProPage() {
                   </rect>
                   <defs>
                     <linearGradient id="scanGlow" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#016D74" stopOpacity="0" />
+                      <stop offset="0%" stopColor="#3d405b" stopOpacity="0" />
                       <stop offset="30%" stopColor="#B2F042" stopOpacity="0.8" />
                       <stop offset="50%" stopColor="#B2F042" stopOpacity="1" />
                       <stop offset="70%" stopColor="#B2F042" stopOpacity="0.8" />
-                      <stop offset="100%" stopColor="#016D74" stopOpacity="0" />
+                      <stop offset="100%" stopColor="#3d405b" stopOpacity="0" />
                     </linearGradient>
                   </defs>
                 </svg>

@@ -14,7 +14,7 @@ export default function PageHero({
   centered = false,
 }) {
   const bg = dark
-    ? 'linear-gradient(135deg, #0C3C3E 0%, #134e4a 50%, #0C3C3E 100%)'
+    ? 'linear-gradient(135deg, #1e2035 0%, #2d2f45 50%, #1e2035 100%)'
     : '#F8F8FB';
 
   return (

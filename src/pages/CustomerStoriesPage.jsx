@@ -150,7 +150,7 @@ const QuoteIcon = () => (
 const PlayIcon = () => (
   <svg className="w-16 h-16 drop-shadow-lg" viewBox="0 0 64 64" fill="none">
     <circle cx="32" cy="32" r="30" fill="white" fillOpacity="0.95" />
-    <path d="M26 20L46 32L26 44V20Z" fill="#016D74" />
+    <path d="M26 20L46 32L26 44V20Z" fill="#3d405b" />
   </svg>
 );
 

@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'rd-teal': '#016D74',
-        'rd-dark': '#0C3C3E',
-        'rd-dark-teal': '#134e4a',
+        'rd-teal': '#3d405b',
+        'rd-dark': '#1e2035',
+        'rd-dark-teal': '#2d2f45',
         'rd-light': '#FAF9E3',
-        'rd-green': '#066d75',
+        'rd-green': '#3d405b',
         'rd-cream': '#F8F8FB',
         'rd-lime': '#D4F479',
         'rd-mint': '#C3EAB3',

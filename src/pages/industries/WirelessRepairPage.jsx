@@ -347,7 +347,7 @@ export default function WirelessRepairPage() {
           </div>
 
           {/* Renewal alerts */}
-          <div className="mt-14 grid grid-cols-1 lg:grid-cols-[0.45fr_0.55fr] gap-8 items-center bg-[#0C3C3E] border border-white/10 rounded-3xl p-8 md:p-10">
+          <div className="mt-14 grid grid-cols-1 lg:grid-cols-[0.45fr_0.55fr] gap-8 items-center bg-[#1e2035] border border-white/10 rounded-3xl p-8 md:p-10">
             <div className="flex items-center gap-4">
               <div className="w-14 h-14 rounded-2xl bg-rd-lime/20 text-rd-lime flex items-center justify-center shrink-0">
                 <IconRepeat className="w-7 h-7" />
@@ -422,7 +422,7 @@ export default function WirelessRepairPage() {
       </section>
 
       {/* UNIFIED POS & PAYMENTS */}
-      <section className="bg-[#0C3C3E] text-white py-16 md:py-20 px-6">
+      <section className="bg-[#1e2035] text-white py-16 md:py-20 px-6">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-[0.5fr_0.5fr] gap-12 items-center">
             <div>

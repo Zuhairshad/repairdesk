@@ -3,9 +3,9 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 const funnelStages = [
-  { label: 'Attract', pct: '100%', color: '#016D74', desc: 'Email campaigns, SMS blasts, social media' },
-  { label: 'Engage', pct: '75%', color: '#01858E', desc: 'Personalized follow-ups, review requests' },
-  { label: 'Convert', pct: '50%', color: '#02A0AB', desc: 'Promotional offers, referral programs' },
+  { label: 'Attract', pct: '100%', color: '#3d405b', desc: 'Email campaigns, SMS blasts, social media' },
+  { label: 'Engage', pct: '75%', color: '#4d5175', desc: 'Personalized follow-ups, review requests' },
+  { label: 'Convert', pct: '50%', color: '#6870a0', desc: 'Promotional offers, referral programs' },
   { label: 'Retain', pct: '30%', color: '#7CCE2B', desc: 'Re-engagement, loyalty campaigns' },
 ];
 
@@ -23,8 +23,8 @@ const smsMessages = [
 ];
 
 const segments = [
-  { name: 'Repeat Buyers', count: 342, color: '#016D74' },
-  { name: 'One-time Visitors', count: 891, color: '#02A0AB' },
+  { name: 'Repeat Buyers', count: 342, color: '#3d405b' },
+  { name: 'One-time Visitors', count: 891, color: '#6870a0' },
   { name: 'High-value', count: 156, color: '#7CCE2B' },
 ];
 
@@ -103,7 +103,7 @@ export default function MarketingPage() {
 
           {/* Marketing Funnel SVG */}
           <div className="flex justify-center">
-            <svg viewBox="0 0 360 340" className="w-full max-w-sm" fill="none">
+            <svg viewBox="0 0 360 316" className="w-full max-w-sm" fill="none">
               {funnelStages.map((s, i) => {
                 const topW = 320 - i * 60;
                 const botW = 320 - (i + 1) * 60;
@@ -112,15 +112,14 @@ export default function MarketingPage() {
                 const botX = (360 - botW) / 2;
                 return (
                   <g key={s.label}>
-                    <path d={`M${topX},${y + 6} L${topX + topW},${y + 6} L${botX + botW},${y + 70} L${botX},${y + 70} Z`} fill={s.color} opacity={0.92} rx="6" />
+                    <path d={`M${topX},${y + 6} L${topX + topW},${y + 6} L${botX + botW},${y + 70} L${botX},${y + 70} Z`} fill={s.color} opacity={0.92} />
                     <text x="180" y={y + 35} textAnchor="middle" fill="white" fontFamily="Poppins,sans-serif" fontWeight="700" fontSize="15">{s.label}</text>
                     <text x="180" y={y + 54} textAnchor="middle" fill="white" fontFamily="DM Sans,sans-serif" fontSize="10" opacity="0.7">{s.desc}</text>
                   </g>
                 );
               })}
-              {/* Drip arrow at bottom */}
-              <path d="M175 320 L180 335 L185 320" stroke="#7CCE2B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-              <circle cx="180" cy="338" r="2" fill="#7CCE2B" opacity="0.6" />
+              {/* Downward triangle indicator below funnel */}
+              <polygon points="168,308 192,308 180,316" fill="#D4F479" opacity="0.85" />
             </svg>
           </div>
         </div>
@@ -234,32 +233,32 @@ export default function MarketingPage() {
       </section>
 
       {/* ── CUSTOMER SEGMENTATION VENN ── */}
-      <section className="bg-white py-20 px-6">
+      <section className="bg-white py-12 px-6">
         <div className="container-main text-center">
           <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-rd-teal mb-3 font-poppins">Smart Segmentation</span>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4">Target the Right Customers Every Time</h2>
-          <p className="text-gray-500 font-dm-sans text-lg mb-14 max-w-2xl mx-auto">
+          <p className="text-gray-500 font-dm-sans text-lg mb-8 max-w-2xl mx-auto">
             Slice your customer base by repair history, spending, visit frequency, or any custom field. Then send each segment exactly the offer they respond to.
           </p>
 
           {/* Venn diagram */}
-          <div className="flex justify-center mb-14">
-            <svg viewBox="0 0 420 260" className="w-full max-w-md" fill="none">
-              <circle cx="155" cy="130" r="100" fill="#016D74" opacity="0.15" stroke="#016D74" strokeWidth="1.5" />
-              <circle cx="265" cy="130" r="100" fill="#02A0AB" opacity="0.15" stroke="#02A0AB" strokeWidth="1.5" />
-              <circle cx="210" cy="80" r="80" fill="#7CCE2B" opacity="0.12" stroke="#7CCE2B" strokeWidth="1.5" />
+          <div className="flex justify-center mb-8">
+            <svg viewBox="0 0 420 230" className="w-full max-w-sm" fill="none">
+              <circle cx="155" cy="115" r="95" fill="#3d405b" opacity="0.13" stroke="#3d405b" strokeWidth="1.5" />
+              <circle cx="265" cy="115" r="95" fill="#6870a0" opacity="0.13" stroke="#6870a0" strokeWidth="1.5" />
+              <circle cx="210" cy="70" r="75" fill="#D4F479" opacity="0.12" stroke="#D4F479" strokeWidth="1.5" />
               {segments.map((s, i) => {
-                const positions = [{ x: 110, y: 170 }, { x: 310, y: 170 }, { x: 210, y: 60 }];
+                const positions = [{ x: 105, y: 160 }, { x: 315, y: 160 }, { x: 210, y: 20 }];
                 return (
                   <g key={s.name}>
                     <text x={positions[i].x} y={positions[i].y} textAnchor="middle" fill={s.color} fontFamily="Poppins,sans-serif" fontWeight="700" fontSize="13">{s.name}</text>
-                    <text x={positions[i].x} y={positions[i].y + 18} textAnchor="middle" fill={s.color} fontFamily="DM Sans,sans-serif" fontSize="11" opacity="0.7">{s.count} customers</text>
+                    <text x={positions[i].x} y={positions[i].y + 16} textAnchor="middle" fill={s.color} fontFamily="DM Sans,sans-serif" fontSize="11" opacity="0.7">{s.count} customers</text>
                   </g>
                 );
               })}
               {/* Overlap label */}
-              <text x="210" y="145" textAnchor="middle" fill="#016D74" fontFamily="Poppins,sans-serif" fontWeight="700" fontSize="12">VIP</text>
-              <text x="210" y="162" textAnchor="middle" fill="#016D74" fontFamily="DM Sans,sans-serif" fontSize="10" opacity="0.6">48 customers</text>
+              <text x="210" y="130" textAnchor="middle" fill="#3d405b" fontFamily="Poppins,sans-serif" fontWeight="700" fontSize="12">VIP</text>
+              <text x="210" y="146" textAnchor="middle" fill="#3d405b" fontFamily="DM Sans,sans-serif" fontSize="10" opacity="0.6">48 customers</text>
             </svg>
           </div>
 
@@ -305,7 +304,7 @@ export default function MarketingPage() {
             <div className="flex items-end gap-3 h-28">
               {[45, 62, 78, 55, 88, 72, 94].map((h, i) => (
                 <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                  <div className="w-full rounded-t-md transition-all" style={{ height: `${h}%`, background: i === 6 ? '#7CCE2B' : '#016D74' }} />
+                  <div className="w-full rounded-t-md transition-all" style={{ height: `${h}%`, background: i === 6 ? '#7CCE2B' : '#3d405b' }} />
                   <span className="text-white/30 text-[10px] font-dm-sans">{['M', 'T', 'W', 'T', 'F', 'S', 'S'][i]}</span>
                 </div>
               ))}
@@ -324,7 +323,7 @@ export default function MarketingPage() {
           <div className="flex flex-wrap justify-center gap-6 max-w-2xl mx-auto">
             {[
               { name: 'Mailchimp', letter: 'M', bg: '#FFE01B' },
-              { name: 'Campaigner', letter: 'C', bg: '#016D74' },
+              { name: 'Campaigner', letter: 'C', bg: '#3d405b' },
               { name: 'Google Reviews', letter: 'G', bg: '#4285F4' },
               { name: 'Facebook', letter: 'f', bg: '#1877F2' },
               { name: 'Yelp', letter: 'Y', bg: '#D32323' },

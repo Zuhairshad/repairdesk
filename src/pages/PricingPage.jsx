@@ -359,7 +359,7 @@ export default function PricingPage() {
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.highlights.map((f) => (
                     <li key={f} className="flex items-start gap-3 text-sm font-dm-sans">
-                      <Check className={`w-4.5 h-4.5 mt-0.5 ${plan.highlight ? 'text-rd-lime' : 'text-rd-teal'}`} />
+                      <Check className={`w-4 h-4 mt-0.5 shrink-0 ${plan.highlight ? 'text-rd-lime' : 'text-rd-teal'}`} />
                       <span className={plan.highlight ? 'text-gray-200' : 'text-gray-700'}>{f}</span>
                     </li>
                   ))}

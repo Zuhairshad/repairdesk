@@ -172,7 +172,7 @@ export default function DroneRepairPage() {
     <PageLayout>
 
       {/* ---------------- HERO — radar / night-flight theme ---------------- */}
-      <section className="relative overflow-hidden bg-[#0C3C3E] text-white py-24 px-6">
+      <section className="relative overflow-hidden bg-[#1e2035] text-white py-24 px-6">
         {/* radar rings decoration */}
         <div className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 hidden lg:block">
           <svg width="520" height="520" viewBox="0 0 520 520" fill="none">
@@ -264,7 +264,7 @@ export default function DroneRepairPage() {
       {/* ---------------- CASE STUDY ---------------- */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="container-main">
-          <div className="bg-[#0C3C3E] rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-[0.4fr_0.6fr] gap-10 items-center relative overflow-hidden">
+          <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-[0.4fr_0.6fr] gap-10 items-center relative overflow-hidden">
             <IconPropeller className="absolute -bottom-10 -right-10 w-52 h-52 text-white/5" />
             <div>
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Case Study</span>
@@ -345,7 +345,7 @@ export default function DroneRepairPage() {
             <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
               <div className="absolute w-40 h-40 md:w-48 md:h-48 rounded-full border border-dashed border-white/30" />
               <IconMail className="w-20 h-20 md:w-24 md:h-24 text-white" />
-              <IconGPS className="absolute -top-2 -right-2 w-10 h-10 text-rd-lime bg-[#0C3C3E] rounded-full p-2" />
+              <IconGPS className="absolute -top-2 -right-2 w-10 h-10 text-rd-lime bg-[#1e2035] rounded-full p-2" />
             </div>
           </div>
           <div>
@@ -361,7 +361,7 @@ export default function DroneRepairPage() {
       {/* ---------------- YOU'RE IN GREAT COMPANY ---------------- */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="container-main">
-          <div className="bg-[#0C3C3E] rounded-3xl p-8 md:p-14 text-center relative overflow-hidden">
+          <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 text-center relative overflow-hidden">
             <div className="pointer-events-none absolute inset-0 opacity-10 flex items-center justify-center">
               <svg width="600" height="600" viewBox="0 0 600 600" fill="none">
                 <circle cx="300" cy="300" r="280" stroke="#D4F479" />
