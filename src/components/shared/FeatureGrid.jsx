@@ -33,7 +33,7 @@ export default function FeatureGrid({ title, subtitle, features = [], columns = 
               className="bg-white rounded-xl p-6 md:p-8 shadow-[0_6px_20px_rgba(60,63,64,0.07)] border border-gray-50 hover:shadow-lg transition-shadow duration-300"
             >
               {feat.icon && (
-                <div className="w-12 h-12 rounded-xl bg-[#F0FAFB] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-[#EEF2F7] flex items-center justify-center mb-4">
                   {typeof feat.icon === 'string' ? (
                     <img src={feat.icon} alt="" className="w-7 h-7 object-contain" />
                   ) : (

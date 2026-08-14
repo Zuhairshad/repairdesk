@@ -295,7 +295,7 @@ export default function PointOfSalePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {[
                   { title: 'Contactless Payments', desc: 'RFID tap, Apple Pay, Google Pay, or email payment links.', accent: 'bg-rd-teal' },
-                  { title: 'Partial Payments', desc: 'Let customers split bills across multiple payment methods.', accent: 'bg-emerald-500' },
+                  { title: 'Partial Payments', desc: 'Let customers split bills across multiple payment methods.', accent: 'bg-[#457b9d]' },
                   { title: 'Upfront Deposits', desc: 'Collect deposits before starting repairs to protect your time.', accent: 'bg-amber-500' },
                   { title: 'Estimates & Invoices', desc: 'Send quotes via email and convert to invoices in one click.', accent: 'bg-violet-500' },
                 ].map(item => (

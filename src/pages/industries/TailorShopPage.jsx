@@ -101,7 +101,7 @@ const workflowSteps = [
   { label: 'Cut', icon: <ScissorsIcon className="w-7 h-7" />, color: 'bg-amber-500' },
   { label: 'Sew', icon: <NeedleIcon className="w-7 h-7" />, color: 'bg-violet-500' },
   { label: 'Fit', icon: <HangerIcon className="w-7 h-7" />, color: 'bg-rose-500' },
-  { label: 'Deliver', icon: <RulerIcon className="w-7 h-7" />, color: 'bg-emerald-500' },
+  { label: 'Deliver', icon: <RulerIcon className="w-7 h-7" />, color: 'bg-[#457b9d]' },
 ];
 
 const fabricSwatches = [
@@ -121,7 +121,7 @@ const calendarDays = [
   { day: 'Fri 18', slots: [{ time: '10:30 AM', client: 'Maria G.', type: 'Fitting' }] },
 ];
 
-const slotColors = { Fitting: 'bg-rd-teal/15 text-rd-teal border-rd-teal/30', Measure: 'bg-amber-50 text-amber-700 border-amber-200', Pickup: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
+const slotColors = { Fitting: 'bg-rd-teal/15 text-rd-teal border-rd-teal/30', Measure: 'bg-amber-50 text-amber-700 border-amber-200', Pickup: 'bg-rd-cream text-rd-dark border-rd-teal/20' };
 
 const faqs = [
   { q: 'Can I store individual customer measurements?', a: 'Yes. Every customer profile includes a dedicated measurements tab where you can log chest, waist, hip, inseam, sleeve length, and any custom fields. Measurements are saved permanently so repeat orders take seconds to create.' },

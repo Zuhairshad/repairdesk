@@ -83,9 +83,9 @@ export default function MarketingPage() {
           ))}
         </div>
 
-        <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Copy */}
-          <div>
+          <div className="min-w-0">
             <div className="inline-flex items-center gap-2 bg-rd-teal/20 text-rd-teal rounded-full px-4 py-1.5 text-xs font-poppins font-semibold tracking-wide uppercase mb-6">
               <Icon name="megaphone" className="w-4 h-4" /> Marketing Suite
             </div>
@@ -102,8 +102,8 @@ export default function MarketingPage() {
           </div>
 
           {/* Marketing Funnel SVG */}
-          <div className="flex justify-center">
-            <svg viewBox="0 0 360 316" className="w-full max-w-sm" fill="none">
+          <div className="flex justify-center min-w-0">
+            <svg viewBox="0 0 360 316" className="w-full max-w-[320px] lg:max-w-sm" fill="none">
               {funnelStages.map((s, i) => {
                 const topW = 320 - i * 60;
                 const botW = 320 - (i + 1) * 60;

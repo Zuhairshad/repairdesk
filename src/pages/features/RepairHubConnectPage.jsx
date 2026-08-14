@@ -258,7 +258,7 @@ export default function RepairHubConnectPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {[
-              { tag: 'Pickup Ready', color: 'bg-emerald-500', preview: 'Hi {customer}, your {device} repair is complete! You can pick it up at {store} before closing today.' },
+              { tag: 'Pickup Ready', color: 'bg-[#457b9d]', preview: 'Hi {customer}, your {device} repair is complete! You can pick it up at {store} before closing today.' },
               { tag: 'Diagnosis Update', color: 'bg-blue-500', preview: 'Hi {customer}, we\'ve diagnosed your {device}. The issue is {diagnosis}. Estimated cost: {cost}. Reply YES to approve.' },
               { tag: 'Payment Receipt', color: 'bg-amber-500', preview: 'Thank you, {customer}! Payment of {amount} received for ticket #{ticket}. Here is your digital receipt.' },
               { tag: 'Appointment Reminder', color: 'bg-purple-500', preview: 'Reminder: You have an appointment at {store} on {date} at {time}. Reply CANCEL to reschedule.' },

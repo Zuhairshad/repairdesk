@@ -20,7 +20,7 @@ const triggerMap = [
 
 const analyticsData = [
   { label: 'Delivery Rate', value: '98.4%', bar: 98, color: 'bg-rd-teal' },
-  { label: 'Open Rate', value: '97.1%', bar: 97, color: 'bg-emerald-500' },
+  { label: 'Open Rate', value: '97.1%', bar: 97, color: 'bg-[#457b9d]' },
   { label: 'Response Rate', value: '41.3%', bar: 41, color: 'bg-amber-500' },
   { label: 'Opt-out Rate', value: '0.8%', bar: 1, color: 'bg-red-400' },
 ];

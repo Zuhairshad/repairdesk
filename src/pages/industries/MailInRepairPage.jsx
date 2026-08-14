@@ -86,7 +86,7 @@ const notifications = [
   { time: '2:17 PM', channel: 'SMS', msg: 'Your package is on its way! Tracking: 1Z999AA10...',  color: 'bg-purple-500' },
   { time: 'Next Day', channel: 'Email', msg: 'We received your device. Intake inspection complete.', color: 'bg-rd-teal' },
   { time: '11:45 AM', channel: 'SMS', msg: 'Repair quote ready: $89.00. Tap to approve.',           color: 'bg-amber-500' },
-  { time: '4:30 PM', channel: 'Email', msg: 'Repair complete! Invoice #4821 — pay online.',        color: 'bg-emerald-500' },
+  { time: '4:30 PM', channel: 'Email', msg: 'Repair complete! Invoice #4821 — pay online.',        color: 'bg-[#457b9d]' },
   { time: '5:00 PM', channel: 'SMS', msg: 'Your device shipped! Tracking: 1Z999AA20...',           color: 'bg-rd-teal' },
 ];
 
@@ -230,16 +230,16 @@ export default function MailInRepairPage() {
             <div className="bg-white/[0.06] backdrop-blur-sm rounded-2xl border border-white/10 p-6 order-2 lg:order-1">
               <div className="flex items-center justify-between mb-6">
                 <span className="font-poppins font-semibold text-sm">Repair #4821</span>
-                <span className="text-xs bg-emerald-400/20 text-emerald-300 px-3 py-1 rounded-full font-dm-sans font-semibold">In Repair</span>
+                <span className="text-xs bg-rd-mint/20 text-rd-mint px-3 py-1 rounded-full font-dm-sans font-semibold">In Repair</span>
               </div>
 
               {/* Status progress bar */}
               <div className="relative mb-6">
                 <div className="h-1.5 bg-white/10 rounded-full">
-                  <div className="h-1.5 bg-gradient-to-r from-rd-teal to-emerald-400 rounded-full" style={{ width: '66%' }} />
+                  <div className="h-1.5 bg-gradient-to-r from-rd-teal to-rd-mint rounded-full" style={{ width: '66%' }} />
                 </div>
                 <div className="flex justify-between mt-2 text-[10px] text-white/40 font-dm-sans">
-                  <span className="text-white/80">Received</span><span className="text-white/80">Diagnosing</span><span className="text-emerald-300">Repairing</span><span>Shipping</span><span>Delivered</span>
+                  <span className="text-white/80">Received</span><span className="text-white/80">Diagnosing</span><span className="text-rd-mint">Repairing</span><span>Shipping</span><span>Delivered</span>
                 </div>
               </div>
 
@@ -251,7 +251,7 @@ export default function MailInRepairPage() {
                   { t: 'Aug 10, 10:03 AM', msg: 'Repair request submitted. Shipping label sent.', status: 'done' },
                 ].map((entry, i) => (
                   <div key={i} className="flex gap-3 items-start">
-                    <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${entry.status === 'current' ? 'bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.5)]' : 'bg-white/25'}`} />
+                    <div className={`w-2 h-2 rounded-full mt-1.5 shrink-0 ${entry.status === 'current' ? 'bg-rd-mint shadow-[0_0_6px_rgba(69,123,157,0.5)]' : 'bg-white/25'}`} />
                     <div>
                       <p className="text-white/90 text-sm font-dm-sans">{entry.msg}</p>
                       <span className="text-white/30 text-xs font-dm-sans">{entry.t}</span>
@@ -433,7 +433,7 @@ export default function MailInRepairPage() {
                 ].map(item => (
                   <div key={item.label} className="flex items-center justify-between bg-white/5 rounded-lg px-3 py-2">
                     <span className="text-white/70">{item.label}</span>
-                    <span className={item.ok ? 'text-emerald-400 text-xs' : 'text-amber-400 text-xs'}>{item.status}</span>
+                    <span className={item.ok ? 'text-rd-mint text-xs' : 'text-amber-400 text-xs'}>{item.status}</span>
                   </div>
                 ))}
               </div>

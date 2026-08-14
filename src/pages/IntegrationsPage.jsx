@@ -21,7 +21,7 @@ const integrations = [
     category: 'Payments',
     description: 'Preferred Payment Solution. Accept payments seamlessly within RepairHub with competitive rates and next-day funding.',
     badge: 'Preferred',
-    color: 'bg-teal-100 text-teal-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'RD',
   },
   {
@@ -96,7 +96,7 @@ const integrations = [
     category: 'Marketing',
     description: 'Keep customers informed with automated SMS notifications for repair status updates, pickup reminders, and promotions.',
     badge: null,
-    color: 'bg-teal-100 text-teal-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'RS',
   },
   // Parts Suppliers
@@ -196,7 +196,7 @@ const integrations = [
     category: 'Widgets',
     description: 'Give power to your customers & allow them to check the status of their repair job in real time straight from your website.',
     badge: null,
-    color: 'bg-teal-100 text-teal-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'RT',
   },
   {
@@ -253,7 +253,7 @@ const integrations = [
     category: 'Misc',
     description: 'Easily engage with more customers, solve queries faster with 3CX phone system integration built into RepairHub.',
     badge: null,
-    color: 'bg-teal-100 text-teal-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: '3C',
   },
   {
@@ -261,7 +261,7 @@ const integrations = [
     category: 'Misc',
     description: 'A seamless online solution for businesses managing buybacks and trade-ins. Perfect for device resellers.',
     badge: null,
-    color: 'bg-emerald-100 text-emerald-700',
+    color: 'bg-rd-teal/10 text-rd-dark',
     initials: 'RE',
   },
 ];

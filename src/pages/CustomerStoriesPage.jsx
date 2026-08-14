@@ -26,7 +26,7 @@ const stories = [
     metric: '3 locations synced',
     quote:
       'Inventory visibility across our three locations used to be a nightmare. Now we see stock in real time and reorder before we run out.',
-    color: 'from-emerald-500 to-teal-600',
+    color: 'from-[#457b9d] to-[#3d405b]',
   },
   {
     company: 'Precision Watch Repair',

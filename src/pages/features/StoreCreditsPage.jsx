@@ -273,9 +273,9 @@ export default function StoreCreditsPage() {
             </div>
 
             {/* AFTER — Store Credit */}
-            <div className="relative rounded-2xl border-2 border-emerald-200 bg-emerald-50/50 p-7 overflow-hidden">
+            <div className="relative rounded-2xl border-2 border-rd-teal/20 bg-rd-teal/5 p-7 overflow-hidden">
               <div className="absolute top-0 right-0 bg-rd-teal text-white text-[10px] font-poppins font-bold uppercase tracking-widest px-4 py-1.5 rounded-bl-xl">The RepairHub Way</div>
-              <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-5 mt-4">
+              <div className="w-12 h-12 rounded-xl bg-rd-teal/10 flex items-center justify-center mb-5 mt-4">
                 <CheckIcon className="w-6 h-6 text-rd-teal" />
               </div>
               <h3 className="font-poppins font-bold text-xl text-rd-dark mb-3">Store Credit</h3>
@@ -287,7 +287,7 @@ export default function StoreCreditsPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 pt-4 border-t border-emerald-200 text-center">
+              <div className="mt-6 pt-4 border-t border-rd-teal/20 text-center">
                 <p className="text-rd-teal font-poppins font-bold text-2xl">+$150</p>
                 <p className="text-xs text-gray-400 font-dm-sans">Retained as future revenue</p>
               </div>

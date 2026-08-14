@@ -32,7 +32,7 @@ const principles = [
   { color: 'bg-rd-teal/10 text-rd-teal', title: 'Lawfulness & Fairness', desc: 'We process personal data only for legitimate, specified purposes disclosed upfront.' },
   { color: 'bg-blue-50 text-blue-600', title: 'Purpose Limitation', desc: 'Data collected for a stated purpose is never repurposed without fresh consent.' },
   { color: 'bg-purple-50 text-purple-600', title: 'Data Minimisation', desc: 'We collect only what is strictly necessary. No bloated profiles, no hoarded data.' },
-  { color: 'bg-emerald-50 text-emerald-600', title: 'Accuracy', desc: 'We maintain up-to-date records and give you tools to correct anything that is wrong.' },
+  { color: 'bg-rd-cream text-rd-teal', title: 'Accuracy', desc: 'We maintain up-to-date records and give you tools to correct anything that is wrong.' },
   { color: 'bg-amber-50 text-amber-600', title: 'Storage Limitation', desc: 'Data is retained only as long as necessary, then securely deleted or anonymised.' },
   { color: 'bg-rose-50 text-rose-600', title: 'Integrity & Confidentiality', desc: 'Encryption, access controls, and regular audits protect data against unauthorised access.' },
 ];

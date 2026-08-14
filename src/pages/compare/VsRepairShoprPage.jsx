@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
-const Check = () => <span className="text-emerald-500 font-bold text-lg">✓</span>;
+const Check = () => <span className="text-[#457b9d] font-bold text-lg">✓</span>;
 const Cross = () => <span className="text-gray-300 font-bold text-lg">✗</span>;
 
 const features = [

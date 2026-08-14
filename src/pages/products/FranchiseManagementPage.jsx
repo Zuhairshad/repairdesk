@@ -44,7 +44,7 @@ const pipelineSteps = [
   {
     label: 'Launch',
     desc: 'Franchisee goes live with full training and support resources',
-    color: 'bg-emerald-50 text-emerald-700 border-emerald-300',
+    color: 'bg-rd-cream text-rd-dark border-rd-teal/30',
   },
 ];
 
@@ -263,7 +263,7 @@ export default function FranchiseManagementPage() {
                     <div key={i} className="bg-rd-cream rounded-xl p-3 text-center">
                       <div className="font-dm-sans text-[11px] text-gray-500 mb-1">{kpi.label}</div>
                       <div className="font-poppins font-bold text-rd-dark text-lg">{kpi.value}</div>
-                      <div className={`text-xs font-dm-sans font-medium ${kpi.up ? 'text-emerald-600' : 'text-red-500'}`}>{kpi.change}</div>
+                      <div className={`text-xs font-dm-sans font-medium ${kpi.up ? 'text-rd-teal' : 'text-red-500'}`}>{kpi.change}</div>
                     </div>
                   ))}
                 </div>
@@ -286,8 +286,8 @@ export default function FranchiseManagementPage() {
                   <div className="font-dm-sans text-xs text-gray-500 mb-2">Recent Tickets</div>
                   {[
                     { id: '#4821', device: 'iPhone 15 Pro', status: 'In Progress', color: 'bg-amber-100 text-amber-700' },
-                    { id: '#4820', device: 'Samsung S24', status: 'Completed', color: 'bg-emerald-100 text-emerald-700' },
-                    { id: '#4819', device: 'iPad Air', status: 'Completed', color: 'bg-emerald-100 text-emerald-700' },
+                    { id: '#4820', device: 'Samsung S24', status: 'Completed', color: 'bg-rd-teal/10 text-rd-dark' },
+                    { id: '#4819', device: 'iPad Air', status: 'Completed', color: 'bg-rd-teal/10 text-rd-dark' },
                   ].map((t, i) => (
                     <div key={i} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
                       <div className="flex items-center gap-2">

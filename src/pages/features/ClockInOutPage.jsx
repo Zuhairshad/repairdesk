@@ -7,7 +7,7 @@ const workdaySegments = [
   { label: 'Morning Shift', type: 'work', width: '30%', color: 'bg-rd-teal' },
   { label: '12:00 PM', type: 'break', width: '8%', color: 'bg-amber-400' },
   { label: 'Afternoon Shift', type: 'work', width: '35%', color: 'bg-rd-teal' },
-  { label: '5:30 PM', type: 'clock-out', width: '0%', color: 'bg-emerald-500' },
+  { label: '5:30 PM', type: 'clock-out', width: '0%', color: 'bg-[#457b9d]' },
 ];
 
 const timesheetRows = [
@@ -106,7 +106,7 @@ export default function ClockInOutPage() {
                 <span className="text-[9px] font-bold text-amber-900">BRK</span>
               </div>
               <div className="bg-rd-teal h-full" style={{ width: '41%' }} />
-              <div className="bg-emerald-500 h-full rounded-r-lg flex items-center justify-center" style={{ width: '6%' }}>
+              <div className="bg-[#457b9d] h-full rounded-r-lg flex items-center justify-center" style={{ width: '6%' }}>
                 <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function ClockInOutPage() {
             <div className="flex gap-5 mt-4 text-xs font-dm-sans text-gray-500">
               <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-rd-teal inline-block" /> Active Work</span>
               <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-amber-400 inline-block" /> Break</span>
-              <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-emerald-500 inline-block" /> Clock Out</span>
+              <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-[#457b9d] inline-block" /> Clock Out</span>
               <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded bg-gray-200 inline-block" /> Untracked</span>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function ClockInOutPage() {
                     <td className="py-3.5 px-3 text-center font-semibold text-rd-dark">{row.total}</td>
                     <td className={`py-3.5 px-3 text-center font-semibold ${parseFloat(row.overtime) > 0 ? 'text-red-500' : 'text-gray-400'}`}>{row.overtime}h</td>
                     <td className="py-3.5 px-4 text-center">
-                      <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full ${row.status === 'Approved' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>{row.status}</span>
+                      <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full ${row.status === 'Approved' ? 'bg-rd-teal/10 text-rd-dark' : 'bg-amber-100 text-amber-700'}`}>{row.status}</span>
                     </td>
                   </tr>
                 ))}
@@ -262,12 +262,12 @@ export default function ClockInOutPage() {
             <div className="h-6 rounded-full bg-white/5 overflow-hidden flex">
               <div className="bg-rd-teal h-full" style={{ width: '72%' }} title="Regular hours" />
               <div className="bg-amber-400 h-full" style={{ width: '5%' }} title="Overtime" />
-              <div className="bg-emerald-500 h-full" style={{ width: '8%' }} title="Break (paid)" />
+              <div className="bg-[#457b9d] h-full" style={{ width: '8%' }} title="Break (paid)" />
             </div>
             <div className="flex gap-6 mt-3 text-[11px] font-dm-sans text-white/50">
               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-rd-teal inline-block" /> Regular (72%)</span>
               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-amber-400 inline-block" /> Overtime (5%)</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-emerald-500 inline-block" /> Paid Break (8%)</span>
+              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-[#457b9d] inline-block" /> Paid Break (8%)</span>
               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-white/10 inline-block" /> Unallocated (15%)</span>
             </div>
           </div>
