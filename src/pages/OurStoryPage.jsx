@@ -135,18 +135,18 @@ export default function OurStoryPage() {
   return (
     <PageLayout>
       {/* Hero — asymmetric, storytelling tone */}
-      <section className="bg-rd-dark relative overflow-hidden">
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rd-teal/30 blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-rd-lime/10 blur-3xl" />
+      <section className="bg-rd-cream relative overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-rd-teal/8 blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-rd-lime/8 blur-3xl pointer-events-none" />
         <div className="container-main relative z-10 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 text-rd-lime text-xs font-poppins font-semibold uppercase tracking-widest mb-6">
-              <span className="w-8 h-px bg-rd-lime" /> Our Story
+            <span className="inline-flex items-center gap-2 text-rd-teal text-xs font-poppins font-semibold uppercase tracking-widest mb-6">
+              <span className="w-8 h-px bg-rd-teal" /> Our Story
             </span>
-            <h1 className="font-poppins font-semibold text-3xl md:text-5xl text-white leading-tight mb-6">
+            <h1 className="font-poppins font-semibold text-3xl md:text-5xl text-rd-dark leading-tight mb-6">
               Everything You Need To Know About RepairDesk
             </h1>
-            <p className="font-dm-sans text-white/70 text-lg leading-relaxed mb-8 max-w-xl">
+            <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
               RepairDesk is built to automate the whole process of repair shops and to streamline their daily activities to give you greater peace of mind.
             </p>
             <Link to="/partner-with-us" className="btn-primary">
@@ -156,17 +156,17 @@ export default function OurStoryPage() {
 
           {/* Floating credential stack */}
           <div className="relative hidden lg:block h-72">
-            <div className="absolute top-0 right-4 bg-white/10 backdrop-blur border border-white/10 rounded-2xl px-6 py-5 w-52">
-              <div className="font-poppins font-semibold text-2xl text-rd-lime">3,000+</div>
-              <div className="text-white/60 text-sm font-dm-sans">Repair Shops Trust Us</div>
+            <div className="absolute top-0 right-4 bg-white shadow-lg border border-gray-100 rounded-2xl px-6 py-5 w-52">
+              <div className="font-poppins font-semibold text-2xl text-rd-teal">3,000+</div>
+              <div className="text-gray-500 text-sm font-dm-sans">Repair Shops Trust Us</div>
             </div>
-            <div className="absolute top-24 left-0 bg-white/10 backdrop-blur border border-white/10 rounded-2xl px-6 py-5 w-52">
-              <div className="font-poppins font-semibold text-2xl text-rd-lime">40+</div>
-              <div className="text-white/60 text-sm font-dm-sans">Countries Served</div>
+            <div className="absolute top-24 left-0 bg-white shadow-lg border border-gray-100 rounded-2xl px-6 py-5 w-52">
+              <div className="font-poppins font-semibold text-2xl text-rd-teal">40+</div>
+              <div className="text-gray-500 text-sm font-dm-sans">Countries Served</div>
             </div>
-            <div className="absolute bottom-0 right-10 bg-white/10 backdrop-blur border border-white/10 rounded-2xl px-6 py-5 w-52">
-              <div className="font-poppins font-semibold text-2xl text-rd-lime">SaaS</div>
-              <div className="text-white/60 text-sm font-dm-sans">POS &amp; ERP Platform</div>
+            <div className="absolute bottom-0 right-10 bg-white shadow-lg border border-gray-100 rounded-2xl px-6 py-5 w-52">
+              <div className="font-poppins font-semibold text-2xl text-rd-teal">SaaS</div>
+              <div className="text-gray-500 text-sm font-dm-sans">POS &amp; ERP Platform</div>
             </div>
           </div>
         </div>

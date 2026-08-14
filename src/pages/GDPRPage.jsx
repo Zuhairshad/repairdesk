@@ -70,22 +70,22 @@ export default function GDPRPage() {
   return (
     <PageLayout showCTA={false}>
       {/* Hero */}
-      <section className="relative bg-rd-dark overflow-hidden py-24 px-6">
-        <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-          <svg viewBox="0 0 200 240" className="w-96 h-96" fill="white">
+      <section className="relative bg-white overflow-hidden py-24 px-6 border-b border-gray-100">
+        <div className="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none">
+          <svg viewBox="0 0 200 240" className="w-96 h-96" fill="#016D74">
             <path d="M100 5L15 40v60c0 55 37 105 85 120C148 205 185 155 185 100V40L100 5z" />
           </svg>
         </div>
         <div className="container-main max-w-4xl relative z-10">
-          <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/40 rounded-full px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 bg-rd-teal/10 border border-rd-teal/20 rounded-full px-4 py-1.5 mb-6">
             <IconShield className="w-4 h-4 text-rd-teal" />
             <span className="text-rd-teal font-poppins font-semibold text-xs tracking-wider uppercase">Data Privacy</span>
           </div>
-          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-4 leading-tight">Your Data, Your Rights.</h1>
-          <p className="text-white/70 font-dm-sans text-lg max-w-2xl leading-relaxed mb-4">
+          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-rd-dark mb-4 leading-tight">Your Data, Your Rights.</h1>
+          <p className="text-gray-600 font-dm-sans text-lg max-w-2xl leading-relaxed mb-4">
             RepairDesk is fully committed to the General Data Protection Regulation (GDPR). This page explains what that means for you, your customers, and the data in your account.
           </p>
-          <p className="text-white/50 font-dm-sans text-sm">Last updated: 1 January 2025 · Effective date: 25 May 2018</p>
+          <p className="text-gray-400 font-dm-sans text-sm">Last updated: 1 January 2025 · Effective date: 25 May 2018</p>
         </div>
       </section>
 

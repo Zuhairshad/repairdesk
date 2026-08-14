@@ -184,22 +184,20 @@ export default function CareersPage() {
   return (
     <PageLayout>
       {/* ============ HERO ============ */}
-      <section className="relative overflow-hidden bg-rd-dark pt-24 pb-32">
-        {/* decorative network of people */}
-        <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
-          <div className="absolute -top-16 -left-10 w-72 h-72 rounded-full bg-rd-lime" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-rd-teal" />
-        </div>
+      <section className="relative overflow-hidden bg-rd-cream pt-24 pb-32">
+        {/* decorative soft glows */}
+        <div className="absolute -top-20 right-[10%] w-72 h-72 rounded-full bg-rd-teal/6 blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-[5%] w-56 h-56 rounded-full bg-rd-lime/8 blur-3xl pointer-events-none" />
 
         <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-14 items-center">
           <div className="text-center lg:text-left">
-            <span className="inline-block bg-rd-lime/20 text-rd-lime text-sm font-poppins font-semibold px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block bg-rd-teal/10 text-rd-teal text-sm font-poppins font-semibold px-4 py-1.5 rounded-full mb-6">
               Careers at RepairDesk
             </span>
-            <h1 className="font-dm-serif text-4xl md:text-6xl text-white mb-6 leading-tight">
+            <h1 className="font-dm-serif text-4xl md:text-6xl text-rd-dark mb-6 leading-tight">
               Be a Part of Something Great!
             </h1>
-            <p className="font-dm-sans text-gray-300 text-lg max-w-xl mx-auto lg:mx-0 mb-8">
+            <p className="font-dm-sans text-gray-600 text-lg max-w-xl mx-auto lg:mx-0 mb-8">
               Join Us on a Journey to Experience the Global IT Industry and a Culture That Inspires Community
             </p>
             <a href="#open-positions" className="btn-primary">
@@ -210,11 +208,11 @@ export default function CareersPage() {
           {/* People constellation graphic */}
           <div className="relative h-72 hidden sm:block">
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 260" fill="none">
-              <path d="M60 60 L160 130 L260 50 M160 130 L100 210 M160 130 L240 200" stroke="#D4F479" strokeOpacity="0.35" strokeWidth="1.5" />
+              <path d="M60 60 L160 130 L260 50 M160 130 L100 210 M160 130 L240 200" stroke="#016D74" strokeOpacity="0.3" strokeWidth="1.5" />
             </svg>
             {[
               { top: '4%', left: '10%', size: 'w-16 h-16', tint: 'bg-rd-lime text-rd-dark' },
-              { top: '38%', left: '42%', size: 'w-24 h-24', tint: 'bg-white text-rd-teal' },
+              { top: '38%', left: '42%', size: 'w-24 h-24', tint: 'bg-rd-dark text-white' },
               { top: '2%', left: '76%', size: 'w-14 h-14', tint: 'bg-rd-mint text-rd-dark' },
               { top: '68%', left: '24%', size: 'w-16 h-16', tint: 'bg-rd-teal text-white' },
               { top: '66%', left: '68%', size: 'w-16 h-16', tint: 'bg-rd-lime text-rd-dark' },

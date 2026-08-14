@@ -66,16 +66,16 @@ export default function TermsPage() {
   return (
     <PageLayout showCTA={false}>
       {/* Hero */}
-      <section className="bg-rd-dark py-20 px-6">
+      <section className="bg-white border-b border-gray-100 py-20 px-6">
         <div className="container-main max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-white/80 font-poppins font-semibold text-xs tracking-wider uppercase">Legal</span>
+          <div className="inline-flex items-center gap-2 bg-rd-teal/10 border border-rd-teal/20 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-rd-teal font-poppins font-semibold text-xs tracking-wider uppercase">Legal</span>
           </div>
-          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-white mb-4">Terms of Service</h1>
-          <p className="text-white/70 font-dm-sans text-base mb-4">
+          <h1 className="font-poppins font-bold text-4xl md:text-5xl text-rd-dark mb-4">Terms of Service</h1>
+          <p className="text-gray-600 font-dm-sans text-base mb-4">
             These terms govern your access to and use of RepairDesk software. Please read them carefully.
           </p>
-          <div className="flex items-center gap-4 text-white/40 font-dm-sans text-sm">
+          <div className="flex items-center gap-4 text-gray-400 font-dm-sans text-sm">
             <span>Last updated: 1 January 2025</span>
             <span>·</span>
             <span>Effective: 1 January 2025</span>
