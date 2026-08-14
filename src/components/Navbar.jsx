@@ -323,9 +323,10 @@ export default function Navbar() {
     </button>
   );
 
-  /* Invisible hover-bridge between nav button and dropdown panel */
+  /* Invisible hover-bridge: fills the gap between the button and dropdown panel
+     so moving the mouse downward into the dropdown doesn't trigger mouseleave */
   const HoverBridge = () => (
-    <div className="absolute left-0 right-0 top-full h-3" />
+    <div className="absolute -left-8 -right-8 top-full h-4" />
   );
 
   /* Render a product icon by label lookup */
@@ -349,15 +350,15 @@ export default function Navbar() {
 
   return (
     <header ref={navRef} className={`sticky top-0 z-50 w-full bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-none'}`}>
-      <nav className="container-main flex items-center justify-between h-16 md:h-[68px]">
+      <nav className="container-main relative flex items-center h-16 md:h-[68px]">
 
-        {/* Logo */}
-        <Link to="/" onClick={closeAll} className="flex items-center shrink-0 mr-6 h-7 md:h-8">
+        {/* Logo — flush left */}
+        <Link to="/" onClick={closeAll} className="flex items-center shrink-0 h-7 md:h-8 z-10">
           <Logo className="h-full" />
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden xl:flex items-center gap-6 font-dm-sans flex-1">
+        {/* Desktop nav — centred absolutely so logo stays at the left edge */}
+        <div className="hidden xl:flex items-center gap-6 font-dm-sans absolute left-1/2 -translate-x-1/2">
 
           {/* ──────────── PRODUCTS ──────────── */}
           <div className="relative" onMouseEnter={() => open('products')} onMouseLeave={scheduleClose}>
@@ -365,7 +366,7 @@ export default function Navbar() {
             <HoverBridge />
             {activeDropdown === 'products' && (
               <div
-                className="fixed left-1/2 -translate-x-1/2 top-[60px] pt-3 z-50"
+                className="fixed left-1/2 -translate-x-1/2 top-[68px] z-[60]"
                 style={{ width: '860px', maxWidth: '96vw' }}
                 onMouseEnter={() => open('products')} onMouseLeave={scheduleClose}
               >
@@ -420,7 +421,7 @@ export default function Navbar() {
             <HoverBridge />
             {activeDropdown === 'features' && (
               <div
-                className="fixed left-1/2 -translate-x-1/2 top-[60px] pt-3 z-50"
+                className="fixed left-1/2 -translate-x-1/2 top-[68px] z-[60]"
                 style={{ width: '960px', maxWidth: '96vw' }}
                 onMouseEnter={() => open('features')} onMouseLeave={scheduleClose}
               >
@@ -465,7 +466,7 @@ export default function Navbar() {
             <HoverBridge />
             {activeDropdown === 'industries' && (
               <div
-                className="fixed left-1/2 -translate-x-1/2 top-[60px] pt-3 z-50"
+                className="fixed left-1/2 -translate-x-1/2 top-[68px] z-[60]"
                 style={{ width: '880px', maxWidth: '96vw' }}
                 onMouseEnter={() => open('industries')} onMouseLeave={scheduleClose}
               >
@@ -545,8 +546,8 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Right CTA */}
-        <div className="hidden xl:flex items-center gap-3 ml-4">
+        {/* Right CTA — pushed to far right */}
+        <div className="hidden xl:flex items-center gap-3 ml-auto z-10">
           <Link to="/login"
             className="text-sm font-medium border border-gray-200 text-[#2e384d] px-5 py-2 rounded-full hover:border-rd-teal hover:text-rd-teal transition-colors whitespace-nowrap">
             Log in
@@ -559,7 +560,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button type="button" onClick={() => setMobileOpen(p => !p)}
-          className="xl:hidden w-10 h-10 flex items-center justify-center text-rd-dark rounded-lg hover:bg-gray-50"
+          className="xl:hidden ml-auto w-10 h-10 flex items-center justify-center text-rd-dark rounded-lg hover:bg-gray-50"
           aria-label="Toggle menu">
           {mobileOpen
             ? <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
