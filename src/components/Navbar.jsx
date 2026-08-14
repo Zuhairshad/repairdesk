@@ -548,10 +548,6 @@ export default function Navbar() {
 
         {/* Right CTA — pushed to far right */}
         <div className="hidden xl:flex items-center gap-3 ml-auto z-10">
-          <Link to="/login"
-            className="text-sm font-medium border border-gray-200 text-[#2e384d] px-5 py-2 rounded-full hover:border-rd-teal hover:text-rd-teal transition-colors whitespace-nowrap">
-            Log in
-          </Link>
           <Link to="/register"
             className="btn-primary text-sm px-5 py-2 whitespace-nowrap">
             Free Trial
@@ -648,7 +644,6 @@ export default function Navbar() {
           </div>
 
           <div className="pt-4 pb-2 flex flex-col gap-3">
-            <Link to="/login" onClick={closeAll} className="text-center border border-gray-200 rounded-full py-2.5 text-sm font-medium text-rd-dark hover:border-rd-teal hover:text-rd-teal transition-colors">Log in</Link>
             <Link to="/register" onClick={closeAll} className="btn-primary text-center py-2.5 text-sm">Start Free Trial</Link>
           </div>
         </div>
