@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from './Logo';
 
 const featureLinks = [
   { label: "Point of Sale", to: "/features/point-of-sale" },
@@ -72,8 +73,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
             {/* Column 1 – Brand */}
             <div>
-              <Link to="/">
-                <img src="/images/logo.png" alt="RepairHub" className="h-8 mb-4" />
+              <Link to="/" className="inline-flex h-8 mb-4">
+                <Logo className="h-full" />
               </Link>
               <p className="text-gray-500 text-xs font-poppins leading-relaxed mb-5">
                 RepairHub is a cloud based point-of-sale software, engineered specifically for small and medium sized computer and cell phone repair shops.

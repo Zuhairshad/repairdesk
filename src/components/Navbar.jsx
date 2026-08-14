@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 // ── SVG ICON COMPONENTS ─────────────────────────────────────────────────────
 
@@ -351,8 +352,8 @@ export default function Navbar() {
       <nav className="container-main flex items-center justify-between h-16 md:h-[68px]">
 
         {/* Logo */}
-        <Link to="/" onClick={closeAll} className="flex items-center shrink-0 mr-6">
-          <img src="/images/logo.png" alt="RepairHub" className="h-7 md:h-8" />
+        <Link to="/" onClick={closeAll} className="flex items-center shrink-0 mr-6 h-7 md:h-8">
+          <Logo className="h-full" />
         </Link>
 
         {/* Desktop nav */}
