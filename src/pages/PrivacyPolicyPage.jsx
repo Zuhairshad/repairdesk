@@ -16,11 +16,11 @@ const sections = [
   {
     title: 'How We Use Your Information',
     content: [
-      'Provide, maintain, and improve the RepairHub platform.',
+      'Provide, maintain, and improve the AA Repairdesk platform.',
       'Process transactions and send billing communications.',
       'Send product updates, security notices, and support messages.',
       'Analyse usage patterns to fix bugs and plan new features.',
-      'Comply with legal obligations and protect RepairHub and its users.',
+      'Comply with legal obligations and protect AA Repairdesk and its users.',
     ],
   },
   {
@@ -29,7 +29,7 @@ const sections = [
       'We do not sell your personal data to third parties, ever.',
       'We share data only with service providers who need it to deliver our platform (see sub-processors on the GDPR page).',
       'We may disclose data when required by law, court order, or regulatory request.',
-      'If RepairHub is acquired, data transfers under the same privacy terms.',
+      'If AA Repairdesk is acquired, data transfers under the same privacy terms.',
     ],
   },
   {
@@ -66,7 +66,7 @@ const sections = [
       'Correction: update inaccurate or incomplete information.',
       'Deletion: request erasure of your personal data (subject to legal retention obligations).',
       'Portability: receive your data in a machine-readable format.',
-      'Contact privacy@repairhub.co to exercise any of these rights.',
+      'Contact privacy@aarepairdesk.co to exercise any of these rights.',
     ],
   },
   {
@@ -74,14 +74,14 @@ const sections = [
     content: [
       'We may update this policy to reflect changes in our practices or legal requirements.',
       'We will notify you via email and in-app notification at least 30 days before material changes take effect.',
-      'Continued use of RepairHub after the effective date constitutes acceptance.',
+      'Continued use of AA Repairdesk after the effective date constitutes acceptance.',
     ],
   },
   {
     title: 'Contact Us',
     content: [
-      'Privacy enquiries: privacy@repairhub.co',
-      'General support: hello@repairhub.co',
+      'Privacy enquiries: privacy@aarepairdesk.co',
+      'General support: hello@aarepairdesk.co',
       'Phone: +1 302-207-7373',
       'Address: 108 W 13th St, Wilmington, DE 19801, USA',
     ],
@@ -189,8 +189,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="font-poppins font-bold text-2xl text-rd-dark mb-2">Questions About Your Privacy?</h2>
           <p className="font-dm-sans text-gray-500 mb-6">Our privacy team responds within 48 hours on business days.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:privacy@repairhub.co" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark transition-colors">
-              privacy@repairhub.co
+            <a href="mailto:privacy@aarepairdesk.co" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark transition-colors">
+              privacy@aarepairdesk.co
             </a>
             <Link to="/contact" className="inline-flex items-center gap-2 border border-gray-200 text-rd-dark font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-cream transition-colors">
               Contact Form

@@ -29,12 +29,12 @@ const segments = [
 ];
 
 const faqs = [
-  { q: 'Is there any extra cost for using marketing tools?', a: 'No. Email and SMS marketing automation is included in your RepairHub plan at no additional charge. Send campaigns, set up automations, and track results without paying a cent more.' },
-  { q: 'Can I connect my existing Mailchimp or Campaigner account?', a: 'Absolutely. RepairHub integrates directly with Mailchimp and Campaigner. Your customer lists sync automatically so you can run advanced campaigns in either platform alongside RepairHub\'s built-in tools.' },
-  { q: 'How does automated follow-up work after a repair?', a: 'When a ticket is closed, RepairHub triggers a follow-up sequence you define: a thank-you email immediately, a review request after 24 hours, and a re-engagement offer after 30 days. Every step is customizable.' },
+  { q: 'Is there any extra cost for using marketing tools?', a: 'No. Email and SMS marketing automation is included in your AA Repairdesk plan at no additional charge. Send campaigns, set up automations, and track results without paying a cent more.' },
+  { q: 'Can I connect my existing Mailchimp or Campaigner account?', a: 'Absolutely. AA Repairdesk integrates directly with Mailchimp and Campaigner. Your customer lists sync automatically so you can run advanced campaigns in either platform alongside AA Repairdesk\'s built-in tools.' },
+  { q: 'How does automated follow-up work after a repair?', a: 'When a ticket is closed, AA Repairdesk triggers a follow-up sequence you define: a thank-you email immediately, a review request after 24 hours, and a re-engagement offer after 30 days. Every step is customizable.' },
   { q: 'What kind of customer segments can I create?', a: 'Segment by repair type, purchase history, visit frequency, spending tier, or time since last visit. Combine multiple criteria to build laser-focused audiences for each campaign.' },
   { q: 'Can I use my own branding in email templates?', a: 'Yes. The drag-and-drop email builder lets you upload your logo, set brand colors, choose fonts, and save reusable templates. Dynamic tags auto-fill customer names, store details, and repair info.' },
-  { q: 'How do I measure campaign performance?', a: 'Every campaign shows real-time open rates, click-through rates, bounce counts, and conversion metrics. Export reports or view them in your RepairHub dashboard to continuously optimize your outreach.' },
+  { q: 'How do I measure campaign performance?', a: 'Every campaign shows real-time open rates, click-through rates, bounce counts, and conversion metrics. Export reports or view them in your AA Repairdesk dashboard to continuously optimize your outreach.' },
 ];
 
 const lifecycleSteps = [
@@ -96,7 +96,7 @@ export default function MarketingPage() {
               Email campaigns, SMS automations, review collection, and referral programs — all built into your repair shop POS. No extra tools, no extra cost.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/25 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Book a Demo</Link>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function MarketingPage() {
             <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-rd-teal mb-3 font-poppins">Customer Lifecycle</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4">Bring Every Customer Back</h2>
             <p className="text-gray-500 font-dm-sans text-lg max-w-2xl mx-auto">
-              Map automated touchpoints across the entire customer journey. From first visit to loyal advocate, RepairHub keeps the conversation going.
+              Map automated touchpoints across the entire customer journey. From first visit to loyal advocate, AA Repairdesk keeps the conversation going.
             </p>
           </div>
 
@@ -372,7 +372,7 @@ export default function MarketingPage() {
           </div>
 
           <div className="text-center mt-14">
-            <a href="https://app.repairhub.co/register" className="btn-primary px-10 py-3.5">Automate Your Marketing</a>
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-10 py-3.5">Automate Your Marketing</a>
           </div>
         </div>
       </section>
@@ -382,7 +382,7 @@ export default function MarketingPage() {
         <div className="container-main max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-3">Questions? Answered.</h2>
-            <p className="text-gray-500 font-dm-sans">Everything you need to know about RepairHub marketing tools.</p>
+            <p className="text-gray-500 font-dm-sans">Everything you need to know about AA Repairdesk marketing tools.</p>
           </div>
 
           <div className="space-y-3">

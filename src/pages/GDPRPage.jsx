@@ -44,7 +44,7 @@ const rights = [
   { title: 'Right to Restrict Processing', desc: 'Ask us to pause processing while you contest accuracy or await an objection decision.' },
   { title: 'Right to Data Portability', desc: 'Receive your data in a machine-readable format (JSON / CSV) and transfer it to another provider.' },
   { title: 'Right to Object', desc: 'Object to processing based on legitimate interest, including direct marketing, and we will stop immediately.' },
-  { title: 'Right Not to Be Subject to Automated Decisions', desc: 'RepairHub does not make legally significant automated decisions about individuals.' },
+  { title: 'Right Not to Be Subject to Automated Decisions', desc: 'AA Repairdesk does not make legally significant automated decisions about individuals.' },
 ];
 
 const securityMeasures = [
@@ -83,7 +83,7 @@ export default function GDPRPage() {
           </div>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl text-rd-dark mb-4 leading-tight">Your Data, Your Rights.</h1>
           <p className="text-gray-600 font-dm-sans text-lg max-w-2xl leading-relaxed mb-4">
-            RepairHub is fully committed to the General Data Protection Regulation (GDPR). This page explains what that means for you, your customers, and the data in your account.
+            AA Repairdesk is fully committed to the General Data Protection Regulation (GDPR). This page explains what that means for you, your customers, and the data in your account.
           </p>
           <p className="text-gray-400 font-dm-sans text-sm">Last updated: 1 January 2025 · Effective date: 25 May 2018</p>
         </div>
@@ -95,7 +95,7 @@ export default function GDPRPage() {
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-8">
             <p className="font-poppins font-bold text-rd-dark text-lg mb-2">Data Controller</p>
             <p className="font-dm-sans text-gray-500 text-sm leading-relaxed">
-              RepairHub Inc., 108 W 13th St, Wilmington, DE 19801, USA is the data controller for personal data processed through the RepairHub platform. For EU/EEA customers, we process data under Article 6(1)(b) GDPR (contract performance) and Article 6(1)(f) (legitimate interests) as primary lawful bases.
+              AA Repairdesk Inc., 108 W 13th St, Wilmington, DE 19801, USA is the data controller for personal data processed through the AA Repairdesk platform. For EU/EEA customers, we process data under Article 6(1)(b) GDPR (contract performance) and Article 6(1)(f) (legitimate interests) as primary lawful bases.
             </p>
           </div>
         </div>
@@ -226,8 +226,8 @@ export default function GDPRPage() {
           <h2 className="font-poppins font-bold text-2xl text-rd-dark mb-2">Contact Us About Your Data</h2>
           <p className="font-dm-sans text-gray-500 mb-8">To exercise any of your rights or ask questions about how we handle personal data:</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:privacy@repairhub.co" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark transition-colors">
-              <IconMail />privacy@repairhub.co
+            <a href="mailto:privacy@aarepairdesk.co" className="inline-flex items-center gap-2 bg-rd-teal text-white font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-rd-dark transition-colors">
+              <IconMail />privacy@aarepairdesk.co
             </a>
             <Link to="/contact" className="inline-flex items-center gap-2 border border-gray-200 text-rd-dark font-poppins font-semibold text-sm px-6 py-3 rounded-xl hover:bg-white transition-colors">
               Contact Form

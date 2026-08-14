@@ -3,14 +3,14 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 const faqs = [
-  { q: 'Does RepairHub Connect replace my existing email and SMS providers?', a: 'RepairHub Connect works alongside your current providers. It pulls SMS, email, and internal messages into a single threaded inbox so your team never has to switch between apps. You keep your existing phone numbers and email addresses — Connect simply unifies them.' },
+  { q: 'Does AA Repairdesk Connect replace my existing email and SMS providers?', a: 'AA Repairdesk Connect works alongside your current providers. It pulls SMS, email, and internal messages into a single threaded inbox so your team never has to switch between apps. You keep your existing phone numbers and email addresses — Connect simply unifies them.' },
   { q: 'Can I see the full communication history for a customer?', a: 'Yes. Every message exchanged with a customer — across SMS, email, and internal notes — is stored in a single timeline on their profile. When a customer walks in or calls, your team has the full context in seconds, no matter who handled the previous conversation.' },
   { q: 'How do automated message triggers work?', a: 'You define rules based on ticket events — for example, "when repair status changes to Ready for Pickup, send SMS template #3." Triggers fire instantly and log the outbound message in the customer thread. You can set triggers for status changes, payment receipts, appointment reminders, and more.' },
-  { q: 'Is internal team chat included at no extra cost?', a: 'Internal messaging is built into every RepairHub Connect plan. Your technicians can tag colleagues, share notes on a ticket, and escalate issues — all inside the same interface where customer messages live. No separate chat tool required.' },
+  { q: 'Is internal team chat included at no extra cost?', a: 'Internal messaging is built into every AA Repairdesk Connect plan. Your technicians can tag colleagues, share notes on a ticket, and escalate issues — all inside the same interface where customer messages live. No separate chat tool required.' },
   { q: 'Are file attachments supported in conversations?', a: 'Yes. You can attach images, PDFs, and documents to any outbound message or internal note. Attachments are stored with the conversation thread so your team can reference warranty photos, diagnostic reports, or signed approvals at any time.' },
 ];
 
-export default function RepairHubConnectPage() {
+export default function RepairdeskConnectPage() {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -28,10 +28,10 @@ export default function RepairHubConnectPage() {
                 <span className="text-rd-mint">One&nbsp;inbox.</span>
               </h1>
               <p className="font-dm-sans text-lg text-white/75 leading-relaxed mb-10 max-w-lg">
-                RepairHub Connect brings SMS, email, and internal team chat into a single threaded conversation view — so no customer message falls through the cracks.
+                AA Repairdesk Connect brings SMS, email, and internal team chat into a single threaded conversation view — so no customer message falls through the cracks.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+                <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
                 <Link to="/contact" className="border border-white/30 hover:border-white text-white font-poppins font-semibold px-8 py-3.5 rounded-full transition-colors">
                   Request a Demo
                 </Link>

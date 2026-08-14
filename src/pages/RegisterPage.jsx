@@ -49,14 +49,14 @@ export default function RegisterPage() {
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
               <div className="w-5 h-5 bg-rd-teal rounded-full" />
             </div>
-            <span className="text-white font-poppins font-bold text-2xl tracking-tight">RepairHub</span>
+            <span className="text-white font-poppins font-bold text-2xl tracking-tight">AA Repairdesk</span>
           </div>
 
           <h2 className="text-white font-poppins font-bold text-3xl mb-4">
             Start Your Free Trial
           </h2>
           <p className="text-white/80 font-dm-sans text-lg mb-8 leading-relaxed">
-            Join thousands of repair shops using RepairHub to streamline their business.
+            Join thousands of repair shops using AA Repairdesk to streamline their business.
           </p>
 
           {/* Feature bullets */}
@@ -87,7 +87,7 @@ export default function RegisterPage() {
         <div className="w-full max-w-md">
           {/* Logo */}
           <Link to="/" className="inline-flex items-center gap-2 mb-8">
-            <img src="/images/logo.png" alt="RepairHub" className="h-8" />
+            <img src="/images/logo.png" alt="AA Repairdesk" className="h-8" />
           </Link>
 
           <h1 className="font-poppins font-bold text-3xl text-rd-dark mb-2">

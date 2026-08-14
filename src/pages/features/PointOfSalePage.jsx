@@ -76,19 +76,19 @@ const ReceiptCard = ({ children, className = '' }) => (
 const faqs = [
   {
     q: 'What is a repair shop POS system?',
-    a: 'A repair shop POS (Point of Sale) system is software designed to manage all aspects of a repair business — from creating repair tickets and tracking jobs to processing payments and managing inventory. RepairHub\'s POS is built specifically for repair shops, unlike generic retail POS systems.',
+    a: 'A repair shop POS (Point of Sale) system is software designed to manage all aspects of a repair business — from creating repair tickets and tracking jobs to processing payments and managing inventory. AA Repairdesk\'s POS is built specifically for repair shops, unlike generic retail POS systems.',
   },
   {
-    q: 'Does RepairHub POS work for multiple store locations?',
-    a: 'Yes! RepairHub supports multiple store locations from a single account. You can manage inventory, staff, reports, and repair tickets across all your locations and see unified data in one dashboard.',
+    q: 'Does AA Repairdesk POS work for multiple store locations?',
+    a: 'Yes! AA Repairdesk supports multiple store locations from a single account. You can manage inventory, staff, reports, and repair tickets across all your locations and see unified data in one dashboard.',
   },
   {
-    q: 'Can I use RepairHub POS on a tablet or iPad?',
-    a: 'RepairHub is a cloud-based POS that works in any modern web browser, including on iPad and Android tablets. You can run it on a desktop computer, laptop, or tablet — whatever works best for your counter setup.',
+    q: 'Can I use AA Repairdesk POS on a tablet or iPad?',
+    a: 'AA Repairdesk is a cloud-based POS that works in any modern web browser, including on iPad and Android tablets. You can run it on a desktop computer, laptop, or tablet — whatever works best for your counter setup.',
   },
   {
-    q: 'Does RepairHub integrate with payment processors?',
-    a: 'Yes, RepairHub integrates with several payment solutions including RepairHub Payments (our preferred solution), Square, Paymentsense (UK/Ireland), and Tyro (Australia). You can accept cash, cards, contactless payments, and payment links.',
+    q: 'Does AA Repairdesk integrate with payment processors?',
+    a: 'Yes, AA Repairdesk integrates with several payment solutions including AA Repairdesk Payments (our preferred solution), Square, Paymentsense (UK/Ireland), and Tyro (Australia). You can accept cash, cards, contactless payments, and payment links.',
   },
   {
     q: 'How does repair ticket management work?',
@@ -96,11 +96,11 @@ const faqs = [
   },
   {
     q: 'Can I sell accessories and devices alongside repairs?',
-    a: 'Absolutely. RepairHub POS handles both retail sales and repair services. You can sell accessories, pre-owned devices, gift cards, and prepaid PINs all from the same checkout screen.',
+    a: 'Absolutely. AA Repairdesk POS handles both retail sales and repair services. You can sell accessories, pre-owned devices, gift cards, and prepaid PINs all from the same checkout screen.',
   },
   {
     q: 'Is there a free trial available?',
-    a: 'Yes, RepairHub offers a free trial so you can explore all the POS features, set up your inventory, and see how it works with your workflow before committing.',
+    a: 'Yes, AA Repairdesk offers a free trial so you can explore all the POS features, set up your inventory, and see how it works with your workflow before committing.',
   },
 ];
 
@@ -268,7 +268,7 @@ export default function PointOfSalePage() {
                 {/* Card 1 (top) */}
                 <div className="absolute bottom-12 left-0 right-0 h-44 rounded-2xl bg-gradient-to-br from-rd-lime to-[#457b9d] shadow-xl p-6 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
-                    <div className="font-poppins font-bold text-rd-dark text-lg">RepairHub</div>
+                    <div className="font-poppins font-bold text-rd-dark text-lg">AA Repairdesk</div>
                     {/* Contactless icon */}
                     <svg className="w-8 h-8 text-rd-dark/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0" />
@@ -395,7 +395,7 @@ export default function PointOfSalePage() {
                 Get More Out of Every Transaction
               </h2>
               <p className="font-dm-sans text-gray-500 leading-relaxed mb-8">
-                Boost your average order value without extra effort &mdash; RepairHub suggests accessories, bundles, and group discounts right at the point of sale.
+                Boost your average order value without extra effort &mdash; AA Repairdesk suggests accessories, bundles, and group discounts right at the point of sale.
               </p>
               <div className="space-y-5">
                 {[
@@ -526,7 +526,7 @@ export default function PointOfSalePage() {
 
               <div className="border-t border-dashed border-gray-300 pt-6">
                 <p className="font-dm-sans text-gray-600 text-sm leading-relaxed italic">
-                  "RepairHub has completely transformed how we run our shop. From ticketing to payments to inventory &mdash; everything is in one place and it just works. I wouldn't go back to our old system for anything."
+                  "AA Repairdesk has completely transformed how we run our shop. From ticketing to payments to inventory &mdash; everything is in one place and it just works. I wouldn't go back to our old system for anything."
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function PointOfSalePage() {
                 Frequently Asked Questions
               </h2>
               <p className="font-dm-sans text-gray-500 leading-relaxed mb-6">
-                Everything you need to know about RepairHub's POS system. Can't find an answer?
+                Everything you need to know about AA Repairdesk's POS system. Can't find an answer?
               </p>
               <Link to="/contact" className="inline-flex items-center gap-2 font-poppins font-semibold text-rd-teal text-sm hover:underline">
                 Contact Support
@@ -615,7 +615,7 @@ export default function PointOfSalePage() {
             Ready to Transform Your Checkout?
           </h2>
           <p className="font-dm-sans text-white/60 text-lg max-w-xl mx-auto mb-10">
-            Join thousands of repair shops worldwide who use RepairHub POS every day to run a faster, smarter business.
+            Join thousands of repair shops worldwide who use AA Repairdesk POS every day to run a faster, smarter business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

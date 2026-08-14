@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 const faqData = [
   {
     q: 'Can I send invoices directly from a repair ticket?',
-    a: 'Yes. When you close or update a ticket, RepairHub auto-generates an invoice pre-filled with line items, labor charges, taxes, and any parts used. You can email it with a payment link in one click.',
+    a: 'Yes. When you close or update a ticket, AA Repairdesk auto-generates an invoice pre-filled with line items, labor charges, taxes, and any parts used. You can email it with a payment link in one click.',
   },
   {
     q: 'How do partial payments and deposits work?',
     a: 'You can collect any amount upfront as a deposit when a ticket is created. The remaining balance is tracked automatically, and customers can pay the rest later online or in-store. Every payment is logged with timestamps.',
   },
   {
-    q: 'Which accounting platforms does RepairHub integrate with?',
-    a: 'RepairHub offers two-way sync with both QuickBooks Online and Xero. Invoices, payments, refunds, and tax data flow automatically so your books are always up to date without double entry.',
+    q: 'Which accounting platforms does AA Repairdesk integrate with?',
+    a: 'AA Repairdesk offers two-way sync with both QuickBooks Online and Xero. Invoices, payments, refunds, and tax data flow automatically so your books are always up to date without double entry.',
   },
   {
-    q: 'Does RepairHub support multi-currency billing?',
+    q: 'Does AA Repairdesk support multi-currency billing?',
     a: 'Absolutely. You can set a base currency for your store and accept payments in other currencies. Exchange rates can be configured manually or pulled automatically, and invoices display the correct currency symbol and formatting.',
   },
   {
@@ -25,7 +25,7 @@ const faqData = [
   },
   {
     q: 'How does the payment link in emailed invoices work?',
-    a: 'Each emailed invoice contains a unique secure link. When customers click it, they see the invoice details and can pay using credit card, debit card, or other enabled payment methods. The payment status updates in RepairHub in real time.',
+    a: 'Each emailed invoice contains a unique secure link. When customers click it, they see the invoice details and can pay using credit card, debit card, or other enabled payment methods. The payment status updates in AA Repairdesk in real time.',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function BillingInvoicingPage() {
               Generate invoices automatically, email payment links, collect deposits, and sync every dollar with QuickBooks or Xero — no spreadsheets, no double entry.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Book a Demo</Link>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function BillingInvoicingPage() {
       <section className="bg-white py-20 px-6">
         <div className="container-main">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark text-center mb-4">The Invoice Lifecycle</h2>
-          <p className="text-gray-500 font-dm-sans text-center text-lg mb-16 max-w-2xl mx-auto">Every repair follows the same money trail. RepairHub automates each step so nothing slips through the cracks.</p>
+          <p className="text-gray-500 font-dm-sans text-center text-lg mb-16 max-w-2xl mx-auto">Every repair follows the same money trail. AA Repairdesk automates each step so nothing slips through the cracks.</p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-0 max-w-5xl mx-auto">
             {[
               {
@@ -198,12 +198,12 @@ export default function BillingInvoicingPage() {
           <p className="text-gray-500 font-dm-sans text-center text-lg mb-14 max-w-2xl mx-auto">Two-way integration with QuickBooks and Xero means invoices, payments, taxes, and refunds flow automatically. Zero manual reconciliation.</p>
 
           <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-0">
-            {/* RepairHub block */}
+            {/* AA Repairdesk block */}
             <div className="bg-rd-dark rounded-2xl px-8 py-6 text-center shrink-0">
               <div className="w-12 h-12 rounded-xl bg-rd-teal flex items-center justify-center mx-auto mb-3">
                 <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.573-1.066z" /><circle cx="12" cy="12" r="3" /></svg>
               </div>
-              <div className="font-poppins font-bold text-white text-lg">RepairHub</div>
+              <div className="font-poppins font-bold text-white text-lg">AA Repairdesk</div>
               <div className="text-white/50 text-xs font-dm-sans mt-1">Invoices, Payments, Taxes</div>
             </div>
 
@@ -428,10 +428,10 @@ export default function BillingInvoicingPage() {
               {/* Dotted top edge */}
               <div className="border-b-2 border-dashed border-gray-300 pb-4 mb-5 text-center">
                 <div className="text-[10px] font-poppins uppercase tracking-[0.2em] text-gray-400 mb-1">Customer Testimonial</div>
-                <div className="text-[10px] font-dm-sans text-gray-300">Verified RepairHub User</div>
+                <div className="text-[10px] font-dm-sans text-gray-300">Verified AA Repairdesk User</div>
               </div>
               <blockquote className="font-dm-sans text-rd-dark text-base leading-relaxed mb-6 text-center">
-                "We used to spend an hour every evening reconciling invoices. With RepairHub, invoices generate from tickets automatically, customers pay through the emailed link, and everything syncs to QuickBooks. We literally saved 30 hours a month."
+                "We used to spend an hour every evening reconciling invoices. With AA Repairdesk, invoices generate from tickets automatically, customers pay through the emailed link, and everything syncs to QuickBooks. We literally saved 30 hours a month."
               </blockquote>
               <div className="border-t border-dashed border-gray-300 pt-4 text-center">
                 <div className="font-poppins font-bold text-rd-dark">Marcus Chen</div>
@@ -455,7 +455,7 @@ export default function BillingInvoicingPage() {
       <section className="bg-rd-cream py-20 px-6">
         <div className="container-main max-w-3xl">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark text-center mb-4">Frequently Asked Questions</h2>
-          <p className="text-gray-500 font-dm-sans text-center text-lg mb-12">Everything you need to know about billing and invoicing in RepairHub.</p>
+          <p className="text-gray-500 font-dm-sans text-center text-lg mb-12">Everything you need to know about billing and invoicing in AA Repairdesk.</p>
           <div className="space-y-3">
             {faqData.map((faq, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-100 overflow-hidden">

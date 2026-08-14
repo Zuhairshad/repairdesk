@@ -52,7 +52,7 @@ const streamlineFeatures = [
   {
     step: '02',
     title: 'Track Repair Jobs',
-    description: 'Track the status of repair jobs and keep customers updated in real time. RepairHub work order software automates workflows and modernizes repair management.',
+    description: 'Track the status of repair jobs and keep customers updated in real time. AA Repairdesk work order software automates workflows and modernizes repair management.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 14l2 2 4-4" />
@@ -62,7 +62,7 @@ const streamlineFeatures = [
   {
     step: '03',
     title: 'Inventory Management',
-    description: "RepairHub work order and inventory management software helps you keep tabs on available parts and accessories so you're always stocked up.",
+    description: "AA Repairdesk work order and inventory management software helps you keep tabs on available parts and accessories so you're always stocked up.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -125,7 +125,7 @@ const profitabilityFeatures = [
 const insightTiles = [
   {
     title: 'Employee Management',
-    description: 'Manage your employees, evaluate performance, and process payroll — RepairHub work order management software does it all without any errors.',
+    description: 'Manage your employees, evaluate performance, and process payroll — AA Repairdesk work order management software does it all without any errors.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -134,7 +134,7 @@ const insightTiles = [
   },
   {
     title: 'Roles and Permissions',
-    description: 'Define, set, and implement employee roles and permissions to control exactly what your team can access inside RepairHub.',
+    description: 'Define, set, and implement employee roles and permissions to control exactly what your team can access inside AA Repairdesk.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -163,7 +163,7 @@ const insightTiles = [
 
 const testimonials = [
   {
-    quote: 'Our technicians used to lose track of which jobs were waiting on parts. With RepairHub work orders and custom statuses, everyone on the floor knows exactly where every device stands at all times.',
+    quote: 'Our technicians used to lose track of which jobs were waiting on parts. With AA Repairdesk work orders and custom statuses, everyone on the floor knows exactly where every device stands at all times.',
     name: 'Jason Tran',
     role: 'Owner, iRestore — Seattle, WA',
   },
@@ -182,19 +182,19 @@ const testimonials = [
 const faqs = [
   {
     q: 'How do I Get Started?',
-    a: 'Share your business details with us by filling out the form. A product specialist will reach out to you to give a complete consultation on how to set up your repair shop using RepairHub Work Order Management software.',
+    a: 'Share your business details with us by filling out the form. A product specialist will reach out to you to give a complete consultation on how to set up your repair shop using AA Repairdesk Work Order Management software.',
   },
   {
     q: 'What Can I Manage with the Software?',
     a: 'The all-in-one work order software helps you create and track work orders, inventory, employees, sales, and cross-platform communication. You can also use its POS features for an easy check-out process.',
   },
   {
-    q: 'Can I Integrate RepairHub with other Platforms?',
-    a: 'Yes, RepairHub work order software can be integrated with 40+ platforms, including WooCommerce, Shopify, QuickBooks, Xero, ShipStation, and many more.',
+    q: 'Can I Integrate AA Repairdesk with other Platforms?',
+    a: 'Yes, AA Repairdesk work order software can be integrated with 40+ platforms, including WooCommerce, Shopify, QuickBooks, Xero, ShipStation, and many more.',
   },
   {
-    q: 'How much does RepairHub subscription cost?',
-    a: 'RepairHub subscription starts from as low as $99/store/month for five users. It goes up from there depending on your number of users, your chosen plan, and any add-ons you select.',
+    q: 'How much does AA Repairdesk subscription cost?',
+    a: 'AA Repairdesk subscription starts from as low as $99/store/month for five users. It goes up from there depending on your number of users, your chosen plan, and any add-ons you select.',
   },
 ];
 
@@ -213,7 +213,7 @@ export default function WorkOrderPage() {
                 Work Order Software for Repair Shops
               </h1>
               <p className="font-dm-sans text-lg text-white/80 mb-8 leading-relaxed">
-                A reliable and powerful work order management system to meet all your repair business requirements. Create tickets, assign jobs to repair technicians, track repair status, organize your inventory, and streamline all the repair management processes with RepairHub.
+                A reliable and powerful work order management system to meet all your repair business requirements. Create tickets, assign jobs to repair technicians, track repair status, organize your inventory, and streamline all the repair management processes with AA Repairdesk.
               </p>
               <div className="flex flex-wrap gap-6">
                 {['Create & assign tickets', 'Track repair status live', 'Order parts from vendors'].map((item) => (
@@ -302,7 +302,7 @@ export default function WorkOrderPage() {
               Automate Processes and Save Time
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg">
-              RepairHub work order system for small businesses lets you automate and manage end-to-end operations at your repair shop. Create repair tickets, communicate with your employees, and enable them to finish the repair job quickly — no more manual data entry.
+              AA Repairdesk work order system for small businesses lets you automate and manage end-to-end operations at your repair shop. Create repair tickets, communicate with your employees, and enable them to finish the repair job quickly — no more manual data entry.
             </p>
           </div>
 
@@ -393,7 +393,7 @@ export default function WorkOrderPage() {
                 Monitor and Track Performance
               </h2>
               <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8">
-                With RepairHub work order software, track the complete performance of your business — repair jobs, employee activity, sales, and revenue. Streamline everything from inventory management to payroll to repair job history, check repair statuses, monitor employee productivity, and get business reports with rich, advanced modules.
+                With AA Repairdesk work order software, track the complete performance of your business — repair jobs, employee activity, sales, and revenue. Streamline everything from inventory management to payroll to repair job history, check repair statuses, monitor employee productivity, and get business reports with rich, advanced modules.
               </p>
               <div className="space-y-5">
                 {insightTiles.map((tile) => (
@@ -426,7 +426,7 @@ export default function WorkOrderPage() {
               <span className="font-poppins font-semibold text-rd-mint text-sm uppercase tracking-widest">Centralized Management</span>
               <h2 className="font-dm-serif text-2xl md:text-3xl mt-2 mb-3">Manage Multiple Stores</h2>
               <p className="font-dm-sans text-white/80 leading-relaxed">
-                Whether you're a multi-store operation or a franchise, RepairHub work order software connects every location you manage. Transfer inventory between stores and keep an accurate record of every part and accessory as you grow from a single store to multiple franchises.
+                Whether you're a multi-store operation or a franchise, AA Repairdesk work order software connects every location you manage. Transfer inventory between stores and keep an accurate record of every part and accessory as you grow from a single store to multiple franchises.
               </p>
             </div>
             <a href="#" className="btn-primary text-base px-8 py-3.5 whitespace-nowrap flex-shrink-0">
@@ -441,7 +441,7 @@ export default function WorkOrderPage() {
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mb-4">
-              Repair Shops Running on RepairHub
+              Repair Shops Running on AA Repairdesk
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg">
               Real shops, real workflows — see how repair businesses use work order management to save time and grow revenue.
@@ -477,7 +477,7 @@ export default function WorkOrderPage() {
               All the Answers You're Looking For
             </h2>
             <p className="font-dm-sans text-gray-600 text-center mb-12">
-              Common questions about RepairHub's work order management software.
+              Common questions about AA Repairdesk's work order management software.
             </p>
             <div className="space-y-4">
               {faqs.map((faq) => (

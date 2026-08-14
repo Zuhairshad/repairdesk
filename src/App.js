@@ -29,13 +29,13 @@ import CustomerFacingDisplayPage from './pages/features/CustomerFacingDisplayPag
 import MultiLocationPage from './pages/features/MultiLocationPage';
 import SelfCheckInPage from './pages/features/SelfCheckInPage';
 import ClockInOutPage from './pages/features/ClockInOutPage';
-import RepairHubSMSPage from './pages/features/RepairHubSMSPage';
+import RepairdeskSMSPage from './pages/features/RepairHubSMSPage';
 import JobNotificationsPage from './pages/features/JobNotificationsPage';
 import FeatureAppointmentsProPage from './pages/features/AppointmentsProPage';
 import GoogleReviewsPage from './pages/features/GoogleReviewsPage';
 import PaymentsPage from './pages/features/PaymentsPage';
 import PhoneProPage from './pages/features/PhoneProPage';
-import RepairHubConnectPage from './pages/features/RepairHubConnectPage';
+import RepairdeskConnectPage from './pages/features/RepairHubConnectPage';
 
 // Industries
 import CellPhoneRepairPage from './pages/industries/CellPhoneRepairPage';
@@ -121,13 +121,13 @@ export default function App() {
         <Route path="/features/multi-location" element={<MultiLocationPage />} />
         <Route path="/features/self-check-in" element={<SelfCheckInPage />} />
         <Route path="/features/clock-in-out" element={<ClockInOutPage />} />
-        <Route path="/features/repairhub-sms" element={<RepairHubSMSPage />} />
+        <Route path="/features/aarepairdesk-sms" element={<RepairdeskSMSPage />} />
         <Route path="/features/job-notifications" element={<JobNotificationsPage />} />
         <Route path="/features/appointments-pro" element={<FeatureAppointmentsProPage />} />
         <Route path="/features/google-reviews" element={<GoogleReviewsPage />} />
-        <Route path="/features/repairhub-payments" element={<PaymentsPage />} />
+        <Route path="/features/aarepairdesk-payments" element={<PaymentsPage />} />
         <Route path="/features/phone-pro" element={<PhoneProPage />} />
-        <Route path="/features/repairhub-connect" element={<RepairHubConnectPage />} />
+        <Route path="/features/aarepairdesk-connect" element={<RepairdeskConnectPage />} />
 
         {/* Industries */}
         <Route path="/industries/cell-phone-repair" element={<CellPhoneRepairPage />} />
@@ -151,8 +151,8 @@ export default function App() {
         <Route path="/industries/bicycle-repair" element={<BicycleRepairPage />} />
 
         {/* Compare */}
-        <Route path="/compare/repairhub-vs-repairshopr" element={<VsRepairShoprPage />} />
-        <Route path="/compare/repairhub-vs-repairq" element={<VsRepairqPage />} />
+        <Route path="/compare/aarepairdesk-vs-repairshopr" element={<VsRepairShoprPage />} />
+        <Route path="/compare/aarepairdesk-vs-repairq" element={<VsRepairqPage />} />
 
         {/* Main */}
         <Route path="/pricing" element={<PricingPage />} />

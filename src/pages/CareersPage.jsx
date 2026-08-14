@@ -153,7 +153,7 @@ const perks = [
   { icon: IconShield, tint: 'bg-rd-lime/25 text-rd-dark', title: 'PF & Employee Old Age Benefit', desc: 'Provident fund contributions and EOBI coverage so your future stays secure while you build ours.' },
   { icon: IconBaby, tint: 'bg-rd-mint/40 text-rd-teal', title: 'Maternity & Paternity Leave', desc: 'Paid time off for new parents to bond with their little ones without work worries.' },
   { icon: IconHeartPulse, tint: 'bg-rd-teal/10 text-rd-teal', title: 'Health Insurance', desc: 'Medical coverage for you and your dependents, because wellbeing comes first.' },
-  { icon: IconUsersShare, tint: 'bg-rd-lime/25 text-rd-dark', title: 'Employee Referral Program', desc: 'Bring great people along and get rewarded for growing the RepairHub family.' },
+  { icon: IconUsersShare, tint: 'bg-rd-lime/25 text-rd-dark', title: 'Employee Referral Program', desc: 'Bring great people along and get rewarded for growing the AA Repairdesk family.' },
   { icon: IconCalendarLeaf, tint: 'bg-rd-mint/40 text-rd-teal', title: 'Paid Leaves', desc: 'Generous annual, casual, and sick leave so you can rest and recharge guilt-free.' },
   { icon: IconTrophy, tint: 'bg-rd-teal/10 text-rd-teal', title: 'Employee Recognition & Performance Incentives', desc: 'Bonuses, shout-outs, and rewards for the people who consistently raise the bar.' },
 ];
@@ -192,7 +192,7 @@ export default function CareersPage() {
         <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-14 items-center">
           <div className="text-center lg:text-left">
             <span className="inline-block bg-rd-teal/10 text-rd-teal text-sm font-poppins font-semibold px-4 py-1.5 rounded-full mb-6">
-              Careers at RepairHub
+              Careers at AA Repairdesk
             </span>
             <h1 className="font-dm-serif text-4xl md:text-6xl text-rd-dark mb-6 leading-tight">
               Be a Part of Something Great!
@@ -259,7 +259,7 @@ export default function CareersPage() {
                 <path d="M7 6c-2.8 0-5 2.2-5 5v7h7v-7H5.2C5.6 9.5 7 8 9 8V6H7zm10 0c-2.8 0-5 2.2-5 5v7h7v-7h-3.8c.4-1.5 1.8-3 3.8-3V6h-2z" />
               </svg>
               <p className="font-dm-serif text-lg md:text-xl text-rd-dark italic leading-relaxed">
-                "Welcome to RepairHub! We're grateful to all the people who have been part of this journey and are
+                "Welcome to AA Repairdesk! We're grateful to all the people who have been part of this journey and are
                 looking forward to joining forces with exceptional talent that shares our vision, values, and work
                 philosophy. So, if you want to be challenged to be the best at what you do, drop us a line and we'd
                 love to connect."
@@ -277,10 +277,10 @@ export default function CareersPage() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.3} d="M12 2l2.4 6.8L21 11l-6.6 2.2L12 20l-2.4-6.8L3 11l6.6-2.2L12 2z" />
           </svg>
           <span className="text-rd-mint text-sm font-poppins font-semibold uppercase tracking-widest">
-            North Star for RepairHub
+            North Star for AA Repairdesk
           </span>
           <p className="font-dm-serif text-2xl md:text-3xl text-white mt-4 leading-snug">
-            RepairHub to be the most customer-centric, reliable &amp; innovative company in the repair industry.
+            AA Repairdesk to be the most customer-centric, reliable &amp; innovative company in the repair industry.
           </p>
         </div>
       </section>
@@ -295,7 +295,7 @@ export default function CareersPage() {
               </span>
               <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-2 mb-6">Where We Stand</h2>
               <p className="font-dm-sans text-gray-600 leading-relaxed">
-                RepairHub started in 2014 as a POS solution for independent Cell Phone Repair stores but has
+                AA Repairdesk started in 2014 as a POS solution for independent Cell Phone Repair stores but has
                 rapidly grown over the years to become the preferred choice of merchants in any repair industry all
                 over the world. We take pride in our growing family of dedicated, talented people building this
                 journey with us.
@@ -368,7 +368,7 @@ export default function CareersPage() {
                 Management Trainee Officer
               </span>
               <h2 className="font-dm-serif text-2xl md:text-3xl text-white mt-2 mb-3">
-                Kickstart your Career Today, MTO Program at RepairHub!
+                Kickstart your Career Today, MTO Program at AA Repairdesk!
               </h2>
               <p className="font-dm-sans text-gray-300 leading-relaxed">
                 Built for fresh graduates and early-career talent, our MTO program rotates you across teams,
@@ -392,7 +392,7 @@ export default function CareersPage() {
                 Ditch the Office, Get Relaxed in Girls Lounge!
               </h2>
               <p className="font-dm-sans text-gray-600 leading-relaxed mb-6">
-                Away from the work desk, a sanctuary where the ladies of RepairHub convene to relax, rest and
+                Away from the work desk, a sanctuary where the ladies of AA Repairdesk convene to relax, rest and
                 relieve stress. Disconnect from the daily grind of work, stretch, meditate, and re-energize your
                 body and soul. Read a nice book, get a power nap or challenge your friends to a game of monopoly.
                 Shine on girl, be you.
@@ -427,7 +427,7 @@ export default function CareersPage() {
             <span className="text-rd-teal text-sm font-poppins font-semibold uppercase tracking-widest">
               Culture &amp; Community
             </span>
-            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-2">Life at RepairHub</h2>
+            <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-2">Life at AA Repairdesk</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
             {galleryItems.map((item, i) => {
@@ -493,7 +493,7 @@ export default function CareersPage() {
             Let's build something amazing together!
           </p>
           <a
-            href="mailto:careers@repairhub.co?subject=I'm Interested in Joining RepairHub"
+            href="mailto:careers@aarepairdesk.co?subject=I'm Interested in Joining AA Repairdesk"
             className="inline-block bg-rd-lime text-white font-poppins font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-colors"
           >
             Join Us!

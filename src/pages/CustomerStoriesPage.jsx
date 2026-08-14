@@ -9,7 +9,7 @@ const featuredStory = {
   industry: 'Cell Phone Repair',
   location: 'Austin, TX',
   quote:
-    'We were drowning in sticky notes and spreadsheets. RepairHub replaced all of it overnight. Our ticket time got cut in half, and customers actually started leaving five-star reviews because they could track their repairs in real time.',
+    'We were drowning in sticky notes and spreadsheets. AA Repairdesk replaced all of it overnight. Our ticket time got cut in half, and customers actually started leaving five-star reviews because they could track their repairs in real time.',
   results: [
     { number: '50%', label: 'Faster ticket processing' },
     { number: '4.9', label: 'Google review rating' },
@@ -45,7 +45,7 @@ const stories = [
     location: 'San Francisco, CA',
     metric: '$18K saved yearly',
     quote:
-      'Tracking custom orders and serialized pieces was chaos before RepairHub. Now every piece has a digital trail from intake to pickup.',
+      'Tracking custom orders and serialized pieces was chaos before AA Repairdesk. Now every piece has a digital trail from intake to pickup.',
     color: 'from-violet-500 to-purple-600',
   },
   {
@@ -55,7 +55,7 @@ const stories = [
     location: 'Phoenix, AZ',
     metric: '100% serial tracking',
     quote:
-      'Tracking drone serial numbers and logging repair history was impossible with our old system. RepairHub makes it simple and searchable.',
+      'Tracking drone serial numbers and logging repair history was impossible with our old system. AA Repairdesk makes it simple and searchable.',
     color: 'from-sky-500 to-blue-600',
   },
   {
@@ -75,7 +75,7 @@ const stories = [
     location: 'Chicago, IL',
     metric: '5 stores, 1 platform',
     quote:
-      'We scaled from one store to five in two years. RepairHub grew with us — same system, same data, no migration headaches.',
+      'We scaled from one store to five in two years. AA Repairdesk grew with us — same system, same data, no migration headaches.',
     color: 'from-rose-500 to-red-600',
   },
 ];
@@ -179,7 +179,7 @@ export default function CustomerStoriesPage() {
           </h1>
           <p className="text-white/65 text-lg md:text-xl font-dm-sans leading-relaxed max-w-2xl">
             From cell phone stores to jewelry workshops, see how repair businesses
-            around the world use RepairHub to save time, delight customers, and grow revenue.
+            around the world use AA Repairdesk to save time, delight customers, and grow revenue.
           </p>
           <div className="flex items-center gap-3 mt-2">
             {[...Array(5)].map((_, i) => (
@@ -368,7 +368,7 @@ export default function CustomerStoriesPage() {
               Hear It Straight from Them
             </h2>
             <p className="font-dm-sans text-gray-500 mt-3 max-w-lg mx-auto">
-              Watch repair shop owners share their experience with RepairHub in their own words.
+              Watch repair shop owners share their experience with AA Repairdesk in their own words.
             </p>
           </div>
 
@@ -443,7 +443,7 @@ export default function CustomerStoriesPage() {
             Share Your Story
           </h2>
           <p className="font-dm-sans text-white/70 text-lg md:text-xl leading-relaxed mb-8 max-w-xl mx-auto">
-            Using RepairHub to run your repair shop? We would love to feature your journey and the results
+            Using AA Repairdesk to run your repair shop? We would love to feature your journey and the results
             you have achieved. Your story could inspire thousands of shop owners worldwide.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -454,7 +454,7 @@ export default function CustomerStoriesPage() {
               Submit Your Story
             </Link>
             <a
-              href="https://app.repairhub.co/register"
+              href="https://app.aarepairdesk.co/register"
               className="border border-white/30 text-white font-poppins font-semibold px-8 py-3.5 rounded-full hover:bg-white/10 transition-colors"
             >
               Start Free Trial

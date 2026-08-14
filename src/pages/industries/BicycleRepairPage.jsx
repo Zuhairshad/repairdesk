@@ -109,7 +109,7 @@ const efficiencySubFeatures = [
   {
     title: 'Loyalty Program',
     icon: ICONS.medal,
-    desc: 'Use the RepairHub loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.',
+    desc: 'Use the AA Repairdesk loyalty program to cultivate stronger relationships, grow repeat business, and increase lifetime value.',
   },
 ];
 
@@ -145,7 +145,7 @@ const companyStats = [
 const faqs = [
   {
     q: 'What Bicycle Repair Shop Software is Good for Scheduling a Service?',
-    a: 'As a bicycle repair store owner, you have multiple options. However, RepairHub stands among all of them. It helps you schedule services, assign repairs to technicians, and track progress all from one place.',
+    a: 'As a bicycle repair store owner, you have multiple options. However, AA Repairdesk stands among all of them. It helps you schedule services, assign repairs to technicians, and track progress all from one place.',
   },
   {
     q: 'Does Bicycle Inventory Management Software Transfer Stock Between Locations as I Own Multiple Stores?',
@@ -153,23 +153,23 @@ const faqs = [
   },
   {
     q: 'Can I also Sell Bicycles Online if I use a POS at My Shop?',
-    a: 'Yes. A bicycle repair shop POS software like RepairHub integrates with Shopify and WooCommerce, letting you sell bicycles and accessories online, and keeps your inventory and customer data synced.',
+    a: 'Yes. A bicycle repair shop POS software like AA Repairdesk integrates with Shopify and WooCommerce, letting you sell bicycles and accessories online, and keeps your inventory and customer data synced.',
   },
   {
     q: 'What Bicycle Repair Shop Billing Software or Methods Can Help with Invoices and Repairs?',
-    a: 'For a bicycle shop, a good POS system for repair shop should handle both invoicing and repairs. Among all the software available right now, RepairHub is one that checks all those boxes. It offers repair job management (tickets, assigning techs, notes), and invoices (digital invoices, payment links).',
+    a: 'For a bicycle shop, a good POS system for repair shop should handle both invoicing and repairs. Among all the software available right now, AA Repairdesk is one that checks all those boxes. It offers repair job management (tickets, assigning techs, notes), and invoices (digital invoices, payment links).',
   },
   {
     q: 'How can I Get Good Reviews for My Bicycle Repair Shop?',
-    a: 'First, you need to offer great repair services and customer support. Secondly, you can get help from the RepairHub Google reviews automation tool. It helps you send a review link to your customers 24 hours after the repair is done. Thus, you can get more 5-star reviews and rank your store even better.',
+    a: 'First, you need to offer great repair services and customer support. Secondly, you can get help from the AA Repairdesk Google reviews automation tool. It helps you send a review link to your customers 24 hours after the repair is done. Thus, you can get more 5-star reviews and rank your store even better.',
   },
   {
     q: 'How Much Do I Have to Spend to Get Reliable Management Software for My Bicycle Shop?',
-    a: "The cost of a bicycle repair shop software depends on your store's size and the features you need. When it comes to reliability and ease of use, there is nothing better than RepairHub, and you can get the subscription for $99/store per month. And if you go for the annual plan, you can get it for as low as $79.",
+    a: "The cost of a bicycle repair shop software depends on your store's size and the features you need. When it comes to reliability and ease of use, there is nothing better than AA Repairdesk, and you can get the subscription for $99/store per month. And if you go for the annual plan, you can get it for as low as $79.",
   },
   {
-    q: 'Does RepairHub also Offer Customer Support?',
-    a: 'Yes, we are available 24 hours, 6 days a week to serve you. You can connect with one of our product specialists or send us an email at support@repairhub.co, anytime you want.',
+    q: 'Does AA Repairdesk also Offer Customer Support?',
+    a: 'Yes, we are available 24 hours, 6 days a week to serve you. You can connect with one of our product specialists or send us an email at support@aarepairdesk.co, anytime you want.',
   },
 ];
 
@@ -233,7 +233,7 @@ export default function BicycleRepairPage() {
           </p>
           <div className="flex flex-wrap gap-4">
             <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-            <a href="https://app.repairhub.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Free Trial</a>
+            <a href="https://app.aarepairdesk.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Free Trial</a>
           </div>
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mt-12 text-sm text-white/60 font-dm-sans">
             <span className="text-[11px] uppercase tracking-widest text-white/40">Syncs with</span>
@@ -255,7 +255,7 @@ export default function BicycleRepairPage() {
               </span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">Track Every Repair with Ease</h2>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-4">
-                Say goodbye to juggling between paper-based service request forms or using multiple systems that don't integrate. With RepairHub, all-in-one bicycle repair shop ticketing system, you can quickly access all job-related data to view job status, due dates, and overdue tasks in one place at a glance.
+                Say goodbye to juggling between paper-based service request forms or using multiple systems that don't integrate. With AA Repairdesk, all-in-one bicycle repair shop ticketing system, you can quickly access all job-related data to view job status, due dates, and overdue tasks in one place at a glance.
               </p>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed">
                 If a repair job needs additional work, email or text quotes to customers for easy acceptance or decline.
@@ -297,7 +297,7 @@ export default function BicycleRepairPage() {
           </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5 max-w-2xl">Easily Manage Your Bicycle Shop Inventory</h2>
           <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-10 max-w-2xl">
-            From bicycles to kickstands and helmets, RepairHub allows you to effectively manage your inventory, ensuring you are always aware of what you have in stock and will need before demand arises.
+            From bicycles to kickstands and helmets, AA Repairdesk allows you to effectively manage your inventory, ensuring you are always aware of what you have in stock and will need before demand arises.
           </p>
 
           <div className="rounded-3xl bg-[#FAF9E3] p-8 md:p-10 grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 items-center mb-12">
@@ -307,7 +307,7 @@ export default function BicycleRepairPage() {
             <div>
               <h3 className="font-poppins font-bold text-rd-dark text-xl mb-2">Seamlessly Sell Bicycles Online</h3>
               <p className="text-gray-700 font-dm-sans leading-relaxed">
-                Whether you prefer selling in-store or running an online store, RepairHub makes it super easy to sell online through its integration with Shopify and WooCommerce, which synchronizes your inventory and customer data between your point of sale and online store, so you always know exactly what you have in stock and prevent issues like double-selling.
+                Whether you prefer selling in-store or running an online store, AA Repairdesk makes it super easy to sell online through its integration with Shopify and WooCommerce, which synchronizes your inventory and customer data between your point of sale and online store, so you always know exactly what you have in stock and prevent issues like double-selling.
               </p>
             </div>
           </div>
@@ -363,7 +363,7 @@ export default function BicycleRepairPage() {
           </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5 max-w-2xl">The Easy, Integrated Way to Take Payments</h2>
           <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-12 max-w-2xl">
-            RepairHub provides a unified platform with Payments seamlessly integrated into your bicycle shop POS. This automates your payment process, reducing errors and quicker checkouts without manual entries. With RepairHub Integrated payment processing, you get:
+            AA Repairdesk provides a unified platform with Payments seamlessly integrated into your bicycle shop POS. This automates your payment process, reducing errors and quicker checkouts without manual entries. With AA Repairdesk Integrated payment processing, you get:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {paymentSubFeatures.map((f) => (
@@ -392,7 +392,7 @@ export default function BicycleRepairPage() {
                 Trusted by More Than 3,000+ Repair Stores
               </h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
-                When you join RepairHub, you don't just get a software. You join a community of bicycle repair shop owners around the world who help you learn and grow your business.
+                When you join AA Repairdesk, you don't just get a software. You join a community of bicycle repair shop owners around the world who help you learn and grow your business.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
@@ -430,9 +430,9 @@ export default function BicycleRepairPage() {
         <div className="container-main relative z-10 text-center max-w-2xl mx-auto">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-6">Get Started with the #1 Repair Shop POS</h2>
           <p className="text-white/70 font-dm-sans leading-relaxed mb-8">
-            RepairHub is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch &amp; jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
+            AA Repairdesk is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch &amp; jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
           </p>
-          <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 inline-block">Start Free Trial</a>
+          <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 inline-block">Start Free Trial</a>
         </div>
       </section>
     </PageLayout>

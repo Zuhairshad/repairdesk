@@ -28,7 +28,7 @@ const bookingFlow = [
   {
     num: '03',
     title: 'Confirmation Sent Instantly',
-    desc: 'RepairHub fires an SMS and email confirmation the moment the booking is made — no back-and-forth.',
+    desc: 'AA Repairdesk fires an SMS and email confirmation the moment the booking is made — no back-and-forth.',
   },
   {
     num: '04',
@@ -54,7 +54,7 @@ const deepDives = [
   {
     tag: 'Calendar Sync',
     title: 'One Calendar — Everywhere You Need It',
-    desc: 'Every appointment in RepairHub flows to Google Calendar or Outlook in real time. Double-booking is physically impossible. Your team sees their schedule on any device without ever opening the POS.',
+    desc: 'Every appointment in AA Repairdesk flows to Google Calendar or Outlook in real time. Double-booking is physically impossible. Your team sees their schedule on any device without ever opening the POS.',
     bullets: ['Two-way Google Calendar sync', 'Microsoft Outlook integration', 'Conflict detection & blocking', 'Per-technician calendar views'],
     art: 'calendar',
   },
@@ -68,7 +68,7 @@ const deepDives = [
   {
     tag: 'Staff Management',
     title: 'Route Every Job to the Right Technician',
-    desc: "Set individual availability, lunch breaks, and vacation days for each tech. RepairHub routes new bookings only to available staff. Customers see real-time open slots — never a time that's already taken.",
+    desc: "Set individual availability, lunch breaks, and vacation days for each tech. AA Repairdesk routes new bookings only to available staff. Customers see real-time open slots — never a time that's already taken.",
     bullets: ['Per-tech availability windows', 'Break & holiday blocking', 'Auto-routing by skill level', 'Color-coded team calendar'],
     art: 'staff',
   },
@@ -84,14 +84,14 @@ const stats = [
 
 /* ── Integrations ───────────────────────────────────────────────────────── */
 const integrations = [
-  'Google Calendar', 'Outlook', 'Google Business', 'Facebook', 'RepairHub SMS', 'RepairHub POS',
+  'Google Calendar', 'Outlook', 'Google Business', 'Facebook', 'AA Repairdesk SMS', 'AA Repairdesk POS',
 ];
 
 /* ── FAQ ────────────────────────────────────────────────────────────────── */
 const faqs = [
   { q: 'Can I embed the booking widget on my own website?', a: 'Yes — you get a small JavaScript snippet you paste into any page. It works on WordPress, Wix, Squarespace, Shopify, and plain HTML.' },
-  { q: 'Does the widget match my brand colors?', a: 'Fully. You can set your logo, primary color, and button text from within RepairHub. Customers never see RepairHub branding unless you want them to.' },
-  { q: 'What happens when a customer books online?', a: 'RepairHub creates a pending repair ticket, notifies the assigned tech, and sends the customer a confirmation SMS and email — all within seconds of the booking.' },
+  { q: 'Does the widget match my brand colors?', a: 'Fully. You can set your logo, primary color, and button text from within AA Repairdesk. Customers never see AA Repairdesk branding unless you want them to.' },
+  { q: 'What happens when a customer books online?', a: 'AA Repairdesk creates a pending repair ticket, notifies the assigned tech, and sends the customer a confirmation SMS and email — all within seconds of the booking.' },
   { q: 'Can I block out days when my shop is closed?', a: 'Yes. You set your business hours, holidays, and per-technician breaks. Customers can only book slots that are genuinely open.' },
   { q: 'Does Appointments Pro replace my POS workflow?', a: "No — it feeds into it. When a customer arrives for their appointment, the ticket is already created. Your tech just opens it, performs the repair, and closes it out as normal." },
 ];
@@ -274,7 +274,7 @@ export default function AppointmentsProPage() {
               {/* Browser bar */}
               <div className="flex items-center gap-2 px-5 py-3 border-b border-gray-100 bg-gray-50">
                 <div className="w-3 h-3 rounded-full bg-red-400" /><div className="w-3 h-3 rounded-full bg-yellow-400" /><div className="w-3 h-3 rounded-full bg-blue-400" />
-                <div className="flex-1 mx-4 bg-white border border-gray-200 rounded-lg px-4 py-1.5 text-xs font-dm-sans text-gray-400">Appointments — RepairHub</div>
+                <div className="flex-1 mx-4 bg-white border border-gray-200 rounded-lg px-4 py-1.5 text-xs font-dm-sans text-gray-400">Appointments — AA Repairdesk</div>
               </div>
               {/* Calendar grid */}
               <div className="flex">

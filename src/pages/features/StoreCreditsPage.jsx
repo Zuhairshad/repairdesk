@@ -102,10 +102,10 @@ const stats = [
 
 const faqs = [
   { q: 'Can customers use store credits alongside other payment methods?', a: 'Absolutely. Customers can split their payment between store credits and any other method you accept — cash, card, loyalty points, or mobile payments. The POS handles the split automatically at checkout.' },
-  { q: 'How do I set expiry dates for issued credits?', a: 'You can configure default expiry windows in your RepairHub settings — 30, 60, 90 days, or custom durations. Each credit issued follows your default, or you can override per transaction. Customers receive notifications as expiry approaches.' },
-  { q: 'Do store credits sync across multiple store locations?', a: 'Yes. When you run multiple locations under RepairHub, a customer\'s credit balance is unified. Credits issued at any location can be redeemed at any other location in real time.' },
+  { q: 'How do I set expiry dates for issued credits?', a: 'You can configure default expiry windows in your AA Repairdesk settings — 30, 60, 90 days, or custom durations. Each credit issued follows your default, or you can override per transaction. Customers receive notifications as expiry approaches.' },
+  { q: 'Do store credits sync across multiple store locations?', a: 'Yes. When you run multiple locations under AA Repairdesk, a customer\'s credit balance is unified. Credits issued at any location can be redeemed at any other location in real time.' },
   { q: 'Can I issue store credits for trade-in devices?', a: 'This is one of the most popular use cases. Instead of paying cash for trade-ins, issue store credits. You acquire inventory while the customer gets spending power that keeps them coming back to your shop.' },
-  { q: 'Is there an additional cost for the store credits feature?', a: 'Store credits are included with the RepairHub Enterprise plan at no additional per-transaction fees. There are no hidden charges — credits are simply another payment method within your existing subscription.' },
+  { q: 'Is there an additional cost for the store credits feature?', a: 'Store credits are included with the AA Repairdesk Enterprise plan at no additional per-transaction fees. There are no hidden charges — credits are simply another payment method within your existing subscription.' },
 ];
 
 /* ---------- Component ---------- */
@@ -132,7 +132,7 @@ export default function StoreCreditsPage() {
               Stop bleeding revenue through refunds. Issue store credits instead and watch one-time customers become loyal regulars with a balance to spend.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/30">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/30">Start Free Trial</a>
               <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Book a Demo</Link>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function StoreCreditsPage() {
               {/* Wallet body */}
               <div className="bg-gradient-to-br from-[#4d5175] to-rd-teal rounded-3xl p-6 shadow-2xl shadow-black/40 border border-white/10">
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-xs font-poppins font-semibold tracking-wider uppercase text-white/60">RepairHub Wallet</span>
+                  <span className="text-xs font-poppins font-semibold tracking-wider uppercase text-white/60">AA Repairdesk Wallet</span>
                   <WalletIcon className="w-6 h-6 text-rd-mint" />
                 </div>
                 <p className="text-white/50 text-xs font-dm-sans mb-1">Available Balance</p>
@@ -221,7 +221,7 @@ export default function StoreCreditsPage() {
                   <p className="text-[10px] text-white/40 font-dm-sans uppercase tracking-wider">Balance</p>
                   <p className="font-poppins font-bold text-white text-xl">$247.50</p>
                 </div>
-                <p className="font-poppins font-bold text-rd-mint text-sm tracking-wider">RepairHub</p>
+                <p className="font-poppins font-bold text-rd-mint text-sm tracking-wider">AA Repairdesk</p>
               </div>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default function StoreCreditsPage() {
 
             {/* AFTER — Store Credit */}
             <div className="relative rounded-2xl border-2 border-rd-teal/20 bg-rd-teal/5 p-7 overflow-hidden">
-              <div className="absolute top-0 right-0 bg-rd-teal text-white text-[10px] font-poppins font-bold uppercase tracking-widest px-4 py-1.5 rounded-bl-xl">The RepairHub Way</div>
+              <div className="absolute top-0 right-0 bg-rd-teal text-white text-[10px] font-poppins font-bold uppercase tracking-widest px-4 py-1.5 rounded-bl-xl">The AA Repairdesk Way</div>
               <div className="w-12 h-12 rounded-xl bg-rd-teal/10 flex items-center justify-center mb-5 mt-4">
                 <CheckIcon className="w-6 h-6 text-rd-teal" />
               </div>
@@ -337,7 +337,7 @@ export default function StoreCreditsPage() {
       <section className="bg-white py-20 px-6">
         <div className="container-main max-w-3xl">
           <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-3 text-center">Common Questions</h2>
-          <p className="text-gray-500 font-dm-sans text-center mb-12">Everything you need to know about store credits on RepairHub.</p>
+          <p className="text-gray-500 font-dm-sans text-center mb-12">Everything you need to know about store credits on AA Repairdesk.</p>
 
           <div className="space-y-3">
             {faqs.map((faq, i) => (

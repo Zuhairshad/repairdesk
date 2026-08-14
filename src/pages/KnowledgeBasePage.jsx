@@ -124,14 +124,14 @@ const popularArticles = [
 ];
 
 const quickStartSteps = [
-  { step: 1, title: 'Create Your Account', desc: 'Sign up and verify your email to access your RepairHub dashboard.', time: '2 min' },
+  { step: 1, title: 'Create Your Account', desc: 'Sign up and verify your email to access your AA Repairdesk dashboard.', time: '2 min' },
   { step: 2, title: 'Add Your Store', desc: 'Enter your store details, logo, and business hours to personalize your setup.', time: '5 min' },
   { step: 3, title: 'Import Inventory', desc: 'Bulk-upload products via CSV or add them one by one from the Inventory tab.', time: '10 min' },
   { step: 4, title: 'Start Selling', desc: 'Open the POS, ring up your first sale, and print a receipt. You are live!', time: '1 min' },
 ];
 
 const videoTutorials = [
-  { title: 'RepairHub Full Walkthrough', duration: '12:34', views: '24K', thumb: 'rd-teal' },
+  { title: 'AA Repairdesk Full Walkthrough', duration: '12:34', views: '24K', thumb: 'rd-teal' },
   { title: 'Mastering Repair Tickets', duration: '8:17', views: '18K', thumb: 'rd-teal' },
   { title: 'Advanced Inventory Management', duration: '10:45', views: '15K', thumb: 'violet-600' },
 ];
@@ -207,7 +207,7 @@ export default function KnowledgeBasePage() {
           <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
             <div>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark">Browse by Topic</h2>
-              <p className="text-gray-500 font-dm-sans mt-1">9 categories covering every corner of RepairHub.</p>
+              <p className="text-gray-500 font-dm-sans mt-1">9 categories covering every corner of AA Repairdesk.</p>
             </div>
             <span className="font-dm-sans text-sm text-gray-400">207 total articles</span>
           </div>
@@ -420,7 +420,7 @@ export default function KnowledgeBasePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
             {/* Email */}
-            <a href="mailto:hello@repairhub.co" className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-rd-teal/40 rounded-2xl p-6 text-center transition-all">
+            <a href="mailto:hello@aarepairdesk.co" className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-rd-teal/40 rounded-2xl p-6 text-center transition-all">
               <div className="w-11 h-11 mx-auto rounded-xl bg-rd-teal/20 flex items-center justify-center mb-3 group-hover:bg-rd-teal transition-colors">
                 <svg className="w-5 h-5 text-rd-teal group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />

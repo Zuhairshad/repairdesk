@@ -115,7 +115,7 @@ const howItWorks = [
     icon: IconInvoice,
     title: 'Easy & Fast Invoicing',
     heading: 'Easy & Fast Invoicing',
-    desc: 'Streamline transactions through integrated payment processing with Square and RepairHub Payments. Search for items, tickets, invoices, or customer details for a smooth workflow.',
+    desc: 'Streamline transactions through integrated payment processing with Square and AA Repairdesk Payments. Search for items, tickets, invoices, or customer details for a smooth workflow.',
   },
   {
     icon: IconBox,
@@ -140,7 +140,7 @@ const customizationCards = [
   {
     icon: IconCheckIn,
     title: 'Self Check-in',
-    desc: "Eliminate manual check-ins and provide convenience to your customers with RepairHub's self-check-in feature.",
+    desc: "Eliminate manual check-ins and provide convenience to your customers with AA Repairdesk's self-check-in feature.",
   },
   {
     icon: IconPhone,
@@ -163,7 +163,7 @@ const companyStats = [
 const customFieldPerks = [
   'Set custom fields to capture drone model, serial number, and damage type',
   'Keep a record of pre and post-repair conditions with customer notes',
-  "Cut exciting deals with RepairHub's trade-in module",
+  "Cut exciting deals with AA Repairdesk's trade-in module",
   'Build a check-in flow that matches how your shop actually works',
 ];
 
@@ -199,7 +199,7 @@ export default function DroneRepairPage() {
             An all-in-one repair shop management software. Track repair jobs, create invoices, and manage your inventory in one place.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start My Free Trial</a>
             <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">
               Request a Demo
             </Link>
@@ -269,7 +269,7 @@ export default function DroneRepairPage() {
             <div>
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Case Study</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">
-                Team Newland Ag Drones about RepairHub
+                Team Newland Ag Drones about AA Repairdesk
               </h2>
               <a href="#" className="inline-flex items-center gap-1 text-rd-mint font-poppins font-semibold text-sm hover:gap-2 transition-all">
                 Learn More
@@ -279,7 +279,7 @@ export default function DroneRepairPage() {
             <div className="bg-white rounded-2xl p-7 md:p-9 relative z-10">
               <div className="text-rd-teal text-4xl font-dm-serif mb-3">&ldquo;</div>
               <p className="text-rd-dark font-dm-sans italic leading-relaxed mb-6">
-                Once we had everything in RepairHub, we stopped guessing where a repair stood and started running service with a lot more clarity. RepairHub gave us a more dependable way to stay organized as volume increased because we can see the repair and the status in one place.
+                Once we had everything in AA Repairdesk, we stopped guessing where a repair stood and started running service with a lot more clarity. AA Repairdesk gave us a more dependable way to stay organized as volume increased because we can see the repair and the status in one place.
               </p>
               <p className="font-poppins font-semibold text-rd-dark">Team Newland Ag Drones</p>
             </div>
@@ -294,10 +294,10 @@ export default function DroneRepairPage() {
             <div>
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Customization Options</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">
-                Customize RepairHub for Your Drone Repair Store
+                Customize AA Repairdesk for Your Drone Repair Store
               </h2>
               <p className="text-gray-500 font-dm-sans text-lg leading-relaxed">
-                Leverage high-level customization to create your check-in flow and serve your customers in the best way possible. Provide value to your customers by utilizing RepairHub&rsquo;s trade-in module to cut exciting deals.
+                Leverage high-level customization to create your check-in flow and serve your customers in the best way possible. Provide value to your customers by utilizing AA Repairdesk&rsquo;s trade-in module to cut exciting deals.
               </p>
             </div>
             <ul className="space-y-4 self-center">
@@ -372,7 +372,7 @@ export default function DroneRepairPage() {
             <div className="relative">
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You&rsquo;re in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5 max-w-xl mx-auto">
-                When you join RepairHub, you don&rsquo;t just get a software
+                When you join AA Repairdesk, you don&rsquo;t just get a software
               </h2>
               <p className="text-white/70 font-dm-sans leading-relaxed max-w-xl mx-auto mb-10">
                 You join a community of drone repair shop owners around the world who help you learn and grow your business.
@@ -398,7 +398,7 @@ export default function DroneRepairPage() {
             Fly Higher with the #1 Drone Repair POS!
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
             <Link to="/contact" className="border border-rd-dark/30 text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-dark/5 transition-colors">
               Request a Demo
             </Link>

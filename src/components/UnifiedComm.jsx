@@ -3,9 +3,9 @@ import React from 'react';
 const features = [
   {
     logo: '/images/connect-logo.png',
-    logoAlt: 'RepairHub Connect',
+    logoAlt: 'AA Repairdesk Connect',
     description:
-      'One inbox within RepairHub for managing multi-channel communication and reviews.',
+      'One inbox within AA Repairdesk for managing multi-channel communication and reviews.',
     items: [
       'Manage inquiries from Facebook',
       'Enable two-way conversations with SMS chat',
@@ -18,10 +18,10 @@ const features = [
     logo: '/images/phonepro-logo.png',
     logoAlt: 'PhonePro',
     description:
-      'Easy-to-use Phone System integrated with RepairHub to improve efficiency while taking calls and booking jobs.',
+      'Easy-to-use Phone System integrated with AA Repairdesk to improve efficiency while taking calls and booking jobs.',
     items: [
       'Single business number for calls and messaging',
-      'Get call alerts within RepairHub with ticket information',
+      'Get call alerts within AA Repairdesk with ticket information',
       'Set custom IVR, greetings, office hours and extensions',
       'View missed calls, call logs, and recordings',
       'Port-in an existing number to get started',
@@ -38,7 +38,7 @@ export default function UnifiedComm() {
             Unified Communication Ecosystem
           </h2>
           <p className="text-gray-600 text-center max-w-3xl mx-auto font-poppins text-lg font-light">
-            A Unified Communication Ecosystem integrated with RepairHub to manage all your calls,
+            A Unified Communication Ecosystem integrated with AA Repairdesk to manage all your calls,
             emails, texts, website queries and social media messages in one place.
           </p>
         </div>

@@ -8,7 +8,7 @@ const FEATURES = [
     image: "/images/carousel/repair-ticket.png",
     title: "Repair Ticket Management",
     paragraph:
-      "With RepairHub intuitive repair ticket management software you can easily create tickets, add parts, complete a pre- & post repair checklists, get customer signatures and assign tickets to technicians. The powerful repair ticket software allows you to access customer information and repair history with ease, track tickets and monitor job progress. Resolve tickets with every successful delivery to increase the efficiency of your shop operations.",
+      "With AA Repairdesk intuitive repair ticket management software you can easily create tickets, add parts, complete a pre- & post repair checklists, get customer signatures and assign tickets to technicians. The powerful repair ticket software allows you to access customer information and repair history with ease, track tickets and monitor job progress. Resolve tickets with every successful delivery to increase the efficiency of your shop operations.",
   },
   {
     icon: "/images/carousel/icon-inventory.svg",
@@ -17,7 +17,7 @@ const FEATURES = [
     image: "/images/carousel/inventory.png",
     title: "Inventory Management",
     paragraph:
-      "Make inventory management effortless with RepairHub’s powerful inventory management software that simplifies inventory tracking, ordering, and replenishment. Easily create a serialized inventory, Purchase Orders and GRNs, transfer your inventory from one store to another and perform inventory counts.",
+      "Make inventory management effortless with AA Repairdesk’s powerful inventory management software that simplifies inventory tracking, ordering, and replenishment. Easily create a serialized inventory, Purchase Orders and GRNs, transfer your inventory from one store to another and perform inventory counts.",
   },
   {
     icon: "/images/carousel/icon-payments.svg",
@@ -35,7 +35,7 @@ const FEATURES = [
     image: "/images/carousel/appointments.png",
     title: "Appointment Scheduling",
     paragraph:
-      "Convert your website visitors to customers with the RepairHub online appointments module. The innovative feature makes it very easy for your customers to book appointments anytime. With customizable options and an intuitive interface, easily schedule, reschedule, and track appointments in real time.",
+      "Convert your website visitors to customers with the AA Repairdesk online appointments module. The innovative feature makes it very easy for your customers to book appointments anytime. With customizable options and an intuitive interface, easily schedule, reschedule, and track appointments in real time.",
   },
   {
     icon: "/images/carousel/icon-sms.svg",
@@ -44,7 +44,7 @@ const FEATURES = [
     image: "/images/carousel/sms-email.png",
     title: "SMS and Email Notification",
     paragraph:
-      "Stay connected with your customers effortlessly using RepairHub’s SMS and email notification feature. Instantly send automated updates, reminders, and notifications to keep customers informed every step of the way. Customize messages to reflect your brand and improve communication efficiency.",
+      "Stay connected with your customers effortlessly using AA Repairdesk’s SMS and email notification feature. Instantly send automated updates, reminders, and notifications to keep customers informed every step of the way. Customize messages to reflect your brand and improve communication efficiency.",
   },
   {
     icon: "/images/carousel/icon-pos.svg",
@@ -71,7 +71,7 @@ const FEATURES = [
     image: "/images/carousel/reporting.png",
     title: "Business Reporting",
     paragraph:
-      "Gain invaluable insights into your repair business with RepairHub’s powerful reporting software. The comprehensive reporting tools allow you to track key metrics, analyze performance, and make data-driven decisions with ease.",
+      "Gain invaluable insights into your repair business with AA Repairdesk’s powerful reporting software. The comprehensive reporting tools allow you to track key metrics, analyze performance, and make data-driven decisions with ease.",
   },
 ];
 

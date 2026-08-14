@@ -99,7 +99,7 @@ const faqs = [
   },
   {
     q: "I'm stuck in a Lock in Contract with my Bank/merchant processing provider?",
-    a: 'RepairHub Payments will try to offer cost savings in merchant service fees to alleviate the cost of a Lock in Contract.',
+    a: 'AA Repairdesk Payments will try to offer cost savings in merchant service fees to alleviate the cost of a Lock in Contract.',
   },
   {
     q: 'How soon will my funds be deposited to my bank account?',
@@ -107,7 +107,7 @@ const faqs = [
   },
   {
     q: 'Can I send an invoice with a pay-now link?',
-    a: 'Yes. With RepairHub Payments, you have the option of sending customers an invoice with a convenient "Pay Now" button, which they can click to pay their dues online.',
+    a: 'Yes. With AA Repairdesk Payments, you have the option of sending customers an invoice with a convenient "Pay Now" button, which they can click to pay their dues online.',
   },
   {
     q: 'How long does it take to process my application?',
@@ -131,15 +131,15 @@ export default function PaymentsPage() {
         <div className="container-main relative grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
-              RepairHub Payments
+              AA Repairdesk Payments
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
-              RepairHub Payments
+              AA Repairdesk Payments
             </h1>
             <p className="text-white/80 text-lg md:text-xl font-dm-sans leading-relaxed mb-8">
               Accept in-person, contactless, or online payments securely and pay one flat rate with no hidden fees.
             </p>
-            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 inline-block">
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 inline-block">
               Get Started
             </a>
           </div>
@@ -212,10 +212,10 @@ export default function PaymentsPage() {
               Case Study
             </span>
             <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-5 leading-snug">
-              Christopher Smith Talks About The Benefits of Using RepairHub Pay
+              Christopher Smith Talks About The Benefits of Using AA Repairdesk Pay
             </h2>
             <blockquote className="border-l-4 border-rd-lime pl-5 text-gray-600 font-dm-sans text-base leading-relaxed mb-6">
-              "Finally kicked out the old payment processor and pulled the trigger on RepairHub Payments. Gotta admit I'm mad I didn't switch sooner. Terminal is awesome, Quick setup and the slideshow/video feature on the terminal is so dope. That's pretty much what sold me tbh. Thanks to RepairHub team for making it a quick and easy process."
+              "Finally kicked out the old payment processor and pulled the trigger on AA Repairdesk Payments. Gotta admit I'm mad I didn't switch sooner. Terminal is awesome, Quick setup and the slideshow/video feature on the terminal is so dope. That's pretty much what sold me tbh. Thanks to AA Repairdesk team for making it a quick and easy process."
             </blockquote>
             <a href="/contact" className="font-poppins font-semibold text-rd-teal hover:text-rd-dark inline-flex items-center gap-2 transition-colors">
               Learn More

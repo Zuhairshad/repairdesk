@@ -10,7 +10,7 @@ const journeySteps = [
   },
   {
     label: 'Points Are Earned',
-    desc: 'RepairHub automatically credits loyalty points to their account.',
+    desc: 'AA Repairdesk automatically credits loyalty points to their account.',
     icon: 'M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z',
   },
   {
@@ -60,12 +60,12 @@ const featureRows = [
 
 const faqs = [
   { q: 'How long are your contracts?', a: 'We offer both, month to month and annual plans, to give you the most flexibility. You can always upgrade, downgrade or add locations as your business grows.' },
-  { q: 'I am a startup, do you have a cheaper plan for me?', a: "If you're a budding company looking to branch out, we've got the Essential plan for you that takes care of your needs. If you'd like more features, you can sign up for our Growth plan instead. RepairHub offers you plans that are highly affordable and pack the most utility for your business, so you're always winning when you choose RepairHub." },
-  { q: "How do I check for a customer's available loyalty points?", a: "The loyalty points for a customer will be visible on the customer information section of the POS once you've selected them, and in the Customer section of your RepairHub account. You should be able to view their remaining loyalty points from here." },
+  { q: 'I am a startup, do you have a cheaper plan for me?', a: "If you're a budding company looking to branch out, we've got the Essential plan for you that takes care of your needs. If you'd like more features, you can sign up for our Growth plan instead. AA Repairdesk offers you plans that are highly affordable and pack the most utility for your business, so you're always winning when you choose AA Repairdesk." },
+  { q: "How do I check for a customer's available loyalty points?", a: "The loyalty points for a customer will be visible on the customer information section of the POS once you've selected them, and in the Customer section of your AA Repairdesk account. You should be able to view their remaining loyalty points from here." },
   { q: 'Will customers be able to stack loyalty points with any other means of payment?', a: 'Yes. Customers can split their payments between loyalty points and any other form of payment that you accept.' },
-  { q: 'Will my customers receive confirmation on their purchase?', a: 'Yes. RepairHub tracks and monitors all purchases made, and your customers will receive an invoice in their email and on their registered number once a transaction goes through. They will also be able to see how many loyalty points they spent on the purchase.' },
-  { q: 'Are there any extra charges to using the loyalty program feature?', a: 'The loyalty program feature is part of your subscription to the RepairHub Enterprise package. If you would like to add store credits to your repair business, please consider signing up.' },
-  { q: 'Do you offer customer support?', a: 'We have excellent customer support & you are always prioritized above anything and everything. If you ever run into a problem or cannot find what you are looking for, you can give us a call, chat with one of product specialists, or send us an email at support@repairhub.co.' },
+  { q: 'Will my customers receive confirmation on their purchase?', a: 'Yes. AA Repairdesk tracks and monitors all purchases made, and your customers will receive an invoice in their email and on their registered number once a transaction goes through. They will also be able to see how many loyalty points they spent on the purchase.' },
+  { q: 'Are there any extra charges to using the loyalty program feature?', a: 'The loyalty program feature is part of your subscription to the AA Repairdesk Enterprise package. If you would like to add store credits to your repair business, please consider signing up.' },
+  { q: 'Do you offer customer support?', a: 'We have excellent customer support & you are always prioritized above anything and everything. If you ever run into a problem or cannot find what you are looking for, you can give us a call, chat with one of product specialists, or send us an email at support@aarepairdesk.co.' },
 ];
 
 function FeatureArt({ type }) {
@@ -155,7 +155,7 @@ export default function LoyaltyProgramPage() {
               Increase lifetime value with the loyalty program — reward every sale with points your customers can spend on their next repair.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Free Trial</a>
               <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
             </div>
           </div>
@@ -246,11 +246,11 @@ export default function LoyaltyProgramPage() {
         <div className="container-main grid md:grid-cols-[280px_1fr] gap-12">
           <div>
             <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-4">All the Answers You're Looking For</h2>
-            <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">Everything repair shop owners ask us before switching their loyalty program to RepairHub.</p>
+            <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">Everything repair shop owners ask us before switching their loyalty program to AA Repairdesk.</p>
             <div className="mt-8 bg-rd-dark rounded-2xl p-5 hidden md:block">
               <svg className="w-7 h-7 text-rd-mint mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-6.716-4.35-9.428-8.06C.86 10.31 1.24 6.6 4.2 4.95c2.4-1.34 5.1-.55 6.8 1.44 1.7-1.99 4.4-2.78 6.8-1.44 2.96 1.65 3.34 5.36 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
               <p className="text-white text-sm font-poppins font-semibold leading-snug">Still have a question about loyalty points?</p>
-              <p className="text-white/60 text-xs font-dm-sans mt-1">support@repairhub.co</p>
+              <p className="text-white/60 text-xs font-dm-sans mt-1">support@aarepairdesk.co</p>
             </div>
           </div>
           <div className="space-y-3">

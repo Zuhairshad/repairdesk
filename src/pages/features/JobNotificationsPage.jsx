@@ -45,11 +45,11 @@ const satisfactionStats = [
 const faqs = [
   {
     q: 'Can I customize the notification messages customers receive?',
-    a: 'Yes. RepairHub provides a full template editor with dynamic merge tags like {customer_name}, {device_type}, {ticket_id}, and {estimated_date}. You can tailor every message to match your shop\'s tone and branding, including adding your logo to email templates.',
+    a: 'Yes. AA Repairdesk provides a full template editor with dynamic merge tags like {customer_name}, {device_type}, {ticket_id}, and {estimated_date}. You can tailor every message to match your shop\'s tone and branding, including adding your logo to email templates.',
   },
   {
     q: 'Which channels are supported for sending notifications?',
-    a: 'RepairHub supports email, SMS, and in-app push notifications. You can configure each notification type to send through one or multiple channels simultaneously. SMS requires a connected Twilio or built-in messaging credit balance.',
+    a: 'AA Repairdesk supports email, SMS, and in-app push notifications. You can configure each notification type to send through one or multiple channels simultaneously. SMS requires a connected Twilio or built-in messaging credit balance.',
   },
   {
     q: 'Can different team members receive different alerts?',
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: 'Do warranty expiry reminders go out automatically?',
-    a: 'Yes. Once you configure the warranty period for a repair, RepairHub schedules a reminder email to the customer a set number of days before expiry. You control the timing and message content. This drives repeat business and builds customer trust.',
+    a: 'Yes. Once you configure the warranty period for a repair, AA Repairdesk schedules a reminder email to the customer a set number of days before expiry. You control the timing and message content. This drives repeat business and builds customer trust.',
   },
 ];
 
@@ -89,10 +89,10 @@ export default function JobNotificationsPage() {
               <span className="text-rd-mint">Fully Automatic.</span>
             </h1>
             <p className="text-white/65 font-dm-sans text-lg md:text-xl leading-relaxed max-w-xl mb-10">
-              RepairHub sends the right notification to the right person at every step of the repair journey, so your team can fix devices instead of fielding phone calls.
+              AA Repairdesk sends the right notification to the right person at every step of the repair journey, so your team can fix devices instead of fielding phone calls.
             </p>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Book a Demo</Link>
             </div>
           </div>
@@ -370,7 +370,7 @@ export default function JobNotificationsPage() {
           <div className="text-center mb-14">
             <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-rd-teal font-poppins mb-3">Results</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-3">The Impact on Your Shop</h2>
-            <p className="text-gray-500 font-dm-sans text-lg max-w-lg mx-auto">Repair shops using RepairHub notifications see measurable improvements across the board.</p>
+            <p className="text-gray-500 font-dm-sans text-lg max-w-lg mx-auto">Repair shops using AA Repairdesk notifications see measurable improvements across the board.</p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
@@ -402,7 +402,7 @@ export default function JobNotificationsPage() {
         <div className="container-main max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-3">Frequently Asked Questions</h2>
-            <p className="text-gray-500 font-dm-sans text-lg">Everything you need to know about RepairHub notifications.</p>
+            <p className="text-gray-500 font-dm-sans text-lg">Everything you need to know about AA Repairdesk notifications.</p>
           </div>
           <div className="space-y-3">
             {faqs.map((faq, i) => (

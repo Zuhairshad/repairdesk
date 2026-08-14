@@ -33,7 +33,7 @@ const DeskPhoneSVG = () => (
 const faqs = [
   {
     q: 'Do I need special hardware to use the phone system?',
-    a: 'No. The RepairHub Phone System is 100% cloud-based VoIP. You can use any SIP-compatible desk phone, a USB headset, or the mobile and desktop softphone apps. No on-premise PBX required.',
+    a: 'No. The AA Repairdesk Phone System is 100% cloud-based VoIP. You can use any SIP-compatible desk phone, a USB headset, or the mobile and desktop softphone apps. No on-premise PBX required.',
   },
   {
     q: 'Can I keep my existing business phone number?',
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: 'How does Caller ID customer lookup work?',
-    a: 'When a call comes in, RepairHub matches the number against your customer database instantly. A pop-up shows the customer name, open tickets, device history, and balance — before you even pick up.',
+    a: 'When a call comes in, AA Repairdesk matches the number against your customer database instantly. A pop-up shows the customer name, open tickets, device history, and balance — before you even pick up.',
   },
   {
     q: 'Is call recording compliant with privacy regulations?',
@@ -55,14 +55,14 @@ const faqs = [
 
 /* ── Comparison data ─────────────────────────────────────────────── */
 const comparisonRows = [
-  { feature: 'Caller ID with customer info',   traditional: false, repairhub: true },
-  { feature: 'Auto-create tickets from calls',  traditional: false, repairhub: true },
-  { feature: 'Call recording & playback',        traditional: false, repairhub: true },
-  { feature: 'IVR / Auto-Attendant',             traditional: false, repairhub: true },
-  { feature: 'Works from any device',            traditional: false, repairhub: true },
-  { feature: 'SMS from business number',          traditional: false, repairhub: true },
-  { feature: 'Monthly per-line costs',           traditional: true,  repairhub: true },
-  { feature: 'Requires on-site PBX hardware',   traditional: true,  repairhub: false },
+  { feature: 'Caller ID with customer info',   traditional: false, aarepairdesk: true },
+  { feature: 'Auto-create tickets from calls',  traditional: false, aarepairdesk: true },
+  { feature: 'Call recording & playback',        traditional: false, aarepairdesk: true },
+  { feature: 'IVR / Auto-Attendant',             traditional: false, aarepairdesk: true },
+  { feature: 'Works from any device',            traditional: false, aarepairdesk: true },
+  { feature: 'SMS from business number',          traditional: false, aarepairdesk: true },
+  { feature: 'Monthly per-line costs',           traditional: true,  aarepairdesk: true },
+  { feature: 'Requires on-site PBX hardware',   traditional: true,  aarepairdesk: false },
 ];
 
 export default function PhoneSystemPage() {
@@ -100,7 +100,7 @@ export default function PhoneSystemPage() {
                 A phone system that <span className="text-rd-mint">knows your customers</span> before you answer
               </h1>
               <p className="font-dm-sans text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
-                VoIP calling, caller&nbsp;ID with instant customer lookup, IVR routing, call recording, and SMS&nbsp;&mdash;&nbsp;all built into RepairHub so every ring turns into revenue.
+                VoIP calling, caller&nbsp;ID with instant customer lookup, IVR routing, call recording, and SMS&nbsp;&mdash;&nbsp;all built into AA Repairdesk so every ring turns into revenue.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/signup" className="btn-primary text-base px-8 py-3.5">
@@ -131,7 +131,7 @@ export default function PhoneSystemPage() {
                 <span className="w-3 h-3 rounded-full bg-red-400" />
                 <span className="w-3 h-3 rounded-full bg-yellow-400" />
                 <span className="w-3 h-3 rounded-full bg-blue-400" />
-                <span className="ml-3 text-xs font-dm-sans text-gray-400 bg-white rounded px-3 py-1">repairhub.co/dashboard</span>
+                <span className="ml-3 text-xs font-dm-sans text-gray-400 bg-white rounded px-3 py-1">aarepairdesk.co/dashboard</span>
               </div>
               {/* Dashboard background placeholder */}
               <div className="bg-gray-100 rounded-xl h-52 relative overflow-hidden">
@@ -377,7 +377,7 @@ export default function PhoneSystemPage() {
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <h2 className="font-poppins font-bold text-rd-dark text-3xl md:text-4xl mb-4">
-              Traditional phone vs RepairHub Phone
+              Traditional phone vs AA Repairdesk Phone
             </h2>
             <p className="font-dm-sans text-gray-600 text-lg">
               See what you gain when your phone system actually talks to your repair software.
@@ -390,7 +390,7 @@ export default function PhoneSystemPage() {
                 <tr>
                   <th className="font-poppins text-sm text-gray-500 pb-4 pr-4 font-medium">Feature</th>
                   <th className="font-poppins text-sm text-gray-500 pb-4 px-4 text-center font-medium">Traditional</th>
-                  <th className="font-poppins text-sm pb-4 px-4 text-center font-semibold text-rd-teal">RepairHub</th>
+                  <th className="font-poppins text-sm pb-4 px-4 text-center font-semibold text-rd-teal">AA Repairdesk</th>
                 </tr>
               </thead>
               <tbody>
@@ -405,7 +405,7 @@ export default function PhoneSystemPage() {
                       )}
                     </td>
                     <td className="text-center py-3.5 px-4 rounded-r-lg">
-                      {row.repairhub ? (
+                      {row.aarepairdesk ? (
                         <svg className="w-5 h-5 text-rd-teal mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                       ) : (
                         <svg className="w-5 h-5 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>

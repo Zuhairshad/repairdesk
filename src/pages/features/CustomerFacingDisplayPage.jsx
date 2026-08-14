@@ -129,7 +129,7 @@ function SignatureScreen() {
       </div>
       <div className="flex-1 px-4 py-3">
         <p className="font-dm-sans text-[10px] text-gray-500 leading-snug mb-3">
-          I authorize RepairHub to charge $207.31 for the services listed and agree to the shop's terms &amp; conditions.
+          I authorize AA Repairdesk to charge $207.31 for the services listed and agree to the shop's terms &amp; conditions.
         </p>
         <div className="bg-white border-2 border-dashed border-rd-teal/40 rounded-lg h-20 flex items-end px-3 pb-2">
           <svg viewBox="0 0 120 30" className="w-full h-8 text-rd-dark" fill="none" stroke="currentColor" strokeWidth={1.6}>
@@ -230,12 +230,12 @@ export default function CustomerFacingDisplayPage() {
           <div className="max-w-3xl mx-auto text-center">
             <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Case Study</span>
             <h2 className="font-poppins font-bold text-rd-dark text-2xl md:text-3xl mb-8">
-              Alex Marini's Reasons to Choose RepairHub
+              Alex Marini's Reasons to Choose AA Repairdesk
             </h2>
             <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-black/5">
               <div className="text-rd-teal text-5xl font-dm-serif leading-none mb-2">&ldquo;</div>
               <p className="font-dm-sans text-rd-dark text-lg md:text-xl leading-relaxed italic mb-6">
-                When Usman introduced us to RepairHub Payments, it was really huge. An all-in-one payment system with a very nice customer facing display that also carries out contactless payments, what else could we ask for?
+                When Usman introduced us to AA Repairdesk Payments, it was really huge. An all-in-one payment system with a very nice customer facing display that also carries out contactless payments, what else could we ask for?
               </p>
               <div className="flex items-center justify-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-rd-teal text-white font-poppins font-bold flex items-center justify-center text-sm">

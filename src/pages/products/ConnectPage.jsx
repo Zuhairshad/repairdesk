@@ -40,7 +40,7 @@ const channels = [
     ),
   },
   {
-    title: 'RepairHub SMS',
+    title: 'AA Repairdesk SMS',
     description: 'Enable two-way conversations with SMS chat and wow your customers with a personalized and engaging experience.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
@@ -50,7 +50,7 @@ const channels = [
   },
   {
     title: 'Two-way Email',
-    description: 'Integrate your business email account with RepairHub Connect and receive all the emails in your unified inbox.',
+    description: 'Integrate your business email account with AA Repairdesk Connect and receive all the emails in your unified inbox.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -99,7 +99,7 @@ const efficiency = [
   },
   {
     title: 'Save Time',
-    description: 'No more tab switching. Goodbye context switching. Stop feeling like a mess, and start winning with RepairHub Connect.',
+    description: 'No more tab switching. Goodbye context switching. Stop feeling like a mess, and start winning with AA Repairdesk Connect.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -112,7 +112,7 @@ const efficiency = [
 const experience = [
   {
     title: 'In-App Notifications',
-    description: 'Get notification alerts within RepairHub and never miss a vital call or message from your customers.',
+    description: 'Get notification alerts within AA Repairdesk and never miss a vital call or message from your customers.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -139,7 +139,7 @@ const experience = [
   },
   {
     title: 'Chats Assignment',
-    description: 'Explore the potential of our deep integration with RepairHub POS by assigning chats to employees so they can respond to queries faster.',
+    description: 'Explore the potential of our deep integration with AA Repairdesk POS by assigning chats to employees so they can respond to queries faster.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -177,12 +177,12 @@ const experience = [
 
 const faqs = [
   {
-    q: 'How to purchase RepairHub Connect for my RepairHub POS?',
-    a: 'You can get a 7 day free trial to RepairHub Connect by filling the form above. Once you\'re happy with the experience, you can enable subscription from the Billing Module at any time.',
+    q: 'How to purchase AA Repairdesk Connect for my AA Repairdesk POS?',
+    a: 'You can get a 7 day free trial to AA Repairdesk Connect by filling the form above. Once you\'re happy with the experience, you can enable subscription from the Billing Module at any time.',
   },
   {
-    q: 'Do I need to upgrade my RepairHub plan to enable RepairHub Connect?',
-    a: 'RepairHub Connect is available as an add-on and can be purchased separately by Essential and Growth paid subscription plan users. It is included in the Advanced package.',
+    q: 'Do I need to upgrade my AA Repairdesk plan to enable AA Repairdesk Connect?',
+    a: 'AA Repairdesk Connect is available as an add-on and can be purchased separately by Essential and Growth paid subscription plan users. It is included in the Advanced package.',
   },
   {
     q: 'How is my data stored and protected?',
@@ -190,7 +190,7 @@ const faqs = [
   },
   {
     q: 'Do you offer customer support?',
-    a: 'We have excellent customer support and you are always prioritized above anything and everything. If you ever run into a problem, you can give us a call, chat with one of our product specialists, or email us at support@repairhub.co',
+    a: 'We have excellent customer support and you are always prioritized above anything and everything. If you ever run into a problem, you can give us a call, chat with one of our product specialists, or email us at support@aarepairdesk.co',
   },
 ];
 
@@ -211,13 +211,13 @@ export default function ConnectPage() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
-                RepairHub Connect
+                AA Repairdesk Connect
               </span>
               <h1 className="font-dm-serif text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
                 One inbox for every conversation
               </h1>
               <p className="font-dm-sans text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
-                Manage your emails, texts, and social messages from one inbox inside RepairHub. Reply to customers in real-time with live chat, and turn more inquiries into booked repairs, all in one screen.
+                Manage your emails, texts, and social messages from one inbox inside AA Repairdesk. Reply to customers in real-time with live chat, and turn more inquiries into booked repairs, all in one screen.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#" className="btn-primary text-base px-8 py-3.5">
@@ -346,7 +346,7 @@ export default function ConnectPage() {
                 Manage Customer Experiences
               </h2>
               <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8">
-                Reduce the hassle of cross platform communication and enjoy the powerful feature set of RepairHub Connect.
+                Reduce the hassle of cross platform communication and enjoy the powerful feature set of AA Repairdesk Connect.
               </p>
               <a href="#" className="btn-primary text-base px-7 py-3 inline-block">
                 Get Started
@@ -390,11 +390,11 @@ export default function ConnectPage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <p className="font-dm-sans text-xl md:text-2xl leading-relaxed mb-8 text-white/90">
-              "RepairHub Connect seems to be a great feature, excellent service by Musa — he goes beyond for my help. I'm not an IT person but he explains in a very professional and friendly manner, best recommended feature so far."
+              "AA Repairdesk Connect seems to be a great feature, excellent service by Musa — he goes beyond for my help. I'm not an IT person but he explains in a very professional and friendly manner, best recommended feature so far."
             </p>
             <div>
               <div className="font-poppins font-semibold text-rd-mint">Catherine Morris Hinerman</div>
-              <div className="font-dm-sans text-white/60 text-sm mt-1">RepairHub Connect Customer</div>
+              <div className="font-dm-sans text-white/60 text-sm mt-1">AA Repairdesk Connect Customer</div>
             </div>
           </div>
         </div>

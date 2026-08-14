@@ -195,11 +195,11 @@ const otherFeatures = [
 
 const faqs = [
   { q: 'How long will it take to add my inventory into the software?', a: 'Single items are instantly added to the inventory. However, if you are importing a larger number of items together, it will take 2-3 minutes.' },
-  { q: 'Does my staff need extensive training to use the inventory management feature?', a: 'No, RepairHub is a user-friendly software and offers employee training so your staff can make the most out of it.' },
+  { q: 'Does my staff need extensive training to use the inventory management feature?', a: 'No, AA Repairdesk is a user-friendly software and offers employee training so your staff can make the most out of it.' },
   { q: 'Can I move inventory from one store to another?', a: 'Yes, you can move inventory from one store to another using a transfer order.' },
   { q: 'Can I add images for each inventory item?', a: 'Yes, you can add multiple images for each inventory item.' },
-  { q: 'Is there an offline mode?', a: 'The RepairHub iPad POS Register app has an Offline Mode that allows you to create tickets and invoices, collect cash payments and process customers when you do not have a reliable internet connection.' },
-  { q: 'Do you offer customer support?', a: 'We have excellent customer support and you are always prioritized above anything and everything. If you ever run into a problem, you can give us a call, chat with a product specialist, or email us at support@repairhub.co' },
+  { q: 'Is there an offline mode?', a: 'The AA Repairdesk iPad POS Register app has an Offline Mode that allows you to create tickets and invoices, collect cash payments and process customers when you do not have a reliable internet connection.' },
+  { q: 'Do you offer customer support?', a: 'We have excellent customer support and you are always prioritized above anything and everything. If you ever run into a problem, you can give us a call, chat with a product specialist, or email us at support@aarepairdesk.co' },
 ];
 
 /* ---------- Page ---------- */
@@ -221,10 +221,10 @@ export default function InventoryPage() {
               Inventory Management Software for Repair Shops
             </h1>
             <p className="text-white/75 text-lg md:text-xl font-dm-sans leading-relaxed mb-8 max-w-lg">
-              Organize your inventory and keep track of your entire stock from order to sale. Your inventory management is made effortless with RepairHub.
+              Organize your inventory and keep track of your entire stock from order to sale. Your inventory management is made effortless with AA Repairdesk.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Request a Demo</Link>
             </div>
           </div>
@@ -346,10 +346,10 @@ export default function InventoryPage() {
                 How Kevin Resolved Inventory Issues In His 14 Stores
               </h2>
               <p className="text-gray-600 font-dm-sans text-base md:text-lg leading-relaxed mb-6">
-                "Stock-take was another major issue for us. We sell a lot of devices on a daily basis, so we need our POS software to keep a clean record of all that's sold, plus resting devices. But our previous software was failing to do so, whereas RepairHub is a big success on that."
+                "Stock-take was another major issue for us. We sell a lot of devices on a daily basis, so we need our POS software to keep a clean record of all that's sold, plus resting devices. But our previous software was failing to do so, whereas AA Repairdesk is a big success on that."
               </p>
               <div className="flex items-center gap-4">
-                <a href="https://app.repairhub.co/register" className="btn-primary px-6 py-3">Learn More</a>
+                <a href="https://app.aarepairdesk.co/register" className="btn-primary px-6 py-3">Learn More</a>
               </div>
             </div>
           </div>
@@ -364,7 +364,7 @@ export default function InventoryPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Low Stock Alerts</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4">Never Run Out Of Stock With Low Stock Alerts</h2>
               <p className="text-gray-500 font-dm-sans text-lg mb-10 max-w-lg">
-                Don't you hate it when you run out of a part that you need for that urgent repair? We know the feeling all too well. You'll never have to face that problem again with RepairHub's low stock alerts — synced live across every store you run.
+                Don't you hate it when you run out of a part that you need for that urgent repair? We know the feeling all too well. You'll never have to face that problem again with AA Repairdesk's low stock alerts — synced live across every store you run.
               </p>
               <div className="space-y-6">
                 {otherFeatures.map((f) => (

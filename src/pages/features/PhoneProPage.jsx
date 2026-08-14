@@ -35,8 +35,8 @@ const faqs = [
   { q: 'What devices does PhonePro support?', a: 'PhonePro supports a wide range of iOS devices (iPhone 6 and later) and Android devices from major manufacturers including Samsung, Google Pixel, OnePlus, Xiaomi, and more. We continuously add support for new models as they are released.' },
   { q: 'How long does a full diagnostic scan take?', a: 'A complete diagnostic scan covering all test categories typically takes 2 to 4 minutes depending on the device model. Individual tests like battery health or screen checks can be run in under 30 seconds each.' },
   { q: 'Can customers see the diagnostic results?', a: 'Yes. PhonePro generates a customer-facing diagnostic summary that you can print, email, or display on screen. This builds trust by showing customers exactly what was tested and the results, both before and after repair.' },
-  { q: 'Does PhonePro integrate with RepairHub repair tickets?', a: 'Absolutely. Diagnostic results are automatically linked to the corresponding repair ticket. Pre-repair and post-repair scans are stored side by side so you and your customer can see exactly what improved.' },
-  { q: 'Do I need special hardware to run diagnostics?', a: 'No special hardware is required. PhonePro runs diagnostics through a software connection using a standard USB cable for the device being tested. Any computer or tablet running RepairHub can initiate a scan.' },
+  { q: 'Does PhonePro integrate with AA Repairdesk repair tickets?', a: 'Absolutely. Diagnostic results are automatically linked to the corresponding repair ticket. Pre-repair and post-repair scans are stored side by side so you and your customer can see exactly what improved.' },
+  { q: 'Do I need special hardware to run diagnostics?', a: 'No special hardware is required. PhonePro runs diagnostics through a software connection using a standard USB cable for the device being tested. Any computer or tablet running AA Repairdesk can initiate a scan.' },
 ];
 
 function CircleProgress({ score, color, size = 80, strokeWidth = 6 }) {
@@ -76,7 +76,7 @@ export default function PhoneProPage() {
                 Automated phone diagnostics that test battery, screen, audio, sensors, and connectivity in minutes. Know exactly what is wrong and prove exactly what you fixed.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+                <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
                 <Link to="/contact" className="border border-white/25 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/5 transition-colors text-base">Book a Demo</Link>
               </div>
             </div>

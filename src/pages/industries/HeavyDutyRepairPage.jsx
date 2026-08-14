@@ -59,12 +59,12 @@ const partsCategories = [
 ];
 
 const faqs = [
-  { q: 'Can RepairHub handle multi-part work orders with different technicians?', a: 'Yes. Each work order can contain unlimited line items, each assignable to a different technician with independent labor time tracking. You can split mechanical, electrical, and hydraulic work across your team and see a unified cost and timeline on a single ticket.' },
+  { q: 'Can AA Repairdesk handle multi-part work orders with different technicians?', a: 'Yes. Each work order can contain unlimited line items, each assignable to a different technician with independent labor time tracking. You can split mechanical, electrical, and hydraulic work across your team and see a unified cost and timeline on a single ticket.' },
   { q: 'How does fleet management work for customers with many assets?', a: 'Every customer can have an unlimited number of assets registered under their account. Each asset tracks its own serial number, service history, warranty status, and preventive maintenance schedule. You can view an entire fleet at a glance and drill into any unit.' },
-  { q: 'Does RepairHub support preventive maintenance scheduling?', a: 'Absolutely. Set up PM schedules based on calendar intervals or operating hours. The system sends automated reminders to both your shop and the customer when service is due, so nothing slips through the cracks.' },
-  { q: 'Can I track serialized high-value parts like engines and transmissions?', a: 'Yes. RepairHub supports serial number tracking on any inventory item. You can trace exactly which part went into which unit, record core returns, and maintain a full chain-of-custody for warranty and liability purposes.' },
+  { q: 'Does AA Repairdesk support preventive maintenance scheduling?', a: 'Absolutely. Set up PM schedules based on calendar intervals or operating hours. The system sends automated reminders to both your shop and the customer when service is due, so nothing slips through the cracks.' },
+  { q: 'Can I track serialized high-value parts like engines and transmissions?', a: 'Yes. AA Repairdesk supports serial number tracking on any inventory item. You can trace exactly which part went into which unit, record core returns, and maintain a full chain-of-custody for warranty and liability purposes.' },
   { q: 'How do I send estimates for expensive heavy equipment repairs?', a: 'Create itemized estimates with labor, parts, and sublet costs. Send them to the customer by email or SMS with a one-click approve/decline link. Once approved, the estimate converts directly into a work order with no re-entry.' },
-  { q: 'Is RepairHub suitable for mobile or on-site heavy equipment repair?', a: 'Yes. RepairHub runs in any browser, so your field technicians can create tickets, log labor, and capture photos from a tablet or phone on the job site. All data syncs in real time back to your shop.' },
+  { q: 'Is AA Repairdesk suitable for mobile or on-site heavy equipment repair?', a: 'Yes. AA Repairdesk runs in any browser, so your field technicians can create tickets, log labor, and capture photos from a tablet or phone on the job site. All data syncs in real time back to your shop.' },
 ];
 
 const GearIcon = () => (
@@ -102,10 +102,10 @@ export default function HeavyDutyRepairPage() {
               Built for the Shops That Fix<br className="hidden md:block" /> the Biggest Machines
             </h1>
             <p className="font-dm-sans text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              Tractors, excavators, generators, forklifts — your jobs are complex. RepairHub gives you multi-part work orders, fleet tracking, and parts inventory purpose-built for heavy equipment.
+              Tractors, excavators, generators, forklifts — your jobs are complex. AA Repairdesk gives you multi-part work orders, fleet tracking, and parts inventory purpose-built for heavy equipment.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
               <Link to="/contact" className="group inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-mint transition-colors">
                 Book a Demo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
@@ -121,7 +121,7 @@ export default function HeavyDutyRepairPage() {
       <section className="bg-rd-cream py-20 px-6">
         <div className="container-main">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark text-center mb-4">Equipment We Help You Service</h2>
-          <p className="font-dm-sans text-gray-500 text-center mb-14 max-w-xl mx-auto">RepairHub adapts to every class of heavy equipment your shop handles.</p>
+          <p className="font-dm-sans text-gray-500 text-center mb-14 max-w-xl mx-auto">AA Repairdesk adapts to every class of heavy equipment your shop handles.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {equipmentCategories.map((cat) => (
               <div key={cat.name} className="group bg-white rounded-2xl p-7 border-2 border-transparent hover:border-rd-teal transition-all shadow-sm hover:shadow-lg">
@@ -227,7 +227,7 @@ export default function HeavyDutyRepairPage() {
       <section className="bg-rd-cream py-20 px-6">
         <div className="container-main">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark text-center mb-4">Preventive Maintenance Scheduling</h2>
-          <p className="font-dm-sans text-gray-500 text-center mb-12 max-w-lg mx-auto">Never miss an oil change, filter swap, or safety inspection. Set it once — RepairHub handles the reminders.</p>
+          <p className="font-dm-sans text-gray-500 text-center mb-12 max-w-lg mx-auto">Never miss an oil change, filter swap, or safety inspection. Set it once — AA Repairdesk handles the reminders.</p>
           <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 max-w-3xl mx-auto overflow-x-auto">
             <div className="flex items-center justify-between mb-6 min-w-[500px]">
               <span className="font-poppins font-semibold text-rd-dark">August 2026</span>
@@ -337,7 +337,7 @@ export default function HeavyDutyRepairPage() {
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-5">Ready to Overhaul Your Shop's Workflow?</h2>
           <p className="font-dm-sans text-white/60 text-lg mb-10">14-day free trial. No credit card required. Set up in under 15 minutes.</p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://app.repairhub.co/register" className="btn-primary px-10 py-4 text-base">Start Free Trial</a>
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-10 py-4 text-base">Start Free Trial</a>
             <Link to="/contact" className="border-2 border-white/20 text-white px-10 py-4 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-mint transition-colors">
               Talk to Sales
             </Link>

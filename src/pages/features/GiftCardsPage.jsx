@@ -3,7 +3,7 @@ import PageLayout from '../../components/PageLayout';
 import { Link } from 'react-router-dom';
 
 const faqs = [
-  { q: 'Can customers redeem gift cards at any of my locations?', a: 'Yes. RepairHub gift cards work across every store linked to your account. A card sold at one location can be redeemed at any other, making them perfect for multi-location repair businesses.' },
+  { q: 'Can customers redeem gift cards at any of my locations?', a: 'Yes. AA Repairdesk gift cards work across every store linked to your account. A card sold at one location can be redeemed at any other, making them perfect for multi-location repair businesses.' },
   { q: 'How do digital gift cards get delivered?', a: 'Digital gift cards are emailed instantly to the recipient with a unique QR code. The email template is fully customizable with your branding, colors, and a personal message from the sender.' },
   { q: 'Can I create gift cards in bulk for promotions?', a: 'Absolutely. The bulk creation tool lets you generate hundreds of pre-loaded gift cards in one click. Set a fixed denomination, assign a batch code, and export them as printable cards or digital codes for your marketing campaigns.' },
   { q: 'What happens when a gift card is only partially redeemed?', a: 'The remaining balance stays on the card and is tracked automatically. Customers can check their balance at the POS, and your staff can see the full transaction history for every card at a glance.' },
@@ -79,7 +79,7 @@ export default function GiftCardsPage() {
               Sell digital and plastic gift cards from your POS. Custom denominations, branded designs, QR scanning, and real-time balance tracking built in.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/20">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 shadow-lg shadow-rd-teal/20">Start Free Trial</a>
               <Link to="/contact" className="group inline-flex items-center gap-2 text-white/70 font-poppins font-semibold hover:text-white transition-colors">
                 Book a Demo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -166,7 +166,7 @@ export default function GiftCardsPage() {
             <div className="flex-1">
               <p className="text-rd-teal font-poppins font-semibold text-sm tracking-widest uppercase mb-3">Revenue Impact</p>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">Gift Cards Drive Repeat Business</h2>
-              <p className="font-dm-sans text-gray-500 leading-relaxed mb-6">Stores using RepairHub gift cards see an average 23% increase in repeat visits. Gift card holders spend 20% more per transaction than cash customers.</p>
+              <p className="font-dm-sans text-gray-500 leading-relaxed mb-6">Stores using AA Repairdesk gift cards see an average 23% increase in repeat visits. Gift card holders spend 20% more per transaction than cash customers.</p>
               <div className="grid grid-cols-2 gap-4">
                 {[{ stat: '23%', label: 'More repeat visits' }, { stat: '20%', label: 'Higher avg. spend' }, { stat: '65%', label: 'Redeemed in 60 days' }, { stat: '3x', label: 'Holiday season lift' }].map(s => (
                   <div key={s.label} className="bg-white rounded-xl p-4 border border-gray-100">
@@ -252,7 +252,7 @@ export default function GiftCardsPage() {
               </div>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-5">Peak Season? Gift Cards Are Your Secret Weapon</h2>
               <p className="font-dm-sans text-white/60 leading-relaxed mb-8">Black Friday, Christmas, Valentine's Day, Mother's Day — gift card sales spike during every holiday. Be ready with bulk creation, seasonal templates, and automated email delivery.</p>
-              <a href="https://app.repairhub.co/register" className="inline-flex items-center gap-2 bg-[#f0d78c] text-rd-dark px-7 py-3 rounded-full font-poppins font-semibold hover:bg-[#e8c96e] transition-colors text-sm">
+              <a href="https://app.aarepairdesk.co/register" className="inline-flex items-center gap-2 bg-[#f0d78c] text-rd-dark px-7 py-3 rounded-full font-poppins font-semibold hover:bg-[#e8c96e] transition-colors text-sm">
                 Get Started Free
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </a>

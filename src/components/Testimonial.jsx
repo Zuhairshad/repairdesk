@@ -84,13 +84,13 @@ export function TestimonialSection() {
   return (
     <>
       <Testimonial
-        quote="Our experience with RepairHub has been a really exciting advancement for our business. While there was a transition period moving to the new system; the positive and cooperative attitude of the company is one that we really admire. Usman and his team go out of their way to assist their customers and are open to feedback and integrating new ideas into their software, as well as providing an extensive knowledge base and tailored support for your business model. Cannot recommend these guys enough for all the hard work and grit they pour into their software."
+        quote="Our experience with AA Repairdesk has been a really exciting advancement for our business. While there was a transition period moving to the new system; the positive and cooperative attitude of the company is one that we really admire. Usman and his team go out of their way to assist their customers and are open to feedback and integrating new ideas into their software, as well as providing an extensive knowledge base and tailored support for your business model. Cannot recommend these guys enough for all the hard work and grit they pour into their software."
         name="Simon Nash"
         title="Owner"
         company="The iPhone Guy"
       />
       <Testimonial
-        quote="We had good experience working with the team at RepairHub in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with RepairHub!"
+        quote="We had good experience working with the team at AA Repairdesk in switching everything over from Quickbooks. This software is what I always dreamed of creating for my business. Thank you for all your help and continued improvements with AA Repairdesk!"
         name="Lyle Schrock"
         title="Owner"
         company="The Lab"

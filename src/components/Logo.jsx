@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * RepairHub logo — self-contained SVG mark + Poppins wordmark.
+ * AA Repairdesk logo — self-contained SVG mark + Poppins wordmark.
  * No image files needed.
  *
  * dark=false (default) → dark navy wordmark  — use on light/white backgrounds
@@ -56,8 +56,8 @@ export default function Logo({ dark = false, className = 'h-8' }) {
         className="font-poppins font-bold leading-none tracking-tight select-none"
         style={{ fontSize: '17px' }}
       >
-        <span style={{ color: dark ? '#ffffff' : '#1e2035' }}>Repair</span>
-        <span style={{ color: '#457b9d' }}>Hub</span>
+        <span style={{ color: '#457b9d' }}>AA </span>
+        <span style={{ color: dark ? '#ffffff' : '#1e2035' }}>Repairdesk</span>
       </span>
     </span>
   );

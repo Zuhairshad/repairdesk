@@ -14,7 +14,7 @@ const mailInSteps = [
   },
   {
     title: "Repair Tracker",
-    desc: "Provide customers with peace of mind by embedding the RepairHub Repair Tracker on your website. Customers can enter their ticket ID and last name to check the status of their shoes, bags, or leather items online.",
+    desc: "Provide customers with peace of mind by embedding the AA Repairdesk Repair Tracker on your website. Customers can enter their ticket ID and last name to check the status of their shoes, bags, or leather items online.",
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -180,13 +180,13 @@ const paymentCards = [
   },
   {
     title: "Payment Integrations",
-    desc: "Connect with popular providers like Square, Stripe, Paypal, RepairHub Payments. Choose what fits your workflow.",
+    desc: "Connect with popular providers like Square, Stripe, Paypal, AA Repairdesk Payments. Choose what fits your workflow.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 10-5.656-5.656l-1.1 1.1" />
       </svg>
     ),
-    badges: ["Square", "Stripe", "Paypal", "RepairHub Payments"],
+    badges: ["Square", "Stripe", "Paypal", "AA Repairdesk Payments"],
   },
   {
     title: "PCI-Compliant",
@@ -237,40 +237,40 @@ const trustBadges = [
 
 const faqs = [
   {
-    q: "Does RepairHub also Manage Mail-in Shoe Repairs?",
-    a: "Yes. RepairHub can manage both physical storefronts and mail-in repair service providers. One can easily manage online inquiries, shipping, and tracking.",
+    q: "Does AA Repairdesk also Manage Mail-in Shoe Repairs?",
+    a: "Yes. AA Repairdesk can manage both physical storefronts and mail-in repair service providers. One can easily manage online inquiries, shipping, and tracking.",
   },
   {
     q: "Which One is the Best Shoe Repair Shop Software and Why?",
-    a: "RepairHub is by far, the best shoe repair shop software you can find today. It offers all the inventory, mail-in repair, repair ticket, and employee management features.",
+    a: "AA Repairdesk is by far, the best shoe repair shop software you can find today. It offers all the inventory, mail-in repair, repair ticket, and employee management features.",
   },
   {
     q: "Does Shoe Repair Software Also Allow Online Repair Requests?",
     a: "Yes. Customers can easily submit repair requests using the inquiry submission feature. So, you can respond faster, and convert more customers.",
   },
   {
-    q: "Can I Manage Leather Goods and Bags Repair Jobs with RepairHub?",
-    a: "Yes. You can manage leather goods, shoes, and bags repair jobs as RepairHub offers all shoe repair store management features. You can manage restoration, polishing, and patchwork, etc., for all types of bags, shoes and leather goods.",
+    q: "Can I Manage Leather Goods and Bags Repair Jobs with AA Repairdesk?",
+    a: "Yes. You can manage leather goods, shoes, and bags repair jobs as AA Repairdesk offers all shoe repair store management features. You can manage restoration, polishing, and patchwork, etc., for all types of bags, shoes and leather goods.",
   },
   {
-    q: "What Payment Integrations Does RepairHub Offer?",
-    a: "RepairHub allows you to connect with Square, Stripe, PayPal and RepairHub Payments effortlessly. So, you can choose what fits your workflow.",
+    q: "What Payment Integrations Does AA Repairdesk Offer?",
+    a: "AA Repairdesk allows you to connect with Square, Stripe, PayPal and AA Repairdesk Payments effortlessly. So, you can choose what fits your workflow.",
   },
   {
     q: "Can Shoe Repair Software Manage Walking Aids Repairs?",
-    a: "Yes. You can manage walking aids with RepairHub. It tracks, organizes and maintains walking aids such as shoe tips, and orthopedic supports.",
+    a: "Yes. You can manage walking aids with AA Repairdesk. It tracks, organizes and maintains walking aids such as shoe tips, and orthopedic supports.",
   },
   {
-    q: "Is RepairHub also Suitable for Small Shoe Repair Shops?",
+    q: "Is AA Repairdesk also Suitable for Small Shoe Repair Shops?",
     a: "Yes. Our POS Software is highly suitable for all types of shoe repair businesses. It helps manage small, independent, and multi-location shoe repair shops by streamlining daily repair operations.",
   },
   {
-    q: "How Does RepairHub Help You Manage Shoe Repair Parts?",
+    q: "How Does AA Repairdesk Help You Manage Shoe Repair Parts?",
     a: "It helps you manage shoe repair parts like soles, heels, or leather pieces by sending you low stock alerts. In addition, you can also manage and keep record of your suppliers and easily create purchase orders.",
   },
   {
-    q: "Can RepairHub Manage Different Footwear Repair Types?",
-    a: "Yes. Using RepairHub, you can manage various footwear repair services including leather boots, sneakers, and sandals repair. Along with that, you can also manage custom shoe restoration jobs.",
+    q: "Can AA Repairdesk Manage Different Footwear Repair Types?",
+    a: "Yes. Using AA Repairdesk, you can manage various footwear repair services including leather boots, sneakers, and sandals repair. Along with that, you can also manage custom shoe restoration jobs.",
   },
 ];
 
@@ -295,7 +295,7 @@ export default function ShoeRepairPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-              <a href="https://app.repairhub.co/register" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="border border-white/30 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Free Trial</a>
             </div>
           </div>
 
@@ -328,9 +328,9 @@ export default function ShoeRepairPage() {
         <div className="container-main">
           <div className="max-w-2xl mb-14">
             <span className="text-rd-teal font-poppins font-bold text-xs uppercase tracking-widest">Expand Your Reach</span>
-            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">Mail‑In Repairs Made Simple with RepairHub</h2>
+            <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">Mail‑In Repairs Made Simple with AA Repairdesk</h2>
             <p className="text-gray-600 font-dm-sans leading-relaxed mb-3">
-              Embed a branded request form on your website so customers can quickly take a picture of their shoes, bags, or leather items and send it for assessment. All these requests automatically flow into RepairHub, keeping every detail, from images to service notes, organized in one place.
+              Embed a branded request form on your website so customers can quickly take a picture of their shoes, bags, or leather items and send it for assessment. All these requests automatically flow into AA Repairdesk, keeping every detail, from images to service notes, organized in one place.
             </p>
             <p className="text-gray-600 font-dm-sans leading-relaxed mb-3">
               Use our ShipStation integration to generate and print shipping labels. This enables customers to send in their items easily. Keep track of every job, such as restoring, repairing, and reviving shoes, bags, and leather goods, with accuracy.
@@ -464,7 +464,7 @@ export default function ShoeRepairPage() {
             <span className="text-rd-teal font-poppins font-bold text-xs uppercase tracking-widest">Fast and Simple</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mt-3 mb-5">Unified POS & Payments</h2>
             <p className="text-gray-600 font-dm-sans leading-relaxed">
-              RepairHub is an all-in-one POS system for shoe repair stores, providing a unified platform with payments seamlessly integrated into your point of sale software. This automates your payment process, resulting in quicker checkouts without manual entries. Here's what you get with RepairHub integrated payment processing:
+              AA Repairdesk is an all-in-one POS system for shoe repair stores, providing a unified platform with payments seamlessly integrated into your point of sale software. This automates your payment process, resulting in quicker checkouts without manual entries. Here's what you get with AA Repairdesk integrated payment processing:
             </p>
           </div>
 
@@ -494,7 +494,7 @@ export default function ShoeRepairPage() {
         <div className="container-main text-center">
           <h2 className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark mb-3">You're in Great Company</h2>
           <p className="text-gray-500 font-dm-sans max-w-2xl mx-auto mb-10">
-            Thousands of business owners and cobblers around the world trust RepairHub to run their shoe repair shops smarter and support each other.
+            Thousands of business owners and cobblers around the world trust AA Repairdesk to run their shoe repair shops smarter and support each other.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {trustBadges.map((b) => (
@@ -532,9 +532,9 @@ export default function ShoeRepairPage() {
         <div className="container-main text-center max-w-3xl">
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">The #1 POS System Built for Shoe Repair Shops</h2>
           <p className="text-white/80 font-dm-sans leading-relaxed mb-8">
-            RepairHub is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
+            AA Repairdesk is a cloud-based point-of-sale software designed specifically for small and medium-sized repair shops, including computer, small engine, power tools, watch & jewelry, shoe, e-bike, bicycle, wireless, camera, heavy-duty, and cell phone repair businesses. The software keeps track of inventory levels and notifies the business when a required part is running low and needs to be replenished, so they can order parts.
           </p>
-          <a href="https://app.repairhub.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
+          <a href="https://app.aarepairdesk.co/register" className="inline-block bg-white text-rd-dark px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-rd-cream transition-colors">Start Free Trial</a>
         </div>
       </section>
     </PageLayout>

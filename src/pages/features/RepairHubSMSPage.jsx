@@ -26,11 +26,11 @@ const analyticsData = [
 ];
 
 const faqs = [
-  { q: 'How does the SMS credit system work?', a: 'RepairHub uses a prepaid credit model. Purchase credits in bundles from your dashboard — domestic US/Canada messages cost about 1-2 credits each, international varies by country. Credits never expire, there are no monthly minimums, and you can set up auto-refill so you never run dry mid-campaign.' },
-  { q: 'Can customers reply to automated messages?', a: 'Absolutely. Every automated SMS supports two-way replies. Customer responses land in your RepairHub inbox as threaded conversations tied to their ticket. Your team can reply from the dashboard — no personal phone numbers needed, no context lost.' },
-  { q: 'How do I connect my Twilio account?', a: 'Go to Settings → Integrations → Twilio in your RepairHub dashboard. Enter your Twilio Account SID, Auth Token, and a verified phone number. RepairHub handles the rest — message routing, delivery tracking, and compliance. You can also use RepairHub\'s built-in SMS without Twilio.' },
+  { q: 'How does the SMS credit system work?', a: 'AA Repairdesk uses a prepaid credit model. Purchase credits in bundles from your dashboard — domestic US/Canada messages cost about 1-2 credits each, international varies by country. Credits never expire, there are no monthly minimums, and you can set up auto-refill so you never run dry mid-campaign.' },
+  { q: 'Can customers reply to automated messages?', a: 'Absolutely. Every automated SMS supports two-way replies. Customer responses land in your AA Repairdesk inbox as threaded conversations tied to their ticket. Your team can reply from the dashboard — no personal phone numbers needed, no context lost.' },
+  { q: 'How do I connect my Twilio account?', a: 'Go to Settings → Integrations → Twilio in your AA Repairdesk dashboard. Enter your Twilio Account SID, Auth Token, and a verified phone number. AA Repairdesk handles the rest — message routing, delivery tracking, and compliance. You can also use AA Repairdesk\'s built-in SMS without Twilio.' },
   { q: 'Can I customize which events trigger an SMS?', a: 'Yes, every trigger is configurable. Choose which ticket status changes fire a message, set quiet hours so customers are not texted at 2 AM, and create different templates per trigger. You can also add conditional logic — for example, only send a parts-ordered SMS if the repair cost exceeds a threshold.' },
-  { q: 'Is there an opt-in and compliance system?', a: 'RepairHub includes built-in TCPA and GDPR-compliant opt-in management. Customers opt in during check-in (digital signature capture), and every outbound SMS includes an opt-out keyword. Opt-out requests are processed automatically and logged for your records.' },
+  { q: 'Is there an opt-in and compliance system?', a: 'AA Repairdesk includes built-in TCPA and GDPR-compliant opt-in management. Customers opt in during check-in (digital signature capture), and every outbound SMS includes an opt-out keyword. Opt-out requests are processed automatically and logged for your records.' },
 ];
 
 function TriggerIcon({ type }) {
@@ -48,7 +48,7 @@ function TriggerIcon({ type }) {
   );
 }
 
-export default function RepairHubSMSPage() {
+export default function RepairdeskSMSPage() {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -70,10 +70,10 @@ export default function RepairHubSMSPage() {
               <span className="text-rd-teal">delivered by text.</span>
             </h1>
             <p className="text-white/60 text-lg font-dm-sans leading-relaxed mb-8 max-w-lg">
-              Automated SMS keeps customers informed from check-in to pickup. Two-way conversations, marketing campaigns, and analytics — all inside RepairHub.
+              Automated SMS keeps customers informed from check-in to pickup. Two-way conversations, marketing campaigns, and analytics — all inside AA Repairdesk.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">Start Free Trial</a>
               <Link to="/contact" className="border border-white/20 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/5 transition-colors">Book a Demo</Link>
             </div>
           </div>
@@ -294,7 +294,7 @@ export default function RepairHubSMSPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3 font-dm-sans">Two-Way SMS</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4">Conversations, not broadcasts</h2>
               <p className="text-gray-500 font-dm-sans text-lg leading-relaxed mb-6">
-                Customers reply right from their phone. Your team responds from the RepairHub dashboard. No personal numbers, no app installs, no missed messages — just a threaded conversation tied to every ticket.
+                Customers reply right from their phone. Your team responds from the AA Repairdesk dashboard. No personal numbers, no app installs, no missed messages — just a threaded conversation tied to every ticket.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
@@ -361,9 +361,9 @@ export default function RepairHubSMSPage() {
       {/* ─── INTEGRATIONS STRIP ─── */}
       <section className="bg-rd-dark py-16 px-6">
         <div className="container-main max-w-3xl text-center">
-          <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-3">Powered by Twilio. Managed by RepairHub.</h2>
+          <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-3">Powered by Twilio. Managed by AA Repairdesk.</h2>
           <p className="text-white/50 font-dm-sans mb-8 max-w-lg mx-auto">
-            Connect your Twilio account for full control, or use RepairHub's built-in SMS — no external account required. Compliance, opt-in management, and delivery tracking are handled automatically.
+            Connect your Twilio account for full control, or use AA Repairdesk's built-in SMS — no external account required. Compliance, opt-in management, and delivery tracking are handled automatically.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {['Twilio Integration', 'TCPA Compliant', 'Auto Opt-Out', 'Delivery Receipts', 'Number Verification'].map(tag => (
@@ -380,7 +380,7 @@ export default function RepairHubSMSPage() {
         <div className="container-main max-w-3xl">
           <div className="text-center mb-12">
             <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-2">Frequently Asked Questions</h2>
-            <p className="text-gray-500 font-dm-sans">Everything you need to know about RepairHub SMS.</p>
+            <p className="text-gray-500 font-dm-sans">Everything you need to know about AA Repairdesk SMS.</p>
           </div>
           <div className="space-y-3">
             {faqs.map((faq, i) => (

@@ -178,7 +178,7 @@ const IconChevron = ({ className = 'w-5 h-5' }) => (
   </svg>
 );
 
-/* ---------- content data (verbatim from repairhub.co) ---------- */
+/* ---------- content data (verbatim from aarepairdesk.co) ---------- */
 
 const painPoints = [
   {
@@ -189,7 +189,7 @@ const painPoints = [
   {
     icon: IconLink,
     title: 'Multiple Integrations Options',
-    desc: "Use the software to suit your shop's operations by integrating it with WooCommerce, RepairHub payments, and SMS integration. Keep your transactions updated, get paid faster, and connect with the customers.",
+    desc: "Use the software to suit your shop's operations by integrating it with WooCommerce, AA Repairdesk payments, and SMS integration. Keep your transactions updated, get paid faster, and connect with the customers.",
   },
   {
     icon: IconBox,
@@ -235,7 +235,7 @@ const integrations = [
   {
     icon: IconXero,
     title: 'Xero Integration',
-    desc: "Think of a personal assistant diligently reflecting all your transactions in your integrated Xero account. That's RepairHub!",
+    desc: "Think of a personal assistant diligently reflecting all your transactions in your integrated Xero account. That's AA Repairdesk!",
   },
   {
     icon: IconSMS,
@@ -336,16 +336,16 @@ const faqs = [
     a: 'Simple repairs, such as polishing stones or replacing clasps, can take up to a few hours. Major repairs, such as stone replacements, restorations, or resizing, will take up to a few days, depending on the nature of the jewelry piece.',
   },
   {
-    q: 'Can you track jewelry repair jobs with RepairHub?',
-    a: "Yes, you can. RepairHub's jewelry repair tracking software creates digital tickets for every repair job. To determine the status of a specific repair, all you need to do is type the customer name or ticket ID in the Jewelry shop POS system.",
+    q: 'Can you track jewelry repair jobs with AA Repairdesk?',
+    a: "Yes, you can. AA Repairdesk's jewelry repair tracking software creates digital tickets for every repair job. To determine the status of a specific repair, all you need to do is type the customer name or ticket ID in the Jewelry shop POS system.",
   },
   {
     q: 'Can I use the same system for repair services and jewelry sales?',
-    a: 'You absolutely can. RepairHub combines jewelry repair store management and sales under one roof. You can sell jewelry, create tickets, track inventory, and track all progress from the same POS dashboard.',
+    a: 'You absolutely can. AA Repairdesk combines jewelry repair store management and sales under one roof. You can sell jewelry, create tickets, track inventory, and track all progress from the same POS dashboard.',
   },
   {
-    q: 'Can I set custom prices for jewelry repair and service using RepairHub?',
-    a: 'Yes. RepairHub lets you set and adjust custom prices for every repair job and service item, so pricing always reflects the materials, labor, and complexity of the piece in front of you.',
+    q: 'Can I set custom prices for jewelry repair and service using AA Repairdesk?',
+    a: 'Yes. AA Repairdesk lets you set and adjust custom prices for every repair job and service item, so pricing always reflects the materials, labor, and complexity of the piece in front of you.',
   },
 ];
 
@@ -417,7 +417,7 @@ export default function JewelryRepairPage() {
             Simplify your jewelry repair, retail, and restoration operations with an all-in-one jewelry repair shop management software.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5">
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5">
               Start My Free Trial
             </a>
             <Link
@@ -547,7 +547,7 @@ export default function JewelryRepairPage() {
           <Eyebrow>Integrations for Jewelry Repair Shops</Eyebrow>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4 max-w-2xl">Stay Focused on Growth, not Legwork.</h2>
           <p className="text-gray-500 font-dm-sans text-lg mb-14 max-w-2xl">
-            Save three hours every day to focus on your business growth while RepairHub automatically handles all the legwork for you.
+            Save three hours every day to focus on your business growth while AA Repairdesk automatically handles all the legwork for you.
           </p>
 
           <div className="relative">
@@ -585,7 +585,7 @@ export default function JewelryRepairPage() {
           <Eyebrow>Designed for Jewelry Repair Management</Eyebrow>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4 max-w-2xl">It's Flexible. It's Scalable.</h2>
           <p className="text-gray-500 font-dm-sans text-lg mb-14 max-w-2xl">
-            Make RepairHub handle the repair ticket workflow separately for each item like jewelry, watch, and keychain. You can easily adjust the system to suit your shop operations – the way you need it.
+            Make AA Repairdesk handle the repair ticket workflow separately for each item like jewelry, watch, and keychain. You can easily adjust the system to suit your shop operations – the way you need it.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
             {flexible.map((f, i) => (
@@ -603,7 +603,7 @@ export default function JewelryRepairPage() {
               <Eyebrow dark>Customized Options</Eyebrow>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Built For Jewelry Repairs</h2>
               <p className="text-white/70 font-dm-sans text-lg leading-relaxed">
-                RepairHub supports "Rat Tail" and "Barbell" label templates, designed especially for delicate and small jewelry items. These tags ensure professional presentation and secure tagging. You can customize size, print layout, and even include logos or repair codes.
+                AA Repairdesk supports "Rat Tail" and "Barbell" label templates, designed especially for delicate and small jewelry items. These tags ensure professional presentation and secure tagging. You can customize size, print layout, and even include logos or repair codes.
               </p>
             </div>
             <div className="flex flex-col gap-8 items-center">
@@ -655,7 +655,7 @@ export default function JewelryRepairPage() {
           <Eyebrow>Jewelry Repair Customer Management</Eyebrow>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-4 max-w-2xl">Build Customer Relations</h2>
           <p className="text-gray-600 font-dm-sans text-lg mb-14 max-w-2xl">
-            RepairHub isn't just built for helping you repair precious family heirlooms – it also lets you forge customer relationships as precious as any treasure you're tasked with fixing.
+            AA Repairdesk isn't just built for helping you repair precious family heirlooms – it also lets you forge customer relationships as precious as any treasure you're tasked with fixing.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {customerRelations.map((c) => {
@@ -679,7 +679,7 @@ export default function JewelryRepairPage() {
         <div className="container-main text-center">
           <h2 className="font-poppins font-bold text-2xl md:text-3xl mb-4">You're in Great Company</h2>
           <p className="text-white/70 font-dm-sans max-w-2xl mx-auto mb-12">
-            When you join RepairHub, you don't just get a software. You join a community of jewelry repair shop owners around the world who help you learn and grow your business.
+            When you join AA Repairdesk, you don't just get a software. You join a community of jewelry repair shop owners around the world who help you learn and grow your business.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
             {companyStats.map((s) => {

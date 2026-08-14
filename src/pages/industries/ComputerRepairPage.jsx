@@ -90,7 +90,7 @@ const moreReasons = [
   },
   {
     title: 'Process Payments In The Blink Of An Eye',
-    desc: 'Collect your dues using RepairHub Payments or other payment providers. Faster, safer, and easier to get paid.',
+    desc: 'Collect your dues using AA Repairdesk Payments or other payment providers. Faster, safer, and easier to get paid.',
     icon: <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h5M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />,
   },
 ];
@@ -104,19 +104,19 @@ const companyStats = [
 const faqs = [
   {
     q: 'What is the best computer repair invoicing software for repair stores?',
-    a: 'The best computer repair invoicing software is the one that automates your billing, tracks payments from various methods like cash or credit, and calculates based on the repair ticket. RepairHub offers all these services and creates invoices that you can email to your customers directly or print as per your choice.',
+    a: 'The best computer repair invoicing software is the one that automates your billing, tracks payments from various methods like cash or credit, and calculates based on the repair ticket. AA Repairdesk offers all these services and creates invoices that you can email to your customers directly or print as per your choice.',
   },
   {
-    q: 'Can I track my computer mail-in repairs from RepairHub?',
-    a: "Yes, you can. With RepairHub's mail-in repair management software, you can easily create a mail-in workflow, triage, assign labels, submit an estimate, and keep your customer informed, ensuring a smooth and error-free process for mail-in repairs.",
+    q: 'Can I track my computer mail-in repairs from AA Repairdesk?',
+    a: "Yes, you can. With AA Repairdesk's mail-in repair management software, you can easily create a mail-in workflow, triage, assign labels, submit an estimate, and keep your customer informed, ensuring a smooth and error-free process for mail-in repairs.",
   },
   {
-    q: 'How can I manage my payments for my computer repair shop with RepairHub?',
-    a: 'RepairHub manages different payment methods like cash, credit/debit card, or store credit. Moreover, RepairHub payments and integration with PayPal, Stripe, Square, and Tyro make the payment process easier and smoother for both you and the customer. You can also create estimates of the payments with the computer repair estimates software.',
+    q: 'How can I manage my payments for my computer repair shop with AA Repairdesk?',
+    a: 'AA Repairdesk manages different payment methods like cash, credit/debit card, or store credit. Moreover, AA Repairdesk payments and integration with PayPal, Stripe, Square, and Tyro make the payment process easier and smoother for both you and the customer. You can also create estimates of the payments with the computer repair estimates software.',
   },
   {
     q: 'How can I market my computer repair store with the POS system?',
-    a: 'RepairHub computer repair shop POS software helps you market your computer repair store through built-in marketing automation. You can send promotional campaigns through email and SMS, offer loyalty points and store credits to your customers, and send automated reminders for Google reviews and feedback.',
+    a: 'AA Repairdesk computer repair shop POS software helps you market your computer repair store through built-in marketing automation. You can send promotional campaigns through email and SMS, offer loyalty points and store credits to your customers, and send automated reminders for Google reviews and feedback.',
   },
   {
     q: 'Does getting professional computer repair shop software help me run my computer repair store better?',
@@ -124,7 +124,7 @@ const faqs = [
   },
   {
     q: 'Can I set low stock alerts on my inventory for my computer repair store?',
-    a: "Yes. You can set custom levels of low stock alerts using RepairHub's computer repair shop inventory system. Once the threshold is crossed, the system will automatically update you.",
+    a: "Yes. You can set custom levels of low stock alerts using AA Repairdesk's computer repair shop inventory system. Once the threshold is crossed, the system will automatically update you.",
   },
 ];
 
@@ -162,16 +162,16 @@ export default function ComputerRepairPage() {
               Upgrade Your Repair Shop with the #1 Computer Repair Management Software
             </h1>
             <p className="text-white/80 text-lg font-dm-sans leading-relaxed mb-8 max-w-xl">
-              Built to solve real repair challenges, RepairHub offers repair tickets, customizable workflows, inventory management, payments, and employee management – all in one place.
+              Built to solve real repair challenges, AA Repairdesk offers repair tickets, customizable workflows, inventory management, payments, and employee management – all in one place.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-              <a href="https://app.repairhub.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start My Free Trial</a>
+              <a href="https://app.aarepairdesk.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start My Free Trial</a>
             </div>
           </div>
           <div className="relative">
             <div className="rounded-3xl bg-white/5 border border-white/10 p-3 backdrop-blur-sm">
-              <img src="/images/carousel/pos.png" alt="RepairHub computer repair shop POS screen" className="rounded-2xl w-full shadow-2xl" />
+              <img src="/images/carousel/pos.png" alt="AA Repairdesk computer repair shop POS screen" className="rounded-2xl w-full shadow-2xl" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl px-5 py-4 shadow-xl hidden sm:block">
               <p className="text-rd-dark font-poppins font-bold text-2xl">3,000+</p>
@@ -199,7 +199,7 @@ export default function ComputerRepairPage() {
           <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Boost efficiency with Repair Tickets</span>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img src="/images/carousel/repair-ticket.png" alt="Repair ticketing and invoicing screen in RepairHub" className="rounded-2xl shadow-lg w-full" />
+              <img src="/images/carousel/repair-ticket.png" alt="Repair ticketing and invoicing screen in AA Repairdesk" className="rounded-2xl shadow-lg w-full" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-5">Repair Ticketing &amp; Invoicing</h2>
@@ -232,7 +232,7 @@ export default function ComputerRepairPage() {
               <h2 className="font-poppins font-bold text-3xl md:text-4xl text-rd-dark mb-2">Manage your Inventory like an Expert</h2>
               <p className="font-poppins font-semibold text-rd-teal text-lg mb-5">Never Miss a Sales Opportunity Due to Low Stock</p>
               <p className="text-gray-600 font-dm-sans text-lg leading-relaxed mb-6">
-                Stay on top of your inventory all the time with RepairHub. Get notified whenever a part or accessory is low in stock, reorder items from your desired suppliers, and add multiple SKUs against various vendors.
+                Stay on top of your inventory all the time with AA Repairdesk. Get notified whenever a part or accessory is low in stock, reorder items from your desired suppliers, and add multiple SKUs against various vendors.
               </p>
               <ul className="space-y-3">
                 {['Track your computer repair shop inventory in real time', 'Order parts and accessories from your desired vendors and suppliers', 'Add multiple SKUs against various vendors'].map((li) => (
@@ -244,7 +244,7 @@ export default function ComputerRepairPage() {
               </ul>
             </div>
             <div>
-              <img src="/images/carousel/inventory.png" alt="Inventory management dashboard in RepairHub" className="rounded-2xl shadow-lg w-full" />
+              <img src="/images/carousel/inventory.png" alt="Inventory management dashboard in AA Repairdesk" className="rounded-2xl shadow-lg w-full" />
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ export default function ComputerRepairPage() {
               <Link to="/features/point-of-sale" className="btn-primary px-8 py-3.5 inline-block">Learn More</Link>
             </div>
             <div>
-              <img src="/images/carousel/pos.png" alt="Point of sale checkout screen in RepairHub" className="rounded-2xl shadow-lg w-full" />
+              <img src="/images/carousel/pos.png" alt="Point of sale checkout screen in AA Repairdesk" className="rounded-2xl shadow-lg w-full" />
             </div>
           </div>
 
@@ -332,7 +332,7 @@ export default function ComputerRepairPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img src="/images/carousel/employee.png" alt="Employee management screen in RepairHub" className="rounded-2xl shadow-lg w-full" />
+              <img src="/images/carousel/employee.png" alt="Employee management screen in AA Repairdesk" className="rounded-2xl shadow-lg w-full" />
             </div>
             <div className="order-1 lg:order-2">
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-teal mb-3">Employee Management</span>
@@ -353,7 +353,7 @@ export default function ComputerRepairPage() {
               <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Trusted by More Than 3,000+ Repair Stores</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed mb-8">
-                When you join RepairHub, you don't just get a software. You join a community of computer repair shop owners around the world who help you learn and grow your business.
+                When you join AA Repairdesk, you don't just get a software. You join a community of computer repair shop owners around the world who help you learn and grow your business.
               </p>
               <div className="grid grid-cols-3 gap-4">
                 {companyStats.map((s) => (
@@ -394,7 +394,7 @@ export default function ComputerRepairPage() {
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-6">Fix More Computers Faster with the #1 Repair POS!</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
-            <a href="https://app.repairhub.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start My Free Trial</a>
+            <a href="https://app.aarepairdesk.co/register" className="border border-white/40 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:bg-white/10 transition-colors">Start My Free Trial</a>
           </div>
         </div>
       </section>

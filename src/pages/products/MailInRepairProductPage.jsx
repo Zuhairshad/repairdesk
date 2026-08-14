@@ -120,7 +120,7 @@ const painPoints = [
 
 const solutionBullets = [
   'Mail-in request forms sit directly on your website',
-  'Customer-submitted requests turn into repair tickets inside RepairHub',
+  'Customer-submitted requests turn into repair tickets inside AA Repairdesk',
   'Shipping labels are generated right after an invoice is created',
   'Online invoices with the payment methods your shop supports',
   'Repair tracker access when customers want to check progress themselves',
@@ -134,7 +134,7 @@ const processSteps = [
     icon: MailIcon,
   },
   {
-    title: 'Ticket is created in RepairHub',
+    title: 'Ticket is created in AA Repairdesk',
     body: 'Job details move into a repair ticket for tracking.',
     icon: TicketIcon,
   },
@@ -166,7 +166,7 @@ const coreFeatures = [
   {
     eyebrow: 'Ticket Management',
     title: 'One Place for the Mail-in Repair Story',
-    body: 'A mail-in repair can lose context fast if the details are sitting in different places. With RepairHub, the request becomes a ticket your team can keep building on. Device condition, customer notes, diagnostics, technician updates, job status, and warranty details stay tied to the repair as it moves through the shop.',
+    body: 'A mail-in repair can lose context fast if the details are sitting in different places. With AA Repairdesk, the request becomes a ticket your team can keep building on. Device condition, customer notes, diagnostics, technician updates, job status, and warranty details stay tied to the repair as it moves through the shop.',
     icon: TicketIcon,
     bullets: [
       'Track customer, device, and mail-in order details from the ticket',
@@ -180,10 +180,10 @@ const coreFeatures = [
   {
     eyebrow: 'Shipping Integration',
     title: 'Keep Mail-in Shipping Easier to Manage',
-    body: 'Mail-in repairs can bring a lot of small shipping details with them. RepairHub connects with ShipStation, so your team can handle labels, carrier options, tracking, return shipments, and invoice-related shipping records without digging through scattered notes.',
+    body: 'Mail-in repairs can bring a lot of small shipping details with them. AA Repairdesk connects with ShipStation, so your team can handle labels, carrier options, tracking, return shipments, and invoice-related shipping records without digging through scattered notes.',
     icon: TruckIcon,
     bullets: [
-      'Inbound labels generated through RepairHub Forms',
+      'Inbound labels generated through AA Repairdesk Forms',
       'One-click Order sends shipping details to ShipStation',
       'Supported carriers available for return shipments',
       'Shipping markup added when the job needs it',
@@ -194,13 +194,13 @@ const coreFeatures = [
   {
     eyebrow: 'Online Payments',
     title: 'Collect Payment Before Return Shipping',
-    body: 'Once a mail-in repair is ready to close out, payment can slow the job down. RepairHub gives your team a way to send the invoice, share a payment link, and let the customer pay before the item is packed for return shipping.',
+    body: 'Once a mail-in repair is ready to close out, payment can slow the job down. AA Repairdesk gives your team a way to send the invoice, share a payment link, and let the customer pay before the item is packed for return shipping.',
     icon: CreditCardIcon,
     bullets: [
       'Payment links included with emailed invoices after the repair is done',
-      'Online payment options such as Stripe, PayPal, and RepairHub Payments',
+      'Online payment options such as Stripe, PayPal, and AA Repairdesk Payments',
       'Customer Portal access for invoice viewing and payment',
-      'Deposit payment collection available through RepairHub Forms when set up',
+      'Deposit payment collection available through AA Repairdesk Forms when set up',
       'Partial or Full payment requests supported through emailed invoices',
     ],
     cta: true,
@@ -208,14 +208,14 @@ const coreFeatures = [
   {
     eyebrow: 'Online Intake',
     title: 'Capture Mail-in Requests From Your Website',
-    body: 'Use RepairHub Forms to collect mail-in repair details through a website widget. Customers can add the information your team needs, attach supported files, and start a request that can become a ticket or lead.',
+    body: 'Use AA Repairdesk Forms to collect mail-in repair details through a website widget. Customers can add the information your team needs, attach supported files, and start a request that can become a ticket or lead.',
     icon: MailIcon,
     bullets: [
       'Build custom form flows with the steps your workflow needs',
       'Create multiple forms for different mail-in repair workflows',
       'Let customers upload supported attachments, including supported documents and device images, for greater transparency',
       'Send automated emails after a customer submits the form',
-      'Create inbound shipping labels through RepairHub Forms',
+      'Create inbound shipping labels through AA Repairdesk Forms',
       'Charge a deposit when customers submit a mail-in repair order',
     ],
     cta: true,
@@ -223,7 +223,7 @@ const coreFeatures = [
   {
     eyebrow: 'Online Repair Tracking',
     title: 'Let Customers Check Progress Without Calling In',
-    body: 'Customers do not always want to call just to ask where a repair stands. With RepairHub, they can use the Repair Tracker on your website, enter their ticket ID and last name, and check the latest status on their own. When invoices are available, they can download them from the same place.',
+    body: 'Customers do not always want to call just to ask where a repair stands. With AA Repairdesk, they can use the Repair Tracker on your website, enter their ticket ID and last name, and check the latest status on their own. When invoices are available, they can download them from the same place.',
     icon: TrackerPinIcon,
     bullets: [
       'Website Repair Tracker widget for customer self-service',
@@ -357,7 +357,7 @@ export default function MailInRepairProductPage() {
               <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">The Solution</span>
               <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-5">One Workflow for Every Mail-in Repair</h2>
               <p className="font-dm-sans text-gray-600 text-lg leading-relaxed mb-8">
-                Mail-in repair gets easier when your entire workflow lives in one place. With RepairHub, the customer request, repair ticket, approval, payment, status update, and shipping details stay tied to the same job as it moves through your shop.
+                Mail-in repair gets easier when your entire workflow lives in one place. With AA Repairdesk, the customer request, repair ticket, approval, payment, status update, and shipping details stay tied to the same job as it moves through your shop.
               </p>
               <a href="#" className="btn-primary text-base px-8 py-3.5">
                 Book A Demo
@@ -386,7 +386,7 @@ export default function MailInRepairProductPage() {
             <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">Mail-in Process</span>
             <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-4">A Clearer Path for Every Mail-in Job</h2>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-              RepairHub Workflows let you create different processes for each type of mail-in repair. Assign the right workflow to an order, define the steps and statuses your team should follow, and move the repair through a consistent process from intake to return shipping.
+              AA Repairdesk Workflows let you create different processes for each type of mail-in repair. Assign the right workflow to an order, define the steps and statuses your team should follow, and move the repair through a consistent process from intake to return shipping.
             </p>
           </div>
 
@@ -419,7 +419,7 @@ export default function MailInRepairProductPage() {
             <span className="font-poppins text-sm font-semibold tracking-widest text-rd-teal uppercase">Core Features</span>
             <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark mt-3 mb-4">Everything Your Mail-in Repair Team Needs</h2>
             <p className="font-dm-sans text-gray-600 text-lg leading-relaxed">
-              See how RepairHub helps your team manage requests, tickets, approvals, payments, updates, and shipping.
+              See how AA Repairdesk helps your team manage requests, tickets, approvals, payments, updates, and shipping.
             </p>
           </div>
 

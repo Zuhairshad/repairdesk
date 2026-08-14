@@ -91,7 +91,7 @@ function Icon({ name, className = 'w-6 h-6' }) {
 }
 
 /* ---------------------------------------------------------------------- */
-/* Catalog data — exact copy from repairhub.co/recommended-hardware       */
+/* Catalog data — exact copy from aarepairdesk.co/recommended-hardware       */
 /* ---------------------------------------------------------------------- */
 
 const catalog = [
@@ -356,7 +356,7 @@ function ProductCard({ item, icon }) {
       )}
 
       <a
-        href="https://app.repairhub.co/register"
+        href="https://app.aarepairdesk.co/register"
         className="inline-flex items-center gap-1.5 mt-auto text-rd-teal font-poppins font-bold text-sm hover:gap-2.5 transition-all"
       >
         Learn More
@@ -443,7 +443,7 @@ export default function RecommendedHardwarePage() {
                 For the best experience, use only recommended hardware — our team can help you choose.
               </p>
             </div>
-            <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 whitespace-nowrap">
+            <a href="https://app.aarepairdesk.co/register" className="btn-primary px-8 py-3.5 whitespace-nowrap">
               Free Trial
             </a>
           </div>

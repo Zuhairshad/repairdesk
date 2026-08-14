@@ -9,7 +9,7 @@ const featureLinks = [
   { label: "Billing & Invoicing", to: "/features/billing-invoicing" },
   { label: "Employee Management", to: "/features/employee-management" },
   { label: "Phone System", to: "/products/phone-system" },
-  { label: "RepairHub Connect", to: "/products/connect" },
+  { label: "AA Repairdesk Connect", to: "/products/connect" },
   { label: "Appointments Pro", to: "/products/appointments-pro" },
   { label: "Google Reviews", to: "/products/reviews-management" },
   { label: "Customer Facing Display", to: "/features/customer-facing-display" },
@@ -41,19 +41,19 @@ const usefulLinks = [
   { label: "Get In Touch", to: "/contact" },
   { label: "Knowledge Base", to: "/knowledge-base" },
   { label: "Refer a Friend", to: "/refer-a-friend" },
-  { label: "RepairHub vs RepairShopr", to: "/compare/repairhub-vs-repairshopr" },
+  { label: "AA Repairdesk vs RepairShopr", to: "/compare/aarepairdesk-vs-repairshopr" },
   { label: "Partner With Us", to: "/partner-with-us" },
-  { label: "RepairHub vs Repairq", to: "/compare/repairhub-vs-repairq" },
+  { label: "AA Repairdesk vs Repairq", to: "/compare/aarepairdesk-vs-repairq" },
   { label: "Recommended Hardware", to: "/recommended-hardware" },
   { label: "Privacy Policy", to: "/privacy-policy" },
   { label: "Terms & Conditions", to: "/terms-conditions" },
 ];
 
 const socialIcons = [
-  { src: "/images/linkedin.svg", alt: "LinkedIn", href: "https://www.linkedin.com/company/repairhub" },
-  { src: "/images/youtube.svg", alt: "YouTube", href: "https://www.youtube.com/repairhub" },
-  { src: "/images/facebook.svg", alt: "Facebook", href: "https://www.facebook.com/repairhub" },
-  { src: "/images/twitter.svg", alt: "X / Twitter", href: "https://twitter.com/repairhub" },
+  { src: "/images/linkedin.svg", alt: "LinkedIn", href: "https://www.linkedin.com/company/aarepairdesk" },
+  { src: "/images/youtube.svg", alt: "YouTube", href: "https://www.youtube.com/aarepairdesk" },
+  { src: "/images/facebook.svg", alt: "Facebook", href: "https://www.facebook.com/aarepairdesk" },
+  { src: "/images/twitter.svg", alt: "X / Twitter", href: "https://twitter.com/aarepairdesk" },
 ];
 
 function FooterLink({ to, children }) {
@@ -77,7 +77,7 @@ export default function Footer() {
                 <Logo className="h-full" />
               </Link>
               <p className="text-gray-500 text-xs font-poppins leading-relaxed mb-5">
-                RepairHub is a cloud based point-of-sale software, engineered specifically for small and medium sized computer and cell phone repair shops.
+                AA Repairdesk is a cloud based point-of-sale software, engineered specifically for small and medium sized computer and cell phone repair shops.
               </p>
               <div className="flex gap-3">
                 {socialIcons.map((icon) => (
@@ -111,7 +111,7 @@ export default function Footer() {
                 <FooterLink key={link.label} to={link.to}>{link.label}</FooterLink>
               ))}
               <div className="mt-6 space-y-1.5">
-                <p className="text-gray-400 text-xs font-poppins">hello@repairhub.co</p>
+                <p className="text-gray-400 text-xs font-poppins">hello@aarepairdesk.co</p>
                 <p className="text-gray-400 text-xs font-poppins">108 W 13th St, Wilmington, DE 19801</p>
                 <p className="text-gray-400 text-xs font-poppins">Jeff Heights Gulberg 3, Lahore, 54000</p>
               </div>
@@ -125,7 +125,7 @@ export default function Footer() {
         <div className="container-main py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
             <span className="text-white/60 text-xs font-poppins">
-              Copyright © 2024 RepairHub INC. All rights reserved.
+              Copyright © 2024 AA Repairdesk INC. All rights reserved.
             </span>
             <div className="flex gap-5">
               <Link to="/privacy-policy" className="text-white/60 text-xs hover:text-white transition-colors font-poppins">Privacy Policy</Link>
