@@ -164,7 +164,7 @@ export default function AppointmentsProPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-block bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-block bg-rd-lime text-white text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
                 Appointments Pro
               </span>
               <h1 className="font-dm-serif text-4xl md:text-5xl lg:text-[3.4rem] leading-tight mb-6">
@@ -516,7 +516,7 @@ export default function AppointmentsProPage() {
       <section className="py-20 bg-gradient-to-br from-rd-dark to-rd-teal">
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <IconQuote className="w-10 h-10 text-rd-lime mx-auto mb-6" />
+            <IconQuote className="w-10 h-10 text-rd-mint mx-auto mb-6" />
             <p className="font-dm-sans text-xl md:text-2xl leading-relaxed mb-4 text-white/90">
               &ldquo;Appointments Pro has been great for my store in generating quick leads, and we are using it across all of our stores.&rdquo;
             </p>
@@ -524,7 +524,7 @@ export default function AppointmentsProPage() {
               &ldquo;Editing and making changes in the widget is very easy because it is directly synced with the Repair Desk account. The recent improvements have significantly enhanced the user experience for Appointments Pro, making it a must-have for every store.&rdquo;
             </p>
             <div>
-              <div className="font-poppins font-semibold text-rd-lime">Rajesh Patel</div>
+              <div className="font-poppins font-semibold text-rd-mint">Rajesh Patel</div>
               <div className="font-dm-sans text-white/60 text-sm mt-1">GR Phones</div>
             </div>
           </div>

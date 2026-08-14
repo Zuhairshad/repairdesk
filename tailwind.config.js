@@ -12,8 +12,8 @@ module.exports = {
         'rd-light': '#FAF9E3',
         'rd-green': '#3d405b',
         'rd-cream': '#F8F8FB',
-        'rd-lime': '#D4F479',
-        'rd-mint': '#C3EAB3',
+        'rd-lime': '#457b9d',
+        'rd-mint': '#7ba8c4',
       },
       fontFamily: {
         'dm-sans': ['"DM Sans"', 'sans-serif'],

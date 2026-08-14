@@ -179,16 +179,16 @@ const trustStats = [
 /* ---------- Small building blocks ---------- */
 const SignalRings = () => (
   <svg className="absolute -right-10 -top-10 w-72 h-72 opacity-20 pointer-events-none" viewBox="0 0 200 200" fill="none">
-    <circle cx="100" cy="100" r="30" stroke="#D4F479" strokeWidth="1.5" />
-    <circle cx="100" cy="100" r="55" stroke="#D4F479" strokeWidth="1.5" />
-    <circle cx="100" cy="100" r="80" stroke="#D4F479" strokeWidth="1.5" />
-    <circle cx="100" cy="100" r="4" fill="#D4F479" />
+    <circle cx="100" cy="100" r="30" stroke="#457b9d" strokeWidth="1.5" />
+    <circle cx="100" cy="100" r="55" stroke="#457b9d" strokeWidth="1.5" />
+    <circle cx="100" cy="100" r="80" stroke="#457b9d" strokeWidth="1.5" />
+    <circle cx="100" cy="100" r="4" fill="#457b9d" />
   </svg>
 );
 
 const EyebrowLabel = ({ children, tone = 'teal' }) => (
   <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5 ${
-    tone === 'lime' ? 'bg-rd-lime text-rd-dark' : tone === 'white' ? 'bg-white/10 text-rd-lime' : 'bg-rd-teal/10 text-rd-teal'
+    tone === 'lime' ? 'bg-rd-lime text-white' : tone === 'white' ? 'bg-white/10 text-rd-mint' : 'bg-rd-teal/10 text-rd-teal'
   }`}>
     <IconBars className="w-3.5 h-3.5" />
     {children}
@@ -206,7 +206,7 @@ export default function WirelessRepairPage() {
         <div className="absolute left-0 bottom-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
         <div className="container-main relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[11px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               Wireless Retail &amp; Repair
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -222,7 +222,7 @@ export default function WirelessRepairPage() {
           </div>
           <div className="mt-16 flex items-center gap-4 flex-wrap">
             <span className="flex items-center gap-2 text-white/60 text-sm font-dm-sans uppercase tracking-wide">
-              <IconBars className="w-4 h-4 text-rd-lime" />
+              <IconBars className="w-4 h-4 text-rd-mint" />
               Powered by a Suite of 40+ Integrated Partners
             </span>
             <div className="flex-1 h-px bg-white/10 min-w-[60px]" />
@@ -328,16 +328,16 @@ export default function WirelessRepairPage() {
                 key={s.title}
                 onClick={() => setActiveStep(i)}
                 className={`flex items-center gap-2 rounded-full px-3 py-2.5 text-left transition-colors ${
-                  activeStep === i ? 'bg-rd-lime text-rd-dark' : 'bg-white/10 text-white/70 hover:bg-white/20'
+                  activeStep === i ? 'bg-rd-lime text-white' : 'bg-white/10 text-white/70 hover:bg-white/20'
                 }`}
               >
-                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-poppins font-bold shrink-0 ${activeStep === i ? 'bg-rd-dark text-rd-lime' : 'bg-white/15'}`}>{i + 1}</span>
+                <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-poppins font-bold shrink-0 ${activeStep === i ? 'bg-rd-dark text-rd-mint' : 'bg-white/15'}`}>{i + 1}</span>
                 <span className="font-poppins font-semibold text-xs md:text-sm leading-tight">{s.title}</span>
               </button>
             ))}
           </div>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 flex items-start gap-5 mt-4">
-            <div className="w-12 h-12 rounded-xl bg-rd-lime text-rd-dark flex items-center justify-center shrink-0">
+            <div className="w-12 h-12 rounded-xl bg-rd-lime text-white flex items-center justify-center shrink-0">
               {(() => { const Icon = billSteps[activeStep].icon; return <Icon className="w-6 h-6" />; })()}
             </div>
             <div>
@@ -349,7 +349,7 @@ export default function WirelessRepairPage() {
           {/* Renewal alerts */}
           <div className="mt-14 grid grid-cols-1 lg:grid-cols-[0.45fr_0.55fr] gap-8 items-center bg-[#1e2035] border border-white/10 rounded-3xl p-8 md:p-10">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-rd-lime/20 text-rd-lime flex items-center justify-center shrink-0">
+              <div className="w-14 h-14 rounded-2xl bg-rd-lime/20 text-rd-mint flex items-center justify-center shrink-0">
                 <IconRepeat className="w-7 h-7" />
               </div>
               <h3 className="font-poppins font-bold text-xl md:text-2xl">
@@ -404,7 +404,7 @@ export default function WirelessRepairPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
             {efficiencyFeatures.map((f) => (
               <div key={f.title} className="rounded-2xl p-6 bg-rd-cream flex flex-col">
-                <div className="w-10 h-10 rounded-full bg-rd-dark text-rd-lime flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-full bg-rd-dark text-rd-mint flex items-center justify-center mb-4">
                   <f.icon className="w-5 h-5" />
                 </div>
                 <h3 className="font-poppins font-bold text-rd-dark mb-2">{f.title}</h3>
@@ -438,7 +438,7 @@ export default function WirelessRepairPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {paymentFeatures.map((f) => (
                 <div key={f.title} className="bg-white/5 border border-white/10 rounded-2xl p-5">
-                  <f.icon className="w-6 h-6 text-rd-lime mb-3" />
+                  <f.icon className="w-6 h-6 text-rd-mint mb-3" />
                   <h3 className="font-poppins font-semibold mb-1.5 text-sm">{f.title}</h3>
                   <p className="text-white/60 font-dm-sans text-xs leading-relaxed">{f.desc}</p>
                 </div>

@@ -66,7 +66,7 @@ const stories = [
     metric: '40% faster repairs',
     quote:
       'The seasonal inventory tools helped us prepare for spring without overstocking. We saved thousands in carrying costs last year.',
-    color: 'from-lime-500 to-green-600',
+    color: 'from-[#457b9d] to-[#3d405b]',
   },
   {
     company: 'AllFix Electronics',
@@ -128,13 +128,13 @@ const videoTestimonials = [
 /* ---------- Inline SVG icon helpers ---------- */
 
 const TrophyIcon = () => (
-  <svg className="w-14 h-14 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
+  <svg className="w-14 h-14 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.996.178-1.768.77-2.065 1.56a2.062 2.062 0 00.597 2.22l.882.756c.166.143.314.3.443.47M18.75 4.236c.996.178 1.768.77 2.065 1.56a2.062 2.062 0 01-.597 2.22l-.882.756a3.72 3.72 0 00-.443.47m-10.386-.01a7.5 7.5 0 1010.386.01" />
   </svg>
 );
 
 const StarCluster = () => (
-  <svg className="w-24 h-24 text-rd-lime/30 absolute -top-4 -right-4" viewBox="0 0 96 96" fill="currentColor">
+  <svg className="w-24 h-24 text-rd-mint/30 absolute -top-4 -right-4" viewBox="0 0 96 96" fill="currentColor">
     <polygon points="48,4 56,36 88,36 62,56 70,88 48,68 26,88 34,56 8,36 40,36" opacity="0.5" />
     <polygon points="20,8 24,20 36,20 26,28 30,40 20,32 10,40 14,28 4,20 16,20" opacity="0.3" />
     <polygon points="80,60 83,68 92,68 85,74 88,82 80,76 72,82 75,74 68,68 77,68" opacity="0.35" />
@@ -175,7 +175,7 @@ export default function CustomerStoriesPage() {
           </span>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.12] max-w-3xl">
             Real Stories from{' '}
-            <span className="text-rd-lime">Real Repair Shops</span>
+            <span className="text-rd-mint">Real Repair Shops</span>
           </h1>
           <p className="text-white/65 text-lg md:text-xl font-dm-sans leading-relaxed max-w-2xl">
             From cell phone stores to jewelry workshops, see how repair businesses
@@ -216,7 +216,7 @@ export default function CustomerStoriesPage() {
                   <div>
                     <p className="text-white font-poppins font-semibold text-lg">{featuredStory.owner}</p>
                     <p className="text-white/60 font-dm-sans text-sm">{featuredStory.role}</p>
-                    <p className="text-rd-lime font-dm-sans text-xs mt-1">{featuredStory.company}</p>
+                    <p className="text-rd-mint font-dm-sans text-xs mt-1">{featuredStory.company}</p>
                   </div>
                 </div>
                 {/* decorative circles */}
@@ -339,7 +339,7 @@ export default function CustomerStoriesPage() {
 
         <div className="container-main max-w-5xl relative z-10">
           <div className="text-center mb-12">
-            <span className="text-rd-lime font-dm-sans font-semibold text-sm uppercase tracking-wider">By the Numbers</span>
+            <span className="text-rd-mint font-dm-sans font-semibold text-sm uppercase tracking-wider">By the Numbers</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-2">
               Results That Speak for Themselves
             </h2>
@@ -351,7 +351,7 @@ export default function CustomerStoriesPage() {
                 key={s.label}
                 className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-colors"
               >
-                <div className="flex justify-center text-rd-lime mb-3">{s.icon}</div>
+                <div className="flex justify-center text-rd-mint mb-3">{s.icon}</div>
                 <p className="font-poppins font-bold text-3xl md:text-4xl text-white">{s.number}</p>
                 <p className="font-dm-sans text-white/55 text-sm mt-1">{s.label}</p>
               </div>
@@ -435,7 +435,7 @@ export default function CustomerStoriesPage() {
 
         <div className="container-main max-w-3xl text-center relative z-10">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur border border-white/15 mb-6">
-            <svg className="w-8 h-8 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <svg className="w-8 h-8 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
             </svg>
           </div>

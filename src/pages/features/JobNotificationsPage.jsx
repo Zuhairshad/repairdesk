@@ -83,10 +83,10 @@ export default function JobNotificationsPage() {
 
         <div className="container-main relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1 text-center lg:text-left">
-            <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-rd-lime font-poppins mb-4">Automated Notifications</span>
+            <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-rd-mint font-poppins mb-4">Automated Notifications</span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] text-white leading-[1.12] mb-6">
               Every Repair Stage.<br />Every Customer Update.<br />
-              <span className="text-rd-lime">Fully Automatic.</span>
+              <span className="text-rd-mint">Fully Automatic.</span>
             </h1>
             <p className="text-white/65 font-dm-sans text-lg md:text-xl leading-relaxed max-w-xl mb-10">
               RepairHub sends the right notification to the right person at every step of the repair journey, so your team can fix devices instead of fielding phone calls.
@@ -184,7 +184,7 @@ export default function JobNotificationsPage() {
                 <div className="flex gap-1.5">
                   <span className="w-3 h-3 rounded-full bg-red-400" />
                   <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                  <span className="w-3 h-3 rounded-full bg-green-400" />
+                  <span className="w-3 h-3 rounded-full bg-blue-400" />
                 </div>
                 <div className="flex-1 text-center">
                   <svg className="w-4 h-4 text-gray-400 inline-block mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
@@ -221,7 +221,7 @@ export default function JobNotificationsPage() {
                 <div className="flex gap-1.5">
                   <span className="w-3 h-3 rounded-full bg-red-400" />
                   <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                  <span className="w-3 h-3 rounded-full bg-green-400" />
+                  <span className="w-3 h-3 rounded-full bg-blue-400" />
                 </div>
                 <div className="flex-1 text-center">
                   <svg className="w-4 h-4 text-gray-400 inline-block mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></svg>
@@ -277,7 +277,7 @@ export default function JobNotificationsPage() {
                 {/* Email channel */}
                 <div className="bg-white/[0.06] backdrop-blur-sm rounded-2xl p-7 border border-white/10 hover:border-rd-lime/30 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-rd-lime/15 flex items-center justify-center mb-5">
-                    <svg className="w-6 h-6 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <svg className="w-6 h-6 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>
                   </div>
@@ -288,7 +288,7 @@ export default function JobNotificationsPage() {
                 {/* SMS channel */}
                 <div className="bg-white/[0.06] backdrop-blur-sm rounded-2xl p-7 border border-white/10 hover:border-rd-lime/30 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-rd-lime/15 flex items-center justify-center mb-5">
-                    <svg className="w-6 h-6 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <svg className="w-6 h-6 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
                     </svg>
                   </div>
@@ -299,7 +299,7 @@ export default function JobNotificationsPage() {
                 {/* Push channel */}
                 <div className="bg-white/[0.06] backdrop-blur-sm rounded-2xl p-7 border border-white/10 hover:border-rd-lime/30 transition-colors">
                   <div className="w-12 h-12 rounded-xl bg-rd-lime/15 flex items-center justify-center mb-5">
-                    <svg className="w-6 h-6 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <svg className="w-6 h-6 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                     </svg>
                   </div>

@@ -141,7 +141,7 @@ export default function SelfCheckInPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/30 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-rd-lime animate-pulse" />
-                <span className="text-[11px] font-poppins font-bold uppercase tracking-widest text-rd-lime">Self Check-In Kiosk</span>
+                <span className="text-[11px] font-poppins font-bold uppercase tracking-widest text-rd-mint">Self Check-In Kiosk</span>
               </div>
               <h1 className="font-poppins font-bold text-4xl md:text-[3.25rem] leading-[1.15] text-white mb-5">
                 Your customers check in.<br />
@@ -304,9 +304,9 @@ export default function SelfCheckInPage() {
 
             {/* Screen 3: Confirmation */}
             <KioskScreen label="Confirmation">
-              <div className="flex-1 flex flex-col items-center justify-center px-6 text-center bg-gradient-to-b from-white to-green-50/50">
-                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
-                  <IconCheck className="w-7 h-7 text-green-600" />
+              <div className="flex-1 flex flex-col items-center justify-center px-6 text-center bg-gradient-to-b from-white to-blue-50/50">
+                <div className="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <IconCheck className="w-7 h-7 text-[#457b9d]" />
                 </div>
                 <p className="font-poppins font-bold text-rd-dark text-sm mb-1">You're Checked In!</p>
                 <p className="text-gray-400 text-[10px] font-dm-sans mb-3 leading-relaxed">Ticket #1042 created. We'll call your name shortly.</p>
@@ -365,7 +365,7 @@ export default function SelfCheckInPage() {
               <div className="absolute top-0 left-0 w-full h-1 bg-rd-lime" />
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-8 h-8 rounded-full bg-rd-teal/30 flex items-center justify-center">
-                  <IconCheck className="w-4 h-4 text-rd-lime" />
+                  <IconCheck className="w-4 h-4 text-rd-mint" />
                 </div>
                 <span className="font-poppins font-bold text-white text-sm">Self Check-In Kiosk</span>
               </div>
@@ -378,13 +378,13 @@ export default function SelfCheckInPage() {
                   'Digital T&C acceptance on record',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-white/70 font-dm-sans text-sm">
-                    <IconCheck className="w-4 h-4 text-rd-lime shrink-0 mt-0.5" />
+                    <IconCheck className="w-4 h-4 text-rd-mint shrink-0 mt-0.5" />
                     {item}
                   </li>
                 ))}
               </ul>
               <div className="mt-6 pt-5 border-t border-white/10 flex items-baseline gap-2">
-                <span className="font-poppins font-bold text-2xl text-rd-lime">&lt;2 min</span>
+                <span className="font-poppins font-bold text-2xl text-rd-mint">&lt;2 min</span>
                 <span className="text-white/40 text-xs font-dm-sans">per customer</span>
               </div>
             </div>

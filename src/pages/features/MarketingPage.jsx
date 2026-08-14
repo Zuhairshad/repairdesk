@@ -6,7 +6,7 @@ const funnelStages = [
   { label: 'Attract', pct: '100%', color: '#3d405b', desc: 'Email campaigns, SMS blasts, social media' },
   { label: 'Engage', pct: '75%', color: '#4d5175', desc: 'Personalized follow-ups, review requests' },
   { label: 'Convert', pct: '50%', color: '#6870a0', desc: 'Promotional offers, referral programs' },
-  { label: 'Retain', pct: '30%', color: '#7CCE2B', desc: 'Re-engagement, loyalty campaigns' },
+  { label: 'Retain', pct: '30%', color: '#457b9d', desc: 'Re-engagement, loyalty campaigns' },
 ];
 
 const campaignMetrics = [
@@ -25,7 +25,7 @@ const smsMessages = [
 const segments = [
   { name: 'Repeat Buyers', count: 342, color: '#3d405b' },
   { name: 'One-time Visitors', count: 891, color: '#6870a0' },
-  { name: 'High-value', count: 156, color: '#7CCE2B' },
+  { name: 'High-value', count: 156, color: '#457b9d' },
 ];
 
 const faqs = [
@@ -119,7 +119,7 @@ export default function MarketingPage() {
                 );
               })}
               {/* Downward triangle indicator below funnel */}
-              <polygon points="168,308 192,308 180,316" fill="#D4F479" opacity="0.85" />
+              <polygon points="168,308 192,308 180,316" fill="#457b9d" opacity="0.85" />
             </svg>
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function MarketingPage() {
             <div className="bg-rd-cream rounded-2xl border border-gray-200 overflow-hidden shadow-lg">
               {/* Toolbar */}
               <div className="flex items-center gap-2 px-5 py-3 bg-white border-b border-gray-100">
-                <div className="flex gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-red-400" /><span className="w-2.5 h-2.5 rounded-full bg-yellow-400" /><span className="w-2.5 h-2.5 rounded-full bg-green-400" /></div>
+                <div className="flex gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-red-400" /><span className="w-2.5 h-2.5 rounded-full bg-yellow-400" /><span className="w-2.5 h-2.5 rounded-full bg-blue-400" /></div>
                 <span className="ml-3 text-xs font-poppins font-semibold text-rd-dark/60">Email Template Builder</span>
               </div>
               {/* Canvas */}
@@ -246,7 +246,7 @@ export default function MarketingPage() {
             <svg viewBox="0 0 420 230" className="w-full max-w-sm" fill="none">
               <circle cx="155" cy="115" r="95" fill="#3d405b" opacity="0.13" stroke="#3d405b" strokeWidth="1.5" />
               <circle cx="265" cy="115" r="95" fill="#6870a0" opacity="0.13" stroke="#6870a0" strokeWidth="1.5" />
-              <circle cx="210" cy="70" r="75" fill="#D4F479" opacity="0.12" stroke="#D4F479" strokeWidth="1.5" />
+              <circle cx="210" cy="70" r="75" fill="#457b9d" opacity="0.12" stroke="#457b9d" strokeWidth="1.5" />
               {segments.map((s, i) => {
                 const positions = [{ x: 105, y: 160 }, { x: 315, y: 160 }, { x: 210, y: 20 }];
                 return (
@@ -293,7 +293,7 @@ export default function MarketingPage() {
                 <div className="w-10 h-10 rounded-xl bg-rd-teal/20 flex items-center justify-center mx-auto mb-4"><Icon name={m.icon} className="w-5 h-5 text-rd-teal" /></div>
                 <p className="font-poppins font-bold text-3xl text-white mb-1">{m.value}</p>
                 <p className="text-white/50 font-dm-sans text-xs uppercase tracking-wider mb-2">{m.label}</p>
-                <span className="inline-block bg-green-500/20 text-green-400 text-xs font-semibold font-dm-sans px-2.5 py-0.5 rounded-full">{m.trend}</span>
+                <span className="inline-block bg-blue-500/20 text-blue-400 text-xs font-semibold font-dm-sans px-2.5 py-0.5 rounded-full">{m.trend}</span>
               </div>
             ))}
           </div>
@@ -304,7 +304,7 @@ export default function MarketingPage() {
             <div className="flex items-end gap-3 h-28">
               {[45, 62, 78, 55, 88, 72, 94].map((h, i) => (
                 <div key={i} className="flex-1 flex flex-col items-center gap-1">
-                  <div className="w-full rounded-t-md transition-all" style={{ height: `${h}%`, background: i === 6 ? '#7CCE2B' : '#3d405b' }} />
+                  <div className="w-full rounded-t-md transition-all" style={{ height: `${h}%`, background: i === 6 ? '#457b9d' : '#3d405b' }} />
                   <span className="text-white/30 text-[10px] font-dm-sans">{['M', 'T', 'W', 'T', 'F', 'S', 'S'][i]}</span>
                 </div>
               ))}

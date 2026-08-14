@@ -215,10 +215,10 @@ export default function BicycleRepairPage() {
     <PageLayout>
       {/* ===== HERO ===== */}
       <section className="bg-rd-dark text-white pt-20 pb-28 px-6 relative overflow-hidden">
-        <WheelGraphic className="absolute -right-24 -top-24 w-[420px] h-[420px] text-rd-lime hidden md:block" />
+        <WheelGraphic className="absolute -right-24 -top-24 w-[420px] h-[420px] text-rd-mint hidden md:block" />
         <WheelGraphic className="absolute -left-32 bottom-[-140px] w-72 h-72 text-rd-teal hidden lg:block" />
         <div className="container-main relative z-10 max-w-3xl">
-          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
             <Icon paths={ICONS.wheel || 'M12 2a10 10 0 100 20 10 10 0 000-20z'} className="w-3.5 h-3.5" strokeWidth={2.5} />
             Bicycle Repair Shop Software
           </span>
@@ -302,7 +302,7 @@ export default function BicycleRepairPage() {
 
           <div className="rounded-3xl bg-[#FAF9E3] p-8 md:p-10 grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 items-center mb-12">
             <div className="w-14 h-14 rounded-2xl bg-rd-dark flex items-center justify-center shrink-0">
-              <Icon paths={ICONS.cart} className="w-6 h-6 text-rd-lime" />
+              <Icon paths={ICONS.cart} className="w-6 h-6 text-rd-mint" />
             </div>
             <div>
               <h3 className="font-poppins font-bold text-rd-dark text-xl mb-2">Seamlessly Sell Bicycles Online</h3>
@@ -331,7 +331,7 @@ export default function BicycleRepairPage() {
         <WheelGraphic className="absolute -right-20 top-1/2 -translate-y-1/2 w-80 h-80 text-white hidden lg:block" />
         <div className="container-main relative z-10">
           <div className="max-w-2xl mb-14">
-            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">
+            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">
               <Icon paths={ICONS.gauge} className="w-3.5 h-3.5" strokeWidth={2.2} />
               Increase Efficiency
             </span>
@@ -369,7 +369,7 @@ export default function BicycleRepairPage() {
             {paymentSubFeatures.map((f) => (
               <div key={f.title} className="bg-white rounded-2xl p-6 shadow-sm">
                 <div className="w-11 h-11 rounded-xl bg-[#1e2035] flex items-center justify-center mb-4">
-                  <Icon paths={f.icon} className="w-5 h-5 text-rd-lime" />
+                  <Icon paths={f.icon} className="w-5 h-5 text-rd-mint" />
                 </div>
                 <h3 className="font-poppins font-semibold text-rd-dark mb-2">{f.title}</h3>
                 <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">{f.desc}</p>
@@ -384,7 +384,7 @@ export default function BicycleRepairPage() {
         <div className="container-main">
           <div className="rounded-3xl bg-[#1e2035] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[0.6fr_0.4fr] gap-10 items-center">
             <div>
-              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">
+              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">
                 <Icon paths={ICONS.users} className="w-3.5 h-3.5" strokeWidth={2.2} />
                 You're in Great Company
               </span>
@@ -398,7 +398,7 @@ export default function BicycleRepairPage() {
             <div className="grid grid-cols-3 gap-4">
               {companyStats.map((s) => (
                 <div key={s.label} className="text-center bg-white/5 rounded-2xl py-6 px-2 border border-white/10">
-                  <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-lime mb-1">{s.stat}</p>
+                  <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-mint mb-1">{s.stat}</p>
                   <p className="text-white/60 font-dm-sans text-xs">{s.label}</p>
                 </div>
               ))}

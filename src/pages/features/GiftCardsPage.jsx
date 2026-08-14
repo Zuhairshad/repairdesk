@@ -103,7 +103,7 @@ export default function GiftCardsPage() {
           <div className="grid md:grid-cols-2 gap-0 max-w-4xl mx-auto rounded-2xl overflow-hidden border border-gray-200">
             {/* Digital side */}
             <div className="relative p-10 bg-gradient-to-br from-rd-teal/[0.04] to-transparent border-b md:border-b-0 md:border-r border-gray-200">
-              <div className="absolute top-6 right-6 bg-rd-lime text-rd-dark text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Popular</div>
+              <div className="absolute top-6 right-6 bg-rd-lime text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Popular</div>
               <div className="w-14 h-14 rounded-2xl bg-rd-teal/10 flex items-center justify-center mb-6">
                 <svg className="w-7 h-7 text-rd-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><rect x="5" y="2" width="14" height="20" rx="2" /><line x1="12" y1="18" x2="12" y2="18.01" strokeWidth="2" strokeLinecap="round" /></svg>
               </div>

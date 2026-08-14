@@ -84,7 +84,7 @@ export default function VsRepairqPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-rd-dark via-[#014a50] to-rd-teal text-white py-24 md:py-32 px-6">
         <div className="container-main max-w-4xl text-center">
-          <span className="inline-block bg-rd-lime text-rd-dark text-xs font-bold uppercase tracking-widest font-poppins px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-block bg-rd-lime text-white text-xs font-bold uppercase tracking-widest font-poppins px-4 py-1.5 rounded-full mb-6">
             Comparison
           </span>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[56px] leading-tight mb-6">
@@ -133,11 +133,11 @@ export default function VsRepairqPage() {
                   <tr key={row.feature} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                     <td className="font-dm-sans text-rd-dark text-sm py-4 px-6 font-medium">{row.feature}</td>
                     <td className="text-center py-4 px-6 bg-rd-teal/5">
-                      <span className="text-green-500 text-xl">&#10003;</span>
+                      <span className="text-blue-500 text-xl">&#10003;</span>
                     </td>
                     <td className="text-center py-4 px-6">
                       {row.competitor ? (
-                        <span className="text-green-500 text-xl">&#10003;</span>
+                        <span className="text-blue-500 text-xl">&#10003;</span>
                       ) : (
                         <span className="text-red-400 text-xl">&#10007;</span>
                       )}

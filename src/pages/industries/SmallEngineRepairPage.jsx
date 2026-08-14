@@ -147,7 +147,7 @@ const Icon = {
 function HexIcon({ children, tone = 'teal' }) {
   const tones = {
     teal: 'bg-rd-teal/10 text-rd-teal',
-    lime: 'bg-rd-lime/20 text-rd-lime',
+    lime: 'bg-rd-lime/20 text-rd-mint',
     cream: 'bg-[#FAF9E3] text-rd-dark',
   };
   return (
@@ -174,7 +174,7 @@ function Gauge({ value }) {
           cy="50"
           r={r}
           fill="none"
-          stroke="#D4F479"
+          stroke="#457b9d"
           strokeWidth="9"
           strokeLinecap="round"
           strokeDasharray={`${c} ${c}`}
@@ -387,11 +387,11 @@ export default function SmallEngineRepairPage() {
         >
           {Icon.gear}
         </div>
-        <div className="absolute top-0 left-0 right-0 h-1.5" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #D4F479 0 10px, #1e2035 10px 20px)' }} />
+        <div className="absolute top-0 left-0 right-0 h-1.5" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #457b9d 0 10px, #1e2035 10px 20px)' }} />
 
         <div className="container-main grid md:grid-cols-[1.15fr_0.85fr] gap-14 items-center relative z-10">
           <div>
-            <span className="inline-flex items-center gap-2 text-[11px] font-poppins font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 text-[11px] font-poppins font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               <span className="w-4 h-4">{Icon.gear}</span>
               Small Engine Repair Shop Software
             </span>
@@ -508,7 +508,7 @@ export default function SmallEngineRepairPage() {
               {workflowSteps.map((step, i) => (
                 <React.Fragment key={step.n}>
                   <div className="flex flex-col items-center text-center w-32 shrink-0">
-                    <div className="w-14 h-14 rounded-full bg-rd-dark text-rd-lime flex items-center justify-center font-poppins font-bold text-sm border-4 border-rd-cream mb-3">
+                    <div className="w-14 h-14 rounded-full bg-rd-dark text-rd-mint flex items-center justify-center font-poppins font-bold text-sm border-4 border-rd-cream mb-3">
                       {step.n}
                     </div>
                     <h4 className="font-poppins font-semibold text-rd-dark text-sm mb-1">{step.label}</h4>
@@ -548,7 +548,7 @@ export default function SmallEngineRepairPage() {
         />
         <div className="container-main relative z-10">
           <div className="max-w-2xl mb-14">
-            <span className="text-rd-lime font-poppins font-bold text-xs uppercase tracking-widest">Work Smarter</span>
+            <span className="text-rd-mint font-poppins font-bold text-xs uppercase tracking-widest">Work Smarter</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-3 mb-5">Built for Small Engine Repair Workflows</h2>
             <p className="text-white/70 font-dm-sans leading-relaxed">
               RepairHub isn't just generic repair software — it's built for how your shop actually works. These tools and integrations help you work faster, stay accurate, and deliver a better customer experience every time.
@@ -561,7 +561,7 @@ export default function SmallEngineRepairPage() {
                 <div className="w-3 h-3 rounded-full bg-rd-cream mx-auto mb-1 shadow-[0_0_0_3px_rgba(255,255,255,0.15)]" />
                 <div className="w-px h-4 bg-white/25 mx-auto" />
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors h-full">
-                  <div className="w-11 h-11 rounded-xl bg-rd-lime/20 text-rd-lime flex items-center justify-center mb-4">
+                  <div className="w-11 h-11 rounded-xl bg-rd-lime/20 text-rd-mint flex items-center justify-center mb-4">
                     {item.icon}
                   </div>
                   <h3 className="font-poppins font-semibold mb-1.5 text-sm">{item.title}</h3>
@@ -577,7 +577,7 @@ export default function SmallEngineRepairPage() {
       <section className="bg-[#1e2035] text-white py-20 px-6">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
-            <span className="text-rd-lime font-poppins font-bold text-xs uppercase tracking-widest">Stay in Charge</span>
+            <span className="text-rd-mint font-poppins font-bold text-xs uppercase tracking-widest">Stay in Charge</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-3 mb-5">Smarter Reports, Better Team Control</h2>
             <p className="text-white/70 font-dm-sans leading-relaxed">
               Keep your shop accountable with reporting and employee management software. Track performance of your employees, monitor sales, and spot bottlenecks efficiently. Set role-based access, reward your top-performing employees, and visualize your growth with stats and data.
@@ -589,7 +589,7 @@ export default function SmallEngineRepairPage() {
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 flex items-center gap-6">
                 <Gauge value={item.value} />
                 <div>
-                  <div className="flex items-center gap-2 mb-1.5 text-rd-lime">{item.icon}
+                  <div className="flex items-center gap-2 mb-1.5 text-rd-mint">{item.icon}
                     <h3 className="font-poppins font-semibold text-white text-sm">{item.title}</h3>
                   </div>
                   <p className="text-white/60 font-dm-sans text-sm leading-relaxed">{item.desc}</p>

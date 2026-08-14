@@ -256,7 +256,7 @@ export default function PricingPage() {
               Annually
               <span
                 className={`text-xs px-2 py-0.5 rounded-full font-bold ${
-                  annual ? 'bg-rd-lime text-rd-dark' : 'bg-rd-lime/60 text-rd-dark'
+                  annual ? 'bg-rd-lime text-white' : 'bg-rd-lime/60 text-rd-dark'
                 }`}
               >
                 -20%
@@ -280,7 +280,7 @@ export default function PricingPage() {
                 }`}
               >
                 {plan.badge && (
-                  <span className="absolute -top-3.5 right-8 bg-rd-lime text-rd-dark text-xs font-poppins font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow">
+                  <span className="absolute -top-3.5 right-8 bg-rd-lime text-white text-xs font-poppins font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow">
                     {plan.badge}
                   </span>
                 )}
@@ -349,17 +349,17 @@ export default function PricingPage() {
 
                 <div
                   className={`flex items-center gap-2 mb-5 text-sm font-poppins font-semibold ${
-                    plan.highlight ? 'text-rd-lime' : 'text-rd-teal'
+                    plan.highlight ? 'text-rd-mint' : 'text-rd-teal'
                   }`}
                 >
-                  <Check className={`w-4 h-4 ${plan.highlight ? 'text-rd-lime' : 'text-rd-teal'}`} />
+                  <Check className={`w-4 h-4 ${plan.highlight ? 'text-rd-mint' : 'text-rd-teal'}`} />
                   {plan.users}
                 </div>
 
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.highlights.map((f) => (
                     <li key={f} className="flex items-start gap-3 text-sm font-dm-sans">
-                      <Check className={`w-4 h-4 mt-0.5 shrink-0 ${plan.highlight ? 'text-rd-lime' : 'text-rd-teal'}`} />
+                      <Check className={`w-4 h-4 mt-0.5 shrink-0 ${plan.highlight ? 'text-rd-mint' : 'text-rd-teal'}`} />
                       <span className={plan.highlight ? 'text-gray-200' : 'text-gray-700'}>{f}</span>
                     </li>
                   ))}
@@ -368,7 +368,7 @@ export default function PricingPage() {
                 <button
                   className={`w-full py-3.5 rounded-full font-poppins font-semibold text-sm transition-all ${
                     plan.highlight
-                      ? 'bg-rd-lime text-rd-dark hover:bg-yellow-300'
+                      ? 'bg-rd-lime text-white hover:opacity-90'
                       : 'btn-primary'
                   }`}
                 >
@@ -460,7 +460,7 @@ export default function PricingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/register"
-              className="inline-block bg-rd-lime text-rd-dark font-semibold px-8 py-3.5 rounded-full hover:bg-yellow-300 transition-colors font-poppins"
+              className="inline-block bg-rd-lime text-white font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-colors font-poppins"
             >
               Get Started
             </a>

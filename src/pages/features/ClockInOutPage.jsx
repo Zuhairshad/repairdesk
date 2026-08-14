@@ -35,7 +35,7 @@ export default function ClockInOutPage() {
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.5) 39px, rgba(255,255,255,0.5) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.5) 39px, rgba(255,255,255,0.5) 40px)' }} />
         <div className="container-main relative z-10 flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1 max-w-xl">
-            <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-rd-lime font-poppins mb-4">Employee Time Tracking</span>
+            <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-rd-mint font-poppins mb-4">Employee Time Tracking</span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.12] text-white mb-6">
               Every Minute Tracked.<br />Every Dollar Accounted.
             </h1>
@@ -230,7 +230,7 @@ export default function ClockInOutPage() {
       <section className="bg-rd-dark py-16 px-6">
         <div className="container-main max-w-5xl">
           <div className="text-center mb-12">
-            <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-rd-lime font-poppins mb-3">Payroll-Ready Reports</span>
+            <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-rd-mint font-poppins mb-3">Payroll-Ready Reports</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-3">From Timesheets to Paychecks in One Click</h2>
             <p className="text-white/55 font-dm-sans text-lg max-w-xl mx-auto">Approved timesheets generate payroll summaries automatically. Export to QuickBooks, Xero, or CSV.</p>
           </div>
@@ -240,7 +240,7 @@ export default function ClockInOutPage() {
             {[
               { label: 'Regular Hours', value: '152.5', sub: 'This pay period', accent: 'text-white' },
               { label: 'Overtime Hours', value: '3.5', sub: '@ 1.5x multiplier', accent: 'text-amber-400' },
-              { label: 'Total Payroll', value: '$6,840', sub: '4 employees', accent: 'text-rd-lime' },
+              { label: 'Total Payroll', value: '$6,840', sub: '4 employees', accent: 'text-rd-mint' },
             ].map(card => (
               <div key={card.label} className="bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center">
                 <div className="text-white/50 text-xs font-poppins uppercase tracking-wider mb-3">{card.label}</div>

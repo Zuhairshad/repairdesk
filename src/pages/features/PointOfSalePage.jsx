@@ -26,7 +26,7 @@ const POSTerminal = () => (
     <rect x="190" y="146" width="58" height="14" rx="7" fill="#3d405b" />
     <text x="219" y="157" textAnchor="middle" fill="white" fontSize="9" fontWeight="bold">$149.99</text>
     {/* Checkout button on screen */}
-    <rect x="72" y="176" width="176" height="28" rx="14" fill="#D4F479" />
+    <rect x="72" y="176" width="176" height="28" rx="14" fill="#457b9d" />
     <text x="160" y="195" textAnchor="middle" fill="#1e2035" fontSize="11" fontWeight="bold">COMPLETE SALE</text>
     {/* Keypad area */}
     {[0, 1, 2].map(row =>
@@ -45,9 +45,9 @@ const POSTerminal = () => (
       ))
     )}
     {/* Card reader slot */}
-    <rect x="110" y="236" width="100" height="4" rx="2" fill="#D4F479" opacity="0.5" />
+    <rect x="110" y="236" width="100" height="4" rx="2" fill="#457b9d" opacity="0.5" />
     {/* LED indicator */}
-    <circle cx="160" cy="232" r="3" fill="#D4F479">
+    <circle cx="160" cy="232" r="3" fill="#457b9d">
       <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
     </circle>
   </svg>
@@ -154,7 +154,7 @@ export default function PointOfSalePage() {
       <section className="relative overflow-hidden bg-rd-dark">
         {/* Background pattern - subtle grid lines like a register display */}
         <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: 'linear-gradient(#D4F479 1px, transparent 1px), linear-gradient(90deg, #D4F479 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#457b9d 1px, transparent 1px), linear-gradient(90deg, #457b9d 1px, transparent 1px)',
           backgroundSize: '48px 48px',
         }} />
 
@@ -164,16 +164,16 @@ export default function PointOfSalePage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-rd-lime/15 border border-rd-lime/30 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-rd-lime animate-pulse" />
-                <span className="font-poppins text-rd-lime text-xs font-semibold tracking-wide uppercase">Point of Sale</span>
+                <span className="font-poppins text-rd-mint text-xs font-semibold tracking-wide uppercase">Point of Sale</span>
               </div>
               <h1 className="font-poppins text-4xl md:text-5xl lg:text-[3.4rem] font-bold text-white leading-[1.12] mb-6">
-                POS Software Built for <span className="text-rd-lime">Repair Shops</span>
+                POS Software Built for <span className="text-rd-mint">Repair Shops</span>
               </h1>
               <p className="font-dm-sans text-lg text-white/70 leading-relaxed max-w-lg mb-10">
                 From inventory and billing to customer management and integrations, everything you need is built into one streamlined checkout. You focus on repairs &mdash; we handle the rest.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/signup" className="inline-flex items-center gap-2 bg-rd-lime text-rd-dark font-poppins font-semibold px-7 py-3.5 rounded-full hover:bg-[#e2ff8a] transition-colors">
+                <Link to="/signup" className="inline-flex items-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-7 py-3.5 rounded-full hover:bg-[#e2ff8a] transition-colors">
                   Start Free Trial
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </Link>
@@ -190,7 +190,7 @@ export default function PointOfSalePage() {
                   { val: '99.9%', label: 'Uptime' },
                 ].map(s => (
                   <div key={s.label}>
-                    <div className="font-poppins font-bold text-rd-lime text-2xl">{s.val}</div>
+                    <div className="font-poppins font-bold text-rd-mint text-2xl">{s.val}</div>
                     <div className="font-dm-sans text-white/50 text-xs mt-0.5">{s.label}</div>
                   </div>
                 ))}
@@ -317,7 +317,7 @@ export default function PointOfSalePage() {
       <section className="bg-rd-dark py-20 md:py-24 overflow-hidden">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-poppins text-rd-lime text-xs font-bold tracking-[0.2em] uppercase">Customer Retention</span>
+            <span className="font-poppins text-rd-mint text-xs font-bold tracking-[0.2em] uppercase">Customer Retention</span>
             <h2 className="font-poppins text-3xl md:text-4xl font-bold text-white mt-3 mb-4">
               Tools to Help You Retain Customers
             </h2>
@@ -333,7 +333,7 @@ export default function PointOfSalePage() {
               <circle cx="250" cy="250" r="210" fill="none" stroke="#1a5c5f" strokeWidth="1" strokeDasharray="8 6" />
               <circle cx="250" cy="250" r="160" fill="none" stroke="#1a5c5f" strokeWidth="1" />
               {/* Animated orbit dot */}
-              <circle r="5" fill="#D4F479">
+              <circle r="5" fill="#457b9d">
                 <animateMotion dur="8s" repeatCount="indefinite" path="M250,40 A210,210 0 1,1 249.9,40" />
               </circle>
             </svg>
@@ -342,7 +342,7 @@ export default function PointOfSalePage() {
             <div className="relative z-10 flex flex-col items-center justify-center py-12">
               <div className="w-28 h-28 rounded-full bg-rd-teal/30 border-2 border-rd-lime/40 flex items-center justify-center mb-8">
                 <div className="text-center">
-                  <div className="font-poppins font-bold text-rd-lime text-xl leading-none">Loyal</div>
+                  <div className="font-poppins font-bold text-rd-mint text-xl leading-none">Loyal</div>
                   <div className="font-dm-sans text-white/60 text-[10px] mt-1">Customer</div>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export default function PointOfSalePage() {
                   },
                 ].map(item => (
                   <div key={item.title} className="bg-white/5 border border-white/10 rounded-2xl p-5 text-center hover:bg-white/10 transition-colors">
-                    <div className="w-10 h-10 mx-auto rounded-xl bg-rd-teal/30 text-rd-lime flex items-center justify-center mb-3">
+                    <div className="w-10 h-10 mx-auto rounded-xl bg-rd-teal/30 text-rd-mint flex items-center justify-center mb-3">
                       {item.icon}
                     </div>
                     <h4 className="font-poppins font-semibold text-white text-sm mb-1">{item.title}</h4>
@@ -404,7 +404,7 @@ export default function PointOfSalePage() {
                   { title: 'Smart Accessory Prompts', desc: 'The POS suggests relevant add-ons during checkout so your staff never forgets to upsell.' },
                 ].map((item, i) => (
                   <div key={item.title} className="flex gap-4 items-start">
-                    <div className="w-8 h-8 rounded-lg bg-rd-lime text-rd-dark flex items-center justify-center font-poppins font-bold text-sm flex-shrink-0">
+                    <div className="w-8 h-8 rounded-lg bg-rd-lime text-white flex items-center justify-center font-poppins font-bold text-sm flex-shrink-0">
                       {i + 1}
                     </div>
                     <div>
@@ -553,14 +553,14 @@ export default function PointOfSalePage() {
               <span className="font-poppins font-bold text-white text-2xl">PH</span>
             </div>
             <div>
-              <svg className="w-8 h-8 text-rd-lime/60 mb-3" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 text-rd-mint/60 mb-3" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p className="font-dm-sans text-white/90 text-lg leading-relaxed mb-4">
                 "The POS is incredibly intuitive. My team was up and running in a day, and our checkout time dropped by half. The integrated payments and ticketing alone saved us from three separate subscriptions."
               </p>
               <div>
-                <span className="font-poppins font-semibold text-rd-lime">Peter Haydon</span>
+                <span className="font-poppins font-semibold text-rd-mint">Peter Haydon</span>
                 <span className="font-dm-sans text-white/50 text-sm ml-2">CEO, Technology Traders</span>
               </div>
             </div>
@@ -607,7 +607,7 @@ export default function PointOfSalePage() {
       <section className="relative overflow-hidden bg-rd-dark py-20 md:py-24">
         {/* Decorative register grid */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'linear-gradient(#D4F479 1px, transparent 1px), linear-gradient(90deg, #D4F479 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#457b9d 1px, transparent 1px), linear-gradient(90deg, #457b9d 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }} />
         <div className="container-main relative z-10 text-center">
@@ -620,7 +620,7 @@ export default function PointOfSalePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/signup"
-              className="inline-flex items-center justify-center gap-2 bg-rd-lime text-rd-dark font-poppins font-semibold px-8 py-4 rounded-full hover:bg-[#e2ff8a] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-8 py-4 rounded-full hover:bg-[#e2ff8a] transition-colors"
             >
               Start Free Trial
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>

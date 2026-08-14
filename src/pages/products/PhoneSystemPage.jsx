@@ -90,14 +90,14 @@ export default function PhoneSystemPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left copy */}
             <div>
-              <span className="inline-flex items-center gap-2 bg-rd-teal/20 text-rd-lime text-sm font-poppins font-semibold px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-flex items-center gap-2 bg-rd-teal/20 text-rd-mint text-sm font-poppins font-semibold px-4 py-1.5 rounded-full mb-6">
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
                 Cloud VoIP
               </span>
               <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.12] mb-6">
-                A phone system that <span className="text-rd-lime">knows your customers</span> before you answer
+                A phone system that <span className="text-rd-mint">knows your customers</span> before you answer
               </h1>
               <p className="font-dm-sans text-white/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
                 VoIP calling, caller&nbsp;ID with instant customer lookup, IVR routing, call recording, and SMS&nbsp;&mdash;&nbsp;all built into RepairHub so every ring turns into revenue.
@@ -106,7 +106,7 @@ export default function PhoneSystemPage() {
                 <Link to="/signup" className="btn-primary text-base px-8 py-3.5">
                   Start Free Trial
                 </Link>
-                <Link to="/demo" className="border border-white/30 hover:border-rd-lime text-white hover:text-rd-lime font-poppins font-semibold text-base px-8 py-3.5 rounded-full transition-colors">
+                <Link to="/demo" className="border border-white/30 hover:border-rd-lime text-white hover:text-rd-mint font-poppins font-semibold text-base px-8 py-3.5 rounded-full transition-colors">
                   Book a Demo
                 </Link>
               </div>
@@ -130,7 +130,7 @@ export default function PhoneSystemPage() {
               <div className="flex items-center gap-2 mb-5">
                 <span className="w-3 h-3 rounded-full bg-red-400" />
                 <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
+                <span className="w-3 h-3 rounded-full bg-blue-400" />
                 <span className="ml-3 text-xs font-dm-sans text-gray-400 bg-white rounded px-3 py-1">repairhub.co/dashboard</span>
               </div>
               {/* Dashboard background placeholder */}
@@ -344,7 +344,7 @@ export default function PhoneSystemPage() {
               <div key={m.label} className="bg-[#0a3d40] rounded-2xl p-6 text-center">
                 <p className="font-dm-sans text-white/50 text-sm mb-1">{m.label}</p>
                 <p className="font-poppins font-bold text-white text-3xl md:text-4xl">{m.value}</p>
-                <span className="inline-block mt-2 text-xs font-dm-sans font-semibold text-rd-lime bg-rd-lime/10 px-2 py-0.5 rounded-full">
+                <span className="inline-block mt-2 text-xs font-dm-sans font-semibold text-rd-mint bg-rd-lime/10 px-2 py-0.5 rounded-full">
                   {m.delta}
                 </span>
               </div>
@@ -430,7 +430,7 @@ export default function PhoneSystemPage() {
               { icon: (<svg className="w-8 h-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>), t: 'Missed Call Alerts', d: 'Instant push notification' },
             ].map(f => (
               <div key={f.t}>
-                <div className="mb-3 text-rd-lime">{f.icon}</div>
+                <div className="mb-3 text-rd-mint">{f.icon}</div>
                 <h4 className="font-poppins font-semibold text-sm mb-1">{f.t}</h4>
                 <p className="font-dm-sans text-white/70 text-xs">{f.d}</p>
               </div>

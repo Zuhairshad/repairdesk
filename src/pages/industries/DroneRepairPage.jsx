@@ -176,19 +176,19 @@ export default function DroneRepairPage() {
         {/* radar rings decoration */}
         <div className="pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 hidden lg:block">
           <svg width="520" height="520" viewBox="0 0 520 520" fill="none">
-            <circle cx="260" cy="260" r="240" stroke="#D4F479" strokeOpacity="0.12" />
-            <circle cx="260" cy="260" r="180" stroke="#D4F479" strokeOpacity="0.16" />
-            <circle cx="260" cy="260" r="120" stroke="#D4F479" strokeOpacity="0.22" />
-            <circle cx="260" cy="260" r="60" stroke="#D4F479" strokeOpacity="0.3" />
-            <line x1="260" y1="20" x2="260" y2="500" stroke="#D4F479" strokeOpacity="0.08" />
-            <line x1="20" y1="260" x2="500" y2="260" stroke="#D4F479" strokeOpacity="0.08" />
-            <circle cx="352" cy="180" r="5" fill="#D4F479" />
-            <circle cx="180" cy="330" r="3.5" fill="#D4F479" fillOpacity="0.7" />
+            <circle cx="260" cy="260" r="240" stroke="#457b9d" strokeOpacity="0.12" />
+            <circle cx="260" cy="260" r="180" stroke="#457b9d" strokeOpacity="0.16" />
+            <circle cx="260" cy="260" r="120" stroke="#457b9d" strokeOpacity="0.22" />
+            <circle cx="260" cy="260" r="60" stroke="#457b9d" strokeOpacity="0.3" />
+            <line x1="260" y1="20" x2="260" y2="500" stroke="#457b9d" strokeOpacity="0.08" />
+            <line x1="20" y1="260" x2="500" y2="260" stroke="#457b9d" strokeOpacity="0.08" />
+            <circle cx="352" cy="180" r="5" fill="#457b9d" />
+            <circle cx="180" cy="330" r="3.5" fill="#457b9d" fillOpacity="0.7" />
           </svg>
         </div>
 
         <div className="container-main relative max-w-3xl">
-          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
             <IconPropeller className="w-3.5 h-3.5" />
             Drone Repair Shop Software
           </span>
@@ -207,15 +207,15 @@ export default function DroneRepairPage() {
 
           <div className="mt-14 flex flex-wrap gap-8">
             <div className="flex items-center gap-3">
-              <IconGPS className="w-6 h-6 text-rd-lime" />
+              <IconGPS className="w-6 h-6 text-rd-mint" />
               <span className="font-dm-sans text-sm text-white/70">Live status tracking</span>
             </div>
             <div className="flex items-center gap-3">
-              <IconRemote className="w-6 h-6 text-rd-lime" />
+              <IconRemote className="w-6 h-6 text-rd-mint" />
               <span className="font-dm-sans text-sm text-white/70">Built for fast turnaround</span>
             </div>
             <div className="flex items-center gap-3">
-              <IconCamera className="w-6 h-6 text-rd-lime" />
+              <IconCamera className="w-6 h-6 text-rd-mint" />
               <span className="font-dm-sans text-sm text-white/70">Photo condition records</span>
             </div>
           </div>
@@ -243,7 +243,7 @@ export default function DroneRepairPage() {
                   <div key={f.title} className="relative">
                     <div className="relative z-10 w-16 h-16 rounded-full bg-rd-teal text-white flex items-center justify-center shadow-lg shadow-rd-teal/20 mb-6">
                       <Icon className="w-7 h-7" />
-                      <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-rd-lime text-rd-dark text-xs font-poppins font-bold flex items-center justify-center">
+                      <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-rd-lime text-white text-xs font-poppins font-bold flex items-center justify-center">
                         {i + 1}
                       </span>
                     </div>
@@ -267,11 +267,11 @@ export default function DroneRepairPage() {
           <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-[0.4fr_0.6fr] gap-10 items-center relative overflow-hidden">
             <IconPropeller className="absolute -bottom-10 -right-10 w-52 h-52 text-white/5" />
             <div>
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Case Study</span>
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Case Study</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">
                 Team Newland Ag Drones about RepairHub
               </h2>
-              <a href="#" className="inline-flex items-center gap-1 text-rd-lime font-poppins font-semibold text-sm hover:gap-2 transition-all">
+              <a href="#" className="inline-flex items-center gap-1 text-rd-mint font-poppins font-semibold text-sm hover:gap-2 transition-all">
                 Learn More
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
               </a>
@@ -345,11 +345,11 @@ export default function DroneRepairPage() {
             <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
               <div className="absolute w-40 h-40 md:w-48 md:h-48 rounded-full border border-dashed border-white/30" />
               <IconMail className="w-20 h-20 md:w-24 md:h-24 text-white" />
-              <IconGPS className="absolute -top-2 -right-2 w-10 h-10 text-rd-lime bg-[#1e2035] rounded-full p-2" />
+              <IconGPS className="absolute -top-2 -right-2 w-10 h-10 text-rd-mint bg-[#1e2035] rounded-full p-2" />
             </div>
           </div>
           <div>
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Drone Mail-In Ticket Management</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Drone Mail-In Ticket Management</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">You&rsquo;ve Got a Mail to Repair!</h2>
             <p className="text-white/80 font-dm-sans text-lg leading-relaxed">
               Track your mail-in drone repair appointments from an integrated calendar right from your ticketing software. Stay on top of schedules with real-time updates and ensure timely service for every repair.
@@ -364,13 +364,13 @@ export default function DroneRepairPage() {
           <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 text-center relative overflow-hidden">
             <div className="pointer-events-none absolute inset-0 opacity-10 flex items-center justify-center">
               <svg width="600" height="600" viewBox="0 0 600 600" fill="none">
-                <circle cx="300" cy="300" r="280" stroke="#D4F479" />
-                <circle cx="300" cy="300" r="200" stroke="#D4F479" />
-                <circle cx="300" cy="300" r="120" stroke="#D4F479" />
+                <circle cx="300" cy="300" r="280" stroke="#457b9d" />
+                <circle cx="300" cy="300" r="200" stroke="#457b9d" />
+                <circle cx="300" cy="300" r="120" stroke="#457b9d" />
               </svg>
             </div>
             <div className="relative">
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You&rsquo;re in Great Company</span>
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You&rsquo;re in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5 max-w-xl mx-auto">
                 When you join RepairHub, you don&rsquo;t just get a software
               </h2>
@@ -380,7 +380,7 @@ export default function DroneRepairPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
                 {companyStats.map((s) => (
                   <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl py-6">
-                    <p className="font-poppins font-bold text-3xl text-rd-lime mb-1">{s.stat}</p>
+                    <p className="font-poppins font-bold text-3xl text-rd-mint mb-1">{s.stat}</p>
                     <p className="text-white/60 font-dm-sans text-sm">{s.label}</p>
                   </div>
                 ))}

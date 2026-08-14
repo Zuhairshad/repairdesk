@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(90deg, #D4F479 0%, #C3EAB3 30.21%);
+  background: linear-gradient(90deg, #457b9d 0%, #7ba8c4 30.21%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

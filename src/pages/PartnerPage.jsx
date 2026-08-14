@@ -148,7 +148,7 @@ export default function PartnerPage() {
         </div>
         <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-14 items-center">
           <div className="text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 bg-rd-lime/15 text-rd-lime text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 font-poppins">
+            <span className="inline-flex items-center gap-2 bg-rd-lime/15 text-rd-mint text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 font-poppins">
               <HandshakeIcon className="w-4 h-4" />
               Partner Program
             </span>
@@ -164,7 +164,7 @@ export default function PartnerPage() {
           {/* Ecosystem diagram */}
           <div className="relative mx-auto w-full max-w-md aspect-square">
             <svg viewBox="0 0 400 400" className="w-full h-full">
-              <g stroke="#D4F479" strokeOpacity="0.35" strokeWidth="1.5">
+              <g stroke="#457b9d" strokeOpacity="0.35" strokeWidth="1.5">
                 <line x1="200" y1="200" x2="200" y2="70" />
                 <line x1="200" y1="200" x2="330" y2="200" />
                 <line x1="200" y1="200" x2="200" y2="330" />
@@ -173,27 +173,27 @@ export default function PartnerPage() {
               {/* Center node */}
               <circle cx="200" cy="200" r="58" fill="#3d405b" />
               <text x="200" y="196" textAnchor="middle" fill="#FFFFFF" fontSize="15" fontWeight="700" fontFamily="Poppins, sans-serif">RepairHub</text>
-              <text x="200" y="214" textAnchor="middle" fill="#C3EAB3" fontSize="10" fontFamily="DM Sans, sans-serif">Ecosystem Core</text>
+              <text x="200" y="214" textAnchor="middle" fill="#7ba8c4" fontSize="10" fontFamily="DM Sans, sans-serif">Ecosystem Core</text>
 
               {/* Satellite: Resellers */}
-              <circle cx="200" cy="70" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
-              <text x="200" y="66" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Resellers</text>
+              <circle cx="200" cy="70" r="42" fill="#1e2035" stroke="#457b9d" strokeOpacity="0.4" />
+              <text x="200" y="66" textAnchor="middle" fill="#457b9d" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Resellers</text>
               <text x="200" y="80" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">Refer &amp; Earn</text>
 
               {/* Satellite: Suppliers */}
-              <circle cx="330" cy="200" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
-              <text x="330" y="196" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Suppliers</text>
+              <circle cx="330" cy="200" r="42" fill="#1e2035" stroke="#457b9d" strokeOpacity="0.4" />
+              <text x="330" y="196" textAnchor="middle" fill="#457b9d" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Suppliers</text>
               <text x="330" y="210" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">OrderSync</text>
 
               {/* Satellite: Affiliates */}
-              <circle cx="200" cy="330" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
-              <text x="200" y="326" textAnchor="middle" fill="#D4F479" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Affiliates</text>
+              <circle cx="200" cy="330" r="42" fill="#1e2035" stroke="#457b9d" strokeOpacity="0.4" />
+              <text x="200" y="326" textAnchor="middle" fill="#457b9d" fontSize="12" fontWeight="700" fontFamily="Poppins, sans-serif">Affiliates</text>
               <text x="200" y="340" textAnchor="middle" fill="#FFFFFF" fontSize="9" fontFamily="DM Sans, sans-serif" opacity="0.7">Train &amp; Refer</text>
 
               {/* Satellite: Repair Shops */}
-              <circle cx="70" cy="200" r="42" fill="#1e2035" stroke="#D4F479" strokeOpacity="0.4" />
-              <text x="70" y="196" textAnchor="middle" fill="#D4F479" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Repair</text>
-              <text x="70" y="210" textAnchor="middle" fill="#D4F479" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Shops</text>
+              <circle cx="70" cy="200" r="42" fill="#1e2035" stroke="#457b9d" strokeOpacity="0.4" />
+              <text x="70" y="196" textAnchor="middle" fill="#457b9d" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Repair</text>
+              <text x="70" y="210" textAnchor="middle" fill="#457b9d" fontSize="11" fontWeight="700" fontFamily="Poppins, sans-serif">Shops</text>
             </svg>
           </div>
         </div>
@@ -231,17 +231,17 @@ export default function PartnerPage() {
             </svg>
 
             <div className="relative z-10 flex flex-col items-center text-center">
-              <span className="inline-flex items-center gap-1.5 bg-rd-lime text-rd-dark text-[11px] font-bold px-3.5 py-1 rounded-full mb-8 font-poppins">
+              <span className="inline-flex items-center gap-1.5 bg-rd-lime text-white text-[11px] font-bold px-3.5 py-1 rounded-full mb-8 font-poppins">
                 <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1l2.755 5.91 6.245.6-4.72 4.316 1.29 6.174L10 15.09l-5.57 2.91 1.29-6.174L.999 7.51l6.245-.6L10 1z" /></svg>
                 Best Rated POS Software
               </span>
 
               <blockquote className="font-poppins text-xl md:text-2xl leading-relaxed text-white max-w-2xl">
-                "At RepairHub, we are committed to providing robust repair shop management and growth solutions for our merchants in <span className="text-rd-lime">over 70 countries</span>. Our vision is to build a next-generation integrated platform that empowers repair shops to save time, earn more and unlock their true potential. We're grateful to everyone who has been part of this journey and are looking forward to building more meaningful partnerships in the coming year. If you're looking to partner with the next disruptor in the repair industry, drop us a line — we'd love to connect and explore potential synergies."
+                "At RepairHub, we are committed to providing robust repair shop management and growth solutions for our merchants in <span className="text-rd-mint">over 70 countries</span>. Our vision is to build a next-generation integrated platform that empowers repair shops to save time, earn more and unlock their true potential. We're grateful to everyone who has been part of this journey and are looking forward to building more meaningful partnerships in the coming year. If you're looking to partner with the next disruptor in the repair industry, drop us a line — we'd love to connect and explore potential synergies."
               </blockquote>
 
               <div className="flex items-center gap-4 mt-9">
-                <div className="w-14 h-14 rounded-full bg-rd-lime/20 border border-rd-lime/40 flex items-center justify-center font-poppins font-bold text-rd-lime text-lg">
+                <div className="w-14 h-14 rounded-full bg-rd-lime/20 border border-rd-lime/40 flex items-center justify-center font-poppins font-bold text-rd-mint text-lg">
                   UB
                 </div>
                 <div className="text-left">
@@ -250,7 +250,7 @@ export default function PartnerPage() {
                 </div>
               </div>
 
-              <Link to="/our-story" className="mt-8 inline-flex items-center gap-2 text-rd-lime font-poppins font-semibold text-sm hover:gap-3 transition-all">
+              <Link to="/our-story" className="mt-8 inline-flex items-center gap-2 text-rd-mint font-poppins font-semibold text-sm hover:gap-3 transition-all">
                 Learn More
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
@@ -296,7 +296,7 @@ export default function PartnerPage() {
         </div>
         <div className="container-main relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <p className="text-xs font-poppins font-bold uppercase tracking-widest text-rd-lime mb-3">OrderSync App</p>
+            <p className="text-xs font-poppins font-bold uppercase tracking-widest text-rd-mint mb-3">OrderSync App</p>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-5">Become an Integrated Supplier!</h2>
             <p className="font-dm-sans text-white/70 leading-relaxed">
               Become your customer's favorite supplier by helping them save up to 20 hrs in inventory management. With RepairHub's OrderSync application integration, customers can import Purchase Order details in just one click, update cost and pricing in their POS, and automatically save SKUs — reducing manual hassle and improving efficiency in their repair shops.
@@ -306,7 +306,7 @@ export default function PartnerPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {orderSyncBenefits.map((b) => (
               <div key={b.title} className="bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur-sm">
-                <div className="w-14 h-14 rounded-2xl bg-rd-lime/15 text-rd-lime flex items-center justify-center mb-5">
+                <div className="w-14 h-14 rounded-2xl bg-rd-lime/15 text-rd-mint flex items-center justify-center mb-5">
                   {b.icon}
                 </div>
                 <h3 className="font-poppins font-bold text-white text-lg mb-2">{b.title}</h3>

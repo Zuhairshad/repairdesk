@@ -169,7 +169,7 @@ function Icon({ name, className }) {
   );
 }
 
-function StarRow({ className = 'text-rd-lime' }) {
+function StarRow({ className = 'text-rd-mint' }) {
   return (
     <div className={`flex gap-0.5 ${className}`}>
       {Array.from({ length: 5 }).map((_, i) => (
@@ -192,7 +192,7 @@ export default function CellPhoneRepairPage() {
         <div className="container-main relative grid grid-cols-1 lg:grid-cols-[1.15fr_1fr] gap-14 items-center">
           {/* Left: copy */}
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               Cell Phone Repair Shop Software
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] leading-tight mb-6">
@@ -205,7 +205,7 @@ export default function CellPhoneRepairPage() {
               {heroBullets.map((b) => (
                 <li key={b} className="flex items-start gap-3">
                   <span className="mt-0.5 w-5 h-5 rounded-full bg-rd-lime/20 flex items-center justify-center shrink-0">
-                    <svg className="w-3 h-3 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <svg className="w-3 h-3 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
@@ -303,7 +303,7 @@ export default function CellPhoneRepairPage() {
       <section className="bg-rd-dark text-white py-20 md:py-24 px-6">
         <div className="container-main grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
           <div>
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-4">The Daily Pressure</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-4">The Daily Pressure</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl leading-tight mb-5">
               A Busy Phone Repair Shop Can Turn Into Chaos Fast
             </h2>
@@ -313,7 +313,7 @@ export default function CellPhoneRepairPage() {
             <div className="bg-white/10 border border-white/10 rounded-2xl p-6 md:p-7">
               <p className="text-white font-dm-sans text-base md:text-lg leading-relaxed">
                 When your workflow cracks under pressure, the gaps get expensive.{' '}
-                <span className="text-rd-lime font-semibold">RepairHub keeps repairs, inventory, and checkout connected</span>, so your shop stays in control.
+                <span className="text-rd-mint font-semibold">RepairHub keeps repairs, inventory, and checkout connected</span>, so your shop stays in control.
               </p>
             </div>
           </div>
@@ -422,7 +422,7 @@ export default function CellPhoneRepairPage() {
       <section className="bg-gradient-to-br from-rd-dark to-[#014a50] py-20 md:py-24 px-6">
         <div className="container-main">
           <div className="text-center mb-12">
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-4">What Repair Shops Say</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-4">What Repair Shops Say</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white max-w-2xl mx-auto">
               Shops Trust RepairHub to Keep Every Repair Moving
             </h2>
@@ -430,7 +430,7 @@ export default function CellPhoneRepairPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {testimonials.map((t) => (
               <div key={t.name} className="bg-white/10 border border-white/10 backdrop-blur-sm rounded-2xl p-7 md:p-8 flex flex-col">
-                <svg className="w-8 h-8 text-rd-lime mb-4" viewBox="0 0 24 24" fill="currentColor">
+                <svg className="w-8 h-8 text-rd-mint mb-4" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M9.5 7C6.5 7 4 9.5 4 12.5S6.5 18 9.5 18h.3c-.6 1.6-2 2.8-3.8 3v2c3.4-.3 6-3.2 6-6.7V12c0-2.8-2.2-5-4.5-5zm9 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5h.3c-.6 1.6-2 2.8-3.8 3v2c3.4-.3 6-3.2 6-6.7V12c0-2.8-2.2-5-4.5-5z" />
                 </svg>
                 <p className="text-white/85 font-dm-sans text-sm md:text-[15px] leading-relaxed italic mb-6 flex-1">
@@ -438,7 +438,7 @@ export default function CellPhoneRepairPage() {
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <div>
-                    <p className="font-poppins font-semibold text-rd-lime text-sm">{t.name}</p>
+                    <p className="font-poppins font-semibold text-rd-mint text-sm">{t.name}</p>
                     <p className="text-white/60 text-xs font-poppins">{t.title}</p>
                   </div>
                   <StarRow />

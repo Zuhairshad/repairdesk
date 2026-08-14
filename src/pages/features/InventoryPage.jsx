@@ -213,7 +213,7 @@ export default function InventoryPage() {
       <section className="bg-rd-dark text-white relative overflow-hidden">
         <div className="container-main py-20 md:py-24 px-6 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center relative z-10">
           <div>
-            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               <IconGauge className="w-3.5 h-3.5" />
               Easy to Manage
             </span>
@@ -261,7 +261,7 @@ export default function InventoryPage() {
                 <div key={s.n} className="relative flex flex-col items-center text-center">
                   <div className="relative w-16 h-16 rounded-2xl bg-rd-teal flex items-center justify-center mb-5 shadow-lg shadow-rd-teal/20 z-10">
                     <s.icon className="w-7 h-7 text-white" />
-                    <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-rd-lime text-rd-dark text-[10px] font-bold font-poppins flex items-center justify-center">{s.n}</span>
+                    <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-rd-lime text-white text-[10px] font-bold font-poppins flex items-center justify-center">{s.n}</span>
                   </div>
                   <h3 className="font-poppins font-semibold text-rd-dark mb-2">{s.title}</h3>
                   <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">{s.desc}</p>
@@ -294,7 +294,7 @@ export default function InventoryPage() {
                 </div>
                 <div className="bg-white/10 rounded-lg px-3 py-2.5">
                   <p className="text-white/40 text-[10px] font-dm-sans uppercase tracking-wide">In Stock</p>
-                  <p className="text-rd-lime font-poppins text-sm font-semibold">22 units</p>
+                  <p className="text-rd-mint font-poppins text-sm font-semibold">22 units</p>
                 </div>
                 <div className="bg-white/10 rounded-lg px-3 py-2.5">
                   <p className="text-white/40 text-[10px] font-dm-sans uppercase tracking-wide">Reorder At</p>
@@ -305,7 +305,7 @@ export default function InventoryPage() {
           </div>
 
           <div className="order-1 lg:order-2">
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Add Inventory Labels</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Add Inventory Labels</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-4">Every Detail, A Barcode Scan Away</h2>
             <p className="text-white/70 font-dm-sans text-lg mb-10 max-w-xl">
               Use inventory labels to organize your stock and manage your inventory without a wrinkle. Scan your inventory items with a barcode reader to instantly pull up all the details you need in your POS terminal.
@@ -314,7 +314,7 @@ export default function InventoryPage() {
               {labelFeatures.map((f) => (
                 <div key={f.title} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-rd-lime/40 transition-colors">
                   <div className="w-9 h-9 rounded-lg bg-rd-lime/20 flex items-center justify-center mb-3">
-                    <f.icon className="w-4.5 h-4.5 text-rd-lime" />
+                    <f.icon className="w-4.5 h-4.5 text-rd-mint" />
                   </div>
                   <h3 className="font-poppins font-semibold text-white text-sm mb-1.5">{f.title}</h3>
                   <p className="text-white/60 font-dm-sans text-xs leading-relaxed">{f.desc}</p>
@@ -385,7 +385,7 @@ export default function InventoryPage() {
             <div className="bg-rd-dark rounded-2xl p-6 md:p-7">
               <div className="flex items-center justify-between mb-5">
                 <p className="font-poppins font-bold text-white text-sm">Multi-Store Stock Board</p>
-                <span className="text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-3 py-1 rounded-full">Live Sync</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-3 py-1 rounded-full">Live Sync</span>
               </div>
               <div className="bg-white rounded-xl p-4">
                 <div className="divide-y divide-gray-100">

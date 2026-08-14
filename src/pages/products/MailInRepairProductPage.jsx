@@ -246,7 +246,7 @@ export default function MailInRepairProductPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
-              <span className="inline-block bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-block bg-rd-lime text-white text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
                 Mail-in Repair Software
               </span>
               <h1 className="font-dm-serif text-3xl md:text-4xl lg:text-5xl leading-tight mb-6">
@@ -255,7 +255,7 @@ export default function MailInRepairProductPage() {
               <ul className="space-y-3 mb-8">
                 {heroBullets.map((bullet) => (
                   <li key={bullet} className="flex items-start gap-3 font-dm-sans text-white/85 text-base md:text-lg leading-relaxed">
-                    <CheckCircleIcon className="w-5 h-5 text-rd-lime flex-shrink-0 mt-0.5" />
+                    <CheckCircleIcon className="w-5 h-5 text-rd-mint flex-shrink-0 mt-0.5" />
                     <span>{bullet}</span>
                   </li>
                 ))}
@@ -271,7 +271,7 @@ export default function MailInRepairProductPage() {
               <div className="flex flex-wrap gap-x-8 gap-y-2">
                 {trustBadges.map((badge) => (
                   <span key={badge} className="font-poppins text-sm text-white/70 flex items-center gap-2">
-                    <CheckCircleIcon className="w-4 h-4 text-rd-lime" />
+                    <CheckCircleIcon className="w-4 h-4 text-rd-mint" />
                     {badge}
                   </span>
                 ))}
@@ -300,7 +300,7 @@ export default function MailInRepairProductPage() {
                 <div className="mt-6 pt-6 border-t border-white/15 space-y-3">
                   <div className="flex items-center justify-between font-dm-sans text-sm text-white/80">
                     <span>Ticket #MR-2291</span>
-                    <span className="bg-rd-lime/20 text-rd-lime text-xs font-poppins font-semibold px-2.5 py-1 rounded-full">In Repair</span>
+                    <span className="bg-rd-lime/20 text-rd-mint text-xs font-poppins font-semibold px-2.5 py-1 rounded-full">In Repair</span>
                   </div>
                   <div className="flex items-center justify-between font-dm-sans text-sm text-white/80">
                     <span>Ticket #MR-2288</span>
@@ -331,7 +331,7 @@ export default function MailInRepairProductPage() {
       <section className="bg-rd-dark py-20 md:py-28">
         <div className="container-main">
           <div className="max-w-2xl mx-auto text-center mb-14">
-            <span className="font-poppins text-sm font-semibold tracking-widest text-rd-lime uppercase">Daily Friction</span>
+            <span className="font-poppins text-sm font-semibold tracking-widest text-rd-mint uppercase">Daily Friction</span>
             <h2 className="font-dm-serif text-3xl md:text-4xl text-white mt-3 mb-4">Mail-in Jobs Get Messy Fast</h2>
             <p className="font-dm-sans text-white/70 text-lg leading-relaxed">
               When every repair update lives in a different place, your team loses time chasing details instead of moving repairs forward.
@@ -340,7 +340,7 @@ export default function MailInRepairProductPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
             {painPoints.map((point, idx) => (
               <div key={point.title} className="bg-rd-dark hover:bg-white/5 transition-colors duration-300 p-7 md:p-8">
-                <div className="font-dm-serif text-3xl text-rd-lime/40 mb-4">{String(idx + 1).padStart(2, '0')}</div>
+                <div className="font-dm-serif text-3xl text-rd-mint/40 mb-4">{String(idx + 1).padStart(2, '0')}</div>
                 <h3 className="font-poppins font-semibold text-white text-base mb-3 leading-snug">{point.title}</h3>
                 <p className="font-dm-sans text-white/60 text-sm leading-relaxed">{point.body}</p>
               </div>

@@ -152,7 +152,7 @@ export default function RepairTicketPage() {
         <div className="absolute -right-16 top-10 w-72 h-72 rounded-full border border-white/10 hidden lg:block" />
         <div className="absolute -right-6 top-32 w-40 h-40 rounded-full border border-dashed border-rd-lime/30 hidden lg:block" />
         <div className="container-main max-w-3xl relative">
-          <div className="inline-flex items-center gap-2 text-rd-lime text-xs font-poppins font-semibold uppercase tracking-widest mb-5">
+          <div className="inline-flex items-center gap-2 text-rd-mint text-xs font-poppins font-semibold uppercase tracking-widest mb-5">
             <IconTicketStub className="w-4 h-4" />
             Repair Ticket Management
           </div>
@@ -192,7 +192,7 @@ export default function RepairTicketPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
                   {saveTimeSteps.slice(rowIdx * 2, rowIdx * 2 + 2).map((f) => (
                     <div key={f.n} className="relative bg-rd-cream rounded-2xl p-7 pt-9 border border-gray-100">
-                      <span className="absolute -top-4 left-7 w-8 h-8 rounded-full bg-rd-dark text-rd-lime text-xs font-poppins font-bold flex items-center justify-center shadow-md">
+                      <span className="absolute -top-4 left-7 w-8 h-8 rounded-full bg-rd-dark text-rd-mint text-xs font-poppins font-bold flex items-center justify-center shadow-md">
                         {f.n}
                       </span>
                       <div className="w-10 h-10 rounded-xl bg-rd-teal/10 flex items-center justify-center mb-4">
@@ -232,7 +232,7 @@ export default function RepairTicketPage() {
                 <div key={f.n} className="relative flex gap-6 pl-0">
                   <div className="relative shrink-0">
                     <div className="w-12 h-12 rounded-full bg-rd-dark flex items-center justify-center text-white relative z-10">
-                      <f.Icon className="w-5 h-5 text-rd-lime" />
+                      <f.Icon className="w-5 h-5 text-rd-mint" />
                     </div>
                   </div>
                   <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex-1">
@@ -252,23 +252,23 @@ export default function RepairTicketPage() {
       {/* Case Study — ticket stub design */}
       <section className="bg-rd-dark text-white py-20 px-6">
         <div className="container-main max-w-3xl mx-auto">
-          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3 text-center">Case Study</span>
+          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3 text-center">Case Study</span>
           <h2 className="font-poppins font-semibold text-2xl md:text-3xl text-center mb-10">
             Peter Haydon of Technology Traders on Repair Ticket Management
           </h2>
           <div className="relative bg-[#0f4548] rounded-2xl border border-white/10 p-8 md:p-10">
             <div className="absolute left-1/2 -top-4 -translate-x-1/2 w-8 h-8 rounded-full bg-rd-dark border border-white/10" />
             <div className="absolute left-1/2 -bottom-4 -translate-x-1/2 w-8 h-8 rounded-full bg-rd-dark border border-white/10" />
-            <IconTicketStub className="w-8 h-8 text-rd-lime mb-5" />
+            <IconTicketStub className="w-8 h-8 text-rd-mint mb-5" />
             <p className="text-white/90 text-xl font-dm-sans italic leading-relaxed mb-6">
               "I think the repair business is the hardest lane of retail. There are so many computers and cell phone models, each one has different kinds of repair problems and we have to master them all. RepairHub helps us a lot in managing all types of repairs and devices."
             </p>
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="font-poppins font-semibold text-rd-lime">Peter Haydon</p>
+                <p className="font-poppins font-semibold text-rd-mint">Peter Haydon</p>
                 <p className="text-white/60 text-sm font-poppins">Technology Traders</p>
               </div>
-              <Link to="/customer-stories" className="text-rd-lime font-poppins font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
+              <Link to="/customer-stories" className="text-rd-mint font-poppins font-semibold text-sm inline-flex items-center gap-1 hover:gap-2 transition-all">
                 Learn More
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
               </Link>
@@ -311,7 +311,7 @@ export default function RepairTicketPage() {
       {/* Increase Efficiency — "M1 Chip" circuit-style feature row */}
       <section className="bg-rd-dark text-white py-20 px-6">
         <div className="container-main">
-          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Increase Efficiency</span>
+          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Increase Efficiency</span>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-4 max-w-2xl">
             The M1 Chip of Repair Shop Softwares
           </h2>
@@ -328,7 +328,7 @@ export default function RepairTicketPage() {
               {chipFeatures.map((f) => (
                 <div key={f.title} className="bg-white/5 rounded-xl p-5 border border-white/10">
                   <div className="w-9 h-9 rounded-lg bg-rd-lime/15 flex items-center justify-center mb-4">
-                    <f.Icon className="w-5 h-5 text-rd-lime" />
+                    <f.Icon className="w-5 h-5 text-rd-mint" />
                   </div>
                   <h4 className="font-poppins font-semibold text-white mb-2 text-sm">{f.title}</h4>
                   <p className="text-white/60 font-dm-sans text-xs leading-relaxed">{f.desc}</p>
@@ -355,7 +355,7 @@ export default function RepairTicketPage() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
               {journeySteps.map((step, i) => (
                 <div key={step.label} className="relative flex flex-col items-center text-center">
-                  <div className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-poppins font-bold text-sm mb-4 ${i === journeySteps.length - 1 ? 'bg-rd-lime text-rd-dark' : 'bg-rd-dark text-rd-lime'}`}>
+                  <div className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-poppins font-bold text-sm mb-4 ${i === journeySteps.length - 1 ? 'bg-rd-lime text-white' : 'bg-rd-dark text-rd-mint'}`}>
                     {i === journeySteps.length - 1 ? (
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     ) : (i + 1)}

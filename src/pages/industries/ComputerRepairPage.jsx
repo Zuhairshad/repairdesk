@@ -155,7 +155,7 @@ export default function ComputerRepairPage() {
         <div className="absolute -left-16 bottom-0 w-72 h-72 rounded-full bg-rd-lime/10 blur-3xl" />
         <div className="container-main relative z-10 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               Computer Repair Shop Software
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
@@ -254,7 +254,7 @@ export default function ComputerRepairPage() {
       <section className="bg-[#1e2035] text-white py-16 md:py-24 px-6">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Repair Tracker</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Repair Tracker</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Track Repair Jobs at your Shop</h2>
             <p className="text-white/70 font-dm-sans text-lg leading-relaxed">
               Track all repairs coming in your shop, items in queue and items that are already repaired. Set up multiple access checks of the items in your store and create invoices with just a click of a button.
@@ -350,7 +350,7 @@ export default function ComputerRepairPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-[0.55fr_0.45fr] gap-12 items-center bg-[#1e2035] rounded-3xl p-8 md:p-14">
             <div>
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Trusted by More Than 3,000+ Repair Stores</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed mb-8">
                 When you join RepairHub, you don't just get a software. You join a community of computer repair shop owners around the world who help you learn and grow your business.
@@ -358,7 +358,7 @@ export default function ComputerRepairPage() {
               <div className="grid grid-cols-3 gap-4">
                 {companyStats.map((s) => (
                   <div key={s.label}>
-                    <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-lime">{s.stat}</p>
+                    <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-mint">{s.stat}</p>
                     <p className="text-white/60 font-dm-sans text-xs">{s.label}</p>
                   </div>
                 ))}

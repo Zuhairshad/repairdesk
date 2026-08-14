@@ -29,22 +29,22 @@ function NetworkMapSVG() {
     <svg viewBox="0 0 400 340" className="w-full max-w-md mx-auto" fill="none">
       {storeEdges.map(([a, b], i) => (
         <line key={i} x1={nodeMap[a].x} y1={nodeMap[a].y} x2={nodeMap[b].x} y2={nodeMap[b].y}
-          stroke="#D4F479" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.5" />
+          stroke="#457b9d" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.5" />
       ))}
       {storeEdges.map(([a, b], i) => {
         const na = nodeMap[a], nb = nodeMap[b];
         const mx = (na.x + nb.x) / 2, my = (na.y + nb.y) / 2;
-        return <circle key={`pulse-${i}`} cx={mx} cy={my} r="3" fill="#D4F479" opacity="0.7">
+        return <circle key={`pulse-${i}`} cx={mx} cy={my} r="3" fill="#457b9d" opacity="0.7">
           <animate attributeName="r" values="2;5;2" dur={`${2 + i * 0.4}s`} repeatCount="indefinite" />
           <animate attributeName="opacity" values="0.8;0.2;0.8" dur={`${2 + i * 0.4}s`} repeatCount="indefinite" />
         </circle>;
       })}
       {storeNodes.map(n => (
         <g key={n.id}>
-          <circle cx={n.x} cy={n.y} r={n.size + 6} fill="#D4F479" opacity="0.1">
+          <circle cx={n.x} cy={n.y} r={n.size + 6} fill="#457b9d" opacity="0.1">
             <animate attributeName="r" values={`${n.size + 4};${n.size + 10};${n.size + 4}`} dur="3s" repeatCount="indefinite" />
           </circle>
-          <circle cx={n.x} cy={n.y} r={n.size} fill={n.id === 'hq' ? '#D4F479' : '#fff'} stroke="#3d405b" strokeWidth="2.5" />
+          <circle cx={n.x} cy={n.y} r={n.size} fill={n.id === 'hq' ? '#457b9d' : '#fff'} stroke="#3d405b" strokeWidth="2.5" />
           {n.id === 'hq' && (
             <svg x={n.x - 9} y={n.y - 9} width="18" height="18" viewBox="0 0 24 24" fill="#3d405b" stroke="none">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#3d405b" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -67,20 +67,20 @@ function TransferFlowSVG() {
     <svg viewBox="0 0 600 120" className="w-full" fill="none">
       <rect x="10" y="25" width="140" height="70" rx="16" fill="#3d405b" />
       <text x="80" y="55" textAnchor="middle" fill="#fff" className="text-[13px] font-semibold">Store A</text>
-      <text x="80" y="75" textAnchor="middle" fill="#D4F479" className="text-[10px]">50 × iPhone Screens</text>
+      <text x="80" y="75" textAnchor="middle" fill="#457b9d" className="text-[10px]">50 × iPhone Screens</text>
       <rect x="450" y="25" width="140" height="70" rx="16" fill="#3d405b" />
       <text x="520" y="55" textAnchor="middle" fill="#fff" className="text-[13px] font-semibold">Store B</text>
-      <text x="520" y="75" textAnchor="middle" fill="#D4F479" className="text-[10px]">Needs restock</text>
-      <line x1="155" y1="60" x2="445" y2="60" stroke="#D4F479" strokeWidth="2" strokeDasharray="8 5" />
-      <circle r="6" fill="#D4F479">
+      <text x="520" y="75" textAnchor="middle" fill="#457b9d" className="text-[10px]">Needs restock</text>
+      <line x1="155" y1="60" x2="445" y2="60" stroke="#457b9d" strokeWidth="2" strokeDasharray="8 5" />
+      <circle r="6" fill="#457b9d">
         <animateMotion dur="2.5s" repeatCount="indefinite" path="M155,60 L445,60" />
       </circle>
-      <circle r="4" fill="#D4F479" opacity="0.5">
+      <circle r="4" fill="#457b9d" opacity="0.5">
         <animateMotion dur="2.5s" repeatCount="indefinite" begin="0.6s" path="M155,60 L445,60" />
       </circle>
       <rect x="250" y="30" width="100" height="30" rx="8" fill="#1e2035" />
-      <text x="300" y="50" textAnchor="middle" fill="#D4F479" className="text-[10px] font-bold">TRANSFER</text>
-      <polygon points="440,52 450,60 440,68" fill="#D4F479" />
+      <text x="300" y="50" textAnchor="middle" fill="#457b9d" className="text-[10px] font-bold">TRANSFER</text>
+      <polygon points="440,52 450,60 440,68" fill="#457b9d" />
     </svg>
   );
 }
@@ -98,15 +98,15 @@ export default function MultiLocationPage() {
     <PageLayout>
       {/* Hero — Network Map */}
       <section className="relative bg-rd-dark overflow-hidden py-20 md:py-28 px-6">
-        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:'radial-gradient(circle, #D4F479 1px, transparent 1px)', backgroundSize:'32px 32px'}} />
+        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:'radial-gradient(circle, #457b9d 1px, transparent 1px)', backgroundSize:'32px 32px'}} />
         <div className="container-main relative z-10 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-rd-lime animate-pulse" />
-              <span className="text-rd-lime font-dm-sans text-xs font-semibold tracking-wide uppercase">Multi-Location Management</span>
+              <span className="text-rd-mint font-dm-sans text-xs font-semibold tracking-wide uppercase">Multi-Location Management</span>
             </div>
             <h1 className="font-poppins font-bold text-4xl md:text-[3.25rem] leading-[1.12] text-white mb-5">
-              Your Entire Repair Network, <span className="text-rd-lime">One Command Center</span>
+              Your Entire Repair Network, <span className="text-rd-mint">One Command Center</span>
             </h1>
             <p className="font-dm-sans text-white/70 text-lg leading-relaxed mb-8 max-w-lg">
               Connect every store location into a single operating system. See live metrics, move inventory, manage staff, and compare performance — without switching tabs.
@@ -136,12 +136,12 @@ export default function MultiLocationPage() {
             {/* Top bar */}
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="flex gap-1.5"><span className="w-3 h-3 rounded-full bg-red-400" /><span className="w-3 h-3 rounded-full bg-yellow-400" /><span className="w-3 h-3 rounded-full bg-green-400" /></div>
+                <div className="flex gap-1.5"><span className="w-3 h-3 rounded-full bg-red-400" /><span className="w-3 h-3 rounded-full bg-yellow-400" /><span className="w-3 h-3 rounded-full bg-blue-400" /></div>
                 <span className="text-white/40 font-dm-sans text-xs ml-2">RepairHub — All Locations</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-green-400" />
-                <span className="text-green-400 text-xs font-dm-sans font-semibold">4 stores online</span>
+                <span className="w-2 h-2 rounded-full bg-blue-400" />
+                <span className="text-blue-400 text-xs font-dm-sans font-semibold">4 stores online</span>
               </div>
             </div>
             {/* Stat row */}
@@ -154,12 +154,12 @@ export default function MultiLocationPage() {
               ].map(s => (
                 <div key={s.label} className="bg-white/5 rounded-2xl p-4">
                   <div className="flex items-center gap-2 mb-2">
-                    <svg className="w-4 h-4 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d={s.icon} /></svg>
+                    <svg className="w-4 h-4 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d={s.icon} /></svg>
                     <span className="text-white/50 font-dm-sans text-[11px] uppercase tracking-wide">{s.label}</span>
                   </div>
                   <div className="flex items-end gap-2">
                     <span className="text-white font-poppins font-bold text-xl">{s.value}</span>
-                    <span className={`text-xs font-dm-sans font-semibold ${s.delta.startsWith('+') ? 'text-green-400' : 'text-blue-400'}`}>{s.delta}</span>
+                    <span className={`text-xs font-dm-sans font-semibold ${s.delta.startsWith('+') ? 'text-blue-400' : 'text-blue-400'}`}>{s.delta}</span>
                   </div>
                 </div>
               ))}
@@ -218,7 +218,7 @@ export default function MultiLocationPage() {
       <section className="bg-rd-dark py-20 px-6">
         <div className="container-main">
           <div className="text-center mb-14">
-            <span className="text-rd-lime font-dm-sans text-sm font-bold uppercase tracking-wider">Location Intelligence</span>
+            <span className="text-rd-mint font-dm-sans text-sm font-bold uppercase tracking-wider">Location Intelligence</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mt-2">Every Store Has Its Own Pulse</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -230,7 +230,7 @@ export default function MultiLocationPage() {
                   </div>
                   <div>
                     <h3 className="font-poppins font-semibold text-white text-sm">{loc.name}</h3>
-                    <span className="text-rd-lime font-dm-sans text-xs font-semibold">{loc.trend} this month</span>
+                    <span className="text-rd-mint font-dm-sans text-xs font-semibold">{loc.trend} this month</span>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -251,7 +251,7 @@ export default function MultiLocationPage() {
                   </div>
                 </div>
                 {/* Decorative corner */}
-                <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-green-400 shadow-[0_0_6px_rgba(74,222,128,0.5)]" />
+                <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_6px_rgba(74,222,128,0.5)]" />
               </div>
             ))}
           </div>
@@ -290,7 +290,7 @@ export default function MultiLocationPage() {
                       <td key={vi} className="py-3 px-4 text-center">
                         <span className={vi === row.best ? 'text-rd-teal font-bold' : 'text-gray-600'}>{v}</span>
                         {vi === row.best && (
-                          <svg className="w-3.5 h-3.5 text-rd-lime inline ml-1 -mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+                          <svg className="w-3.5 h-3.5 text-rd-mint inline ml-1 -mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
                         )}
                       </td>
                     ))}
@@ -340,14 +340,14 @@ export default function MultiLocationPage() {
                   const cy = 160 + dot.ring * Math.sin(rad);
                   return (
                     <g key={i}>
-                      <line x1="160" y1="160" x2={cx} y2={cy} stroke="#D4F479" strokeWidth="0.5" opacity="0.3" />
-                      <circle cx={cx} cy={cy} r="6" fill="#3d405b" stroke="#D4F479" strokeWidth="1.5" />
+                      <line x1="160" y1="160" x2={cx} y2={cy} stroke="#457b9d" strokeWidth="0.5" opacity="0.3" />
+                      <circle cx={cx} cy={cy} r="6" fill="#3d405b" stroke="#457b9d" strokeWidth="1.5" />
                     </g>
                   );
                 })}
                 {/* Center HQ */}
-                <circle cx="160" cy="160" r="22" fill="#3d405b" stroke="#D4F479" strokeWidth="2" />
-                <text x="160" y="164" textAnchor="middle" fill="#D4F479" className="text-[11px] font-bold">HQ</text>
+                <circle cx="160" cy="160" r="22" fill="#3d405b" stroke="#457b9d" strokeWidth="2" />
+                <text x="160" y="164" textAnchor="middle" fill="#457b9d" className="text-[11px] font-bold">HQ</text>
               </svg>
             </div>
           </div>

@@ -75,9 +75,9 @@ const icons = {
 function IconBadge({ children, tone = 'teal' }) {
   const toneClasses =
     tone === 'lime'
-      ? 'bg-rd-lime text-rd-dark'
+      ? 'bg-rd-lime text-white'
       : tone === 'white5'
-      ? 'bg-white/10 text-rd-lime group-hover:bg-rd-lime group-hover:text-rd-dark'
+      ? 'bg-white/10 text-rd-mint group-hover:bg-rd-lime group-hover:text-white'
       : 'bg-rd-teal/10 text-rd-teal group-hover:bg-rd-teal group-hover:text-white';
   return (
     <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-4 transition-colors ${toneClasses}`}>
@@ -212,10 +212,10 @@ export default function CameraRepairPage() {
       {/* HERO — dark room / aperture theme */}
       <section className="bg-rd-dark text-white pt-20 pb-28 px-6 relative overflow-hidden">
         <ApertureGraphic className="absolute -right-16 -top-10 w-[420px] h-[420px] text-rd-teal hidden md:block" />
-        <ApertureGraphic className="absolute -left-24 bottom-[-140px] w-72 h-72 text-rd-lime opacity-60 hidden lg:block" />
+        <ApertureGraphic className="absolute -left-24 bottom-[-140px] w-72 h-72 text-rd-mint opacity-60 hidden lg:block" />
         <div className="container-main relative z-10">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>{icons.lens}</svg>
               Camera Repair Shop Software
             </span>
@@ -229,7 +229,7 @@ export default function CameraRepairPage() {
               Create top-notch repair estimates and receipts for a full-fledged invoice solution. Impressing your customers is that easy!
             </p>
             <p className="text-white/80 text-lg font-dm-sans leading-relaxed mb-8">
-              Don't just record, chart your repair shop's growth with detailed breakdowns. Integrate with <span className="text-rd-lime font-semibold">PayPal</span>, and <span className="text-rd-lime font-semibold">RepairHub</span> payments for smooth financial operations.
+              Don't just record, chart your repair shop's growth with detailed breakdowns. Integrate with <span className="text-rd-mint font-semibold">PayPal</span>, and <span className="text-rd-mint font-semibold">RepairHub</span> payments for smooth financial operations.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="btn-primary px-8 py-3.5">Request a Demo</Link>
@@ -262,7 +262,7 @@ export default function CameraRepairPage() {
         <div className="container-main relative z-10">
           <FilmStrip className="mb-12 overflow-hidden" />
           <div className="max-w-2xl mb-12">
-            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Repair Management</span>
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Repair Management</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5">Ace All Repair Jobs Effortlessly!</h2>
             <p className="text-white/70 font-dm-sans text-lg leading-relaxed">
               Say goodbye to paperwork and spreadsheets. RepairHub helps you manage every step of the repair process transparently—from intake to delivery. Whether it's creating and assigning tickets, or collecting order notes and images, we're with you every step of the way.
@@ -330,9 +330,9 @@ export default function CameraRepairPage() {
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="container-main">
           <div className="bg-rd-dark rounded-3xl p-8 md:p-14 relative overflow-hidden">
-            <ApertureGraphic className="absolute -right-10 -top-10 w-64 h-64 text-rd-lime opacity-20" />
+            <ApertureGraphic className="absolute -right-10 -top-10 w-64 h-64 text-rd-mint opacity-20" />
             <div className="relative z-10 max-w-2xl mb-10">
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-4">You're in Great Company</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
                 When you join RepairHub, you don't just get a POS system built for camera repair shops, but a global community of repair business owners who help you grow and understand your business better.
@@ -341,7 +341,7 @@ export default function CameraRepairPage() {
             <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6">
               {stats.map((s) => (
                 <div key={s.label}>
-                  <p className="font-poppins font-bold text-3xl md:text-4xl text-rd-lime">{s.value}</p>
+                  <p className="font-poppins font-bold text-3xl md:text-4xl text-rd-mint">{s.value}</p>
                   <p className="text-white/60 font-dm-sans text-xs md:text-sm mt-1">{s.label}</p>
                 </div>
               ))}

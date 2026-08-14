@@ -158,7 +158,7 @@ export default function ReportingPage() {
 
         <div className="relative container-main max-w-6xl">
           <div className="text-center mb-14">
-            <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-rd-lime/15 text-rd-lime px-4 py-1.5 rounded-full mb-6 font-poppins">
+            <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-rd-lime/15 text-rd-mint px-4 py-1.5 rounded-full mb-6 font-poppins">
               <IconBar className="w-3.5 h-3.5" /> Reporting &amp; Analytics
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] text-white leading-tight mb-5">
@@ -179,7 +179,7 @@ export default function ReportingPage() {
                   <span className="text-white/20">{k.icon && React.cloneElement(k.icon, { className: 'w-4 h-4' })}</span>
                 </div>
                 <p className="text-white font-poppins font-bold text-xl">{k.value}</p>
-                <span className={`text-xs font-dm-sans font-semibold ${k.up ? 'text-rd-lime' : 'text-red-400'}`}>{k.change}</span>
+                <span className={`text-xs font-dm-sans font-semibold ${k.up ? 'text-rd-mint' : 'text-red-400'}`}>{k.change}</span>
               </div>
             ))}
             {/* Mini bar chart */}
@@ -234,7 +234,7 @@ export default function ReportingPage() {
                   <div className="w-12 h-12 rounded-xl bg-rd-teal/10 flex items-center justify-center mx-auto mb-3 text-rd-teal">{k.icon}</div>
                   <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark">{k.value}</p>
                   <p className="text-gray-500 font-dm-sans text-sm mt-1">{k.label}</p>
-                  <span className={`inline-block mt-2 text-xs font-dm-sans font-bold px-2 py-0.5 rounded-full ${k.up ? 'bg-green-50 text-green-600' : 'bg-red-50 text-red-500'}`}>{k.change} this month</span>
+                  <span className={`inline-block mt-2 text-xs font-dm-sans font-bold px-2 py-0.5 rounded-full ${k.up ? 'bg-blue-50 text-[#457b9d]' : 'bg-red-50 text-red-500'}`}>{k.change} this month</span>
                 </div>
               </div>
             ))}
@@ -256,7 +256,7 @@ export default function ReportingPage() {
             <div className="bg-gray-100 border-b border-gray-200 px-4 py-3 flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-red-400" />
               <span className="w-3 h-3 rounded-full bg-yellow-400" />
-              <span className="w-3 h-3 rounded-full bg-green-400" />
+              <span className="w-3 h-3 rounded-full bg-blue-400" />
               <span className="ml-4 text-xs text-gray-400 font-dm-sans bg-white rounded px-3 py-1 flex-1 max-w-xs truncate">app.repairhub.co/reports/{activeTab}</span>
             </div>
             {/* Tabs */}
@@ -388,8 +388,8 @@ export default function ReportingPage() {
       <section className="bg-gradient-to-br from-rd-dark to-[#013a3f] py-20 px-6 text-white">
         <div className="container-main max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 mb-6">
-            <IconDownload className="w-4 h-4 text-rd-lime" />
-            <span className="text-xs font-poppins font-semibold tracking-wide text-rd-lime uppercase">Export Anywhere</span>
+            <IconDownload className="w-4 h-4 text-rd-mint" />
+            <span className="text-xs font-poppins font-semibold tracking-wide text-rd-mint uppercase">Export Anywhere</span>
           </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-4">One Click. Any Format.</h2>
           <p className="text-white/60 font-dm-sans text-lg max-w-xl mx-auto mb-12">Download any report instantly or schedule automatic exports to your inbox. Your accountant will thank you.</p>
@@ -455,7 +455,7 @@ export default function ReportingPage() {
                       <span className="text-gray-400">Tickets: <span className="text-rd-dark font-semibold">{s.tickets}</span></span>
                       <span className="text-gray-400">Rating: <span className="text-rd-dark font-semibold">{s.rating}</span></span>
                     </div>
-                    <div className="flex items-center gap-1 text-green-600 text-xs font-dm-sans font-semibold">
+                    <div className="flex items-center gap-1 text-[#457b9d] text-xs font-dm-sans font-semibold">
                       <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" /></svg>
                       {s.trend} vs last month
                     </div>

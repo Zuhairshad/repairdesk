@@ -107,7 +107,7 @@ const benefits = [
     title: 'Dominate Search Results',
     description: 'Amplify your visibility and bolster your online presence by becoming the highest-rated repair shop in your area.',
     icon: <SearchIcon className="w-7 h-7" />,
-    accent: 'bg-rd-lime text-rd-dark',
+    accent: 'bg-rd-lime text-white',
   },
   {
     title: 'Drive New Business',
@@ -173,7 +173,7 @@ export default function GoogleReviewsPage() {
             {/* Left: copy */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="inline-flex items-center gap-1.5 bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full">
+                <span className="inline-flex items-center gap-1.5 bg-rd-lime text-white text-sm font-semibold font-poppins px-4 py-1.5 rounded-full">
                   <StarIcon className="w-3.5 h-3.5" />
                   Google Reviews
                 </span>
@@ -245,14 +245,14 @@ export default function GoogleReviewsPage() {
 
                 <div className="flex items-center justify-between bg-rd-dark text-white rounded-xl px-4 py-3">
                   <span className="font-dm-sans text-xs">This month</span>
-                  <span className="flex items-center gap-1.5 font-poppins font-semibold text-sm text-rd-lime">
+                  <span className="flex items-center gap-1.5 font-poppins font-semibold text-sm text-rd-mint">
                     <TrendUpIcon className="w-4 h-4" />
                     +30 new reviews
                   </span>
                 </div>
               </div>
 
-              <div className="hidden md:flex absolute -right-6 top-6 bg-rd-lime text-rd-dark rounded-2xl shadow-xl px-4 py-3 items-center gap-2">
+              <div className="hidden md:flex absolute -right-6 top-6 bg-rd-lime text-white rounded-2xl shadow-xl px-4 py-3 items-center gap-2">
                 <ChatIcon className="w-5 h-5" />
                 <span className="font-poppins text-xs font-semibold">Review request sent</span>
               </div>
@@ -265,7 +265,7 @@ export default function GoogleReviewsPage() {
       <section className="bg-rd-cream py-20 md:py-28">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
-            <span className="inline-block bg-rd-lime text-rd-dark text-xs font-bold font-poppins px-4 py-1.5 rounded-full uppercase tracking-wide mb-5">
+            <span className="inline-block bg-rd-lime text-white text-xs font-bold font-poppins px-4 py-1.5 rounded-full uppercase tracking-wide mb-5">
               Case Study
             </span>
             <h2 className="font-dm-serif text-3xl md:text-4xl text-rd-dark leading-snug mb-5">
@@ -358,7 +358,7 @@ export default function GoogleReviewsPage() {
             {automationSteps.map((s) => (
               <div key={s.step} className="relative bg-rd-cream rounded-2xl p-8 pt-9">
                 <div className="flex items-center gap-4 mb-5">
-                  <div className="w-14 h-14 shrink-0 bg-rd-dark text-rd-lime rounded-xl flex items-center justify-center">
+                  <div className="w-14 h-14 shrink-0 bg-rd-dark text-rd-mint rounded-xl flex items-center justify-center">
                     {s.icon}
                   </div>
                   <span className="font-dm-serif text-3xl text-gray-300">{s.step}</span>

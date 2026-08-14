@@ -88,7 +88,7 @@ function FaqRow({ item, isOpen, onToggle }) {
         onClick={onToggle}
         className="w-full flex items-center gap-4 px-6 py-5 text-left"
       >
-        <span className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-poppins font-bold text-sm transition-colors ${isOpen ? 'bg-rd-lime text-rd-dark' : 'bg-rd-dark/5 text-rd-dark'}`}>
+        <span className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-poppins font-bold text-sm transition-colors ${isOpen ? 'bg-rd-lime text-white' : 'bg-rd-dark/5 text-rd-dark'}`}>
           {isOpen ? '−' : '+'}
         </span>
         <span className="flex-1 font-poppins font-semibold text-rd-dark text-base">{item.q}</span>
@@ -165,12 +165,12 @@ export default function ReferAFriendPage() {
         <div className="pointer-events-none absolute -bottom-32 -left-16 w-80 h-80 rounded-full bg-rd-lime/10 blur-3xl" />
         <div className="container-main relative grid grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-12 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l1.5 4.5H18l-3.5 3 1.5 4.5-4-2.8L8 14l1.5-4.5L6 6.5h4.5z" /></svg>
               Limited Time Offer
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] mb-6">
-              Share the Love &amp; Earn Up to <span className="text-rd-lime">$250</span>
+              Share the Love &amp; Earn Up to <span className="text-rd-mint">$250</span>
             </h1>
             <p className="text-white/75 text-lg font-dm-sans leading-relaxed mb-8 max-w-xl">
               Invite a repair store owner to RepairHub and get $250 in Paypal for every successful referral subscription. Make as many referrals as you like and enjoy the rewards.
@@ -188,7 +188,7 @@ export default function ReferAFriendPage() {
               <span className="font-dm-sans text-rd-dark/70 text-xs mt-1 tracking-wide">per referral</span>
             </div>
             <div className="absolute -top-3 -left-3 w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center rotate-[-12deg]">
-              <svg className="w-7 h-7 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+              <svg className="w-7 h-7 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-12 0v-2.513c0-.933.646-1.756 1.577-1.887A32.79 32.79 0 0112 8.25m-6 4.871v3.998c0 .576.47 1.043 1.048 1.06.9.026 1.799.04 2.702.04h.5m1.75 4.5v-4.5m0 0h4.5m-4.5 0v-3" />
               </svg>
             </div>
@@ -233,7 +233,7 @@ export default function ReferAFriendPage() {
             <div className="hidden md:block absolute top-9 left-[16.5%] right-[16.5%] border-t-2 border-dashed border-rd-teal/25" />
             {steps.map((step) => (
               <div key={step.number} className="relative bg-rd-cream rounded-2xl p-7 pt-10 text-center">
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-rd-dark text-rd-lime flex items-center justify-center font-poppins font-bold border-4 border-white">
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-rd-dark text-rd-mint flex items-center justify-center font-poppins font-bold border-4 border-white">
                   {step.number}
                 </div>
                 <div className="w-14 h-14 rounded-2xl bg-rd-teal/10 text-rd-teal flex items-center justify-center mx-auto mb-4">

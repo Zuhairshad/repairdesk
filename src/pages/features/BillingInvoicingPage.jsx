@@ -43,13 +43,13 @@ export default function BillingInvoicingPage() {
         <div className="container-main relative z-10 grid lg:grid-cols-2 gap-12 items-center">
           {/* Left copy */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/30 text-rd-lime text-xs font-poppins font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/30 text-rd-mint text-xs font-poppins font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 8v2" /></svg>
               Billing &amp; Invoicing
             </div>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] text-white leading-[1.12] mb-6">
               From repair ticket<br className="hidden md:block" /> to&nbsp;
-              <span className="text-rd-lime">paid invoice</span><br className="hidden md:block" /> in seconds
+              <span className="text-rd-mint">paid invoice</span><br className="hidden md:block" /> in seconds
             </h1>
             <p className="font-dm-sans text-white/70 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
               Generate invoices automatically, email payment links, collect deposits, and sync every dollar with QuickBooks or Xero — no spreadsheets, no double entry.
@@ -69,7 +69,7 @@ export default function BillingInvoicingPage() {
                   <div className="text-white/60 text-[10px] font-poppins uppercase tracking-widest">Invoice</div>
                   <div className="text-white font-poppins font-bold text-lg">#INV-4827</div>
                 </div>
-                <span className="bg-rd-lime text-rd-dark text-[10px] font-poppins font-bold uppercase px-3 py-1 rounded-full">Paid</span>
+                <span className="bg-rd-lime text-white text-[10px] font-poppins font-bold uppercase px-3 py-1 rounded-full">Paid</span>
               </div>
               {/* Line items */}
               <div className="px-6 pt-5 pb-3 space-y-3">
@@ -91,7 +91,7 @@ export default function BillingInvoicingPage() {
               <div className="mx-6 border-t border-dashed border-gray-200 pt-3 pb-2 space-y-1.5">
                 <div className="flex justify-between text-rd-dark/60 text-xs"><span>Subtotal</span><span>$189.98</span></div>
                 <div className="flex justify-between text-rd-dark/60 text-xs"><span>Tax (8.25%)</span><span>$15.67</span></div>
-                <div className="flex justify-between text-rd-dark/60 text-xs"><span>Deposit Paid</span><span className="text-green-600">-$50.00</span></div>
+                <div className="flex justify-between text-rd-dark/60 text-xs"><span>Deposit Paid</span><span className="text-[#457b9d]">-$50.00</span></div>
               </div>
               <div className="mx-6 border-t-2 border-rd-dark pt-3 pb-5 flex justify-between items-center">
                 <span className="font-poppins font-bold text-rd-dark">Total Due</span>
@@ -100,17 +100,17 @@ export default function BillingInvoicingPage() {
               {/* Payment link bar */}
               <div className="bg-gray-50 px-6 py-3 flex items-center justify-between">
                 <span className="text-[11px] text-rd-dark/50">Payment link sent via email</span>
-                <svg className="w-4 h-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                <svg className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
               </div>
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-4 -left-2 lg:left-4 bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-3 border border-gray-100">
-              <div className="w-9 h-9 rounded-full bg-green-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center">
+                <svg className="w-5 h-5 text-[#457b9d]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <div>
                 <div className="text-rd-dark font-poppins font-semibold text-sm">Payment Received</div>
-                <div className="text-green-600 text-xs font-dm-sans">$155.65 via Stripe</div>
+                <div className="text-[#457b9d] text-xs font-dm-sans">$155.65 via Stripe</div>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function BillingInvoicingPage() {
                   'Customer payment history and trends',
                 ].map(item => (
                   <li key={item} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-rd-lime mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <svg className="w-5 h-5 text-rd-mint mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     <span className="font-dm-sans text-white/80 text-sm">{item}</span>
                   </li>
                 ))}
@@ -284,9 +284,9 @@ export default function BillingInvoicingPage() {
               {/* Top stat row */}
               <div className="grid grid-cols-3 gap-3 mb-6">
                 {[
-                  { label: 'Collected', value: '$24,380', change: '+12%', color: 'text-green-400' },
+                  { label: 'Collected', value: '$24,380', change: '+12%', color: 'text-blue-400' },
                   { label: 'Outstanding', value: '$3,120', change: '8 invoices', color: 'text-amber-400' },
-                  { label: 'This Month', value: '$27,500', change: '+18% vs last', color: 'text-rd-lime' },
+                  { label: 'This Month', value: '$27,500', change: '+18% vs last', color: 'text-rd-mint' },
                 ].map(stat => (
                   <div key={stat.label} className="bg-white/5 rounded-xl p-3">
                     <div className="text-white/40 text-[10px] font-poppins uppercase tracking-wider mb-1">{stat.label}</div>

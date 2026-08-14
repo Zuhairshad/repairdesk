@@ -130,7 +130,7 @@ export default function WebinarPage() {
         <div className="container-main grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
           {/* Left: copy */}
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               Webinars
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
@@ -149,7 +149,7 @@ export default function WebinarPage() {
             <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-gradient-to-br from-[#1e2035] to-[#3d405b]">
               {/* "screen" area */}
               <div className="relative aspect-video flex items-center justify-center bg-[radial-gradient(circle_at_center,rgba(212,244,121,0.15),transparent_60%)]">
-                <span className="absolute top-4 left-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-black/40 text-rd-lime px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest bg-black/40 text-rd-mint px-3 py-1 rounded-full">
                   <span className="w-1.5 h-1.5 rounded-full bg-rd-lime inline-block" />
                   On-Demand
                 </span>
@@ -277,7 +277,7 @@ export default function WebinarPage() {
       {/* About RepairHub */}
       <section className="bg-[#FAF9E3] py-16 px-6">
         <div className="container-main grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8 items-center">
-          <div className="w-16 h-16 rounded-2xl bg-rd-dark text-rd-lime flex items-center justify-center shrink-0">
+          <div className="w-16 h-16 rounded-2xl bg-rd-dark text-rd-mint flex items-center justify-center shrink-0">
             <ScreenIcon className="w-8 h-8" />
           </div>
           <p className="text-rd-dark font-dm-sans text-base md:text-lg leading-relaxed">
@@ -289,7 +289,7 @@ export default function WebinarPage() {
       {/* Closing CTA */}
       <section className="bg-rd-dark text-white py-16 px-6">
         <div className="container-main text-center max-w-2xl">
-          <div className="w-14 h-14 rounded-full bg-rd-lime text-rd-dark flex items-center justify-center mx-auto mb-6">
+          <div className="w-14 h-14 rounded-full bg-rd-lime text-white flex items-center justify-center mx-auto mb-6">
             <PlayIcon className="w-6 h-6" />
           </div>
           <h2 className="font-poppins font-bold text-2xl md:text-3xl mb-4">Start Your Free Trial Now</h2>

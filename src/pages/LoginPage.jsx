@@ -129,8 +129,8 @@ export default function LoginPage() {
 
             {/* Feature label + REVAMPED badge */}
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-rd-lime font-poppins font-bold text-sm tracking-wider uppercase">Inventory Transfer</span>
-              <span className="bg-rd-lime/20 text-rd-lime text-[10px] font-poppins font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full">
+              <span className="text-rd-mint font-poppins font-bold text-sm tracking-wider uppercase">Inventory Transfer</span>
+              <span className="bg-rd-lime/20 text-rd-mint text-[10px] font-poppins font-bold tracking-wider uppercase px-2.5 py-0.5 rounded-full">
                 Revamped
               </span>
             </div>
@@ -148,7 +148,7 @@ export default function LoginPage() {
             {/* CTA text */}
             <p className="text-white font-poppins font-semibold text-lg mb-6">
               Send, request &amp; receive stock with<br />
-              RepairHub <span className="text-rd-lime">Inventory Transfer</span>
+              RepairHub <span className="text-rd-mint">Inventory Transfer</span>
             </p>
 
             {/* Feature pills */}

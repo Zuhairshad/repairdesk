@@ -217,7 +217,7 @@ export default function RepairHubSMSPage() {
             <div className="bg-rd-cream border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
               <div className="flex items-center justify-between bg-white px-5 py-3 border-b border-gray-100">
                 <span className="font-poppins font-semibold text-sm text-rd-dark">Template Editor</span>
-                <span className="text-[10px] bg-green-100 text-green-700 font-dm-sans font-semibold px-2.5 py-0.5 rounded-full">Active</span>
+                <span className="text-[10px] bg-blue-100 text-blue-700 font-dm-sans font-semibold px-2.5 py-0.5 rounded-full">Active</span>
               </div>
               <div className="px-5 py-4 space-y-3">
                 <div>
@@ -261,7 +261,7 @@ export default function RepairHubSMSPage() {
                       <p className="text-gray-400 text-[10px] font-dm-sans">Ticket #4821 &middot; iPhone 14</p>
                     </div>
                   </div>
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400" title="Active" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-400" title="Active" />
                 </div>
                 <div className="px-4 py-4 space-y-3 bg-gray-50/50">
                   {[

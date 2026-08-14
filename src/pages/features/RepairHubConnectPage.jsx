@@ -20,12 +20,12 @@ export default function RepairHubConnectPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="inline-block bg-rd-lime/20 text-rd-lime text-xs font-bold font-poppins px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+              <span className="inline-block bg-rd-lime/20 text-rd-mint text-xs font-bold font-poppins px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
                 Unified Communications
               </span>
               <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
                 Every message.<br />Every channel.<br />
-                <span className="text-rd-lime">One&nbsp;inbox.</span>
+                <span className="text-rd-mint">One&nbsp;inbox.</span>
               </h1>
               <p className="font-dm-sans text-lg text-white/75 leading-relaxed mb-10 max-w-lg">
                 RepairHub Connect brings SMS, email, and internal team chat into a single threaded conversation view — so no customer message falls through the cracks.
@@ -297,7 +297,7 @@ export default function RepairHubConnectPage() {
                 ].map(f => (
                   <div key={f.title} className="flex gap-4 items-start">
                     <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                      <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d={f.icon} /></svg>
+                      <svg className="w-5 h-5 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d={f.icon} /></svg>
                     </div>
                     <div>
                       <h4 className="font-poppins font-semibold text-sm mb-1">{f.title}</h4>
@@ -330,7 +330,7 @@ export default function RepairHubConnectPage() {
                 <div className="w-7 h-7 rounded-full bg-purple-500 flex items-center justify-center shrink-0"><span className="text-[10px] text-white font-bold">RV</span></div>
                 <div className="bg-white/8 rounded-xl rounded-tl-sm px-3 py-2">
                   <p className="text-white/70 text-xs font-dm-sans">Got it. Attaching the QC photo now.</p>
-                  <div className="mt-2 flex items-center gap-1.5 text-rd-lime/70">
+                  <div className="mt-2 flex items-center gap-1.5 text-rd-mint/70">
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" /></svg>
                     <span className="text-[10px] font-dm-sans">qc_photo_4091.jpg</span>
                   </div>

@@ -42,13 +42,13 @@ export default function ReviewsManagementPage() {
               </div>
               <h1 className="font-poppins text-4xl md:text-5xl lg:text-[3.4rem] font-bold text-white leading-[1.1] mb-6">
                 Turn every repair into a
-                <span className="block text-rd-lime mt-1">5-star review</span>
+                <span className="block text-rd-mint mt-1">5-star review</span>
               </h1>
               <p className="font-dm-sans text-lg text-white/70 max-w-lg mb-10 leading-relaxed">
                 Automatically request reviews after every repair, monitor your reputation in real time, and respond to customers from one dashboard.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/start-trial" className="inline-flex items-center gap-2 bg-rd-lime text-rd-dark font-poppins font-semibold px-7 py-3.5 rounded-full hover:brightness-110 transition-all">
+                <Link to="/start-trial" className="inline-flex items-center gap-2 bg-rd-lime text-white font-poppins font-semibold px-7 py-3.5 rounded-full hover:brightness-110 transition-all">
                   Start Free Trial
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
                 </Link>
@@ -115,7 +115,7 @@ export default function ReviewsManagementPage() {
                   <div className="w-16 h-16 rounded-2xl bg-rd-teal text-white flex items-center justify-center mb-4 shadow-lg shadow-rd-teal/20">
                     {step.icon}
                   </div>
-                  <div className="bg-rd-lime text-rd-dark font-poppins text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center mb-3 -mt-1">{i + 1}</div>
+                  <div className="bg-rd-lime text-white font-poppins text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center mb-3 -mt-1">{i + 1}</div>
                   <h3 className="font-poppins font-semibold text-rd-dark mb-1">{step.title}</h3>
                   <p className="font-dm-sans text-sm text-gray-500 max-w-[180px]">{step.desc}</p>
                 </div>
@@ -160,7 +160,7 @@ export default function ReviewsManagementPage() {
               <div className="bg-gray-50 border-b border-gray-100 px-6 py-4 flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-red-400" />
                 <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
+                <div className="w-3 h-3 rounded-full bg-blue-400" />
                 <span className="font-dm-sans text-xs text-gray-400 ml-3">RepairHub — Reviews Dashboard</span>
               </div>
               <div className="p-6">
@@ -174,7 +174,7 @@ export default function ReviewsManagementPage() {
                   </div>
                   <div className="text-right">
                     <div className="font-dm-sans text-sm text-gray-400">This month</div>
-                    <div className="font-poppins text-2xl font-bold text-green-600">+34</div>
+                    <div className="font-poppins text-2xl font-bold text-[#457b9d]">+34</div>
                     <div className="font-dm-sans text-xs text-gray-400">new reviews</div>
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function ReviewsManagementPage() {
                   { val: '3x', label: 'Faster than manual' },
                 ].map(stat => (
                   <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/10">
-                    <div className="font-poppins text-2xl font-bold text-rd-lime">{stat.val}</div>
+                    <div className="font-poppins text-2xl font-bold text-rd-mint">{stat.val}</div>
                     <div className="font-dm-sans text-sm text-white/60 mt-1">{stat.label}</div>
                   </div>
                 ))}
@@ -332,7 +332,7 @@ export default function ReviewsManagementPage() {
             <div className="lg:col-span-3 bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
               <div className="flex items-center justify-between mb-4">
                 <div className="font-poppins font-semibold text-rd-dark">Monthly Review Count</div>
-                <div className="flex items-center gap-1 text-green-600">
+                <div className="flex items-center gap-1 text-[#457b9d]">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" /></svg>
                   <span className="font-dm-sans text-sm font-semibold">+127% growth</span>
                 </div>

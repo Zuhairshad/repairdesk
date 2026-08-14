@@ -75,7 +75,7 @@ const GearIcon = () => (
 );
 
 function HealthBar({ value }) {
-  const color = value > 75 ? 'bg-green-500' : value > 50 ? 'bg-yellow-500' : 'bg-red-500';
+  const color = value > 75 ? 'bg-blue-500' : value > 50 ? 'bg-yellow-500' : 'bg-red-500';
   return (
     <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
       <div className={`${color} h-full rounded-full transition-all`} style={{ width: `${value}%` }} />
@@ -96,7 +96,7 @@ export default function HeavyDutyRepairPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px flex-1 max-w-[60px] bg-rd-lime" />
-              <span className="font-dm-sans text-xs uppercase tracking-[0.25em] text-rd-lime font-semibold">Heavy Duty Repair Software</span>
+              <span className="font-dm-sans text-xs uppercase tracking-[0.25em] text-rd-mint font-semibold">Heavy Duty Repair Software</span>
             </div>
             <h1 className="font-poppins font-bold text-4xl md:text-[3.4rem] md:leading-[1.12] text-white mb-6">
               Built for the Shops That Fix<br className="hidden md:block" /> the Biggest Machines
@@ -106,7 +106,7 @@ export default function HeavyDutyRepairPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://app.repairhub.co/register" className="btn-primary px-8 py-3.5 text-base">Start Free Trial</a>
-              <Link to="/contact" className="group inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-lime transition-colors">
+              <Link to="/contact" className="group inline-flex items-center gap-2 border-2 border-white/20 text-white px-8 py-3.5 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-mint transition-colors">
                 Book a Demo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
               </Link>
@@ -114,7 +114,7 @@ export default function HeavyDutyRepairPage() {
           </div>
         </div>
         {/* Hazard stripe bottom border */}
-        <div className="h-3 w-full" style={{ background: 'repeating-linear-gradient(135deg, #C8E52B 0 12px, #3d405b 12px 24px)' }} />
+        <div className="h-3 w-full" style={{ background: 'repeating-linear-gradient(135deg, #457b9d 0 12px, #3d405b 12px 24px)' }} />
       </section>
 
       {/* === EQUIPMENT CATEGORIES GRID === */}
@@ -195,12 +195,12 @@ export default function HeavyDutyRepairPage() {
               <div className="flex items-center gap-2 mb-5">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                <div className="w-3 h-3 rounded-full bg-green-500" />
+                <div className="w-3 h-3 rounded-full bg-blue-500" />
                 <span className="ml-3 text-gray-500 text-xs font-dm-sans">Fleet Dashboard — Acme Equipment Co.</span>
               </div>
               <div className="space-y-3 min-w-[320px]">
                 {fleetUnits.map((u) => {
-                  const statusColor = u.status === 'In Service' ? 'text-green-400' : u.status === 'In Repair' ? 'text-yellow-400' : 'text-orange-400';
+                  const statusColor = u.status === 'In Service' ? 'text-blue-400' : u.status === 'In Repair' ? 'text-yellow-400' : 'text-orange-400';
                   return (
                     <div key={u.id} className="bg-gray-800 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center gap-3">
                       <div className="flex-1 min-w-0">
@@ -234,7 +234,7 @@ export default function HeavyDutyRepairPage() {
               <div className="flex gap-1">
                 <span className="flex items-center gap-1.5 text-xs font-dm-sans text-gray-400"><span className="w-3 h-3 rounded bg-rd-teal inline-block" /> Scheduled</span>
                 <span className="flex items-center gap-1.5 text-xs font-dm-sans text-gray-400 ml-3"><span className="w-3 h-3 rounded bg-yellow-400 inline-block" /> Overdue</span>
-                <span className="flex items-center gap-1.5 text-xs font-dm-sans text-gray-400 ml-3"><span className="w-3 h-3 rounded bg-green-500 inline-block" /> Completed</span>
+                <span className="flex items-center gap-1.5 text-xs font-dm-sans text-gray-400 ml-3"><span className="w-3 h-3 rounded bg-blue-500 inline-block" /> Completed</span>
               </div>
             </div>
             <div className="grid grid-cols-7 gap-1 text-center text-xs font-dm-sans min-w-[500px]">
@@ -248,11 +248,11 @@ export default function HeavyDutyRepairPage() {
                 return (
                   <div key={day} className={`relative aspect-square flex items-center justify-center rounded-lg text-sm
                     ${today ? 'ring-2 ring-rd-teal font-bold text-rd-teal' : 'text-gray-600'}
-                    ${scheduled ? 'bg-rd-teal/10' : ''} ${overdue ? 'bg-yellow-50' : ''} ${completed ? 'bg-green-50' : ''}`}>
+                    ${scheduled ? 'bg-rd-teal/10' : ''} ${overdue ? 'bg-yellow-50' : ''} ${completed ? 'bg-blue-50' : ''}`}>
                     {day}
                     {scheduled && <span className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-rd-teal" />}
                     {overdue && <span className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-yellow-400" />}
-                    {completed && <span className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-green-500" />}
+                    {completed && <span className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-blue-500" />}
                   </div>
                 );
               })}
@@ -338,7 +338,7 @@ export default function HeavyDutyRepairPage() {
           <p className="font-dm-sans text-white/60 text-lg mb-10">14-day free trial. No credit card required. Set up in under 15 minutes.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="https://app.repairhub.co/register" className="btn-primary px-10 py-4 text-base">Start Free Trial</a>
-            <Link to="/contact" className="border-2 border-white/20 text-white px-10 py-4 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-lime transition-colors">
+            <Link to="/contact" className="border-2 border-white/20 text-white px-10 py-4 rounded-full font-poppins font-semibold hover:border-rd-lime hover:text-rd-mint transition-colors">
               Talk to Sales
             </Link>
           </div>

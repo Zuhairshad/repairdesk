@@ -121,12 +121,12 @@ export default function StoreCreditsPage() {
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
         <div className="container-main relative z-10 grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-white/10 backdrop-blur text-rd-lime px-4 py-2 rounded-full mb-8 border border-white/10">
+            <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest bg-white/10 backdrop-blur text-rd-mint px-4 py-2 rounded-full mb-8 border border-white/10">
               <WalletIcon className="w-4 h-4" />
               Store Credits for Repair Shops
             </div>
             <h1 className="font-poppins font-bold text-4xl md:text-[3.25rem] leading-[1.12] mb-6">
-              Turn Every Refund Into a <span className="text-rd-lime">Return Visit</span>
+              Turn Every Refund Into a <span className="text-rd-mint">Return Visit</span>
             </h1>
             <p className="text-white/70 text-lg font-dm-sans leading-relaxed mb-10 max-w-lg">
               Stop bleeding revenue through refunds. Issue store credits instead and watch one-time customers become loyal regulars with a balance to spend.
@@ -144,7 +144,7 @@ export default function StoreCreditsPage() {
               <div className="bg-gradient-to-br from-[#4d5175] to-rd-teal rounded-3xl p-6 shadow-2xl shadow-black/40 border border-white/10">
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-xs font-poppins font-semibold tracking-wider uppercase text-white/60">RepairHub Wallet</span>
-                  <WalletIcon className="w-6 h-6 text-rd-lime" />
+                  <WalletIcon className="w-6 h-6 text-rd-mint" />
                 </div>
                 <p className="text-white/50 text-xs font-dm-sans mb-1">Available Balance</p>
                 <p className="font-poppins font-bold text-4xl text-white mb-6">$247<span className="text-2xl text-white/60">.50</span></p>
@@ -155,7 +155,7 @@ export default function StoreCreditsPage() {
                   </div>
                   <div className="flex-1 bg-white/10 rounded-xl p-3 backdrop-blur">
                     <p className="text-[10px] text-white/50 font-dm-sans mb-0.5">Redeemed</p>
-                    <p className="font-poppins font-semibold text-rd-lime text-sm">$172.50</p>
+                    <p className="font-poppins font-semibold text-rd-mint text-sm">$172.50</p>
                   </div>
                 </div>
                 <div className="mt-5 pt-4 border-t border-white/10">
@@ -221,7 +221,7 @@ export default function StoreCreditsPage() {
                   <p className="text-[10px] text-white/40 font-dm-sans uppercase tracking-wider">Balance</p>
                   <p className="font-poppins font-bold text-white text-xl">$247.50</p>
                 </div>
-                <p className="font-poppins font-bold text-rd-lime text-sm tracking-wider">RepairHub</p>
+                <p className="font-poppins font-bold text-rd-mint text-sm tracking-wider">RepairHub</p>
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@ export default function StoreCreditsPage() {
       {/* ===== Benefits Grid ===== */}
       <section className="bg-rd-dark py-20 px-6">
         <div className="container-main">
-          <p className="text-rd-lime font-poppins font-semibold text-sm uppercase tracking-wider mb-3 text-center">Built for Repair Shops</p>
+          <p className="text-rd-mint font-poppins font-semibold text-sm uppercase tracking-wider mb-3 text-center">Built for Repair Shops</p>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-14 text-center">Everything You Need to Manage Credits</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">

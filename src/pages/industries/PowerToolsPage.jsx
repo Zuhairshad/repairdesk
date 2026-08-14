@@ -168,7 +168,7 @@ function HazardStrip({ className = '' }) {
       className={`h-2.5 w-full ${className}`}
       style={{
         backgroundImage:
-          'repeating-linear-gradient(135deg, #D4F479 0 14px, #1e2035 14px 28px)',
+          'repeating-linear-gradient(135deg, #457b9d 0 14px, #1e2035 14px 28px)',
       }}
     />
   );
@@ -206,7 +206,7 @@ export default function PowerToolsPage() {
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
             <div>
-              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
                 <BoltIcon className="w-3.5 h-3.5" />
                 Power Tools Repair Shop Software
               </span>
@@ -316,7 +316,7 @@ export default function PowerToolsPage() {
                 <div key={f.title} className="rounded-2xl border-2 border-dashed border-rd-teal/25 p-6 hover:border-rd-teal/50 hover:bg-rd-cream/60 transition-colors">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-xl bg-rd-dark flex items-center justify-center shrink-0">
-                      <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>{f.icon}</svg>
+                      <svg className="w-5 h-5 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>{f.icon}</svg>
                     </div>
                     <h3 className="font-poppins font-semibold text-rd-dark">{f.title}</h3>
                   </div>
@@ -332,7 +332,7 @@ export default function PowerToolsPage() {
       <section className="bg-[#1e2035] text-white py-16 md:py-24 px-6 relative overflow-hidden">
         <div className="absolute -left-24 top-1/3 w-72 h-72 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="container-main relative z-10">
-          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">Employee Management</span>
+          <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">Employee Management</span>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl mb-5 max-w-2xl">Set Your Team and Business Up For Success</h2>
           <p className="text-white/70 font-dm-sans text-lg leading-relaxed mb-14 max-w-2xl">
             Keep your employees and technicians organized with role-based access and performance tracking. Track work hours and improve accountability with detailed reports.
@@ -415,7 +415,7 @@ export default function PowerToolsPage() {
         <div className="container-main">
           <div className="bg-[#1e2035] rounded-3xl p-8 md:p-14 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
             <div>
-              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-3">You're in Great Company</span>
+              <span className="block text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-3">You're in Great Company</span>
               <h2 className="font-poppins font-bold text-2xl md:text-3xl text-white mb-5">Join Power Tool Shop Owners Worldwide</h2>
               <p className="text-white/70 font-dm-sans leading-relaxed">
                 When you join RepairHub, you don't just get a software. You join a community of power tool repair shop owners around the world who help you learn and grow your business.
@@ -424,7 +424,7 @@ export default function PowerToolsPage() {
             <div className="grid grid-cols-3 gap-4">
               {companyStats.map((s) => (
                 <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl py-6 text-center">
-                  <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-lime mb-1">{s.stat}</p>
+                  <p className="font-poppins font-bold text-2xl md:text-3xl text-rd-mint mb-1">{s.stat}</p>
                   <p className="text-white/60 font-dm-sans text-xs">{s.label}</p>
                 </div>
               ))}

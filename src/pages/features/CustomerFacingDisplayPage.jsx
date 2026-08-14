@@ -53,7 +53,7 @@ function ItemsScreen({ tall }) {
     <>
       <div className="bg-rd-teal px-4 py-3 flex items-center justify-between">
         <span className="font-poppins font-bold text-white text-xs">Please Review Your Order</span>
-        <svg className="w-4 h-4 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="w-4 h-4 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
         </svg>
       </div>
@@ -108,7 +108,7 @@ function AdsScreen() {
         <span className="font-poppins font-bold text-white text-[11px]">SpeedFix Repairs</span>
       </div>
       <div className="flex-1 px-4 py-4 flex flex-col justify-center items-center text-center bg-gradient-to-br from-rd-teal to-rd-dark">
-        <span className="text-rd-lime font-poppins font-bold text-[10px] tracking-widest mb-2">SPECIAL OFFER</span>
+        <span className="text-rd-mint font-poppins font-bold text-[10px] tracking-widest mb-2">SPECIAL OFFER</span>
         <span className="text-white font-poppins font-bold text-2xl leading-tight mb-2">20% OFF</span>
         <span className="text-white/80 font-dm-sans text-[10px] leading-snug px-2">
           Screen protectors with every screen repair this week
@@ -197,10 +197,10 @@ export default function CustomerFacingDisplayPage() {
     <PageLayout>
       {/* Hero */}
       <section className="bg-[#1e2035] relative overflow-hidden py-20 md:py-28 px-6">
-        <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #D4F479 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #457b9d 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-main relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               Customer Facing Display
             </span>
             <h1 className="font-poppins font-bold text-white text-4xl md:text-5xl leading-tight mb-6">

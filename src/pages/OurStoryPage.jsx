@@ -191,7 +191,7 @@ export default function OurStoryPage() {
             {workflowSteps.map((step, i) => (
               <div key={step.label} className="relative">
                 <div className="bg-rd-cream rounded-2xl p-6 h-full">
-                  <div className="w-10 h-10 rounded-full bg-rd-dark text-rd-lime font-poppins font-semibold flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-full bg-rd-dark text-rd-mint font-poppins font-semibold flex items-center justify-center mb-4">
                     {i + 1}
                   </div>
                   <h3 className="font-poppins font-semibold text-rd-dark mb-2">{step.label}</h3>
@@ -245,7 +245,7 @@ export default function OurStoryPage() {
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div>
-              <span className="text-rd-lime text-xs font-poppins font-semibold uppercase tracking-widest">Our Customers</span>
+              <span className="text-rd-mint text-xs font-poppins font-semibold uppercase tracking-widest">Our Customers</span>
               <h2 className="font-poppins font-semibold text-3xl md:text-4xl text-white mt-3 mb-5">A Global Network of Repair Shops</h2>
               <p className="font-dm-sans text-white/70 leading-relaxed mb-4">
                 RepairHub currently powers hundreds of cell phone repair shops around the world. Most of our customers reside in the USA, UK, Australia, Canada, Italy, France and other European countries.
@@ -356,13 +356,13 @@ export default function OurStoryPage() {
             </div>
 
             <div className="bg-rd-dark rounded-2xl p-8 mt-14 text-center">
-              <svg className="w-8 h-8 text-rd-lime mx-auto mb-4" fill="currentColor" viewBox="0 0 32 32">
+              <svg className="w-8 h-8 text-rd-mint mx-auto mb-4" fill="currentColor" viewBox="0 0 32 32">
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p className="font-poppins text-lg md:text-xl text-white italic leading-relaxed max-w-xl mx-auto">
                 "We didn't just build software — we built a solution for an industry that was crying out for one."
               </p>
-              <p className="text-rd-lime text-sm font-poppins font-semibold mt-4">— Usman Butt, CEO &amp; Founder</p>
+              <p className="text-rd-mint text-sm font-poppins font-semibold mt-4">— Usman Butt, CEO &amp; Founder</p>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@ export default function OurStoryPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s) => (
               <div key={s.label} className="bg-rd-dark rounded-2xl p-7 text-center">
-                <div className="font-poppins font-semibold text-3xl text-rd-lime mb-2">{s.number}</div>
+                <div className="font-poppins font-semibold text-3xl text-rd-mint mb-2">{s.number}</div>
                 <div className="text-sm text-white/70 font-dm-sans">{s.label}</div>
               </div>
             ))}

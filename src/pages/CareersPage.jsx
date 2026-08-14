@@ -211,11 +211,11 @@ export default function CareersPage() {
               <path d="M60 60 L160 130 L260 50 M160 130 L100 210 M160 130 L240 200" stroke="#3d405b" strokeOpacity="0.3" strokeWidth="1.5" />
             </svg>
             {[
-              { top: '4%', left: '10%', size: 'w-16 h-16', tint: 'bg-rd-lime text-rd-dark' },
+              { top: '4%', left: '10%', size: 'w-16 h-16', tint: 'bg-rd-lime text-white' },
               { top: '38%', left: '42%', size: 'w-24 h-24', tint: 'bg-rd-dark text-white' },
               { top: '2%', left: '76%', size: 'w-14 h-14', tint: 'bg-rd-mint text-rd-dark' },
               { top: '68%', left: '24%', size: 'w-16 h-16', tint: 'bg-rd-teal text-white' },
-              { top: '66%', left: '68%', size: 'w-16 h-16', tint: 'bg-rd-lime text-rd-dark' },
+              { top: '66%', left: '68%', size: 'w-16 h-16', tint: 'bg-rd-lime text-white' },
             ].map((p, i) => (
               <div
                 key={i}
@@ -273,10 +273,10 @@ export default function CareersPage() {
       <section className="bg-rd-teal py-16 relative overflow-hidden">
         <div className="absolute -top-10 -right-10 w-56 h-56 rounded-full bg-white/5" />
         <div className="container-main relative z-10 text-center max-w-3xl mx-auto">
-          <svg className="w-10 h-10 text-rd-lime mx-auto mb-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <svg className="w-10 h-10 text-rd-mint mx-auto mb-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.3} d="M12 2l2.4 6.8L21 11l-6.6 2.2L12 20l-2.4-6.8L3 11l6.6-2.2L12 2z" />
           </svg>
-          <span className="text-rd-lime text-sm font-poppins font-semibold uppercase tracking-widest">
+          <span className="text-rd-mint text-sm font-poppins font-semibold uppercase tracking-widest">
             North Star for RepairHub
           </span>
           <p className="font-dm-serif text-2xl md:text-3xl text-white mt-4 leading-snug">
@@ -357,14 +357,14 @@ export default function CareersPage() {
         <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-rd-lime/10 -translate-y-1/3 translate-x-1/3" />
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 items-center max-w-4xl mx-auto text-center md:text-left">
-            <div className="w-20 h-20 rounded-2xl bg-rd-lime text-rd-dark flex items-center justify-center mx-auto md:mx-0 flex-shrink-0">
+            <div className="w-20 h-20 rounded-2xl bg-rd-lime text-white flex items-center justify-center mx-auto md:mx-0 flex-shrink-0">
               <svg className="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9l9-5 9 5-9 5-9-5z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 11v4c0 1.7 2.2 3 5 3s5-1.3 5-3v-4" />
               </svg>
             </div>
             <div>
-              <span className="text-rd-lime text-sm font-poppins font-semibold uppercase tracking-widest">
+              <span className="text-rd-mint text-sm font-poppins font-semibold uppercase tracking-widest">
                 Management Trainee Officer
               </span>
               <h2 className="font-dm-serif text-2xl md:text-3xl text-white mt-2 mb-3">
@@ -468,7 +468,7 @@ export default function CareersPage() {
                       <div className="w-16 h-16 rounded-full bg-rd-teal text-white flex items-center justify-center shadow-md relative z-10">
                         <Icon className="w-7 h-7" />
                       </div>
-                      <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-rd-lime text-rd-dark text-xs font-poppins font-bold flex items-center justify-center z-20">
+                      <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-rd-lime text-white text-xs font-poppins font-bold flex items-center justify-center z-20">
                         {step.num}
                       </span>
                     </div>
@@ -494,7 +494,7 @@ export default function CareersPage() {
           </p>
           <a
             href="mailto:careers@repairhub.co?subject=I'm Interested in Joining RepairHub"
-            className="inline-block bg-rd-lime text-rd-dark font-poppins font-semibold px-8 py-3.5 rounded-full hover:bg-yellow-300 transition-colors"
+            className="inline-block bg-rd-lime text-white font-poppins font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-colors"
           >
             Join Us!
           </a>

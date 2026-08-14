@@ -155,14 +155,14 @@ export default function KnowledgeBasePage() {
 
         <div className="relative container-main px-6 py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
-            <svg className="w-4 h-4 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <svg className="w-4 h-4 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
             </svg>
             <span className="text-white/80 font-dm-sans text-sm font-medium">Knowledge Base</span>
           </div>
 
           <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-4 tracking-tight">
-            How can we help<span className="text-rd-lime">?</span>
+            How can we help<span className="text-rd-mint">?</span>
           </h1>
           <p className="text-white/60 font-dm-sans text-lg md:text-xl max-w-xl mx-auto mb-10">
             Search 200+ articles, guides, and tutorials to find answers fast.
@@ -193,7 +193,7 @@ export default function KnowledgeBasePage() {
           {/* Quick links */}
           <div className="flex flex-wrap justify-center gap-2 mt-6">
             {['Repair tickets', 'POS setup', 'Inventory CSV', 'Stripe integration'].map((tag) => (
-              <Link key={tag} to="#" className="text-white/50 hover:text-rd-lime font-dm-sans text-sm border border-white/10 hover:border-rd-lime/40 rounded-full px-4 py-1.5 transition-colors">
+              <Link key={tag} to="#" className="text-white/50 hover:text-rd-mint font-dm-sans text-sm border border-white/10 hover:border-rd-lime/40 rounded-full px-4 py-1.5 transition-colors">
                 {tag}
               </Link>
             ))}
@@ -455,7 +455,7 @@ export default function KnowledgeBasePage() {
             {/* Schedule a Call */}
             <Link to="#" className="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-rd-lime/40 rounded-2xl p-6 text-center transition-all">
               <div className="w-11 h-11 mx-auto rounded-xl bg-rd-lime/20 flex items-center justify-center mb-3 group-hover:bg-rd-lime transition-colors">
-                <svg className="w-5 h-5 text-rd-lime group-hover:text-rd-dark transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <svg className="w-5 h-5 text-rd-mint group-hover:text-rd-dark transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
                 </svg>
               </div>

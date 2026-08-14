@@ -281,7 +281,7 @@ export default function ShoeRepairPage() {
       <section className="bg-rd-dark text-white py-20 px-6 overflow-hidden relative">
         <div className="container-main grid md:grid-cols-[1.15fr_0.85fr] gap-14 items-center relative z-10">
           <div>
-            <span className="inline-block text-[11px] font-poppins font-bold uppercase tracking-widest text-rd-lime mb-5">
+            <span className="inline-block text-[11px] font-poppins font-bold uppercase tracking-widest text-rd-mint mb-5">
               Leather Goods & Shoe Repair Shop Software
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-[2.75rem] leading-tight mb-6">
@@ -345,7 +345,7 @@ export default function ShoeRepairPage() {
             <div className="space-y-10">
               {mailInSteps.map((step, i) => (
                 <div key={step.title} className="relative flex gap-6">
-                  <div className="w-12 h-12 rounded-full bg-rd-dark text-rd-lime flex items-center justify-center shrink-0 relative z-10">
+                  <div className="w-12 h-12 rounded-full bg-rd-dark text-rd-mint flex items-center justify-center shrink-0 relative z-10">
                     {step.icon}
                   </div>
                   <div className="pt-1">
@@ -416,7 +416,7 @@ export default function ShoeRepairPage() {
                 key={row.title}
                 className={`flex flex-col sm:flex-row items-start sm:items-center gap-5 p-6 rounded-2xl border border-gray-100 ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse sm:text-right"}`}
               >
-                <div className="w-14 h-14 rounded-full bg-rd-dark text-rd-lime flex items-center justify-center shrink-0">
+                <div className="w-14 h-14 rounded-full bg-rd-dark text-rd-mint flex items-center justify-center shrink-0">
                   {row.icon}
                 </div>
                 <div>
@@ -433,7 +433,7 @@ export default function ShoeRepairPage() {
       <section className="bg-rd-dark text-white py-20 px-6">
         <div className="container-main">
           <div className="max-w-2xl mb-14">
-            <span className="text-rd-lime font-poppins font-bold text-xs uppercase tracking-widest">Employee Management & Reporting</span>
+            <span className="text-rd-mint font-poppins font-bold text-xs uppercase tracking-widest">Employee Management & Reporting</span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-3 mb-5">Manage Your Cobblers Smoothly and Set Your Business Up for Success</h2>
             <p className="text-white/70 font-dm-sans leading-relaxed mb-3">
               Keep your cobblers and employees organized with the best, professional shoe repair shop software. Track attendance, work hours, monitor productivity and manage them with role-based access.
@@ -446,7 +446,7 @@ export default function ShoeRepairPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {employeeCards.map((c) => (
               <div key={c.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                <div className="w-11 h-11 rounded-xl bg-rd-lime/20 text-rd-lime flex items-center justify-center mb-4">
+                <div className="w-11 h-11 rounded-xl bg-rd-lime/20 text-rd-mint flex items-center justify-center mb-4">
                   {c.icon}
                 </div>
                 <h3 className="font-poppins font-semibold mb-1.5">{c.title}</h3>

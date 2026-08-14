@@ -98,7 +98,7 @@ export default function FranchiseManagementPage() {
         <div className="container-main relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/30 text-rd-lime text-sm font-poppins font-medium px-4 py-1.5 rounded-full mb-6">
+              <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/30 text-rd-mint text-sm font-poppins font-medium px-4 py-1.5 rounded-full mb-6">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
@@ -106,14 +106,14 @@ export default function FranchiseManagementPage() {
               </div>
               <h1 className="font-poppins text-4xl md:text-5xl lg:text-[3.4rem] font-bold text-white leading-[1.1] mb-6">
                 One HQ.<br />
-                <span className="text-rd-lime">Every location.</span><br />
+                <span className="text-rd-mint">Every location.</span><br />
                 Total control.
               </h1>
               <p className="font-dm-sans text-lg text-white/70 max-w-lg mb-10 leading-relaxed">
                 Scale your repair franchise with centralized operations, automated royalty tracking, and real-time visibility into every store — from a single corporate dashboard.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/demo" className="inline-flex items-center justify-center bg-rd-lime text-rd-dark font-poppins font-semibold px-8 py-3.5 rounded-full hover:brightness-110 transition-all duration-200">
+                <Link to="/demo" className="inline-flex items-center justify-center bg-rd-lime text-white font-poppins font-semibold px-8 py-3.5 rounded-full hover:brightness-110 transition-all duration-200">
                   Talk to Enterprise Sales
                 </Link>
                 <Link to="/demo" className="inline-flex items-center justify-center border border-white/30 text-white font-poppins font-semibold px-8 py-3.5 rounded-full hover:bg-white/10 transition-all duration-200">
@@ -249,7 +249,7 @@ export default function FranchiseManagementPage() {
               <div className="bg-rd-dark px-5 py-3 flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-red-400" />
                 <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
+                <span className="w-3 h-3 rounded-full bg-blue-400" />
                 <span className="ml-3 text-white/50 font-dm-sans text-xs">Store #14 — Downtown Seattle</span>
               </div>
               <div className="p-5 space-y-4">
@@ -339,7 +339,7 @@ export default function FranchiseManagementPage() {
       <section className="py-20 md:py-28 bg-gradient-to-br from-rd-dark to-[#013a3f]">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="inline-block text-rd-lime font-poppins font-semibold text-sm uppercase tracking-widest mb-3">Royalties & Reporting</span>
+            <span className="inline-block text-rd-mint font-poppins font-semibold text-sm uppercase tracking-widest mb-3">Royalties & Reporting</span>
             <h2 className="font-poppins text-3xl md:text-4xl font-bold text-white mb-5">
               Automated royalty collection. Zero spreadsheets.
             </h2>
@@ -383,7 +383,7 @@ export default function FranchiseManagementPage() {
               <div key={i} className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7">
                 <div className="flex items-center justify-between mb-4">
                   <span className="font-dm-sans text-white/50 text-sm">{card.title}</span>
-                  <span className="text-rd-lime">{card.icon}</span>
+                  <span className="text-rd-mint">{card.icon}</span>
                 </div>
                 <div className="font-poppins text-3xl font-bold text-white mb-1">{card.value}</div>
                 <div className="font-dm-sans text-white/40 text-sm">{card.sub}</div>

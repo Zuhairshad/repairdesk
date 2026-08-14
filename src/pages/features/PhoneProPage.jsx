@@ -66,7 +66,7 @@ export default function PhoneProPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left: Copy */}
             <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] bg-rd-lime/15 text-rd-lime border border-rd-lime/30 px-4 py-1.5 rounded-full mb-6 font-poppins">
+              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] bg-rd-lime/15 text-rd-mint border border-rd-lime/30 px-4 py-1.5 rounded-full mb-6 font-poppins">
                 PhonePro Diagnostics
               </span>
               <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-[3.4rem] text-white leading-[1.12] mb-6">
@@ -127,7 +127,7 @@ export default function PhoneProPage() {
                   </defs>
                 </svg>
                 {/* Pulse dots on components */}
-                <span className="absolute top-[58%] left-[22%] w-2 h-2 rounded-full bg-green-400 animate-ping" />
+                <span className="absolute top-[58%] left-[22%] w-2 h-2 rounded-full bg-blue-400 animate-ping" />
                 <span className="absolute top-[18%] left-[18%] w-2 h-2 rounded-full bg-purple-400 animate-ping [animation-delay:0.5s]" />
                 <span className="absolute top-[43%] left-[25%] w-2 h-2 rounded-full bg-orange-400 animate-ping [animation-delay:1s]" />
               </div>
@@ -205,9 +205,9 @@ export default function PhoneProPage() {
             </div>
 
             {/* Post-Repair */}
-            <div className="rounded-2xl border-2 border-green-200 bg-green-50/40 p-8 shadow-lg shadow-green-100/50">
+            <div className="rounded-2xl border-2 border-blue-200 bg-blue-50/40 p-8 shadow-lg shadow-blue-100/50">
               <div className="flex items-center gap-3 mb-6">
-                <span className="w-3 h-3 rounded-full bg-green-500" />
+                <span className="w-3 h-3 rounded-full bg-blue-500" />
                 <span className="font-poppins font-semibold text-rd-dark text-lg">Post-Repair Scan</span>
               </div>
               <div className="space-y-4">
@@ -222,9 +222,9 @@ export default function PhoneProPage() {
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-5 border-t border-green-200 flex items-end justify-between">
+              <div className="mt-6 pt-5 border-t border-blue-200 flex items-end justify-between">
                 <span className="font-dm-sans text-sm text-gray-500">Overall Score</span>
-                <span className="font-poppins font-bold text-3xl text-green-600">97%</span>
+                <span className="font-poppins font-bold text-3xl text-[#457b9d]">97%</span>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@ export default function PhoneProPage() {
               <ul className="space-y-3 font-dm-sans text-white/75 text-[15px]">
                 {['Auto-attached to repair tickets', 'Email or print for customers', 'Stored for warranty reference', 'Branded with your shop name'].map(item => (
                   <li key={item} className="flex items-center gap-3">
-                    <svg className="w-5 h-5 text-rd-lime flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                    <svg className="w-5 h-5 text-rd-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                     {item}
                   </li>
                 ))}
@@ -285,7 +285,7 @@ export default function PhoneProPage() {
                         <td className="py-2.5 text-rd-dark">{item.label}</td>
                         <td className="py-2.5 text-right">
                           {item.status === 'pass' && (
-                            <span className="inline-flex items-center gap-1 text-green-600 font-semibold text-xs">
+                            <span className="inline-flex items-center gap-1 text-[#457b9d] font-semibold text-xs">
                               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                               Pass
                             </span>
@@ -357,7 +357,7 @@ export default function PhoneProPage() {
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center">
             <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-8">
-              <svg className="w-8 h-8 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+              <svg className="w-8 h-8 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
@@ -374,7 +374,7 @@ export default function PhoneProPage() {
                 { stat: '< 4 min', label: 'Full scan completion' },
               ].map(s => (
                 <div key={s.label} className="bg-white/10 backdrop-blur rounded-xl px-5 py-6">
-                  <div className="font-poppins font-bold text-2xl md:text-3xl text-rd-lime mb-1">{s.stat}</div>
+                  <div className="font-poppins font-bold text-2xl md:text-3xl text-rd-mint mb-1">{s.stat}</div>
                   <div className="font-dm-sans text-white/60 text-sm">{s.label}</div>
                 </div>
               ))}

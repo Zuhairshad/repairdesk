@@ -75,10 +75,10 @@ function FeatureArt({ type }) {
       <div className={wrap}>
         <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-rd-teal/30 blur-2xl" />
         <div className="absolute -bottom-12 -left-8 w-48 h-48 rounded-full bg-rd-lime/10 blur-2xl" />
-        <svg className="w-28 h-28 text-rd-lime relative z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-6.716-4.35-9.428-8.06C.86 10.31 1.24 6.6 4.2 4.95c2.4-1.34 5.1-.55 6.8 1.44 1.7-1.99 4.4-2.78 6.8-1.44 2.96 1.65 3.34 5.36 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
+        <svg className="w-28 h-28 text-rd-mint relative z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-6.716-4.35-9.428-8.06C.86 10.31 1.24 6.6 4.2 4.95c2.4-1.34 5.1-.55 6.8 1.44 1.7-1.99 4.4-2.78 6.8-1.44 2.96 1.65 3.34 5.36 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
         <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between">
           <span className="text-[10px] font-poppins font-bold uppercase tracking-widest text-white/50">Repeat Visit</span>
-          <span className="text-[10px] font-poppins font-bold uppercase tracking-widest text-rd-lime">Loyalty +1</span>
+          <span className="text-[10px] font-poppins font-bold uppercase tracking-widest text-rd-mint">Loyalty +1</span>
         </div>
       </div>
     );
@@ -87,13 +87,13 @@ function FeatureArt({ type }) {
     return (
       <div className={wrap}>
         <svg className="w-4/5 h-4/5 relative z-10" viewBox="0 0 200 140" fill="none">
-          <path d="M15 110 C 60 20, 140 120, 185 30" stroke="#D4F479" strokeWidth="3" strokeDasharray="6 8" strokeLinecap="round" />
-          <circle cx="15" cy="110" r="9" fill="#1e2035" stroke="#D4F479" strokeWidth="2.5" />
-          <circle cx="185" cy="30" r="12" fill="#D4F479" />
+          <path d="M15 110 C 60 20, 140 120, 185 30" stroke="#457b9d" strokeWidth="3" strokeDasharray="6 8" strokeLinecap="round" />
+          <circle cx="15" cy="110" r="9" fill="#1e2035" stroke="#457b9d" strokeWidth="2.5" />
+          <circle cx="185" cy="30" r="12" fill="#457b9d" />
           <path d="M180 30 l4 -5 l4 5 l-4 5z" fill="#1e2035" transform="translate(1,1)" />
         </svg>
         <div className="absolute top-6 left-6 text-[10px] font-poppins font-bold uppercase tracking-widest text-white/50">First Visit</div>
-        <div className="absolute bottom-6 right-6 text-[10px] font-poppins font-bold uppercase tracking-widest text-rd-lime">Loyal Regular</div>
+        <div className="absolute bottom-6 right-6 text-[10px] font-poppins font-bold uppercase tracking-widest text-rd-mint">Loyal Regular</div>
       </div>
     );
   }
@@ -102,7 +102,7 @@ function FeatureArt({ type }) {
       <div className={wrap}>
         <div className="grid grid-cols-3 gap-3 relative z-10">
           {[0, 1, 2, 3, 4, 5].map(i => (
-            <svg key={i} className={`w-9 h-9 ${i === 4 ? 'text-rd-lime scale-125' : 'text-white/20'}`} fill="currentColor" viewBox="0 0 24 24">
+            <svg key={i} className={`w-9 h-9 ${i === 4 ? 'text-rd-mint scale-125' : 'text-white/20'}`} fill="currentColor" viewBox="0 0 24 24">
               <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
             </svg>
           ))}
@@ -115,9 +115,9 @@ function FeatureArt({ type }) {
     return (
       <div className={wrap}>
         <div className="relative z-10 flex flex-col items-center">
-          <svg className="w-20 h-20 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+          <svg className="w-20 h-20 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
           <div className="mt-4 bg-white/10 rounded-lg px-4 py-2 flex items-center gap-2">
-            <svg className="w-4 h-4 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <svg className="w-4 h-4 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             <span className="text-[11px] font-dm-sans text-white/70">You've earned 150 pts!</span>
           </div>
         </div>
@@ -127,9 +127,9 @@ function FeatureArt({ type }) {
   return (
     <div className={wrap}>
       <div className="relative z-10 flex items-center gap-4">
-        <svg className="w-14 h-14 text-rd-lime" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 11-14h-7l0-6z"/></svg>
+        <svg className="w-14 h-14 text-rd-mint" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 11-14h-7l0-6z"/></svg>
       </div>
-      <div className="absolute bottom-6 bg-rd-lime text-rd-dark text-[10px] font-poppins font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Enrolled at Checkout</div>
+      <div className="absolute bottom-6 bg-rd-lime text-white text-[10px] font-poppins font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Enrolled at Checkout</div>
     </div>
   );
 }
@@ -170,9 +170,9 @@ export default function LoyaltyProgramPage() {
               </div>
               <div className="flex items-center gap-1 mb-2">
                 {[0, 1, 2, 3, 4].map(i => (
-                  <svg key={i} className="w-4 h-4 text-rd-lime" fill="currentColor" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                  <svg key={i} className="w-4 h-4 text-rd-mint" fill="currentColor" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
                 ))}
-                <span className="text-[10px] font-poppins font-bold text-rd-lime ml-1 tracking-widest">GOLD TIER</span>
+                <span className="text-[10px] font-poppins font-bold text-rd-mint ml-1 tracking-widest">GOLD TIER</span>
               </div>
               <p className="text-3xl font-poppins font-bold mb-1">2,450 <span className="text-base font-dm-sans font-normal text-white/60">pts</span></p>
               <p className="text-white/50 text-xs font-dm-sans mb-6">550 pts to your next reward</p>
@@ -210,7 +210,7 @@ export default function LoyaltyProgramPage() {
               <div key={step.label} className="relative">
                 <div className="bg-rd-cream rounded-2xl p-6 h-full">
                   <div className="w-11 h-11 rounded-xl bg-rd-dark flex items-center justify-center mb-5">
-                    <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d={step.icon} /></svg>
+                    <svg className="w-5 h-5 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d={step.icon} /></svg>
                   </div>
                   <span className="text-rd-teal font-poppins font-bold text-xs">STEP {i + 1}</span>
                   <h3 className="font-poppins font-semibold text-rd-dark mt-1 mb-2">{step.label}</h3>
@@ -248,7 +248,7 @@ export default function LoyaltyProgramPage() {
             <h2 className="font-poppins font-bold text-3xl text-rd-dark mb-4">All the Answers You're Looking For</h2>
             <p className="text-gray-500 font-dm-sans text-sm leading-relaxed">Everything repair shop owners ask us before switching their loyalty program to RepairHub.</p>
             <div className="mt-8 bg-rd-dark rounded-2xl p-5 hidden md:block">
-              <svg className="w-7 h-7 text-rd-lime mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-6.716-4.35-9.428-8.06C.86 10.31 1.24 6.6 4.2 4.95c2.4-1.34 5.1-.55 6.8 1.44 1.7-1.99 4.4-2.78 6.8-1.44 2.96 1.65 3.34 5.36 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
+              <svg className="w-7 h-7 text-rd-mint mb-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21s-6.716-4.35-9.428-8.06C.86 10.31 1.24 6.6 4.2 4.95c2.4-1.34 5.1-.55 6.8 1.44 1.7-1.99 4.4-2.78 6.8-1.44 2.96 1.65 3.34 5.36 1.63 7.99C18.716 16.65 12 21 12 21z"/></svg>
               <p className="text-white text-sm font-poppins font-semibold leading-snug">Still have a question about loyalty points?</p>
               <p className="text-white/60 text-xs font-dm-sans mt-1">support@repairhub.co</p>
             </div>

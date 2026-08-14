@@ -130,7 +130,7 @@ export default function PaymentsPage() {
         <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-rd-teal/20 blur-3xl" />
         <div className="container-main relative grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
               RepairHub Payments
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl leading-tight mb-6">
@@ -154,7 +154,7 @@ export default function PaymentsPage() {
               <div className="bg-rd-dark/60 rounded-xl p-4 mb-3">
                 <p className="text-white/50 text-[10px] font-dm-sans uppercase tracking-widest mb-1">Amount Due</p>
                 <p className="font-poppins font-bold text-2xl text-white">$84.00</p>
-                <div className="flex items-center gap-1.5 mt-2 text-rd-lime">
+                <div className="flex items-center gap-1.5 mt-2 text-rd-mint">
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0" />
                   </svg>
@@ -318,12 +318,12 @@ export default function PaymentsPage() {
       <section className="bg-rd-dark py-20 px-6">
         <div className="container-main grid md:grid-cols-[auto,1fr] gap-10 items-center">
           <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center shrink-0">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-4">
               Security
             </span>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl text-white mb-4">

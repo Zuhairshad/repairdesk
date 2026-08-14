@@ -206,7 +206,7 @@ export default function WorkOrderPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
             <div>
-              <span className="inline-block bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-block bg-rd-lime text-white text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
                 Work Order Management
               </span>
               <h1 className="font-dm-serif text-4xl md:text-5xl leading-tight mb-6">
@@ -218,7 +218,7 @@ export default function WorkOrderPage() {
               <div className="flex flex-wrap gap-6">
                 {['Create & assign tickets', 'Track repair status live', 'Order parts from vendors'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-white/90 font-dm-sans text-sm">
-                    <svg className="w-5 h-5 text-rd-lime flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="w-5 h-5 text-rd-mint flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                     {item}
@@ -418,12 +418,12 @@ export default function WorkOrderPage() {
         <div className="container-main">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 text-white">
             <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0">
-              <svg className="w-10 h-10 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+              <svg className="w-10 h-10 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M5 21V7l8-4v18M13 21V11l6 4v6" />
               </svg>
             </div>
             <div className="flex-1 text-center md:text-left">
-              <span className="font-poppins font-semibold text-rd-lime text-sm uppercase tracking-widest">Centralized Management</span>
+              <span className="font-poppins font-semibold text-rd-mint text-sm uppercase tracking-widest">Centralized Management</span>
               <h2 className="font-dm-serif text-2xl md:text-3xl mt-2 mb-3">Manage Multiple Stores</h2>
               <p className="font-dm-sans text-white/80 leading-relaxed">
                 Whether you're a multi-store operation or a franchise, RepairHub work order software connects every location you manage. Transfer inventory between stores and keep an accurate record of every part and accessory as you grow from a single store to multiple franchises.

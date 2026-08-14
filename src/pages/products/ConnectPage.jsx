@@ -207,7 +207,7 @@ export default function ConnectPage() {
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6">
-              <span className="inline-flex items-center gap-2 bg-rd-lime text-rd-dark text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
+              <span className="inline-flex items-center gap-2 bg-rd-lime text-white text-sm font-semibold font-poppins px-4 py-1.5 rounded-full mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                 </svg>
@@ -235,7 +235,7 @@ export default function ConnectPage() {
                 <div className="bg-rd-cream px-5 py-3 flex items-center gap-2 border-b border-gray-200">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-400" />
                   <span className="ml-3 font-poppins text-xs font-semibold text-rd-dark/60 tracking-wide uppercase">Connect Inbox</span>
                 </div>
                 <div className="p-4 flex flex-col gap-3">
@@ -257,7 +257,7 @@ export default function ConnectPage() {
                   ))}
                 </div>
               </div>
-              <div className="hidden md:flex absolute -bottom-5 -left-5 bg-rd-lime text-rd-dark rounded-xl px-4 py-2.5 shadow-lg items-center gap-2">
+              <div className="hidden md:flex absolute -bottom-5 -left-5 bg-rd-lime text-white rounded-xl px-4 py-2.5 shadow-lg items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -315,7 +315,7 @@ export default function ConnectPage() {
         <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 20% 20%, white 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-main relative">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="font-poppins text-sm font-semibold text-rd-lime uppercase tracking-wider">Be Efficient</span>
+            <span className="font-poppins text-sm font-semibold text-rd-mint uppercase tracking-wider">Be Efficient</span>
             <h2 className="font-dm-serif text-3xl md:text-4xl text-white mt-3 mb-4">
               Do More in Less Time
             </h2>
@@ -326,7 +326,7 @@ export default function ConnectPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {efficiency.map((item) => (
               <div key={item.title} className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 transition-colors duration-300">
-                <div className="w-12 h-12 bg-rd-lime text-rd-dark rounded-xl flex items-center justify-center mb-5">
+                <div className="w-12 h-12 bg-rd-lime text-white rounded-xl flex items-center justify-center mb-5">
                   {item.icon}
                 </div>
                 <h3 className="font-poppins font-semibold text-white text-lg mb-3">{item.title}</h3>
@@ -386,14 +386,14 @@ export default function ConnectPage() {
       <section className="py-20 bg-gradient-to-br from-rd-dark to-rd-teal">
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <svg className="w-10 h-10 text-rd-lime mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-10 h-10 text-rd-mint mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <p className="font-dm-sans text-xl md:text-2xl leading-relaxed mb-8 text-white/90">
               "RepairHub Connect seems to be a great feature, excellent service by Musa — he goes beyond for my help. I'm not an IT person but he explains in a very professional and friendly manner, best recommended feature so far."
             </p>
             <div>
-              <div className="font-poppins font-semibold text-rd-lime">Catherine Morris Hinerman</div>
+              <div className="font-poppins font-semibold text-rd-mint">Catherine Morris Hinerman</div>
               <div className="font-dm-sans text-white/60 text-sm mt-1">RepairHub Connect Customer</div>
             </div>
           </div>

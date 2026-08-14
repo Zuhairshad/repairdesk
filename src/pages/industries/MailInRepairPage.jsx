@@ -201,7 +201,7 @@ export default function MailInRepairPage() {
             {/* Form mockup card */}
             <div className="bg-rd-cream rounded-2xl border border-gray-100 p-6 shadow-sm">
               <div className="flex items-center gap-2 mb-5">
-                <div className="w-3 h-3 rounded-full bg-red-300" /><div className="w-3 h-3 rounded-full bg-amber-300" /><div className="w-3 h-3 rounded-full bg-green-300" />
+                <div className="w-3 h-3 rounded-full bg-red-300" /><div className="w-3 h-3 rounded-full bg-amber-300" /><div className="w-3 h-3 rounded-full bg-blue-300" />
                 <span className="ml-2 text-xs text-gray-400 font-dm-sans">yourshop.com/repair-request</span>
               </div>
               <div className="space-y-4">
@@ -262,13 +262,13 @@ export default function MailInRepairPage() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <span className="text-rd-lime font-dm-sans font-semibold text-sm uppercase tracking-wider">Customer Portal</span>
+              <span className="text-rd-mint font-dm-sans font-semibold text-sm uppercase tracking-wider">Customer Portal</span>
               <h2 className="font-poppins font-bold text-3xl md:text-4xl mt-2 mb-5">Real-Time Tracking Your Customers Will Love</h2>
               <p className="text-white/65 font-dm-sans text-lg leading-relaxed mb-6">Every customer gets a unique tracking page — like tracking a package, but for their repair. They see live status changes, technician notes, intake photos, and estimated completion without ever calling your shop.</p>
               <ul className="space-y-3 font-dm-sans text-white/70">
                 {['Live repair stage progress bar', 'Timestamped activity log', 'Intake condition photos visible to customer', 'One-tap quote approval from the portal'].map(item => (
                   <li key={item} className="flex items-start gap-2.5">
-                    <IconCheck className="w-5 h-5 text-rd-lime shrink-0 mt-0.5" />
+                    <IconCheck className="w-5 h-5 text-rd-mint shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -397,13 +397,13 @@ export default function MailInRepairPage() {
         <div className="container-main max-w-4xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-rd-lime font-dm-sans font-semibold text-sm uppercase tracking-wider">Damage Documentation</span>
+              <span className="text-rd-mint font-dm-sans font-semibold text-sm uppercase tracking-wider">Damage Documentation</span>
               <h2 className="font-poppins font-bold text-3xl mt-2 mb-5">Protect Yourself From Disputes</h2>
               <p className="text-white/65 font-dm-sans text-lg leading-relaxed mb-6">When a device arrives by mail, there is no face-to-face handoff. RepairHub intake forms let technicians photograph every angle and log pre-existing damage before work begins. Every record is timestamped and attached to the ticket.</p>
               <ul className="space-y-2.5 font-dm-sans text-white/70 text-sm">
                 {['Timestamped intake photos', 'Condition checklist with checkboxes', 'Notes visible in customer portal', 'PDF export for dispute resolution'].map(item => (
                   <li key={item} className="flex items-start gap-2">
-                    <IconShield className="w-4 h-4 text-rd-lime shrink-0 mt-0.5" />
+                    <IconShield className="w-4 h-4 text-rd-mint shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}

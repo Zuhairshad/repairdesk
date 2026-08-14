@@ -250,7 +250,7 @@ export default function WatchRepairPage() {
       <section className="bg-gradient-to-br from-rd-dark via-[#1e2035] to-rd-teal text-white py-20 md:py-28 px-6 overflow-hidden">
         <div className="container-main grid lg:grid-cols-[1.2fr_1fr] gap-14 items-center">
           <div>
-            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6 font-poppins">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6 font-poppins">
               Watch Repair Shop Software
             </span>
             <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -359,7 +359,7 @@ export default function WatchRepairPage() {
       {/* Integrations: gear train */}
       <section className="bg-rd-dark py-16 md:py-20 px-6">
         <div className="container-main">
-          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-lime mb-4">
+          <span className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-rd-mint mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-rd-lime" />
             Integrations for Clock Repair Shops
           </span>
@@ -373,7 +373,7 @@ export default function WatchRepairPage() {
             {integrations.map((f) => (
               <div key={f.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
                 <div className="w-11 h-11 rounded-full bg-rd-lime/20 flex items-center justify-center mb-4">
-                  <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={f.icon} />
                   </svg>
                 </div>
@@ -489,7 +489,7 @@ export default function WatchRepairPage() {
             ].map((s) => (
               <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl py-8 px-4 flex flex-col items-center gap-3">
                 <div className="w-11 h-11 rounded-full bg-rd-lime/20 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                  <svg className="w-5 h-5 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={s.icon} />
                   </svg>
                 </div>

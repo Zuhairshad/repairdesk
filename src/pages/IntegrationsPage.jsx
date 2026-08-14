@@ -54,7 +54,7 @@ const integrations = [
     category: 'Accounting',
     description: 'Sync your repair orders, invoices, and expenses directly with QuickBooks Online automatically.',
     badge: null,
-    color: 'bg-green-100 text-green-700',
+    color: 'bg-blue-100 text-blue-700',
     initials: 'QB',
   },
   {
@@ -129,7 +129,7 @@ const integrations = [
     category: 'Parts Suppliers',
     description: 'Order wholesale cell phone and tablet repair parts directly from your RepairHub account to keep your inventory stocked.',
     badge: null,
-    color: 'bg-green-100 text-green-700',
+    color: 'bg-blue-100 text-blue-700',
     initials: 'WG',
   },
   {
@@ -188,7 +188,7 @@ const integrations = [
     category: 'Widgets',
     description: 'Allow customers to get instant quotes on used devices with pre-set buy prices straight from your website.',
     badge: null,
-    color: 'bg-lime-100 text-lime-700',
+    color: 'bg-blue-100 text-blue-700',
     initials: 'BB',
   },
   {
@@ -237,7 +237,7 @@ const integrations = [
     category: 'Misc',
     description: 'Boost repair accuracy & efficiency with M360\'s comprehensive diagnostic tests. Diagnose devices faster and more accurately.',
     badge: null,
-    color: 'bg-green-100 text-green-700',
+    color: 'bg-blue-100 text-blue-700',
     initials: 'M3',
   },
   {
@@ -371,7 +371,7 @@ export default function IntegrationsPage() {
                           {item.category}
                         </span>
                         {item.badge && (
-                          <span className="text-xs bg-rd-lime text-rd-dark px-2 py-0.5 rounded-full font-semibold">
+                          <span className="text-xs bg-rd-lime text-white px-2 py-0.5 rounded-full font-semibold">
                             {item.badge}
                           </span>
                         )}
@@ -406,7 +406,7 @@ export default function IntegrationsPage() {
           </p>
           <a
             href="#"
-            className="inline-block bg-rd-lime text-rd-dark font-semibold px-8 py-3.5 rounded-full hover:bg-yellow-300 transition-colors font-poppins"
+            className="inline-block bg-rd-lime text-white font-semibold px-8 py-3.5 rounded-full hover:opacity-90 transition-colors font-poppins"
           >
             Read The Documentation
           </a>

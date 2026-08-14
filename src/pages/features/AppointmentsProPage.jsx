@@ -103,7 +103,7 @@ function WidgetArt() {
       <div className="flex items-center gap-3 mb-5">
         <div className="w-3 h-3 rounded-full bg-red-400" />
         <div className="w-3 h-3 rounded-full bg-yellow-400" />
-        <div className="w-3 h-3 rounded-full bg-green-400" />
+        <div className="w-3 h-3 rounded-full bg-blue-400" />
         <div className="ml-2 text-xs text-gray-400 font-dm-sans">myrepairshop.com/book</div>
       </div>
       <div className="text-center mb-5">
@@ -252,7 +252,7 @@ export default function AppointmentsProPage() {
       <section className="bg-rd-dark text-white pt-24 pb-0 overflow-hidden">
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/40 text-rd-lime px-5 py-2 rounded-full text-sm font-poppins font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 bg-rd-teal/20 border border-rd-teal/40 text-rd-mint px-5 py-2 rounded-full text-sm font-poppins font-semibold mb-6">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               Appointments Pro
             </div>
@@ -273,7 +273,7 @@ export default function AppointmentsProPage() {
             <div className="bg-white rounded-t-3xl shadow-2xl overflow-hidden border border-gray-100">
               {/* Browser bar */}
               <div className="flex items-center gap-2 px-5 py-3 border-b border-gray-100 bg-gray-50">
-                <div className="w-3 h-3 rounded-full bg-red-400" /><div className="w-3 h-3 rounded-full bg-yellow-400" /><div className="w-3 h-3 rounded-full bg-green-400" />
+                <div className="w-3 h-3 rounded-full bg-red-400" /><div className="w-3 h-3 rounded-full bg-yellow-400" /><div className="w-3 h-3 rounded-full bg-blue-400" />
                 <div className="flex-1 mx-4 bg-white border border-gray-200 rounded-lg px-4 py-1.5 text-xs font-dm-sans text-gray-400">Appointments — RepairHub</div>
               </div>
               {/* Calendar grid */}
@@ -347,7 +347,7 @@ export default function AppointmentsProPage() {
             {bookingFlow.map((step, i) => (
               <div key={step.num} className="flex gap-6 mb-8 group">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-2xl bg-rd-dark text-rd-lime font-dm-serif text-lg flex items-center justify-center font-bold shrink-0 shadow-md">
+                  <div className="w-12 h-12 rounded-2xl bg-rd-dark text-rd-mint font-dm-serif text-lg flex items-center justify-center font-bold shrink-0 shadow-md">
                     {step.num}
                   </div>
                   {i < bookingFlow.length - 1 && <div className="w-px flex-1 bg-gradient-to-b from-rd-dark/20 to-transparent mt-2 min-h-[40px]" />}
@@ -411,7 +411,7 @@ export default function AppointmentsProPage() {
       <section className="py-20 bg-rd-dark">
         <div className="container-main max-w-4xl">
           <div className="text-center text-white">
-            <svg className="w-10 h-10 text-rd-lime mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-10 h-10 text-rd-mint mx-auto mb-8" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <p className="font-dm-sans text-2xl md:text-3xl leading-relaxed mb-10 text-white/90 max-w-3xl mx-auto">

@@ -145,11 +145,11 @@ export default function TailorShopPage() {
         <div className="relative container-main max-w-6xl px-6 py-28 md:py-36 flex flex-col lg:flex-row items-center gap-14">
           <div className="flex-1 max-w-xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-1.5 mb-7">
-              <ScissorsIcon className="w-4 h-4 text-rd-lime" />
-              <span className="text-xs font-bold uppercase tracking-widest text-rd-lime font-poppins">Tailor &amp; Alteration Shop Software</span>
+              <ScissorsIcon className="w-4 h-4 text-rd-mint" />
+              <span className="text-xs font-bold uppercase tracking-widest text-rd-mint font-poppins">Tailor &amp; Alteration Shop Software</span>
             </div>
             <h1 className="font-poppins font-bold text-4xl md:text-[3.25rem] leading-[1.12] mb-6">
-              The fitting room for your <span className="text-rd-lime">entire business</span>
+              The fitting room for your <span className="text-rd-mint">entire business</span>
             </h1>
             <p className="text-white/75 text-lg font-dm-sans leading-relaxed mb-9">
               From the first measurement to the final stitch — manage alteration orders, fabric inventory, fitting appointments, and customer profiles in one elegant system built for tailors.
@@ -378,12 +378,12 @@ export default function TailorShopPage() {
       <section className="bg-rd-dark text-white py-20 px-6">
         <div className="container-main max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-white/5 border border-white/10 rounded-2xl p-7">
-            <SpoolIcon className="w-8 h-8 text-rd-lime mb-4" />
+            <SpoolIcon className="w-8 h-8 text-rd-mint mb-4" />
             <h3 className="font-poppins font-semibold text-xl mb-3">Before &amp; After Documentation</h3>
             <p className="text-white/60 font-dm-sans leading-relaxed text-sm">Snap photos at intake and after completion. Images attach directly to the ticket and can be shared with the customer for approval, building trust and reducing disputes.</p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-7">
-            <HangerIcon className="w-8 h-8 text-rd-lime mb-4" />
+            <HangerIcon className="w-8 h-8 text-rd-mint mb-4" />
             <h3 className="font-poppins font-semibold text-xl mb-3">Multi-Garment Tickets</h3>
             <p className="text-white/60 font-dm-sans leading-relaxed text-sm">A bride bringing in a dress and three bridesmaid gowns? One ticket, four garments, each with its own alteration line, pricing, and status. One invoice, zero confusion.</p>
           </div>

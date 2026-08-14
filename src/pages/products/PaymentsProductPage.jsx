@@ -403,7 +403,7 @@ export default function PaymentsProductPage() {
               },
             ].map((sec) => (
               <div key={sec.title} className="bg-white/[0.06] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.1] transition-colors">
-                <div className="text-rd-lime mb-4">{sec.icon}</div>
+                <div className="text-rd-mint mb-4">{sec.icon}</div>
                 <h3 className="font-poppins font-semibold text-lg mb-2">{sec.title}</h3>
                 <p className="font-dm-sans text-white/55 text-sm leading-relaxed">{sec.desc}</p>
               </div>
@@ -413,7 +413,7 @@ export default function PaymentsProductPage() {
           {/* PCI Badge */}
           <div className="flex justify-center mt-14">
             <div className="inline-flex items-center gap-3 bg-white/10 border border-white/20 rounded-full px-6 py-3">
-              <svg className="w-6 h-6 text-rd-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-6 h-6 text-rd-mint" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <span className="font-poppins text-sm font-semibold tracking-wide">PCI-DSS Level 1 Certified</span>
@@ -441,7 +441,7 @@ export default function PaymentsProductPage() {
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-red-400" />
                 <div className="w-3 h-3 rounded-full bg-yellow-400" />
-                <div className="w-3 h-3 rounded-full bg-green-400" />
+                <div className="w-3 h-3 rounded-full bg-blue-400" />
                 <span className="ml-3 font-poppins text-sm font-semibold text-rd-dark">Payments Dashboard</span>
               </div>
               <span className="font-dm-sans text-xs text-gray-400">Today</span>
@@ -458,7 +458,7 @@ export default function PaymentsProductPage() {
                 <div key={stat.label} className={`px-6 py-5 ${i < 3 ? 'border-r border-gray-100' : ''}`}>
                   <div className="font-dm-sans text-xs text-gray-400 mb-1">{stat.label}</div>
                   <div className="font-poppins font-bold text-xl text-rd-dark">{stat.value}</div>
-                  {stat.trend && <span className="font-dm-sans text-xs text-green-600">{stat.trend}</span>}
+                  {stat.trend && <span className="font-dm-sans text-xs text-[#457b9d]">{stat.trend}</span>}
                 </div>
               ))}
             </div>
@@ -487,7 +487,7 @@ export default function PaymentsProductPage() {
                       <td className="px-6 py-3.5">
                         <span className={`inline-block text-xs font-semibold px-2.5 py-1 rounded-full ${
                           tx.status === 'Settled'
-                            ? 'bg-green-100 text-green-700'
+                            ? 'bg-blue-100 text-blue-700'
                             : 'bg-yellow-100 text-yellow-700'
                         }`}>
                           {tx.status}

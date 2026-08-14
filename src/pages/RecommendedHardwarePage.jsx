@@ -376,7 +376,7 @@ export default function RecommendedHardwarePage() {
       {/* Hero */}
       <section className="bg-rd-dark text-white py-20 md:py-28 px-6">
         <div className="container-main max-w-3xl">
-          <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-rd-dark px-4 py-1.5 rounded-full mb-6">
+          <span className="inline-block text-[10px] font-bold uppercase tracking-widest bg-rd-lime text-white px-4 py-1.5 rounded-full mb-6">
             Recommended Hardware
           </span>
           <h1 className="font-poppins font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
@@ -413,7 +413,7 @@ export default function RecommendedHardwarePage() {
             <div key={cat.id} id={cat.id} className="scroll-mt-24">
               <div className="flex items-center gap-4 mb-2">
                 <div className="w-14 h-14 rounded-2xl bg-rd-dark flex items-center justify-center shrink-0">
-                  <Icon name={cat.icon} className="w-7 h-7 text-rd-lime" />
+                  <Icon name={cat.icon} className="w-7 h-7 text-rd-mint" />
                 </div>
                 <div>
                   <h2 className="font-poppins font-bold text-2xl md:text-3xl text-rd-dark">{cat.title}</h2>

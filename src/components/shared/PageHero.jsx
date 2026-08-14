@@ -36,7 +36,7 @@ export default function PageHero({
         {centered ? (
           <div className="text-center max-w-3xl mx-auto">
             {label && (
-              <p className={`text-sm uppercase tracking-widest font-poppins font-medium mb-3 ${dark ? 'text-rd-lime' : 'text-rd-teal'}`}>
+              <p className={`text-sm uppercase tracking-widest font-poppins font-medium mb-3 ${dark ? 'text-rd-mint' : 'text-rd-teal'}`}>
                 {label}
               </p>
             )}
@@ -65,7 +65,7 @@ export default function PageHero({
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
             <div className={`w-full ${image ? 'lg:w-[55%]' : ''} text-center lg:text-left`}>
               {label && (
-                <p className={`text-sm uppercase tracking-widest font-poppins font-medium mb-3 ${dark ? 'text-rd-lime' : 'text-rd-teal'}`}>
+                <p className={`text-sm uppercase tracking-widest font-poppins font-medium mb-3 ${dark ? 'text-rd-mint' : 'text-rd-teal'}`}>
                   {label}
                 </p>
               )}
